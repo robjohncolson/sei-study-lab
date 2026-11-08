@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-11-08T23:05:28.774Z",
+  "purpose": "Proposed source-code review publication; nothing uploaded",
+  "fileCount": 63,
+  "totalBytesExcludingManifest": 768518,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 444,
+      "sha256": "26ef6ffc21d10f581f262df721afde244499470f0b8542df81a67b92fdcd7d1a"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2082,
+      "sha256": "ddea468e768059a8516d717fe4aa1bfb42f4ca8f186b9de2282e958270850bbc"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8128,
+      "sha256": "51b3ff67c106273dc11ce896900f227deed1bc6f42c2d4a77c9a9d8eaa710766"
+    },
+    {
+      "path": "apps/server/integration.test.ts",
+      "bytes": 25788,
+      "sha256": "9c08d010a3194419e3f98e43981c9c16d24af96d3dfad28669e657a2d87fb865"
+    },
+    {
+      "path": "apps/server/src/app.ts",
+      "bytes": 7408,
+      "sha256": "7404ee414bf1ce7866189e2ad8b517382d697a5c2943e4ae2752ef4a00fcef35"
+    },
+    {
+      "path": "apps/server/src/backup.ts",
+      "bytes": 669,
+      "sha256": "1c807b5680a66151107478e6fe3d0002b3bf534d6091a39a647ca4309dceb99f"
+    },
+    {
+      "path": "apps/server/src/handoff.ts",
+      "bytes": 7362,
+      "sha256": "2973cdf60364cf650aa65ed76ca2b4e5f04fbd77024b61ebc45366c895defe29"
+    },
+    {
+      "path": "apps/server/src/main.ts",
+      "bytes": 1005,
+      "sha256": "a098f8ee6d25ef50936afe8f0cb5398ed1216803185078f7df3f72e08b23db84"
+    },
+    {
+      "path": "apps/server/src/migrations/001-initial.sql",
+      "bytes": 6205,
+      "sha256": "295f5f28097cc18d6f592710a175d5e23fea7d7795ca7d642ade82e74bff239f"
+    },
+    {
+      "path": "apps/server/src/migrations/002-versioned-drafts.sql",
+      "bytes": 706,
+      "sha256": "54988ec8753a3f652946ce34364c5f7cd6ad3822554a9a534b28fc6cb649a547"
+    },
+    {
+      "path": "apps/server/src/store.ts",
+      "bytes": 25230,
+      "sha256": "f748075f5e78135084e4ca21ec9577480cb00288e9e522039629c4654711b7c1"
+    },
+    {
+      "path": "apps/server/src/types.ts",
+      "bytes": 3251,
+      "sha256": "36f0591baf9f0c6a3ccf1b5fd1523fcff8f75a62c8ddf4e81018a908eb1fbb0e"
+    },
+    {
+      "path": "apps/web/e2e.spec.ts",
+      "bytes": 19386,
+      "sha256": "dba1e2142bc44dc01eceb182e1ef90c6dbc7c2b33cef952c04d0cb9901ae2a44"
+    },
+    {
+      "path": "apps/web/index.html",
+      "bytes": 326,
+      "sha256": "ba831c635e40ec5e945bd39a225942b9518df20efde0db64113f95b0ed87b087"
+    },
+    {
+      "path": "apps/web/src/App.tsx",
+      "bytes": 13714,
+      "sha256": "95f933e59fc76944045237dfe06ca03b82a1f0d07944ff7a2810325c55c3ebe7"
+    },
+    {
+      "path": "apps/web/src/DraftNavigation.tsx",
+      "bytes": 5668,
+      "sha256": "bcd319e7ec0d13607a3d62f6f5f92b76cd6cf7bf86def1391b690a330b2c8a67"
+    },
+    {
+      "path": "apps/web/src/Exchange.tsx",
+      "bytes": 9847,
+      "sha256": "5c7bef9503850c6b3f64c968c1c7726d1565247de2c50ebe8fd045a91a2ee4ad"
+    },
+    {
+      "path": "apps/web/src/Practice.tsx",
+      "bytes": 10409,
+      "sha256": "42cca71a986da49af3e5543819a1ee00298bcded2d5b66e8a3bc998e979316ca"
+    },
+    {
+      "path": "apps/web/src/Writing.tsx",
+      "bytes": 9403,
+      "sha256": "0e01103fd2d4afe2b694d56ac78949429506bf30e28a800d280e1f74ca853a80"
+    },
+    {
+      "path": "apps/web/src/api.ts",
+      "bytes": 1280,
+      "sha256": "edef0a29cec363695a47e78cb20d43bcfa058a55d121aa002a0a7d59e646d692"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "bytes": 317,
+      "sha256": "70c1fd2ab5b9d3e71130021b751460bb14b6bf13fdea32ee1f1a9fea326228ae"
+    },
+    {
+      "path": "apps/web/src/styles.css",
+      "bytes": 14865,
+      "sha256": "1ede37f66d3526f2fcc0d66ec564709df747b7b30c8f2acaf4e43f24e763779d"
+    },
+    {
+      "path": "apps/web/src/types.ts",
+      "bytes": 1095,
+      "sha256": "362814ab025954d91c7ec763888fd8f92fa56c21a14080d6f9d5ecea38167e80"
+    },
+    {
+      "path": "apps/web/vite.config.ts",
+      "bytes": 876,
+      "sha256": "5de7fe6a18e077c36fd3fbf6909620d465c350816842156ca760bbe9cb2ec11f"
+    },
+    {
+      "path": "codex-review-fixes.md",
+      "bytes": 7660,
+      "sha256": "34a4c9f58d3770b5a5fa1ef924a3ccc4f1a26108e1908f0dbcbfe70831c70b7c"
+    },
+    {
+      "path": "content/author-seed.ts",
+      "bytes": 42370,
+      "sha256": "078c371dde8af17cda7d08b10c08a74c6812fb24c4454926799312ed1d2a93dc"
+    },
+    {
+      "path": "content/catalog.json",
+      "bytes": 150735,
+      "sha256": "fae70311e1e4c2eecd445e712ba5b140230863bde055bd4406b4e361d7a21bc9"
+    },
+    {
+      "path": "content/fetch-inventory.ts",
+      "bytes": 7668,
+      "sha256": "1e91981c38448d48ebcb940e762abb5514d51a40740b12fefd33e17d72ec9255"
+    },
+    {
+      "path": "content/inventory.json",
+      "bytes": 48840,
+      "sha256": "469cfc43755c9f7a624b33bfbdb386dde5e53289d8ceb799edc480740ad02779"
+    },
+    {
+      "path": "docs/anki-workflow.md",
+      "bytes": 1417,
+      "sha256": "0431063e7b323ee850c729bf84bd1ebf233f32ac13558af0131884f15730fe03"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 2221,
+      "sha256": "79671ca43505061026887aa15d451729a72532f9140a167d34b20225bac0282d"
+    },
+    {
+      "path": "docs/content-review-checklist.md",
+      "bytes": 1373,
+      "sha256": "c3fe2e4741ba78b1a3dd38dac204a919f1005b2ee44e575fb9dd614e1102127e"
+    },
+    {
+      "path": "docs/data-schema.md",
+      "bytes": 3147,
+      "sha256": "44f0fff0ec58865156798ba91e87dc3efb4b8c2b5eed393a6019e1e5c2fc7714"
+    },
+    {
+      "path": "docs/decisions-and-todo.md",
+      "bytes": 1291,
+      "sha256": "c0bd7667f5fddc41f999a806f4e1566cfc5b41696a41fd1d3f1297170edd9e5d"
+    },
+    {
+      "path": "docs/examples/synthetic-export.json",
+      "bytes": 59038,
+      "sha256": "47ff36eb1bae8680d1e9aea0e4fa8967e8167413cc08c77f5abfbd4938d40504"
+    },
+    {
+      "path": "docs/examples/synthetic-packet.json",
+      "bytes": 4046,
+      "sha256": "99addcc47885c9fe34f32def9cbb0b5b88c728cf5ba91655e8f0a5d0728032ad"
+    },
+    {
+      "path": "docs/examples/synthetic-packet.md",
+      "bytes": 4552,
+      "sha256": "66c80f7ff558adc8f2fcb9a9cf118893a6b4f609ecd312e418c3db4307a2c4fa"
+    },
+    {
+      "path": "docs/examples/synthetic-proposal.json",
+      "bytes": 728,
+      "sha256": "cea0d855f40f9b5c56fdd3519fcfc00c8169864e4ef7571952e6cc20c4e6c1dd"
+    },
+    {
+      "path": "docs/grok-review-handoff.md",
+      "bytes": 2400,
+      "sha256": "16dc0227cff2cf994e3f40cf475045a265e7c8fb3a00dd58f1d5f5507015da9f"
+    },
+    {
+      "path": "docs/handoff-manifest.json",
+      "bytes": 5873,
+      "sha256": "06c5f3c31d6f999d64f78a3929ba7a14ecd0924bffa6c089e98712be0ff4c229"
+    },
+    {
+      "path": "docs/implementation-status.md",
+      "bytes": 6474,
+      "sha256": "8e6e6854bf438f4cc3ee4b43c98a2b38a8e658431111a531d057317c9f3689e3"
+    },
+    {
+      "path": "docs/publication-manifest.json",
+      "bytes": null,
+      "sha256": null,
+      "note": "Self-hash/size omitted to avoid circular metadata"
+    },
+    {
+      "path": "docs/publication-preview.md",
+      "bytes": 4380,
+      "sha256": "a3938a53d7bdae1554098d639d683ef451efc5e548b33e01a8b97171c2cbd77c"
+    },
+    {
+      "path": "docs/repository-review.md",
+      "bytes": 4695,
+      "sha256": "2fa4ce3248b098c43efa607a7427838a55d124967d05f3d5966ee8fbd6e023a8"
+    },
+    {
+      "path": "docs/review-fixes.md",
+      "bytes": 5129,
+      "sha256": "7352c5c0160e4b000a957dd1971438385f3d4daea3bfa5291d80ec8b03f2204d"
+    },
+    {
+      "path": "docs/source-review.md",
+      "bytes": 8307,
+      "sha256": "4373ee2e330b9410004287747bbe19282d75a3baec224b6c0ff55566bbdc10a2"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "bytes": 716,
+      "sha256": "ca963119c58808227afb4011163f418d03585e45ec58ace4955e439b12fc02b2"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 176547,
+      "sha256": "1076ac158ba98be79582b4fb236181e445cbc81a03fb4b0bff828f6cb184cf89"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1363,
+      "sha256": "528956be669b8adf81528997afe9bde313a94e4c6fc0aa101c6ef5f41dcfb787"
+    },
+    {
+      "path": "packages/shared/src/index.ts",
+      "bytes": 14643,
+      "sha256": "bcb82dab0685733636cbdc7b6517118d7776965ee3483d8d8bb8551eec1aacb2"
+    },
+    {
+      "path": "playwright.config.ts",
+      "bytes": 336,
+      "sha256": "f18dc18de8c97c58a2fed852f7c44e0831d8a1bbb67669a9d2a77d6a76270074"
+    },
+    {
+      "path": "scripts/create-demo.ts",
+      "bytes": 1722,
+      "sha256": "e72f34b8f97ea824befb1dffabbc81e2bd4745bf15ad00fabe5a1a0bcfba0138"
+    },
+    {
+      "path": "scripts/dev.mjs",
+      "bytes": 864,
+      "sha256": "8748699554064c39af58c483c0b29bbf95e599e871a517144cbadba99731103b"
+    },
+    {
+      "path": "scripts/e2e-server.ts",
+      "bytes": 1104,
+      "sha256": "6415d2b55ddf6336d5f30f43638a5f0aeb8ba81daf60aea8978b31d78032d024"
+    },
+    {
+      "path": "scripts/prepare-source-review.mjs",
+      "bytes": 4267,
+      "sha256": "1726fb7c6db98d59d17d51ceb2aa68a3241221f989bb7ab07ef424431d4bd146"
+    },
+    {
+      "path": "scripts/smoke-built.mjs",
+      "bytes": 1355,
+      "sha256": "83e093d25edf0ce59cc7d0507dcbb1c8734d0d762644aed51d8df446ad6cbf18"
+    },
+    {
+      "path": "scripts/validate-content.ts",
+      "bytes": 462,
+      "sha256": "5701c5e7860b8254d2cd5da7b56eca12557695391d68299af75f8635fa1d4634"
+    },
+    {
+      "path": "scripts/write-manifest.mjs",
+      "bytes": 4019,
+      "sha256": "9065108721a934eb90e5c07c08e58dbd5a5b5ecd5265637d6ab96aed0c934260"
+    },
+    {
+      "path": "tests/review-regressions.test.ts",
+      "bytes": 6740,
+      "sha256": "160db865a1a5dc0cf786644c39f9fadaf6b5355dd7d3044206a7cdd09d07a728"
+    },
+    {
+      "path": "tests/shared.test.ts",
+      "bytes": 6027,
+      "sha256": "61e4016810fff23e9581536b0690934223d2357bc577955ee46b741ca07f1f3e"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 362,
+      "sha256": "b19643b94ccbfc000f585b71e4ef5a6607bf7ef4bc41ec587ab5278068b4e1ae"
+    },
+    {
+      "path": "vitest.config.ts",
+      "bytes": 164,
+      "sha256": "3a62965c396bedfbfe035c5ccb7ac4cc51644f6972c4a79919e6d3aad775fd2b"
+    }
+  ],
+  "privacyChecks": {
+    "gitIgnoredPathProbes": [
+      "runtime/study.sqlite",
+      "runtime/study.sqlite-wal",
+      "runtime/backups/example.sqlite",
+      "runtime/exports/answer.json",
+      "runtime/review/source-review.zip",
+      ".env",
+      ".env.local",
+      ".vercel/project.json",
+      "secrets/example.json",
+      "credentials/example.json",
+      "imports/private.json",
+      "exports/private.json",
+      "answers/private.json",
+      "certificate.pfx",
+      "certificate.p12",
+      "sei-study-lab-export.json",
+      "sei-review-packet.json",
+      "sei-review-packet.md",
+      "apps/server/private-fixtures/example.json"
+    ],
+    "allProbesIgnored": true,
+    "credentialPatternScan": {
+      "findingCount": 0,
+      "scope": "Candidate regular source files only; no runtime/private file contents read",
+      "limitation": "Heuristic signatures, not a guarantee that every secret or personal detail is absent"
+    },
+    "excludedDirectories": [
+      ".git/",
+      ".vercel/",
+      "runtime/",
+      "node_modules/",
+      "dist/",
+      "test-results/",
+      "playwright-report/",
+      "secrets/",
+      "credentials/",
+      "imports/",
+      "exports/",
+      "answers/"
+    ],
+    "intentionalPublicContext": [
+      "MTEL/SEI educational context",
+      "January 16, 2027 planning target",
+      "official source text and provenance",
+      "synthetic demonstration answers",
+      "tested development tool versions"
+    ]
+  },
+  "repositoryState": {
+    "stagedFiles": [
+      ".gitignore",
+      "AGENTS.md",
+      "README.md",
+      "apps/server/integration.test.ts",
+      "apps/server/src/app.ts",
+      "apps/server/src/backup.ts",
+      "apps/server/src/handoff.ts",
+      "apps/server/src/main.ts",
+      "apps/server/src/migrations/001-initial.sql",
+      "apps/server/src/migrations/002-versioned-drafts.sql",
+      "apps/server/src/store.ts",
+      "apps/server/src/types.ts",
+      "apps/web/e2e.spec.ts",
+      "apps/web/index.html",
+      "apps/web/src/App.tsx",
+      "apps/web/src/DraftNavigation.tsx",
+      "apps/web/src/Exchange.tsx",
+      "apps/web/src/Practice.tsx",
+      "apps/web/src/Writing.tsx",
+      "apps/web/src/api.ts",
+      "apps/web/src/main.tsx",
+      "apps/web/src/styles.css",
+      "apps/web/src/types.ts",
+      "apps/web/vite.config.ts",
+      "codex-review-fixes.md",
+      "content/author-seed.ts",
+      "content/catalog.json",
+      "content/fetch-inventory.ts",
+      "content/inventory.json",
+      "docs/anki-workflow.md",
+      "docs/architecture.md",
+      "docs/content-review-checklist.md",
+      "docs/data-schema.md",
+      "docs/decisions-and-todo.md",
+      "docs/examples/synthetic-export.json",
+      "docs/examples/synthetic-packet.json",
+      "docs/examples/synthetic-packet.md",
+      "docs/examples/synthetic-proposal.json",
+      "docs/grok-review-handoff.md",
+      "docs/handoff-manifest.json",
+      "docs/implementation-status.md",
+      "docs/publication-manifest.json",
+      "docs/publication-preview.md",
+      "docs/repository-review.md",
+      "docs/review-fixes.md",
+      "docs/source-review.md",
+      "eslint.config.mjs",
+      "package-lock.json",
+      "package.json",
+      "packages/shared/src/index.ts",
+      "playwright.config.ts",
+      "scripts/create-demo.ts",
+      "scripts/dev.mjs",
+      "scripts/e2e-server.ts",
+      "scripts/prepare-source-review.mjs",
+      "scripts/smoke-built.mjs",
+      "scripts/validate-content.ts",
+      "scripts/write-manifest.mjs",
+      "tests/review-regressions.test.ts",
+      "tests/shared.test.ts",
+      "tsconfig.json",
+      "vitest.config.ts"
+    ],
+    "remoteNames": [],
+    "pushedByThisPreparation": false,
+    "deployedByThisPreparation": false
+  }
+}

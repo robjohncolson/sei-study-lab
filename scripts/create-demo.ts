@@ -1,0 +1,16 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {CatalogSchema} from '../packages/shared/src/index.js';
+import {SeiStore} from '../apps/server/src/store.js';
+import {createHandoff} from '../apps/server/src/handoff.js';
+const c=CatalogSchema.parse(JSON.parse(readFileSync('content/catalog.json','utf8')));
+const store=new SeiStore(c,':memory:');
+const task=c.tasks.find(t=>t.kind==='case')!;
+const {attempt}=store.submit({taskId:task.id,taskVersion:task.version,answer:'SYNTHETIC DEMO: A language survey is not a proficiency score. Preserve the mathematics target and gather appropriate language evidence.',hintCount:1,assistance:['Synthetic demo; not learner evidence']},'synthetic-demo');
+const packet=createHandoff(store,{attemptId:attempt.id,includeAnswer:true,includeHints:true,context:'Synthetic example only; do not treat as a learner’s work.'});
+mkdirSync('docs/examples',{recursive:true});
+writeFileSync('docs/examples/synthetic-export.json',JSON.stringify(store.exportData(),null,2)+'\n');
+writeFileSync('docs/examples/synthetic-packet.json',packet.json+'\n');
+writeFileSync('docs/examples/synthetic-packet.md',packet.markdown);
+writeFileSync('docs/examples/synthetic-proposal.json',JSON.stringify({...packet.packet.returnContract,judgeLabel:'Synthetic demonstration',criteriaFeedback:[{criterionId:'reasoning',comment:'Demonstrates a conceptual distinction; more application detail is needed.',answerQuotes:['A language survey is not a proficiency score.'],missingEvidence:['A concrete support and follow-up assessment']}],reason:'Demonstration only; not validated scoring'},null,2)+'\n');
+store.close();
+console.log('Wrote synthetic-only examples; no runtime learning evidence seeded.');

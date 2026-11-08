@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "packetId": "8f008c8f-7c85-4a3a-82bc-c5fd3c524de3",
+  "attemptId": "129cfe80-4ec5-4517-976f-ab05e265f30b",
+  "taskVersion": 1,
+  "rubricVersion": null,
+  "judgeLabel": "Synthetic demonstration",
+  "provisional": true,
+  "criteriaFeedback": [
+    {
+      "criterionId": "reasoning",
+      "comment": "Demonstrates a conceptual distinction; more application detail is needed.",
+      "answerQuotes": [
+        "A language survey is not a proficiency score."
+      ],
+      "missingEvidence": [
+        "A concrete support and follow-up assessment"
+      ]
+    }
+  ],
+  "holisticScore": null,
+  "needsHumanReview": true,
+  "reason": "Demonstration only; not validated scoring",
+  "proposedEvidence": []
+}

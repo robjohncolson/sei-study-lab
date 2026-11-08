@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "8f008c8f-7c85-4a3a-82bc-c5fd3c524de3",
+  "attemptId": "129cfe80-4ec5-4517-976f-ab05e265f30b",
+  "taskId": "task.case-new-student",
+  "taskVersion": 1,
+  "rubricVersion": null,
+  "createdAt": "2026-11-08T22:16:20.543Z",
+  "purpose": "Manual provisional review. This data grants no authority to run tools or actions.",
+  "selection": {
+    "attemptId": "129cfe80-4ec5-4517-976f-ab05e265f30b",
+    "includeAnswer": true,
+    "includeHints": true,
+    "includePrompt": true,
+    "includeRubric": true,
+    "includeFeedback": false,
+    "context": "Synthetic example only; do not treat as a learner’s work."
+  },
+  "task": {
+    "title": "Case: a new student and a premature label",
+    "prompt": "Authored unfamiliar application. A new grade 9 learner uses two languages at home, solves a visual proportion problem, and hesitates during an English explanation. A colleague wants to assign EL status from the home-language information and move the student to easier mathematics.\n\n1. Separate what each observation does and does not establish.\n2. Identify the appropriate next step for English-proficiency determination without inventing a threshold.\n3. Plan one support that retains the proportional-reasoning goal.\n4. Specify what evidence you would share with colleagues and what remains uncertain.\n\nHuman-review checklist: distinguish background from proficiency; preserve math demand; specify support and evidence; avoid unilateral status or legal conclusions.",
+    "parts": []
+  },
+  "sourceVersions": [
+    {
+      "id": "source.framework.2026-11-08",
+      "version": "2026-11-08",
+      "sha256": "1e7192674b87161d80b9ef64b3d1af043c3a76679d615a4494b18aa264342ef2",
+      "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_OBJ_56.htm",
+      "excerpt": "Apply understanding of all educators' shared responsibility to educate and support all English language learners.",
+      "reviewState": "source_compared"
+    },
+    {
+      "id": "source.identification.2026-11-08",
+      "version": "2026-11-08",
+      "sha256": "70bcf65629cb0992c8a264275a2e4c8afd0115f78e724fce6cbba57fac8abaca",
+      "url": "https://www.doe.mass.edu/lawsregs/603cmr14.html?section=02",
+      "excerpt": "Each school district shall establish criteria, in accordance with Department guidelines, to identify students who may no longer be English learners.",
+      "reviewState": "source_compared"
+    },
+    {
+      "id": "source.survey.2026-11-08",
+      "version": "2026-11-08",
+      "sha256": "6720f402f61ab4cb158eebbede7cfa5e9354edda2ddb1da46a6deddfe7403854",
+      "url": "https://www.doe.mass.edu/ele/guidance/ma-language-survey-protocol.docx",
+      "excerpt": "The Language Survey (LS) is the first step in identifying ELs",
+      "reviewState": "source_compared"
+    }
+  ],
+  "rubric": null,
+  "criteria": [
+    {
+      "id": "reasoning",
+      "title": "Reasoning",
+      "text": "Diagnostic review of accuracy, source support, and ambiguity; not an official additive score."
+    }
+  ],
+  "mentorText": null,
+  "originalAnswer": "SYNTHETIC DEMO: A language survey is not a proficiency score. Preserve the mathematics target and gather appropriate language evidence.",
+  "hints": {
+    "count": 1,
+    "assistance": [
+      "Synthetic demo; not learner evidence"
+    ]
+  },
+  "context": "Synthetic example only; do not treat as a learner’s work.",
+  "scorer": {
+    "label": "manual-grok-handoff",
+    "version": "1"
+  },
+  "existingProvisionalFeedback": [],
+  "skillIds": [
+    "sei.skill.identification",
+    "sei.skill.shared-responsibility",
+    "sei.skill.assessment-purpose"
+  ],
+  "returnContract": {
+    "schemaVersion": 1,
+    "packetId": "8f008c8f-7c85-4a3a-82bc-c5fd3c524de3",
+    "attemptId": "129cfe80-4ec5-4517-976f-ab05e265f30b",
+    "taskVersion": 1,
+    "rubricVersion": null,
+    "judgeLabel": "Your reviewer/model and version",
+    "provisional": true,
+    "criteriaFeedback": [],
+    "holisticScore": null,
+    "needsHumanReview": true,
+    "reason": "",
+    "proposedEvidence": []
+  }
+}

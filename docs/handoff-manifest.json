@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "appVersion": "0.1.0",
+  "generatedAt": "2026-11-08T22:21:22.833Z",
+  "platform": {
+    "os": "Windows",
+    "shell": "PowerShell",
+    "node": "22.17.1",
+    "npm": "10.9.2",
+    "sqlite": "node:sqlite experimental; DatabaseSync and backup verified",
+    "browser": "Installed Microsoft Edge156.0.4314.58"
+  },
+  "entryPoints": {
+    "development": "npm run dev",
+    "productionBuild": "npm run build",
+    "production": "npm start",
+    "server": "apps/server/src/main.ts",
+    "web": "apps/web/src/main.tsx",
+    "catalog": "content/catalog.json"
+  },
+  "migrations": [
+    "apps/server/src/migrations/001-initial.sql",
+    "apps/server/src/migrations/002-versioned-drafts.sql"
+  ],
+  "dependencies": {
+    "@fastify/static": "10.1.10",
+    "fastify": "5.12.8",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@playwright/test": "1.56.1",
+    "@types/node": "22.19.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-react": "5.1.0",
+    "esbuild": "0.25.12",
+    "eslint": "9.39.5",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "7.3.7",
+    "vitest": "5.1.0"
+  },
+  "overrides": {
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "11.0.5"
+    }
+  },
+  "content": {
+    "objectives": 13,
+    "officialDescriptiveBullets": 59,
+    "objective0013ReferralRecords": 1,
+    "statementRecords": 60,
+    "competencies": 11,
+    "indicators": 5,
+    "skills": 9,
+    "alignments": 23,
+    "prerequisites": 5,
+    "lessons": 6,
+    "checks": 24,
+    "cases": 3,
+    "writingTasks": 2,
+    "cards": 12,
+    "mentorTexts": 2,
+    "rubrics": 1,
+    "sourceVersions": 13,
+    "sourceCompared": 13,
+    "sourceCheckedTasks": 29,
+    "draftTasks": 0,
+    "humanReviewedTasks": 0,
+    "reviewEvents": 42,
+    "seedAttempts": 0
+  },
+  "testsActuallyRun": [
+    {
+      "command": "npm ci",
+      "result": "passed after releasing Windows test-process file lock; no administrator access"
+    },
+    {
+      "command": "npm audit",
+      "result": "0 vulnerabilities"
+    },
+    {
+      "command": "npm run content:validate",
+      "result": "passed"
+    },
+    {
+      "command": "npm test",
+      "result": "31 passed:13 shared and18 integration"
+    },
+    {
+      "command": "npm run test:integration",
+      "result": "18 passed"
+    },
+    {
+      "command": "npm run typecheck",
+      "result": "passed"
+    },
+    {
+      "command": "npm run lint",
+      "result": "passed"
+    },
+    {
+      "command": "npm run build",
+      "result": "passed; nonfatal third-party comment notices"
+    },
+    {
+      "command": "npm run test:e2e",
+      "result": "4 passed; installed Edge; external network blocked; separate synthetic DB"
+    },
+    {
+      "command": "node scripts/smoke-built.mjs",
+      "result": "passed production entry/HTML/catalog/origin checks; separate empty DB"
+    },
+    {
+      "command": "npx tsx scripts/create-demo.ts",
+      "result": "passed; synthetic-only tracked examples"
+    }
+  ],
+  "documentedNotSeparatelyRun": [
+    "npm start (same compiled entry directly smoke tested)",
+    "npm run db:backup (consistent WAL backup integration-tested)",
+    "npx playwright install chromium (optional, never run)"
+  ],
+  "knownGaps": [
+    "No independent human content review",
+    "Policy thresholds/durations/accommodations and full2026 operational guidance not verified",
+    "Most objectives are inventory or narrowly mapped, not fully taught",
+    "Extended responses and approved external feedback remain provisional; seeded transfer_evidence cannot yet qualify",
+    "No validated scoring-agreement/anchor study or human adjudication workflow",
+    "Imports require exact locally installed catalog versions; drafts and pending packets excluded from evidence interchange",
+    "Anki review history not synchronized",
+    "AnkiConnect, model adapters and BKT deferred",
+    "Node24 not tested; node:sqlite experimental on installed Node22",
+    "ESLint9 is lifecycle-deprecated; tested and currently audited clean"
+  ],
+  "safeNextSteps": [
+    "Start locally and try0001 practice",
+    "Review source qualifications and seed content with a qualified human educator",
+    "Back up using supported SQLite backup before future catalog migrations",
+    "Explicitly authorize any later GitHub destination/visibility after reviewing ignored private data"
+  ],
+  "publication": {
+    "mode": "User-authorized public source review",
+    "repository": "https://github.com/robjohncolson/sei-study-lab",
+    "preparedForUpload": true,
+    "hostingDeployed": false,
+    "privateRuntimeExcluded": true
+  },
+  "privacy": {
+    "realAnswersInManifest": false,
+    "credentialsAcquired": false,
+    "modelsDownloaded": false,
+    "browsersDownloaded": false,
+    "defaultModelCalls": 0
+  },
+  "latestReviewFixes": {
+    "verifiedAt": "2026-11-08T23:04:48.374Z",
+    "evidencePolicyVersion": 2,
+    "unitIntegrationPassed": 54,
+    "browserPassed": 12,
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "contentValidation": "passed",
+    "browserPorts": [
+      5174,
+      4318
+    ],
+    "realLearnerDatabaseOpened": false,
+    "changes": [
+      "Feedback-dependent revisions excluded; delayed fresh retests supported",
+      "Awaited serialized navigation saves and visible failures",
+      "Immutable historical task snapshots resolve readiness",
+      "Versioned drafts preserve old prompts and require deliberate copying",
+      "Generation-context evidence preserved on import; merged-history eligibility derived",
+      "Ambiguous same-time failures retain explicit recheck"
+    ],
+    "independentModelReview": "Confirmed original same-ms reproduction now needs_recheck; no remaining concrete blocker in reviewed scope"
+  }
+}

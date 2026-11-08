@@ -1,0 +1,1328 @@
+{
+  "schemaVersion": 1,
+  "appVersion": "0.1.0",
+  "exportedAt": "2026-11-08T22:16:20.544Z",
+  "origin": "sei-study-lab",
+  "catalog": {
+    "tasks": [
+      {
+        "answerKey": {
+          "accepted": [
+            "b"
+          ],
+          "feedback": "The survey provides language-background information; the authorized identification process and proficiency evidence determine status. It does not measure mathematical ability.",
+          "wrongFeedback": {
+            "a": "Language background does not measure content knowledge. Separate the constructs.",
+            "c": "A survey response is not a proficiency assessment result."
+          }
+        },
+        "familyId": "family.survey-concept",
+        "id": "task.survey-purpose",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "The student must have weak mathematics knowledge."
+          },
+          {
+            "id": "b",
+            "text": "The information belongs in the district’s process for deciding whether proficiency screening is needed."
+          },
+          {
+            "id": "c",
+            "text": "The student has already received an English proficiency score."
+          }
+        ],
+        "prompt": "A new student’s Language Survey reports a language other than English. Which conclusion is justified by that information alone?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.identification"
+        ],
+        "sourceRefs": [
+          "source.survey.2026-11-08",
+          "source.identification.2026-11-08"
+        ],
+        "title": "What does the survey establish?",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "c"
+          ],
+          "feedback": "The protocol separates family communication preferences from identification questions. A family’s language-access needs and a child’s proficiency are related contexts, not interchangeable measures.",
+          "wrongFeedback": {
+            "a": "A parent’s communication preference alone does not establish the child’s EL status.",
+            "b": "Family communication needs do not disappear because a child speaks English."
+          }
+        },
+        "familyId": "family.family-communication",
+        "id": "task.translation-preference",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "The child is automatically an EL."
+          },
+          {
+            "id": "b",
+            "text": "The parent request can be ignored if the child speaks English."
+          },
+          {
+            "id": "c",
+            "text": "Honor the communication need and use the appropriate identification evidence for the child."
+          }
+        ],
+        "prompt": "A parent requests translated written communication. No student proficiency evidence is available. What should a teacher infer?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.identification"
+        ],
+        "sourceRefs": [
+          "source.survey.2026-11-08"
+        ],
+        "title": "Separate family communication from identification",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "english proficiency",
+            "english language proficiency",
+            "english proficiency assessment",
+            "english language proficiency assessment"
+          ],
+          "feedback": "Look for direct evidence of English proficiency through the appropriate assessment process. Longer or differently phrased answers need review rather than an automatic incorrect label.",
+          "wrongFeedback": {}
+        },
+        "familyId": "family.survey-concept",
+        "id": "task.survey-recall",
+        "kind": "short",
+        "noveltyKind": "familiar",
+        "prompt": "In a few words, name what must be assessed separately from language-background survey information to determine English-language proficiency.",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.identification"
+        ],
+        "sourceRefs": [
+          "source.survey.2026-11-08",
+          "source.identification.2026-11-08"
+        ],
+        "title": "Name the distinction",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "a"
+          ],
+          "feedback": "The content teacher plans access to content and academic discourse while coordinating specialist expertise.",
+          "wrongFeedback": {
+            "b": "Waiting withholds content access instead of planning support.",
+            "c": "Removing reasoning/discussion changes the target and avoids the language-development need."
+          }
+        },
+        "familyId": "family.shared-concept",
+        "id": "task.shared-plan",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Keep the algebra goal and coordinate content-language supports with the ESL colleague."
+          },
+          {
+            "id": "b",
+            "text": "Wait for fluent English before teaching algebra."
+          },
+          {
+            "id": "c",
+            "text": "Remove discussion and give only computation."
+          }
+        ],
+        "prompt": "An algebra teacher says only the ESL teacher should adapt access to algebra discussions. Which response best fits shared responsibility?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.shared-responsibility"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08",
+          "source.competencies.2026-11-08"
+        ],
+        "title": "Who plans access?",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "b"
+          ],
+          "feedback": "Specific evidence identifies content understanding, the language domain, and assistance. It lets colleagues choose a next step.",
+          "wrongFeedback": {
+            "a": "A label without task evidence gives colleagues little basis for planning.",
+            "c": "Accent is not evidence of mathematical misunderstanding."
+          }
+        },
+        "familyId": "family.team-planning",
+        "id": "task.team-evidence",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Needs ESL; no further details."
+          },
+          {
+            "id": "b",
+            "text": "Explained equivalent ratios with a diagram; needed a frame to connect the explanation in writing."
+          },
+          {
+            "id": "c",
+            "text": "Has an accent, so does not understand ratios."
+          }
+        ],
+        "prompt": "Which note best supports shared planning after a ratio lesson?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.shared-responsibility"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08"
+        ],
+        "title": "Bring useful evidence to a team",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "all educators",
+            "all teachers",
+            "every educator",
+            "all school educators"
+          ],
+          "feedback": "All educators share responsibility. This does not erase specialized roles or individual support plans.",
+          "wrongFeedback": {}
+        },
+        "familyId": "family.shared-concept",
+        "id": "task.shared-recall",
+        "kind": "short",
+        "noveltyKind": "familiar",
+        "prompt": "Who shares responsibility for educating and supporting English learners? Give the broad group, not only one specialist role.",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.shared-responsibility"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08"
+        ],
+        "title": "Recall the responsibility",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "c"
+          ],
+          "feedback": "Support the observed need and use the established team/process for status decisions. One classroom response is not a reclassification rule.",
+          "wrongFeedback": {
+            "a": "A status label does not remove an instructional need.",
+            "b": "A single classroom answer does not replace current official criteria and procedures."
+          }
+        },
+        "familyId": "family.former-support",
+        "id": "task.former-support",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ignore the difficulty because the student is a former EL."
+          },
+          {
+            "id": "b",
+            "text": "Automatically change the student’s official status based on this answer."
+          },
+          {
+            "id": "c",
+            "text": "Provide evidence-based academic-language support and share observations through the appropriate team."
+          }
+        ],
+        "prompt": "A former EL understands a graph but struggles to write its explanation. What is the best classroom response?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.current-former"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08",
+          "source.identification.2026-11-08",
+          "source.monitoring.2026-11-08"
+        ],
+        "title": "Respond to evidence after exit",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "b"
+          ],
+          "feedback": "Framework references identify topics to study. Current operational rules require current authoritative evidence, not historical mentions or plausibility.",
+          "wrongFeedback": {
+            "a": "A historical reference can become outdated.",
+            "c": "A plausible number is not legal or policy evidence."
+          }
+        },
+        "familyId": "family.policy-provenance",
+        "id": "task.policy-date",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Use the old reference because all published rules stay unchanged."
+          },
+          {
+            "id": "b",
+            "text": "Compare the claim with current official guidance, record version/effective-date limits, and leave a gap if unresolved."
+          },
+          {
+            "id": "c",
+            "text": "Use whichever threshold sounds reasonable."
+          }
+        ],
+        "prompt": "A study card states an exit threshold using a historical framework reference alone. What should happen before it is taught as current Massachusetts policy?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.current-former"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08",
+          "source.guidance.2026-11-08",
+          "source.identification.2026-11-08"
+        ],
+        "title": "Find the authority for a policy claim",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "policy research gap",
+            "policy-research gap",
+            "unverified policy",
+            "unverified"
+          ],
+          "feedback": "Keep it a policy-research gap. Do not infer a legal rule from a classroom example.",
+          "wrongFeedback": {}
+        },
+        "familyId": "family.policy-provenance",
+        "id": "task.policy-recall",
+        "kind": "short",
+        "noveltyKind": "familiar",
+        "prompt": "A numeric exit threshold has no current official verification. What should this app call it? Answer with the gap label.",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.current-former"
+        ],
+        "sourceRefs": [
+          "source.guidance.2026-11-08",
+          "source.identification.2026-11-08"
+        ],
+        "title": "Name the policy gap",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "a"
+          ],
+          "feedback": "Analyze the language function and task evidence. Teach the comparison and justification language alongside the content.",
+          "wrongFeedback": {
+            "b": "Conversation alone is not evidence of motivation or avoidance.",
+            "c": "Difficulty expressing a justification does not by itself establish lack of content understanding."
+          }
+        },
+        "familyId": "family.academic-concept",
+        "id": "task.social-academic",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Social fluency does not guarantee control of the academic language of justification."
+          },
+          {
+            "id": "b",
+            "text": "Comfortable conversation proves the student is avoiding work."
+          },
+          {
+            "id": "c",
+            "text": "The student cannot understand rates."
+          }
+        ],
+        "prompt": "A student chats comfortably but struggles to justify a comparison of two rates. Which interpretation supports instruction?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.academic-language"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08",
+          "source.indicators.2026-11-08"
+        ],
+        "title": "Conversation and explanation",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "c"
+          ],
+          "feedback": "The barrier includes sentence/discourse relationships. A word list alone does not teach how to connect evidence and a claim.",
+          "wrongFeedback": {
+            "a": "The evidence points beyond isolated word meaning.",
+            "b": "Circling a number removes the explanation target."
+          }
+        },
+        "familyId": "family.discourse-analysis",
+        "id": "task.language-levels",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ask them to copy the vocabulary definitions again."
+          },
+          {
+            "id": "b",
+            "text": "Reduce the task to circling a number."
+          },
+          {
+            "id": "c",
+            "text": "Model a connected explanation and have them rehearse a claim-evidence connection using their own values."
+          }
+        ],
+        "prompt": "Students know rate and constant but cannot connect a claim to supporting values. Which support targets the missing demand most directly?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.academic-language"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08"
+        ],
+        "title": "Beyond a word list",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "academic language"
+          ],
+          "feedback": "Academic language includes word/phrase, sentence, and discourse demands; it is more than technical vocabulary.",
+          "wrongFeedback": {}
+        },
+        "familyId": "family.academic-concept",
+        "id": "task.academic-recall",
+        "kind": "short",
+        "noveltyKind": "familiar",
+        "prompt": "What kind of language is used to explain, argue, and justify ideas within school subjects? Use the two-word category.",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.academic-language"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08",
+          "source.indicators.2026-11-08"
+        ],
+        "title": "Recall the language category",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "b"
+          ],
+          "feedback": "A composite can hide differences among listening, speaking, reading, and writing. Use disaggregated evidence and the actual task.",
+          "wrongFeedback": {
+            "a": "An overall result does not describe each domain equally.",
+            "c": "Speaking can support writing, but it does not replace writing development."
+          }
+        },
+        "familyId": "family.domain-concept",
+        "id": "task.uneven-profile",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Give both learners identical supports solely from the overall result."
+          },
+          {
+            "id": "b",
+            "text": "Use domain evidence and classroom work to tailor supports while retaining content goals."
+          },
+          {
+            "id": "c",
+            "text": "Assume stronger speaking means writing no longer needs instruction."
+          }
+        ],
+        "prompt": "Two learners have the same overall English proficiency result. One has stronger speaking and weaker writing. What should planning do?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.domain-profiles"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08",
+          "source.rubric.2026-11-08"
+        ],
+        "title": "Read the profile",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "c"
+          ],
+          "feedback": "The observations concern different domains. Investigate text demands instead of collapsing them into one label.",
+          "wrongFeedback": {
+            "a": "Evidence in listening/speaking does not establish the same performance in reading.",
+            "b": "More precise evidence helps target instruction; less evidence does not."
+          }
+        },
+        "familyId": "family.domain-application",
+        "id": "task.domain-demand",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Treat the oral evidence as proof of identical reading proficiency."
+          },
+          {
+            "id": "b",
+            "text": "Stop collecting domain evidence."
+          },
+          {
+            "id": "c",
+            "text": "Investigate the reading demand and plan a support, using the oral strengths as resources."
+          }
+        ],
+        "prompt": "A student follows an oral explanation and gives a clear spoken response but struggles to interpret a written prompt. Which next step is most defensible?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.domain-profiles"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08",
+          "source.rubric.2026-11-08"
+        ],
+        "title": "Match evidence to a domain",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "writing"
+          ],
+          "feedback": "Writing is a distinct domain. This narrow recall check alone cannot demonstrate good instructional planning.",
+          "wrongFeedback": {}
+        },
+        "familyId": "family.domain-concept",
+        "id": "task.domains-recall",
+        "kind": "short",
+        "noveltyKind": "familiar",
+        "prompt": "Name the fourth language domain: listening, speaking, reading, and ____.",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.domain-profiles"
+        ],
+        "sourceRefs": [
+          "source.rubric.2026-11-08"
+        ],
+        "title": "Retrieve the missing domain",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "b"
+          ],
+          "feedback": "Judge evidence relevant to the content target and separate language feedback. Neither grammatical accuracy nor inaccuracy alone establishes mathematical understanding.",
+          "wrongFeedback": {
+            "a": "Article errors do not erase valid mathematical evidence.",
+            "c": "Fluent grammar can accompany incorrect mathematics."
+          }
+        },
+        "familyId": "family.construct-separation",
+        "id": "task.grammar-content",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Score all reasoning as incorrect because the English is imperfect."
+          },
+          {
+            "id": "b",
+            "text": "Recognize the mathematical evidence and give separate language feedback."
+          },
+          {
+            "id": "c",
+            "text": "Treat fluent grammar as the only evidence needed."
+          }
+        ],
+        "prompt": "A learner’s diagram and reasoning correctly show why two ratios are equivalent, but the written explanation has article errors. If the target is proportional reasoning, what is appropriate?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.assessment-purpose"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08"
+        ],
+        "title": "Score the intended construct",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "a"
+          ],
+          "feedback": "Formative use concerns evidence used to adjust teaching/learning. Format or length alone does not determine purpose.",
+          "wrongFeedback": {
+            "b": "A short item can serve different purposes; identify the use.",
+            "c": "A classroom exit ticket does not replace the official identification process."
+          }
+        },
+        "familyId": "family.assessment-purpose",
+        "id": "task.formative-use",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "It informs the next instructional decision."
+          },
+          {
+            "id": "b",
+            "text": "It is automatically formative because it contains only one question."
+          },
+          {
+            "id": "c",
+            "text": "It produces an official English proficiency classification."
+          }
+        ],
+        "prompt": "A teacher uses an exit ticket to decide which representation to model tomorrow. What makes this a formative use?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.assessment-purpose"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08"
+        ],
+        "title": "Purpose before format",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "formative",
+            "formative assessment"
+          ],
+          "feedback": "Formative assessment informs action during learning; summative use summarizes achievement. Task format alone does not decide the purpose.",
+          "wrongFeedback": {}
+        },
+        "familyId": "family.assessment-purpose",
+        "id": "task.formative-recall",
+        "kind": "short",
+        "noveltyKind": "familiar",
+        "prompt": "What is the usual label for assessment used during learning to guide the next teaching and learning steps?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.assessment-purpose"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08"
+        ],
+        "title": "Retrieve the assessment purpose",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "c"
+          ],
+          "feedback": "Use oral strength as a bridge and retain an explicit writing goal. Adjust support from evidence.",
+          "wrongFeedback": {
+            "a": "Permanent substitution avoids the writing-development goal.",
+            "b": "Removing a useful scaffold needlessly ignores the learner’s demonstrated strength."
+          }
+        },
+        "familyId": "family.oral-writing-concept",
+        "id": "task.rehearsal-bridge",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Replace all future writing with speech."
+          },
+          {
+            "id": "b",
+            "text": "Require silent writing with no connection to the demonstrated oral strength."
+          },
+          {
+            "id": "c",
+            "text": "Rehearse the explanation, notice a modeled written structure, then write and review with support."
+          }
+        ],
+        "prompt": "A learner explains a linear relationship orally but writes only fragments. Which sequence best develops writing?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.oral-to-writing"
+        ],
+        "sourceRefs": [
+          "source.rubric.2026-11-08",
+          "source.framework.2026-11-08"
+        ],
+        "title": "Use an oral strength",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "a"
+          ],
+          "feedback": "Inspect the intended content-language relation and assistance. Duration and length alone do not establish a successful explanation.",
+          "wrongFeedback": {
+            "b": "Speaking time alone does not show what transferred to writing.",
+            "c": "Length alone does not establish accuracy or reasoning."
+          }
+        },
+        "familyId": "family.rehearsal-transfer-check",
+        "id": "task.rehearsal-evidence",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether the writing connects the student’s claim to relevant data, and which language support was used."
+          },
+          {
+            "id": "b",
+            "text": "Whether everyone spoke for exactly the same number of seconds."
+          },
+          {
+            "id": "c",
+            "text": "Whether the paragraph is long, regardless of reasoning."
+          }
+        ],
+        "prompt": "After rehearsing with a partner, students write a comparison. Which evidence best informs the next step?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.oral-to-writing"
+        ],
+        "sourceRefs": [
+          "source.rubric.2026-11-08",
+          "source.framework.2026-11-08"
+        ],
+        "title": "Check what transferred",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "oral rehearsal",
+            "spoken rehearsal"
+          ],
+          "feedback": "Oral rehearsal can help organize meaning and language before a distinct written attempt.",
+          "wrongFeedback": {}
+        },
+        "familyId": "family.oral-writing-concept",
+        "id": "task.rehearsal-recall",
+        "kind": "short",
+        "noveltyKind": "familiar",
+        "prompt": "What two-word strategy lets a student try out an explanation aloud before writing?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.oral-to-writing"
+        ],
+        "sourceRefs": [
+          "source.rubric.2026-11-08",
+          "source.framework.2026-11-08"
+        ],
+        "title": "Retrieve the intermediate step",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "b"
+          ],
+          "feedback": "The scaffold improves access while leaving comparison, evidence selection, and justification to the learner.",
+          "wrongFeedback": {
+            "a": "The replacement task changes the intellectual objective.",
+            "c": "Copying the complete answer removes the evidence of independent reasoning."
+          }
+        },
+        "familyId": "family.scaffold-concept",
+        "id": "task.preserve-demand",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Replace comparison with copying multiplication facts."
+          },
+          {
+            "id": "b",
+            "text": "Offer a labeled graph and optional comparison frame while students choose and justify the better rate."
+          },
+          {
+            "id": "c",
+            "text": "Give the complete decision and have students copy it."
+          }
+        ],
+        "prompt": "The goal is to compare rates and justify a decision. Which change best preserves that goal?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.rigorous-scaffolds"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08",
+          "source.indicators.2026-11-08"
+        ],
+        "title": "Choose a scaffold",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "c"
+          ],
+          "feedback": "Scaffolding responds to evidence and builds independence. One assisted success is not independent mastery.",
+          "wrongFeedback": {
+            "a": "One supported success may not transfer to unsupported work.",
+            "b": "Permanent unchanged support prevents an honest check of independence."
+          }
+        },
+        "familyId": "family.scaffold-adjustment",
+        "id": "task.fade-support",
+        "kind": "mc",
+        "noveltyKind": "familiar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Remove all supports permanently after one success."
+          },
+          {
+            "id": "b",
+            "text": "Keep the identical frame forever without checking independence."
+          },
+          {
+            "id": "c",
+            "text": "Try a suitable task with less support, record assistance, and use the evidence to adjust."
+          }
+        ],
+        "prompt": "A student uses a comparison frame accurately. What is the most informative next step?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.rigorous-scaffolds"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08"
+        ],
+        "title": "Decide when to adjust a scaffold",
+        "version": 1
+      },
+      {
+        "answerKey": {
+          "accepted": [
+            "scaffolding",
+            "scaffold",
+            "a scaffold"
+          ],
+          "feedback": "A scaffold changes access and support while preserving the intended intellectual work; it should respond to evidence.",
+          "wrongFeedback": {}
+        },
+        "familyId": "family.scaffold-concept",
+        "id": "task.scaffold-recall",
+        "kind": "short",
+        "noveltyKind": "familiar",
+        "prompt": "What is the term for temporary, responsive instructional support that helps a learner work toward a demanding goal?",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.rigorous-scaffolds"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08"
+        ],
+        "title": "Retrieve the support concept",
+        "version": 1
+      },
+      {
+        "familyId": "family.task.case-new-student",
+        "id": "task.case-new-student",
+        "kind": "case",
+        "noveltyKind": "unfamiliar",
+        "prompt": "Authored unfamiliar application. A new grade 9 learner uses two languages at home, solves a visual proportion problem, and hesitates during an English explanation. A colleague wants to assign EL status from the home-language information and move the student to easier mathematics.\n\n1. Separate what each observation does and does not establish.\n2. Identify the appropriate next step for English-proficiency determination without inventing a threshold.\n3. Plan one support that retains the proportional-reasoning goal.\n4. Specify what evidence you would share with colleagues and what remains uncertain.\n\nHuman-review checklist: distinguish background from proficiency; preserve math demand; specify support and evidence; avoid unilateral status or legal conclusions.",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.identification",
+          "sei.skill.shared-responsibility",
+          "sei.skill.assessment-purpose"
+        ],
+        "sourceRefs": [
+          "source.survey.2026-11-08",
+          "source.identification.2026-11-08",
+          "source.framework.2026-11-08"
+        ],
+        "title": "Case: a new student and a premature label",
+        "version": 1
+      },
+      {
+        "familyId": "family.task.case-water",
+        "id": "task.case-water",
+        "kind": "case",
+        "noveltyKind": "unfamiliar",
+        "prompt": "Authored unfamiliar application in environmental science. A learner explains a water-use chart orally but writes “less water because this.” The learner’s overall language result is similar to a peer who reads strongly and speaks less confidently.\n\n1. Identify missing evidence before interpreting the overall scores.\n2. Analyze the word, sentence, and discourse demands of comparing two conservation proposals.\n3. Design an oral-to-written sequence that retains the comparison goal.\n4. State what would show improvement in content reasoning separately from English production.\n\nHuman-review checklist: domain-specific evidence; actual comparison language; oral strength used as a bridge; separate content and language observations.",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.academic-language",
+          "sei.skill.domain-profiles",
+          "sei.skill.oral-to-writing"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08",
+          "source.rubric.2026-11-08"
+        ],
+        "title": "Case: reading a water-use claim",
+        "version": 1
+      },
+      {
+        "familyId": "family.task.case-former-el",
+        "id": "task.case-former-el",
+        "kind": "case",
+        "noveltyKind": "unfamiliar",
+        "prompt": "Authored unfamiliar application. A former EL writes a fluent paragraph claiming that a cheaper subscription fee always means a cheaper total cost, ignoring the per-use charge. A peer uses imperfect grammar but compares both cost components correctly.\n\n1. Describe the evidence of mathematical understanding in each response.\n2. Explain the feedback each learner needs.\n3. Plan a formative check that preserves the comparison goal with appropriate supports.\n4. Explain why these responses alone do not decide official EL status and identify the policy research gap.\n\nHuman-review checklist: fluency is not correctness; separate constructs; use evidence to plan; consult current procedures for administrative decisions.",
+        "reviewState": "source_checked",
+        "skillIds": [
+          "sei.skill.current-former",
+          "sei.skill.assessment-purpose",
+          "sei.skill.rigorous-scaffolds"
+        ],
+        "sourceRefs": [
+          "source.framework.2026-11-08",
+          "source.identification.2026-11-08",
+          "source.monitoring.2026-11-08"
+        ],
+        "title": "Case: a former EL and fluent but faulty reasoning",
+        "version": 1
+      },
+      {
+        "familyId": "family.writing.mentor.math-plans",
+        "id": "task.writing.mentor.math-plans",
+        "kind": "writing",
+        "mentorTextId": "mentor.math-plans",
+        "mentorTextSha256": "af4d49e30eecbad18d300b50a538209404c1aa805b6e9f822d8b7c4217c1f180",
+        "mentorTextVersion": 1,
+        "noveltyKind": "unfamiliar",
+        "parts": [
+          {
+            "id": "analysis",
+            "prompt": "Identify this mentor text and discipline. State a content goal. Analyze essential vocabulary, a sentence-level feature, and a discourse-level feature using specific examples. State observable language goals for oral interaction, reading, and writing.",
+            "title": "1. Analyze the text and set goals"
+          },
+          {
+            "id": "oracy",
+            "prompt": "Choose vocabulary that matters to your content goal. Explain a teaching sequence that makes meaning visible and engages students in listening and speaking. Differentiate supports for two contrasting domain profiles without assigning stereotypes.",
+            "title": "2. Build vocabulary and oral interaction"
+          },
+          {
+            "id": "reading",
+            "prompt": "Plan a reading sequence using specific sentences from the same text. Explain how students will unpack a demanding relationship and use text evidence. Describe how supports preserve the content reasoning and can change with evidence.",
+            "title": "3. Support meaning-making while reading"
+          },
+          {
+            "id": "writing",
+            "prompt": "Plan an oral rehearsal and a distinct written task tied to the content goal. Model a relevant language structure without supplying the learner’s full answer. Explain how you will support and then check increasingly independent writing.",
+            "title": "4. Bridge discussion into written discourse"
+          },
+          {
+            "id": "assessment",
+            "prompt": "Describe formative evidence from all four language domains and evidence of content learning. Distinguish content reasoning from English control. Explain how you will respond to two possible wrong turns and justify your choices using the same mentor text.",
+            "title": "5. Assess and justify the integrated lesson"
+          }
+        ],
+        "prompt": "Derived practice, not an official MTEL assignment. Use this exact authored mentor text for all five parts. Plan approximately 1,500 words across the complete response if useful; choose your own practice timing. The public official sample provides Part I only. The following five prompts are custom instructional practice, not official Parts II–V.",
+        "reviewState": "source_checked",
+        "rubricVersionId": "rubric.mtel56.public@1",
+        "skillIds": [
+          "sei.skill.academic-language",
+          "sei.skill.domain-profiles",
+          "sei.skill.assessment-purpose",
+          "sei.skill.oral-to-writing",
+          "sei.skill.rigorous-scaffolds",
+          "sei.skill.integrated-writing"
+        ],
+        "sourceRefs": [
+          "source.rubric.2026-11-08",
+          "source.framework.2026-11-08"
+        ],
+        "title": "Five-part derived practice: When does the cheaper plan change?",
+        "version": 1
+      },
+      {
+        "familyId": "family.writing.mentor.science-streams",
+        "id": "task.writing.mentor.science-streams",
+        "kind": "writing",
+        "mentorTextId": "mentor.science-streams",
+        "mentorTextSha256": "060c5b41b28b5f799edc014b6da00c626b041f2dda327c6ad3522d435d849623",
+        "mentorTextVersion": 1,
+        "noveltyKind": "unfamiliar",
+        "parts": [
+          {
+            "id": "analysis",
+            "prompt": "Identify this mentor text and discipline. State a content goal. Analyze essential vocabulary, a sentence-level feature, and a discourse-level feature using specific examples. State observable language goals for oral interaction, reading, and writing.",
+            "title": "1. Analyze the text and set goals"
+          },
+          {
+            "id": "oracy",
+            "prompt": "Choose vocabulary that matters to your content goal. Explain a teaching sequence that makes meaning visible and engages students in listening and speaking. Differentiate supports for two contrasting domain profiles without assigning stereotypes.",
+            "title": "2. Build vocabulary and oral interaction"
+          },
+          {
+            "id": "reading",
+            "prompt": "Plan a reading sequence using specific sentences from the same text. Explain how students will unpack a demanding relationship and use text evidence. Describe how supports preserve the content reasoning and can change with evidence.",
+            "title": "3. Support meaning-making while reading"
+          },
+          {
+            "id": "writing",
+            "prompt": "Plan an oral rehearsal and a distinct written task tied to the content goal. Model a relevant language structure without supplying the learner’s full answer. Explain how you will support and then check increasingly independent writing.",
+            "title": "4. Bridge discussion into written discourse"
+          },
+          {
+            "id": "assessment",
+            "prompt": "Describe formative evidence from all four language domains and evidence of content learning. Distinguish content reasoning from English control. Explain how you will respond to two possible wrong turns and justify your choices using the same mentor text.",
+            "title": "5. Assess and justify the integrated lesson"
+          }
+        ],
+        "prompt": "Derived practice, not an official MTEL assignment. Use this exact authored mentor text for all five parts. Plan approximately 1,500 words across the complete response if useful; choose your own practice timing. The public official sample provides Part I only. The following five prompts are custom instructional practice, not official Parts II–V.",
+        "reviewState": "source_checked",
+        "rubricVersionId": "rubric.mtel56.public@1",
+        "skillIds": [
+          "sei.skill.academic-language",
+          "sei.skill.domain-profiles",
+          "sei.skill.assessment-purpose",
+          "sei.skill.oral-to-writing",
+          "sei.skill.rigorous-scaffolds",
+          "sei.skill.integrated-writing"
+        ],
+        "sourceRefs": [
+          "source.rubric.2026-11-08",
+          "source.framework.2026-11-08"
+        ],
+        "title": "Five-part derived practice: Why shaded streams can stay cooler",
+        "version": 1
+      }
+    ],
+    "sources": [
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "Apply understanding of all educators' shared responsibility to educate and support all English language learners.",
+        "id": "source.framework.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:03.420Z",
+        "reviewState": "source_compared",
+        "sha256": "1e7192674b87161d80b9ef64b3d1af043c3a76679d615a4494b18aa264342ef2",
+        "title": "MTEL Field 56 overview and objectives",
+        "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_OBJ_56.htm",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "60 multiple-choice items and 1 open-response assignment consisting of 5 tasks",
+        "id": "source.exam.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:03.658Z",
+        "reviewState": "source_compared",
+        "sha256": "c378d7ea840b4f8bade63fc547bbd04e43275add7fc2f9f27ed1ec97401dfbc2",
+        "title": "MTEL Sheltered English Immersion (56) test information",
+        "url": "https://www.mtel.nesinc.com/TestView.aspx?f=HTML_FRAG/MA056_TestPage.html",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "Sheltered English Immersion",
+        "id": "source.preparation.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:03.697Z",
+        "reviewState": "source_compared",
+        "sha256": "95c473a9097045dcb138ffa471688f6e7bdba666bd98f082082e53d3ca44185e",
+        "title": "MTEL Field 56 preparation materials",
+        "url": "https://www.mtel.nesinc.com/TestView.aspx?f=HTML_FRAG/MA056_PrepMaterials.html",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "Quality and relevance of supporting details.",
+        "id": "source.rubric.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:03.771Z",
+        "reviewState": "source_compared",
+        "sha256": "49de2c87e507644fe99c66234b81b3eba41400ab73bd0d3954309064ffe4c3fc",
+        "title": "MTEL Field 56 public open-response sample and scoring rubric",
+        "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_CRI_56.asp",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "The basic structure and functions of language.",
+        "id": "source.competencies.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:03.959Z",
+        "reviewState": "source_compared",
+        "sha256": "42c5ca20e0cfbf6e337132fe86b0562f2996e518a85afd57817979898262c93b",
+        "title": "603 CMR 7.14 Endorsements",
+        "url": "https://www.doe.mass.edu/lawsregs/603cmr7.html?section=14",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "Uses effective strategies and techniques for making content accessible to English learners.",
+        "id": "source.indicators.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:04.001Z",
+        "reviewState": "source_compared",
+        "sha256": "3913c1f17b5bc51508d0037be1cc9056a4dc3e37742a017957d5f5a083ad48cb",
+        "title": "603 CMR 7.08 Professional Standards for Teachers",
+        "url": "https://www.doe.mass.edu/lawsregs/603cmr7.html?section=08",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "Sheltered English Immersion",
+        "id": "source.pathways.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:04.088Z",
+        "reviewState": "source_compared",
+        "sha256": "32d46fe6ac8c00697f8582c1e74b2ac7a515cb7a62c8be3bfc6bcad5aa252e35",
+        "title": "Rethinking Equity and Teaching for English Language Learners (RETELL)",
+        "url": "https://www.doe.mass.edu/retell/",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "FSRS",
+        "id": "source.anki.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:04.374Z",
+        "reviewState": "source_compared",
+        "sha256": "71f5869a4fa98bf7ab2f33549bb3082d5274bf925b37ec864a51db5fc51ee2b2",
+        "title": "Anki Manual: Deck Options",
+        "url": "https://docs.ankiweb.net/manual/deck-options",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "OpenAI",
+        "id": "source.deepseek.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:04.553Z",
+        "reviewState": "source_compared",
+        "sha256": "986e7e7b2409ecfb21a66b7a0d25214349d9bbf1bed9893748a398bfd12b8f17",
+        "title": "DeepSeek API: Your First API Call",
+        "url": "https://api-docs.deepseek.com/",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "Each school district shall establish criteria, in accordance with Department guidelines, to identify students who may no longer be English learners.",
+        "id": "source.identification.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:04.641Z",
+        "reviewState": "source_compared",
+        "sha256": "70bcf65629cb0992c8a264275a2e4c8afd0115f78e724fce6cbba57fac8abaca",
+        "title": "603 CMR 14.02 Identification and Assessment of Students",
+        "url": "https://www.doe.mass.edu/lawsregs/603cmr14.html?section=02",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "2026 Guidance on English Learner Education Services and Programming",
+        "id": "source.guidance.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:04.678Z",
+        "reviewState": "source_compared",
+        "sha256": "4e2f77c0be121cfb2fba346a68f4e54d21058c8a3d2f1990b0d06aff36ecda56",
+        "title": "Massachusetts English Learner Education: Guidance and Laws",
+        "url": "https://www.doe.mass.edu/ele/guidance/",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "Fetched bytes; excerpt compared with decoded visible text. Retrieval date is not an effective date.",
+        "effectiveDate": null,
+        "excerpt": "Follow-Up Support",
+        "id": "source.monitoring.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:04.777Z",
+        "reviewState": "source_compared",
+        "sha256": "48bbd8fe7c4b346ad03892b940817f8848983757f3fba241343cd5b6d4d72054",
+        "title": "English Learner Education Program Monitoring & Compliance",
+        "url": "https://www.doe.mass.edu/ele/cpr/",
+        "version": "2026-11-08"
+      },
+      {
+        "checks": "DOCX read separately in memory with PowerShell ZipArchive; matched paragraph text. Publication June 2025, effective date not established.",
+        "effectiveDate": null,
+        "excerpt": "The Language Survey (LS) is the first step in identifying ELs",
+        "id": "source.survey.2026-11-08",
+        "retrievedAt": "2026-11-08T22:13:04.874Z",
+        "reviewState": "source_compared",
+        "sha256": "6720f402f61ab4cb158eebbede7cfa5e9354edda2ddb1da46a6deddfe7403854",
+        "title": "Massachusetts Language Survey Protocol, June 2025",
+        "url": "https://www.doe.mass.edu/ele/guidance/ma-language-survey-protocol.docx",
+        "version": "2026-11-08"
+      }
+    ],
+    "mentorTexts": [
+      {
+        "discipline": "Mathematics (secondary)",
+        "id": "mentor.math-plans",
+        "originKind": "authored_practice",
+        "sha256": "af4d49e30eecbad18d300b50a538209404c1aa805b6e9f822d8b7c4217c1f180",
+        "text": "Two community workshops rent equipment. Plan A charges a monthly fee of 12 dollars and 3 dollars for each hour of use. Plan B has no monthly fee and charges 5 dollars for each hour. If a person uses equipment for h hours in a month, the total costs can be modeled by A = 12 + 3h and B = 5h.\n\nAt two hours, Plan A costs 18 dollars and Plan B costs 10 dollars. At ten hours, Plan A costs 42 dollars and Plan B costs 50 dollars. Therefore, the plan with the lower monthly fee does not always have the lower total cost. The fixed fee and the hourly rate both matter.\n\nTo find when the costs are equal, set 12 + 3h equal to 5h. Subtracting 3h from both sides gives 12 = 2h, so h = 6. At six hours, each plan costs 30 dollars. On a graph of cost against hours, this is the intersection of the two lines. For fewer than six hours, Plan B is cheaper; for more than six hours, Plan A is cheaper. These conclusions apply within the model, which assumes the rates remain constant and ignores taxes or discounts.",
+        "title": "When does the cheaper plan change?",
+        "version": 1
+      },
+      {
+        "discipline": "Environmental science (secondary)",
+        "id": "mentor.science-streams",
+        "originKind": "authored_practice",
+        "sha256": "060c5b41b28b5f799edc014b6da00c626b041f2dda327c6ad3522d435d849623",
+        "text": "Sunlight transfers energy to stream water and to the surrounding land. Trees along a stream can intercept some incoming sunlight, reducing the energy that reaches the water. As a result, a shaded section may warm less during a sunny afternoon than an otherwise similar unshaded section.\n\nA class places temperature sensors at two stream sites. One site has dense tree cover; the other is open. The students measure both sites at the same times for five days. The shaded site is usually cooler in the afternoon. This pattern is consistent with an effect of shade, but it does not prove that shade alone caused the difference. Water depth, flow, incoming groundwater, and weather may also affect temperature.\n\nTo strengthen their explanation, the students describe these other conditions and compare more sites. They report the size of the temperature differences instead of saying that trees always cool every stream by the same amount. A useful scientific claim connects the observed pattern to a plausible energy-transfer process while acknowledging what the observations cannot establish.",
+        "title": "Why shaded streams can stay cooler",
+        "version": 1
+      }
+    ],
+    "rubrics": [
+      {
+        "criteria": [
+          {
+            "id": "purpose",
+            "text": "The extent to which the response achieves the purpose of the assignment.",
+            "title": "Purpose"
+          },
+          {
+            "id": "subject-matter-knowledge",
+            "text": "Accuracy and appropriateness in the application of subject matter knowledge.",
+            "title": "Subject Matter Knowledge"
+          },
+          {
+            "id": "support",
+            "text": "Quality and relevance of supporting details.",
+            "title": "Support"
+          },
+          {
+            "id": "rationale",
+            "text": "Soundness of argument and degree of understanding of the subject matter.",
+            "title": "Rationale"
+          }
+        ],
+        "id": "rubric.mtel56.public",
+        "scale": {
+          "1": "The \"1\" response reflects a weak knowledge and understanding of the subject matter. The purpose of the assignment is not achieved. There is little or no appropriate or accurate application of subject matter knowledge. The supporting evidence, if present, is weak; there are few or no relevant examples. The response reflects little or no reasoning about or understanding of the topic.",
+          "2": "The \"2\" response reflects a limited knowledge and understanding of the subject matter. The purpose of the assignment is partially achieved. There is a limited, possibly inaccurate or inappropriate, application of subject matter knowledge. The supporting evidence is limited; there are few relevant examples. The response reflects a limited, poorly reasoned understanding of the topic.",
+          "3": "The \"3\" response reflects an adequate knowledge and understanding of the subject matter. The purpose of the assignment is largely achieved. There is a generally accurate and appropriate application of subject matter knowledge. The supporting evidence is adequate; there are some acceptable, relevant examples. The response reflects an adequately reasoned understanding of the topic.",
+          "4": "The \"4\" response reflects a thorough knowledge and understanding of the subject matter. The purpose of the assignment is fully achieved. There is substantial, accurate, and appropriate application of subject matter knowledge. The supporting evidence is sound; there are high-quality, relevant examples. The response reflects an ably reasoned, comprehensive understanding of the topic.",
+          "B": "There is no response to the assignment.",
+          "U": "The response is unrelated to the assigned topic, illegible, primarily in a language other than English, not of sufficient length to score, or merely a repetition of the assignment."
+        },
+        "sourceVersionId": "source.rubric.2026-11-08",
+        "version": 1
+      }
+    ]
+  },
+  "attempts": [
+    {
+      "assistance": [
+        "Synthetic demo; not learner evidence"
+      ],
+      "exposureGroupId": "family.task.case-new-student",
+      "hintCount": 1,
+      "id": "129cfe80-4ec5-4517-976f-ab05e265f30b",
+      "mentorText": null,
+      "noveltyKind": "unfamiliar",
+      "originalAnswer": "SYNTHETIC DEMO: A language survey is not a proficiency score. Preserve the mathematics target and gather appropriate language evidence.",
+      "parentAttemptId": null,
+      "sessionId": "synthetic-demo",
+      "startedAt": "2026-11-08T22:16:20.538Z",
+      "submittedAt": "2026-11-08T22:16:20.538Z",
+      "taskId": "task.case-new-student",
+      "taskVersion": 1
+    }
+  ],
+  "judgments": [
+    {
+      "attemptId": "129cfe80-4ec5-4517-976f-ab05e265f30b",
+      "createdAt": "2026-11-08T22:16:20.538Z",
+      "id": "83d9f3e1-827f-4a74-918c-864b5151b6b5",
+      "judgeKind": "authored_key",
+      "judgeVersion": "bounded-key-v1",
+      "quotedEvidence": [],
+      "result": {
+        "feedback": "Saved for review. An open response needs evidence-based human judgment; missing keywords alone do not make it wrong.",
+        "provisional": true,
+        "sourceChecked": true,
+        "status": "needs_review"
+      },
+      "rubricVersionId": null,
+      "supersedesId": null,
+      "uncertaintyReason": "Unmatched or open response requires review"
+    }
+  ],
+  "evidenceEvents": [
+    {
+      "attemptId": "129cfe80-4ec5-4517-976f-ab05e265f30b",
+      "createdAt": "2026-11-08T22:16:20.538Z",
+      "eligible": false,
+      "evidenceKind": "pending",
+      "exclusionReason": "Hints or assistance recorded",
+      "familyId": "family.task.case-new-student",
+      "hintCount": 1,
+      "id": "0ce5fd7e-caeb-4255-baf8-d370065ab9f4",
+      "independence": "assisted",
+      "judgmentId": "83d9f3e1-827f-4a74-918c-864b5151b6b5",
+      "noveltyKind": "unfamiliar",
+      "skillId": "sei.skill.identification",
+      "sourceChecked": true
+    },
+    {
+      "attemptId": "129cfe80-4ec5-4517-976f-ab05e265f30b",
+      "createdAt": "2026-11-08T22:16:20.538Z",
+      "eligible": false,
+      "evidenceKind": "pending",
+      "exclusionReason": "Hints or assistance recorded",
+      "familyId": "family.task.case-new-student",
+      "hintCount": 1,
+      "id": "ca17e0f4-0d02-4830-9bce-19b48b47d05e",
+      "independence": "assisted",
+      "judgmentId": "83d9f3e1-827f-4a74-918c-864b5151b6b5",
+      "noveltyKind": "unfamiliar",
+      "skillId": "sei.skill.shared-responsibility",
+      "sourceChecked": true
+    },
+    {
+      "attemptId": "129cfe80-4ec5-4517-976f-ab05e265f30b",
+      "createdAt": "2026-11-08T22:16:20.538Z",
+      "eligible": false,
+      "evidenceKind": "pending",
+      "exclusionReason": "Hints or assistance recorded",
+      "familyId": "family.task.case-new-student",
+      "hintCount": 1,
+      "id": "48427b2e-6ef3-412a-ae85-9c710000e016",
+      "independence": "assisted",
+      "judgmentId": "83d9f3e1-827f-4a74-918c-864b5151b6b5",
+      "noveltyKind": "unfamiliar",
+      "skillId": "sei.skill.assessment-purpose",
+      "sourceChecked": true
+    }
+  ]
+}

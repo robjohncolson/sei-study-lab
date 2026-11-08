@@ -1,0 +1,77 @@
+# Source publication inventory
+
+Prepared for the user-authorized public GitHub source review. The application remains local-only. Private runtime data is excluded.
+
+## Included files
+
+Exactly **63 files** belong in this snapshot:
+
+- [.gitattributes](../.gitattributes)
+- [.gitignore](../.gitignore)
+- [AGENTS.md](../AGENTS.md)
+- [README.md](../README.md)
+- [apps/server/integration.test.ts](../apps/server/integration.test.ts)
+- [apps/server/src/app.ts](../apps/server/src/app.ts)
+- [apps/server/src/backup.ts](../apps/server/src/backup.ts)
+- [apps/server/src/handoff.ts](../apps/server/src/handoff.ts)
+- [apps/server/src/main.ts](../apps/server/src/main.ts)
+- [apps/server/src/migrations/001-initial.sql](../apps/server/src/migrations/001-initial.sql)
+- [apps/server/src/migrations/002-versioned-drafts.sql](../apps/server/src/migrations/002-versioned-drafts.sql)
+- [apps/server/src/store.ts](../apps/server/src/store.ts)
+- [apps/server/src/types.ts](../apps/server/src/types.ts)
+- [apps/web/e2e.spec.ts](../apps/web/e2e.spec.ts)
+- [apps/web/index.html](../apps/web/index.html)
+- [apps/web/src/App.tsx](../apps/web/src/App.tsx)
+- [apps/web/src/DraftNavigation.tsx](../apps/web/src/DraftNavigation.tsx)
+- [apps/web/src/Exchange.tsx](../apps/web/src/Exchange.tsx)
+- [apps/web/src/Practice.tsx](../apps/web/src/Practice.tsx)
+- [apps/web/src/Writing.tsx](../apps/web/src/Writing.tsx)
+- [apps/web/src/api.ts](../apps/web/src/api.ts)
+- [apps/web/src/main.tsx](../apps/web/src/main.tsx)
+- [apps/web/src/styles.css](../apps/web/src/styles.css)
+- [apps/web/src/types.ts](../apps/web/src/types.ts)
+- [apps/web/vite.config.ts](../apps/web/vite.config.ts)
+- [codex-review-fixes.md](../codex-review-fixes.md)
+- [content/author-seed.ts](../content/author-seed.ts)
+- [content/catalog.json](../content/catalog.json)
+- [content/fetch-inventory.ts](../content/fetch-inventory.ts)
+- [content/inventory.json](../content/inventory.json)
+- [docs/anki-workflow.md](../docs/anki-workflow.md)
+- [docs/architecture.md](../docs/architecture.md)
+- [docs/content-review-checklist.md](../docs/content-review-checklist.md)
+- [docs/data-schema.md](../docs/data-schema.md)
+- [docs/decisions-and-todo.md](../docs/decisions-and-todo.md)
+- [docs/examples/synthetic-export.json](../docs/examples/synthetic-export.json)
+- [docs/examples/synthetic-packet.json](../docs/examples/synthetic-packet.json)
+- [docs/examples/synthetic-packet.md](../docs/examples/synthetic-packet.md)
+- [docs/examples/synthetic-proposal.json](../docs/examples/synthetic-proposal.json)
+- [docs/grok-review-handoff.md](../docs/grok-review-handoff.md)
+- [docs/handoff-manifest.json](../docs/handoff-manifest.json)
+- [docs/implementation-status.md](../docs/implementation-status.md)
+- [docs/publication-manifest.json](../docs/publication-manifest.json)
+- [docs/publication-preview.md](../docs/publication-preview.md)
+- [docs/repository-review.md](../docs/repository-review.md)
+- [docs/review-fixes.md](../docs/review-fixes.md)
+- [docs/source-review.md](../docs/source-review.md)
+- [eslint.config.mjs](../eslint.config.mjs)
+- [package-lock.json](../package-lock.json)
+- [package.json](../package.json)
+- [packages/shared/src/index.ts](../packages/shared/src/index.ts)
+- [playwright.config.ts](../playwright.config.ts)
+- [scripts/create-demo.ts](../scripts/create-demo.ts)
+- [scripts/dev.mjs](../scripts/dev.mjs)
+- [scripts/e2e-server.ts](../scripts/e2e-server.ts)
+- [scripts/prepare-source-review.mjs](../scripts/prepare-source-review.mjs)
+- [scripts/smoke-built.mjs](../scripts/smoke-built.mjs)
+- [scripts/validate-content.ts](../scripts/validate-content.ts)
+- [scripts/write-manifest.mjs](../scripts/write-manifest.mjs)
+- [tests/review-regressions.test.ts](../tests/review-regressions.test.ts)
+- [tests/shared.test.ts](../tests/shared.test.ts)
+- [tsconfig.json](../tsconfig.json)
+- [vitest.config.ts](../vitest.config.ts)
+
+## Excluded
+
+Runtime databases/WAL, real answers, private imports/exports, backups, credentials, environment files, provider-local settings, dependencies, build outputs, test artifacts and Git metadata are excluded. Labeled synthetic examples and the original review-fix prompt are included.
+
+See publication-manifest.json for hashes and checks. It is a pre-upload inventory, not a deployed application. The current Git commit identifies the actual published source. Historical ZIPs under runtime/review are not uploaded.
