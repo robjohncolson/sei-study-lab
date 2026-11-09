@@ -1181,6 +1181,163 @@
       "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
       "derivedClaimRationale": "Can Dos supplement standards and remain usable examples; the supplied overview explicitly says they are not yet updated to 2020. Do not equate them with the 2020 Language Expectations.",
       "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent source verification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0007-0009.s1.2026-11-08",
+      "title": "MTEL Field 56 objectives: unchanged Objective 0007-0009 statements",
+      "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_OBJ_56.htm",
+      "documentVersion": "Live page 2026-11-08",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0007-0009-s1-v1",
+      "excerpt": "Apply understanding of the key features and goals of SEI, including types of SEI programming models, variations in SEI protocols (e.g., the Sheltered Instruction Observation Protocol [SIOP®] Model), and differences between English as a Second Language (ESL) and SEI.\n\nApply understanding of key procedures used in planning SEI instruction, including using model performance indicators and designing concurrent language and content instructional objectives.\n\nApply understanding of key strategies used in implementing SEI instruction (e.g., providing comprehensible input, promoting students' development of learning skills and strategies, providing opportunities for interaction).\n\nApply knowledge of how to create and maintain a safe and collaborative learning environment that values diversity, promotes student engagement, and motivates students to meet high standards of conduct, effort, and performance.\n\nRecognize the role of the SEI teacher as a partner to ESL staff and the importance of consulting and collaborating with ESL staff to provide English language learners with comprehensive, challenging educational opportunities.\n\nRecognize differences between social and academic language and the importance of these differences in planning, differentiating, and delivering effective instruction for English language learners at various grade, English proficiency, and literacy levels.\n\nRecognize the role of academic language in students' content knowledge and reading comprehension in the content areas and the needs of English language learners with limited academic language proficiency (e.g., students with strong social language skills but weak academic language skills, students with interrupted formal education [SIFE], students with disabilities).\n\nApply knowledge of the characteristic features of academic language at the word/phrase level (e.g., technical language), the sentence level (e.g., complexity of grammatical structures), and the discourse level (e.g., density of text) in the content areas of language arts, mathematics, science, and social studies as described in WIDA's Features of Academic Language, the WIDA ELD Standards, and the Massachusetts Curriculum Framework for English Language Arts and Literacy .\n\nDemonstrate ability to use meaning-based approaches to analyze the language of academic texts (e.g., analyzing the rhetorical structure of a text, deconstructing sentences, unpacking a text clause by clause to investigate language patterns used in the text) to identify areas that may be linguistically demanding for English language learners.\n\nAnalyze methods and practices for developing English language learners' academic language proficiency (e.g., explicit instruction in academic vocabulary, clear explanations of academic language structures and vocabulary, sentence frames) and for including students in classroom academic discourse.\n\nRecognize the challenges associated with assessing English language learners, including the nature and role of cultural bias and linguistic bias in assessment and consideration of linguistic factors that can influence special education assessment.\n\nApply knowledge of valid and reliable assessments for English language learners.\n\nApply knowledge of types and purposes of formative and summative classroom assessments (e.g., grading rubrics, textbook assessments, curriculum-based assessments, performance assessments, assessment portfolios) used with English language learners, including the benefits and features of performance-based content assessment for English language learners at various English proficiency levels, and how to interpret and use informal assessment results to inform classroom instruction (e.g., grading English language learners at various proficiency levels, providing appropriate assessment feedback).\n\nApply knowledge of types and purposes of standardized assessments used with English language learners, including the WIDA Assessing Comprehension and Communication in English State-to-State for English Language Learners (ACCESS for ELLs®) test and Massachusetts Comprehensive Assessment System (MCAS), and how to interpret and use data from standardized assessments to inform classroom instruction.\n\nApply knowledge of how to differentiate assessments for English language learners as appropriate for the purpose and their English proficiency level (e.g., modifying formative assessments by reducing the linguistic load while maintaining high content and knowledge expectations), including acceptable assessment accommodations (e.g., bilingual dictionaries, linguistic modifications) for English language learners on classroom assessments and state standardized assessments.",
+      "supportingExcerpts": [
+        {
+          "id": "mtel56.obj.0007.ds.01",
+          "text": "Apply understanding of the key features and goals of SEI, including types of SEI programming models, variations in SEI protocols (e.g., the Sheltered Instruction Observation Protocol [SIOP®] Model), and differences between English as a Second Language (ESL) and SEI."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.02",
+          "text": "Apply understanding of key procedures used in planning SEI instruction, including using model performance indicators and designing concurrent language and content instructional objectives."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.03",
+          "text": "Apply understanding of key strategies used in implementing SEI instruction (e.g., providing comprehensible input, promoting students' development of learning skills and strategies, providing opportunities for interaction)."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.04",
+          "text": "Apply knowledge of how to create and maintain a safe and collaborative learning environment that values diversity, promotes student engagement, and motivates students to meet high standards of conduct, effort, and performance."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.05",
+          "text": "Recognize the role of the SEI teacher as a partner to ESL staff and the importance of consulting and collaborating with ESL staff to provide English language learners with comprehensive, challenging educational opportunities."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.01",
+          "text": "Recognize differences between social and academic language and the importance of these differences in planning, differentiating, and delivering effective instruction for English language learners at various grade, English proficiency, and literacy levels."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.02",
+          "text": "Recognize the role of academic language in students' content knowledge and reading comprehension in the content areas and the needs of English language learners with limited academic language proficiency (e.g., students with strong social language skills but weak academic language skills, students with interrupted formal education [SIFE], students with disabilities)."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.03",
+          "text": "Apply knowledge of the characteristic features of academic language at the word/phrase level (e.g., technical language), the sentence level (e.g., complexity of grammatical structures), and the discourse level (e.g., density of text) in the content areas of language arts, mathematics, science, and social studies as described in WIDA's Features of Academic Language, the WIDA ELD Standards, and the Massachusetts Curriculum Framework for English Language Arts and Literacy ."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.04",
+          "text": "Demonstrate ability to use meaning-based approaches to analyze the language of academic texts (e.g., analyzing the rhetorical structure of a text, deconstructing sentences, unpacking a text clause by clause to investigate language patterns used in the text) to identify areas that may be linguistically demanding for English language learners."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.05",
+          "text": "Analyze methods and practices for developing English language learners' academic language proficiency (e.g., explicit instruction in academic vocabulary, clear explanations of academic language structures and vocabulary, sentence frames) and for including students in classroom academic discourse."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.01",
+          "text": "Recognize the challenges associated with assessing English language learners, including the nature and role of cultural bias and linguistic bias in assessment and consideration of linguistic factors that can influence special education assessment."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.02",
+          "text": "Apply knowledge of valid and reliable assessments for English language learners."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.03",
+          "text": "Apply knowledge of types and purposes of formative and summative classroom assessments (e.g., grading rubrics, textbook assessments, curriculum-based assessments, performance assessments, assessment portfolios) used with English language learners, including the benefits and features of performance-based content assessment for English language learners at various English proficiency levels, and how to interpret and use informal assessment results to inform classroom instruction (e.g., grading English language learners at various proficiency levels, providing appropriate assessment feedback)."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.04",
+          "text": "Apply knowledge of types and purposes of standardized assessments used with English language learners, including the WIDA Assessing Comprehension and Communication in English State-to-State for English Language Learners (ACCESS for ELLs®) test and Massachusetts Comprehensive Assessment System (MCAS), and how to interpret and use data from standardized assessments to inform classroom instruction."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.05",
+          "text": "Apply knowledge of how to differentiate assessments for English language learners as appropriate for the purpose and their English proficiency level (e.g., modifying formative assessments by reducing the linguistic load while maintaining high content and knowledge expectations), including acceptable assessment accommodations (e.g., bilingual dictionaries, linguistic modifications) for English language learners on classroom assessments and state standardized assessments."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "hashProvenance": "No full HTML SHA-256 supplied for this packet; no hash inferred from another snapshot.",
+      "derivedClaimRationale": "Exact existing official statements anchor narrow derived scopes. They do not supply proprietary SIOP features, exhaustive assessment procedures or official practice items.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0007-0009.s9.2026-11-08",
+      "title": "WIDA ACCESS Interpretive Guide for Score Reports",
+      "url": "https://wida.wisc.edu/sites/default/files/resource/Interpretive-Guide.pdf",
+      "documentVersion": "Spring 2026; last revised April 2026",
+      "sha256": "83593228d956c615f52b2fe80ef11679969c856bb82e55c65f78774b744eeb55",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0007-0009-s9-v1",
+      "excerpt": "Proficiency levels are domain specific.\n\nTo make comparisons across grade levels but not across domains.\n\nBecause a high score in one language domain can inflate a composite score, a student’s individual performance in each domain is more informative than a single composite score.\n\nConfidence bands … Standard Error of Measurement (SEM) … reminder that scale scores represent just one point in a range of potential student performance outcomes.\n\ntreat 2025–2026 ACCESS scale scores as a new baseline … (you can’t compare scale scores from previous years).",
+      "supportingExcerpts": [
+        {
+          "id": "domains",
+          "text": "Proficiency levels are domain specific."
+        },
+        {
+          "id": "scale-comparison",
+          "text": "To make comparisons across grade levels but not across domains."
+        },
+        {
+          "id": "composite",
+          "text": "Because a high score in one language domain can inflate a composite score, a student’s individual performance in each domain is more informative than a single composite score."
+        },
+        {
+          "id": "uncertainty",
+          "text": "Confidence bands … Standard Error of Measurement (SEM) … reminder that scale scores represent just one point in a range of potential student performance outcomes."
+        },
+        {
+          "id": "baseline",
+          "text": "treat 2025–2026 ACCESS scale scores as a new baseline … (you can’t compare scale scores from previous years)."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "hashProvenance": "Binary SHA-256 supplied by the researcher; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Interpret English language proficiency by domain; composite scores can hide differences. Scale scores are not interchangeable across domains. SEM cautions against treating one point score as exact. The 2025-2026 reset prevents unqualified scale-score comparisons to previous years; no growth formula is supplied.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0007-0009.s10.2026-11-08",
+      "title": "DESE MCAS Accessibility and Accommodations Manual",
+      "url": "https://www.doe.mass.edu/mcas/accessibility/manual.pdf",
+      "documentVersion": "2026-27 cycle, manual as retrieved",
+      "sha256": "8763f2ca8bba85f29c3f90b637d1475d3357fc5a1a8d96f997a62da1cb6db4ff",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0007-0009-s10-v1",
+      "excerpt": "Accessibility features and accommodations are intended to allow EL students to demonstrate their knowledge and skills more effectively due to barriers associated with English language proficiency.\n\nfeatures and accommodations should be examined and revised annually as the EL student makes progress toward attaining English proficiency.\n\naccommodations should not be used solely for testing.\n\nbilingual dictionary/glossaries are not recommended for ELs who are unfamiliar with these resources.\n\nAccommodations mitigate the effects of a student’s disability but do not reduce learning or performance expectations.",
+      "supportingExcerpts": [
+        {
+          "id": "purpose",
+          "text": "Accessibility features and accommodations are intended to allow EL students to demonstrate their knowledge and skills more effectively due to barriers associated with English language proficiency."
+        },
+        {
+          "id": "review",
+          "text": "features and accommodations should be examined and revised annually as the EL student makes progress toward attaining English proficiency."
+        },
+        {
+          "id": "routine",
+          "text": "accommodations should not be used solely for testing."
+        },
+        {
+          "id": "familiarity",
+          "text": "bilingual dictionary/glossaries are not recommended for ELs who are unfamiliar with these resources."
+        },
+        {
+          "id": "expectations",
+          "text": "Accommodations mitigate the effects of a student’s disability but do not reduce learning or performance expectations."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "hashProvenance": "Binary SHA-256 supplied by the researcher; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "EL access supports require routine instructional use and annual review. The no-lowered-expectations quotation is from the students-with-disabilities section; the classroom high-content rule is independently stated by S1. No particular state-test accommodation eligibility, code, authorization or numeric exit threshold is inferred.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
     }
   ],
   "objectives": [
@@ -2271,6 +2428,60 @@
         "source.obj0004-0006.s7.2026-11-08"
       ],
       "body": "ORIGINAL UNOFFICIAL LEARNING MODULE — PARTIAL OBJECTIVE 0006\n\nThis original module samples the six existing Objective 0006 statements using synthetic K–8 content lessons. It is not an official examination item, a required word list or a complete oral-language curriculum. Source labels refer to the supplied packet; its researcher retrieved the material on 2026-11-08, America/New_York. Codex did not fetch it. Model comparison is not human review.\n\nThese assisted guided checks create no attempts or independent evidence.\n\nLEARNING GOALS\nContent goal: select a small set of useful words for a specific content text, justify the selection through meaning and language demands, and plan repeated word use with purposeful listening, speaking and writing.\nLanguage goal: paraphrase a partner's main idea and one supporting detail, ask a clarification question, and use a selected word to justify a content claim. Explain a word choice with “in this context … means … because ….” These goals describe observable practice, not proficiency cutoffs.\n\nSTAGE 1 — CONNECT WORD LEARNING TO CONTENT AND EVIDENCE\nThe April 2014 IES/WWC practice guide addresses English-medium academic instruction in elementary and middle school, K–8. Recommendation 1 is intensive teaching of a set of academic vocabulary words across several days using varied activities. Recommendation 2 integrates oral and written English language instruction into content-area teaching. Both are rated Strong; the packet specifically identifies content-acquisition measures for Recommendation 2. These are evidence ratings within that guide, not invented effect sizes or a guarantee for an individual lesson. Pre-K and high-school applications require a scope caveat and additional evidence; this module's worked plans stay in K–8. [S5]\nAcademic vocabulary includes general academic and domain-specific vocabulary. Selection should serve the meaning of the actual lesson. The “three tiers” phrase appears in the exam inventory, but the Beck monograph was not supplied: this module invents no tier membership rules, official tier word lists or equation between tiers and WIDA proficiency levels. [S1/S5]\n\nSTAGE 2 — CHOOSE A FEW WORDS FOR A REASON\nAsk which words unlock an important concept, which recur in the unit's reasoning, and what may make them challenging. A word may have multiple meanings, a useful or misleading cross-language resemblance, meaningful parts, or an idiomatic use. Teach the concept and contextual use, not only an isolated synonym. Not every familiar language supplies useful English cognates; verify proposed connections. S5 names word parts, cognates, false cognates and idiomatic extensions as relevant considerations. [S5]\n\nWORKED EXAMPLE 1 — A GRADE 6 COMMUNITY-GARDEN UNIT\nLearners compare two original proposals for a school garden using observations of shade and access. The teacher selects “evidence,” “access” and “reusable” as an authored small set for this particular text, not a prescribed tier list. “Evidence” helps connect a recommendation to observations; “access” names whether people can reach and use the space; “reusable” can be examined through its meaningful parts and the idea of using material again.\nDay 1: connect each word to a visual or concrete example and a contrasting nonexample in the text. Learners explain what makes an observation evidence for a particular claim.\nDay 2: partners revisit the proposals, use the words to compare choices and paraphrase one another before responding. An accessible bilingual resource may verify a proposed cognate; a connection is used only if it fits the meaning.\nDay 3: groups revise a recommendation after a new observation, then write a short justification using appropriate words. Later revisit the words in another relevant passage and inspect understanding beyond copied definitions.\nReasoning: repeated, varied use across days connects concept, talk and writing. The exact three-day design and selected words are authored illustrations of S5, not the only valid duration or list. A one-day dictionary-copying exercise would provide neither intensive varied use nor evidence of meaning in the unit. [S5/S6]\n\nGUIDED PAUSE A — THINK, THEN COMPARE (ASSISTED; NO INDEPENDENT ATTEMPT)\nWhy might the teacher omit a rare decorative word from this unit's intensive set? Feedback: prioritize words that help learners understand and communicate the unit's ideas, while explaining other words as needed. The decision is tied to the text and task, not a made-up tier rule. Copying a definition does not by itself show contextual understanding. This static guided pause stores no response, attempt, judgment or evidence. [S5]\n\nSTAGE 3 — LISTEN FOR MEANING, THEN USE IT\nOral work needs a purpose beyond taking turns. A listener can identify a main idea, note a supporting detail, paraphrase the speaker's reasoning and ask what evidence supports it. The speaker can clarify and revise. Then writing can preserve or extend the reasoning. These authored routines illustrate S1's listening/oral/literacy connections and S5/S6's integration of language with content; they are not a new scored speaking rubric. [S1/S5/S6]\nUse a visual or organizer to anchor the content, but keep the task's intellectual demand. A simple language frame may support a complex comparison without supplying its answer. S3 includes oral, written, visual and kinesthetic modes as resources. Offering multiple modalities does not assign a permanent “visual learner” type. Feedback should focus on the intended meaning and language function; a first rehearsal and a focused revision can call for different kinds of correction. [S1/S3/S7]\n\nWORKED EXAMPLE 2 — DAILY STRUCTURED TALK IN A HISTORY UNIT\nA grade 5 class compares two accounts of how a neighborhood public space changed. Each pair has an image and an excerpt. Speaker A states an interpretation and a detail; Listener B paraphrases the interpretation, checks the detail against the source and asks one clarification question. They switch roles with the other account, then write one point of agreement and one unresolved question.\nReasoning: listening has an observable purpose, each speaker must respond to meaning, and writing uses the discussion. The teacher can notice whether a learner understood the main claim even if a sentence form still needs support. A short model of “I heard …; which detail supports …?” may help access; it is not a requirement to count exact phrases. [S1/S5/S6]\nCounterexample: displaying word posters while students work silently all week does not implement daily opportunities to talk about content. Unstructured “chat if finished” also gives no clear listening target or reason to use the words.\n\nGUIDED PAUSE B — THINK, THEN COMPARE (ASSISTED)\nA listener repeats a word from the speaker but cannot explain the claim. What next step fits the goal? Feedback: return to the source and ask for a paraphrase of the main idea and a relevant detail, with a model or visual if needed. More repetitions of the isolated word may not address listening comprehension. Accept varied wording that conveys the meaning; do not confuse exact phrase imitation with understanding. No independent evidence is created. [S1/S5/S6]\n\nSTAGE 4 — MAKE MEANING CHANGES VISIBLE\nPolysemous words have multiple meanings, and different disciplines may use the same word differently. Teach the relevant meanings in their actual contexts. In an authored civics passage, “measure” may mean a proposed action or rule; in a science procedure, “measure” may describe determining a quantity. A learner who knows one use may need explicit comparison for the other. This illustrates the supplied S1 polysemy cue and S5's attention to multiple meanings; it is not an official test item. [S1/S5]\n\nWORKED EXAMPLE 3 — RESOURCES THAT HELP, RESOURCES THAT MISLEAD\nA grade 7 inquiry text uses “investigation.” A learner already knows investigación, the connection supplied in S5. Verify the meaning in the inquiry sentence and invite the learner to use it to explain what is being investigated. Another proposed connection only looks similar; the class's reference explicitly identifies a different meaning. Contrast the meanings in context rather than banning all cross-language discussion. For “reusable,” examine re- and the whole word in the unit; do not teach that every word beginning with those letters has that prefix.\nReasoning: cognate, false-cognate, polysemy and morphology decisions ask different questions. Similar appearance is not proof, one familiar meaning is not every meaning, and word-part knowledge must be checked against context. No utility percentage or fixed language-group trait follows from these examples. [S5]\n\nGUIDED PAUSE C — THINK, THEN COMPARE (ASSISTED)\nA colleague says “measure” must be a rare technical Tier 3 word in every subject. Feedback: compare the two actual sentences and meanings. The packet supports contextual polysemy instruction, not that universal tier assignment. Create a small meaning map with examples as an authored option; do not claim that the packet validates every semantic-map, word-wall, drama, chant or technology method. No response or success is stored. [S1/S5]\n\nREMAINING GAPS AND NEXT STEPS\nThe six statements remain partial. Full listening progressions, all oral/interpersonal skills, the WIDA Speaking Rubric and Massachusetts ELA details, achievement effect sizes, tier taxonomy, comprehensive idiom instruction, and evaluations of particular vocabulary technologies or activity formats are gaps. S5's K–8 scope must travel with its claims. The linked unaided checks sample distinct decisions. The unfamiliar civic-unit case requires a multi-day plan, justified word choices, listening/talk/writing and uncertainty; it has no deterministic answer key and remains provisional/manual. An unfamiliar tag proves no transfer. Native flashcards support recall only; neither cards, guided pauses nor lesson reading create independent evidence or complete an objective."
+    },
+    {
+      "id": "lesson.obj0007.sheltered-planning.v1",
+      "title": "Shelter a rigorous lesson: dual goals, interaction and fading",
+      "skillIds": [
+        "sei.skill.rigorous-scaffolds",
+        "sei.skill.shared-responsibility",
+        "sei.skill.academic-language"
+      ],
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "body": "ORIGINAL UNOFFICIAL LEARNING MODULE - PARTIAL OBJECTIVE 0007\n\nThese original synthetic classroom situations are derived instruction, not official exam items or a complete SEI protocol. S1-S10 refer to this slice's supplied evidence packet, retrieved by the researcher on 2026-11-08. Codex did not retrieve the documents. The source inventory records this slice's short supporting excerpts. Model wording comparison is not human review.\n\nCONTENT GOAL: Given a proposed grade-level lesson, preserve its reasoning target and justify a sequence of access supports, structured interaction and an evidence-based fading decision. LANGUAGE GOAL: Explain the plan using a content-and-language objective pair and causal language linking each support to a specific language demand. Observable success means the plan identifies what learners will reason about, what language they will use, what the teacher will observe and why a support changes.\n\nSTAGE 1 - Name two goals before choosing an activity.\nA content goal describes disciplinary learning, such as comparing explanations of how a local habitat changed using observations. A language goal names language used to do that work: orally justify a proposed cause with an observation and a qualifying phrase, then write the reasoning. 'Learn vocabulary' alone does not specify the content relationship or the language function. S1 names concurrent objectives; S4 calls for subject frameworks and WIDA standards in tandem. The objective pair is an authored illustration, not an official WIDA performance indicator. [S1 source.obj0007-0009.s1.2026-11-08] [S4 source.obj0004-0006.s7.2026-11-08]\n\nSTAGE 2 - Scaffold up to the content target.\nComprehensible input can include a labeled image, a brief demonstration, chunked directions and an organizer that makes a relation visible. Invite useful familiar-language notes or discussion and check what meaning they contribute; no language background guarantees a particular strategy. A scaffold changes access to the same reasoning. Replacing a causal investigation with naming easy objects removes the target. WIDA protects complex texts, rigorous learning and meaningful discussion; a proficiency description cannot justify below-grade content 'because EL.' [S2 source.obj0004-0006.s2.2026-11-08] [S3 source.obj0004-0006.s3.2026-11-08]\n\nSTAGE 3 - Make interaction intellectually consequential.\nAfter a teacher thinks aloud about one observation, partners choose between explanations, point to evidence, ask a clarifying question and revise a claim. A rotating listener role must paraphrase the reasoning before disagreeing. Give preparation time and optional visual or multilingual notes. These concrete routines are authored applications of S1 interaction, S2 active engagement and S5/S6 content talk, not a proprietary feature list. The WWC anchors concern elementary/middle-grade instruction; this lesson's grade 6 example stays within that scope. A silent worksheet after a lecture may provide input but cannot alone demonstrate meaningful academic interaction. Make disagreement about an interpretation safe by inviting revision and evaluating evidence rather than accent or speed. [S1 source.obj0007-0009.s1.2026-11-08] [S2 source.obj0004-0006.s2.2026-11-08] [S5 source.obj0004-0006.s5.2026-11-08] [S6 source.obj0004-0006.s6.2026-11-08]\n\nWORKED EXAMPLE 1 - Preserve the comparison while opening access.\nA grade 6 class compares two synthetic wetland observations: one area has dense plant cover and clearer water; another has sparse cover and murkier water. The content goal is to propose and qualify an explanation, including the limit that two observations alone do not establish cause. The language goal is to connect a claim and observation with 'because' and qualify it with 'may' or an equivalent expression. First show the locations and label only the words needed to discuss the comparison. Model the distinction between an observation and an explanation. Partners use an observation/claim/uncertainty organizer, ask what other evidence could matter, then write. This preserves reasoning and gives language a real purpose. A counterproposal asks ELs only to copy 'plant' and 'water' while classmates evaluate causation. It removes the target and supplies no evidence that those learners cannot reason about causes. [S2 source.obj0004-0006.s2.2026-11-08] [S4 source.obj0004-0006.s7.2026-11-08]\n\nGUIDED CHECK 1 - Assisted rehearsal; no attempts or independent evidence.\nRead the example with the explanation visible. Which change keeps the content goal: add a labeled diagram and partner rehearsal, or replace causal comparison with matching nouns? Pause and explain using 'The support changes ___ while the target remains ___.' Assisted comparison: the diagram and rehearsal preserve the causal comparison; matching alone replaces it. A learner may still need explicit word instruction, but that instruction prepares access to reasoning rather than substituting for it. Nothing typed or said here is recorded as an attempt or evidence; later unaided checks are separate.\n\nWORKED EXAMPLE 2 - Coordinate SCI and ESL, then test a fading decision.\nIn a grade 7 civic-history lesson, students compare two explanations of a public-space change. The content teacher and ESL teacher co-plan by jointly examining the text, identify cause-and-contrast language, and plan different observations of the same function. Sheltered Content Instruction (SCI) integrates language development with grade-level content throughout the day. Dedicated ESL provides focused language instruction; accessible content alone does not replace it. Scheduling ESL during the core history investigation would remove the very content opportunity the support should help students access. S4 instead protects core SEI content and calls for common planning time and collective responsibility. [S4 source.obj0004-0006.s7.2026-11-08]\n\nThe team first offers a contrast frame and source organizer. Later, after students explain a comparison without reading the frame in more than one classroom opportunity, it invites a new comparison with an optional frame. The teacher checks whether evidence and contrast remain clear. If reasoning or expression breaks down, restore or revise the support and investigate the demand; do not label the learner. This is an authored monitoring plan, not a mandated schedule or score threshold. Keeping every support forever without checking need can obscure independence; removing them solely because a calendar says so is equally unjustified. S10's annual review concerns assessment accommodations. It supports review of need but does not dictate a classroom frame-removal timetable or permission to remove an authorized testing accommodation. [S1 source.obj0007-0009.s1.2026-11-08] [S2 source.obj0004-0006.s2.2026-11-08] [S10 source.obj0007-0009.s10.2026-11-08]\n\nGUIDED CHECK 2 - Assisted comparison; no attempts or independent evidence.\nA team says: 'The ESL teacher will fix English elsewhere; the content teacher can plan alone.' With the source explanation visible, identify the missing planning action. Assisted response: jointly identify the lesson's language demands, preserve dedicated ESL and core content time, and agree what observations will guide support changes. Shared responsibility requires an instructional connection, not merely exchanging a student's proficiency label. Your rehearsal remains assisted; it is not independent practice evidence.\n\nSTAGE 4 - Check the plan and its limits.\nAsk whether the learner still investigates the same disciplinary question, uses language for that question, interacts with others about evidence and has a later opportunity to show reduced need for a support. Observe the actual response and revise. Do not infer ability, disability, culture traits or trauma from language background. This partial lesson does not supply full SEI programming models, proprietary SIOP features, model performance-indicator tables or a complete classroom-management system. Those remain gaps; no objective is complete."
+    },
+    {
+      "id": "lesson.obj0008.academic-discourse.v1",
+      "title": "Academic language: analyze meaning from words to discourse",
+      "skillIds": [
+        "sei.skill.academic-language",
+        "sei.skill.oral-to-writing",
+        "sei.skill.rigorous-scaffolds"
+      ],
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08"
+      ],
+      "body": "ORIGINAL UNOFFICIAL LEARNING MODULE - PARTIAL OBJECTIVE 0008\n\nAll texts, learners and teaching moves below are original synthetic illustrations. This is not an official examination prompt, a full disciplinary language progression or a diagnostic instrument. S1-S10 identify the supplied researcher packet; Codex did not retrieve the documents. Model comparison of source wording is not human review or evidence of learner mastery.\n\nCONTENT GOAL: Analyze a short disciplinary text and preserve its claim, evidence, causal relations and uncertainty when designing instruction. LANGUAGE GOAL: Identify a word/phrase demand, a sentence relationship and a discourse relationship; explain how a support helps learners interpret and produce meaning at each dimension. Observable success includes an annotated text, a justified teaching sequence and an original evidence-based response beyond a filled frame.\n\nSTAGE 1 - Start with the communicative task, not a fluency label.\nComfortable social conversation can coexist with difficulty interpreting a dense source or justifying a claim in writing. That observation identifies an instructional question; it does not prove inability, readiness or a disability. Social and academic language overlap in real use, and the distinction does not establish a fixed acquisition calendar. Look at what the learner is being asked to understand and produce in this discipline. S1 explicitly includes strong social but limited academic language; S2 identifies language dimensions without turning proficiency snapshots into student labels. [S1 source.obj0007-0009.s1.2026-11-08] [S2 source.obj0004-0006.s2.2026-11-08]\n\nSTAGE 2 - Analyze three connected dimensions.\nAt the word/phrase dimension, check everyday words used in a special sense, cross-disciplinary words such as 'evidence' or 'consequence,' technical terms and dense noun groups. At the sentence dimension, ask who acts, what changes, which clauses express cause, contrast or qualification, and what pronouns refer to. At discourse dimension, ask how a whole passage builds meaning: what question it answers, how claims and evidence connect, what information is assumed, and how cohesion and density affect understanding. WIDA 2020 supplies discourse, sentence and word/phrase dimensions. Calling every difficulty 'vocabulary' can leave the causal structure invisible. [S2 source.obj0004-0006.s2.2026-11-08]\n\nWORKED EXAMPLE 1 - Read a sentence as an argument, not a word list.\nOriginal grade 7 science text: 'Although the upstream channel remained clear, sediment carried from the exposed bank after rainfall reduced light downstream. This change may help explain the fewer submerged plants, but the observations do not rule out other causes.' First establish the content question: what explanation is supported and how certain is it? At word/phrase level, unpack 'sediment carried from the exposed bank' into material, origin and movement; distinguish everyday 'clear' from this water context. At sentence level, draw arrows from rainfall to movement and from sediment to reduced light; explain that 'although' contrasts locations and 'may' qualifies the inference. At discourse level, connect 'This change' to reduced light and compare the proposed cause with the stated limit. The text does not prove a single cause. [S1 source.obj0007-0009.s1.2026-11-08] [S2 source.obj0004-0006.s2.2026-11-08]\n\nThe teacher models the first clause, then pairs reconstruct the relation using a diagram and explain why a second interpretation would need more evidence. A vocabulary-only counterexample preteaches twenty isolated words and asks students to repeat the paragraph. Even accurate definitions would not show what 'This change' refers to or why the conclusion is qualified. Vocabulary instruction remains valuable, but it must serve comprehension. S5 supports intensive instruction in a selected academic word set across several days and integration of oral and written language with content; it does not prescribe twenty random words. [S5 source.obj0004-0006.s5.2026-11-08]\n\nGUIDED CHECK 1 - Assisted text analysis; no attempts or independent evidence.\nKeep the worked analysis visible. Does 'may' change the proposed event or the writer's certainty about its explanation? Assisted comparison: it qualifies the explanatory claim; deleting it can overstate what the observations establish. Identify the word-level, sentence-level and discourse-level work that supports that interpretation. The demonstration answer is present, so this rehearsal produces no attempts or independent evidence.\n\nSTAGE 3 - Teach forms as choices that serve meaning.\nOffer a frame such as 'The observation ___ supports ___ because ___; however, ___ remains uncertain.' Model one use, compare it with a misleading use, and invite a different wording that preserves the relationship. A frame can reduce the burden of organizing English while learners reason. It does not supply the evidence, decide whether a claim follows or replace participation in an authentic argument. Students should question a partner's warrant, revise a claim and choose wording for an audience. S4 names arguing with evidence and justifying conclusions; S1 includes frames and inclusion in academic discourse. [S1 source.obj0007-0009.s1.2026-11-08] [S4 source.obj0004-0006.s7.2026-11-08]\n\nWORKED EXAMPLE 2 - Fluent conversation, new disciplinary discourse.\nA grade 8 history group readily discusses weekend activities but writes, 'The council changed the rule. People complained. It was bad.' Its sources show a complaint before the change and a budget note mentioning a separate concern. The content goal is to compare explanations without claiming that sequence proves causation. The language goal is to link each explanation to a source, contrast the evidence and qualify certainty. Teach a small useful word set ('claim,' 'evidence,' 'constraint') in context, unpack a sentence with two possible causes, and jointly map claim-evidence-limitation relations. Partners then argue for one interpretation, listen to a competing explanation and revise their written conclusion. The teacher observes the reasoning and language separately. Strong conversational English does not eliminate the need for this instruction. [S1 source.obj0007-0009.s1.2026-11-08] [S4 source.obj0004-0006.s7.2026-11-08] [S5 source.obj0004-0006.s5.2026-11-08]\n\nA counterproposal has students insert 'because' into every sentence, then awards full argument credit. It checks completion of a structure while leaving the source reasoning unexamined. Another uses a frame that says 'The only cause was ___'; that frame actually forces an unsupported conclusion. An appropriate frame leaves room to qualify or disagree. As learners express the relationships with less assistance, offer the frame as optional and assess a fresh source comparison. This classroom sequence is an authored application, not an effect-size claim or a fixed language-development timetable.\n\nGUIDED CHECK 2 - Assisted comparison; no attempts or evidence.\nWhich response better meets the goals: a fully completed frame with no source, or a shorter explanation that identifies evidence and limits but needs a language revision? Assisted answer: examine the second response's disciplinary reasoning and teach the needed form, while checking the first for unsupported claims. A frame is a support, not proof of understanding. Use this visible answer for rehearsal only; it does not create independent evidence.\n\nSTAGE 4 - Transfer the analysis cautiously.\nThe same dimension questions apply across subjects, but the actual language demand differs. A mathematics comparison may hinge on a conditional relationship; science may distinguish a mechanism from a correlation; history may attribute a claim to a source; language arts may justify an interpretation using narrative details. These are original examples, not official disciplinary taxonomies. Select the text and purpose first, then identify its particular demands. Use visuals, familiar-language planning and structured talk when useful without predicting strategies from nationality. WWC guidance used here is scoped to elementary and middle grades; it is not proof of identical effects at every age. This partial slice leaves complete subject progressions, detailed literacy/disability-specific interventions and broad Massachusetts framework analysis as gaps. No objective is complete."
+    },
+    {
+      "id": "lesson.obj0009.assessment-decisions.v1",
+      "title": "Assessment decisions: domains, access and uncertainty",
+      "skillIds": [
+        "sei.skill.assessment-purpose",
+        "sei.skill.domain-profiles",
+        "sei.skill.rigorous-scaffolds",
+        "sei.skill.identification"
+      ],
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "body": "ORIGINAL UNOFFICIAL LEARNING MODULE - PARTIAL OBJECTIVE 0009\n\nEvery profile and classroom observation below is synthetic. None is a private learner record, official item or reclassification decision. This derived lesson compares wording with the supplied packet; Codex did not retrieve documents or independently verify binary hashes. Source-checked model comparison is not human review. It cannot determine an individual's eligibility, disability or testing accommodations.\n\nCONTENT GOAL: Given a language profile and classroom evidence, distinguish the construct being assessed, preserve the content target, choose an access or monitoring action and state what remains uncertain. LANGUAGE GOAL: Justify the decision with domain-specific observations and qualified claims using 'suggests,' 'does not establish' and a reasoned next step. Observable success means naming the evidence, the bounded inference and an additional observation that could change the plan.\n\nSTAGE 1 - Identify the assessment purpose.\nAn English language proficiency assessment concerns English language use; a classroom content task concerns a disciplinary target. ACCESS supplies English language proficiency evidence by Listening, Speaking, Reading and Writing. It is not a measure of mathematics understanding, content ability, readiness or disability, and its results are not student labels. MCAS concerns content achievement with applicable accessibility rules. A teacher must still inspect the actual task and score interpretation. Do not use a language result as a substitute for a content assessment. [S1 source.obj0007-0009.s1.2026-11-08] [S2 source.obj0004-0006.s2.2026-11-08] [S9 source.obj0007-0009.s9.2026-11-08]\n\nSTAGE 2 - Inspect domains and measurement uncertainty.\nAn Overall composite can hide differences: stronger performance in one domain can raise the composite while another needs attention. Inspect all four domains and the classroom language demands, not Overall alone. S9 says proficiency levels are domain specific and equal scale scores across domains are not interchangeable. A scale score is one point in a range of possible performance, represented by confidence bands using Standard Error of Measurement (SEM). A single administration therefore supports cautious interpretation and triangulation, not certainty about every future task. The supplied guide also treats 2025-2026 ACCESS scale scores as a new baseline; do not compare these scale scores with previous-year scale scores. No score-conversion formula, growth threshold or numerical exit rule is taught here. [S9 source.obj0007-0009.s9.2026-11-08]\n\nWORKED EXAMPLE 1 - An uneven profile does not answer a content question.\nA synthetic grade 6 learner has stronger Listening and Speaking evidence than Reading and Writing evidence. The learner correctly sorts photographs of material changes and orally explains why one change may be reversible, but a dense written worksheet is incomplete. The Overall result alone cannot tell the teacher which language demand caused difficulty. First inspect the domains, then compare the reading load with the task. Use the same science criterion in a labeled-diagram explanation with brief oral follow-up, while separately examining how the learner reads the written directions and expresses a justification. This may reveal content understanding alongside a language instructional need; it does not automatically prove either. [S1 source.obj0007-0009.s1.2026-11-08] [S9 source.obj0007-0009.s9.2026-11-08]\n\nCounterexample: 'Low ACCESS Reading means low science ability, so remove the explanation target.' The inference substitutes one construct for another and lowers expectations without content evidence. Another counterexample declares all supports unnecessary because Overall looks strong. It erases the domain difference and the classroom observations. A better next step targets the written explanation language while preserving the science reasoning, then checks a new task with less help when appropriate. Neither one good diagram nor one weak worksheet establishes comprehensive mastery. [S2 source.obj0004-0006.s2.2026-11-08] [S9 source.obj0007-0009.s9.2026-11-08]\n\nGUIDED CHECK 1 - Assisted interpretation; no attempts or independent evidence.\nWith the analysis visible, name two things the teacher should inspect before changing the plan. Assisted answer: domain-specific English language evidence and performance on the same content target with reduced irrelevant language load. A plausible additional check might separate comprehension of a direction from understanding the science relation. This rehearsal records no attempts or independent evidence; it does not create a student assessment record.\n\nSTAGE 3 - Preserve the construct while improving access.\nFor a formative science check, a labeled diagram plus oral explanation can reduce writing burden while retaining a causal explanation criterion. If the target itself is written argument, however, removing all writing changes what is being observed; collect content and written-language evidence separately. Linguistic and cultural bias can arise when an irrelevant language demand or assumed background knowledge obscures the intended construct. Examine the actual materials and opportunities; never attribute a bias pattern or a cultural trait to an individual from their language background. S1 calls for valid assessment and lower linguistic load with high content expectations. This brief example does not validate an instrument psychometrically. [S1 source.obj0007-0009.s1.2026-11-08]\n\nWORKED EXAMPLE 2 - Access support, routine use and a timely evaluation.\nA synthetic grade 7 learner routinely uses a familiar bilingual glossary to interpret directions in a civics unit and still compares competing arguments using the same evidence criterion as peers. That classroom support addresses language access. A proposal to remove the comparison standard and grade only word matching would modify the learning target. S10 says EL accommodations address English-language barriers, should not appear only on test day and should be examined annually as proficiency grows. It warns against unfamiliar bilingual dictionaries/glossaries. Its explicit no-lowered-expectations quotation occurs in the disability section; S1 independently preserves high content expectations for EL assessment. Classroom use alone does not authorize a particular MCAS support: check current tables and applicable individual rules for an actual state test. This lesson supplies no accommodation codes. [S1 source.obj0007-0009.s1.2026-11-08] [S10 source.obj0007-0009.s10.2026-11-08]\n\nNow add persistent difficulties across well-supported classroom opportunities and a reason for the team to suspect a disability. EL status is neither evidence of disability nor a reason to postpone a warranted special education evaluation until English is fluent. Continue appropriate language support and culturally and linguistically appropriate, domain-aware progress monitoring while following the warranted evaluation process. Do not diagnose from the ACCESS result, and do not require a fixed period of language intervention before considering evaluation. The packet supplies neither an evaluation timeline nor a diagnosis. [S7 source.obj0001.s9.2026-11-08]\n\nGUIDED CHECK 2 - Assisted comparison; no attempts or evidence.\nA colleague proposes waiting for fluent English before investigating the documented concern. Explain why that reasoning fails without claiming the student has a disability. Assisted answer: S7 rejects delay based solely on EL status when there is reason to suspect disability; the team should pursue a warranted evaluation with appropriate evidence and language access. The existence of concern justifies investigation, not a predetermined conclusion. This visible explanation is assisted rehearsal only.\n\nSTAGE 4 - Make the next step conditional and observable.\nRecord the construct, domain evidence, supports already used, content observations and uncertainty. Specify what a new observation would clarify and what result would prompt a support revision or consultation. Use SEM humility: a point score from one administration is not an exact boundary between instructional identities. Triangulate without inventing a numeric decision rule. Review access supports as need changes, and preserve required procedures. Never infer ability, disability, culture traits or trauma from language background. Remaining gaps include full psychometrics, instrument validation, exhaustive assessment/rubric design, current MCAS code tables, individual eligibility and numeric Massachusetts exit/reclassification criteria. These cases do not mark any objective complete."
     }
   ],
   "tasks": [
@@ -4921,6 +5132,688 @@
       "familyId": "family.obj0006.civic-vocabulary-case",
       "noveltyKind": "unfamiliar",
       "lessonId": "lesson.obj0006.vocabulary-talk.v1"
+    },
+    {
+      "id": "task.obj0007.dual-objectives",
+      "version": 1,
+      "kind": "mc",
+      "title": "Align two goals to one investigation",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. A grade 6 team plans a lesson in which students compare two explanations of a habitat change using observations. Which objective pair best preserves both content learning and purposeful language development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learn the names of six organisms and complete an English word-search instead of comparing explanations."
+        },
+        {
+          "id": "b",
+          "text": "Compare explanations using observations; orally justify a claim with evidence and a qualifying phrase, then write the reasoning."
+        },
+        {
+          "id": "c",
+          "text": "Use because in five sentences, regardless of whether the statements explain the habitat observations."
+        },
+        {
+          "id": "d",
+          "text": "Compare explanations, but postpone all attention to language until the content unit ends."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "b"
+        ],
+        "feedback": "The pair keeps the disciplinary comparison and names language used to justify and qualify it. S1 specifies concurrent content/language objectives; S4 teaches content frameworks and WIDA standards in tandem. [S1 source.obj0007-0009.s1.2026-11-08] [S4 source.obj0004-0006.s7.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Naming organisms may prepare access, but the word-search replaces the explanation target. S1 requires concurrent objectives and S4 preserves grade-level content with academic language. [S1 source.obj0007-0009.s1.2026-11-08] [S4 source.obj0004-0006.s7.2026-11-08]",
+          "c": "A connective alone does not define a meaningful language objective aligned to the investigation. S4 pairs standards and academic practices such as justifying conclusions, not disconnected form counts. [S4 source.obj0004-0006.s7.2026-11-08]",
+          "d": "The disciplinary comparison is appropriate, but delaying all language planning misses the concurrent instruction S1 and S4 describe. The needed explanatory language belongs in this lesson. [S1 source.obj0007-0009.s1.2026-11-08] [S4 source.obj0004-0006.s7.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.rigorous-scaffolds"
+      ],
+      "familyId": "family.obj0007.dual-objectives",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0007.sheltered-planning.v1"
+    },
+    {
+      "id": "task.obj0007.scaffold-up",
+      "version": 1,
+      "kind": "mc",
+      "title": "Open access without replacing the problem",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. In a grade-level mathematics lesson, students compare two solution strategies and explain why both work. A learner needs help interpreting the directions. Which initial response preserves the target?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assign below-grade addition facts because the learner is an EL."
+        },
+        {
+          "id": "b",
+          "text": "Let the learner watch others compare strategies but require no explanation."
+        },
+        {
+          "id": "c",
+          "text": "Remove the comparison and ask only for the final answer."
+        },
+        {
+          "id": "d",
+          "text": "Clarify directions with a diagram and useful familiar-language notes, then structure partner explanation of the same strategies."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "d"
+        ],
+        "feedback": "The support changes language access while retaining comparison and explanation. WIDA calls for access to grade-level content and forbids using proficiency descriptions to restrict rigorous participation. [S2 source.obj0004-0006.s2.2026-11-08]",
+        "wrongFeedback": {
+          "a": "EL status does not establish a need for below-grade content. WIDA protects rigorous grade-level access; the observed difficulty concerns directions, not demonstrated mathematical understanding. [S2 source.obj0004-0006.s2.2026-11-08]",
+          "b": "Observation can prepare participation, but eliminating the learner's explanation removes an opportunity to do the reasoning. WIDA includes active engagement and meaningful discussion. [S2 source.obj0004-0006.s2.2026-11-08]",
+          "c": "A final answer alone omits the specified comparison. S1 differentiates access while maintaining high content expectations; deleting the reasoning target does not satisfy that boundary. [S1 source.obj0007-0009.s1.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.rigorous-scaffolds"
+      ],
+      "familyId": "family.scaffold-concept",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0007.sheltered-planning.v1"
+    },
+    {
+      "id": "task.obj0007.fade-support",
+      "version": 1,
+      "kind": "mc",
+      "title": "Let evidence guide a support change",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. During a history unit, several classroom observations show a learner can connect source evidence to a claim without reading the offered sentence frame. What is the most defensible next instructional step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Offer a fresh comparable task with the frame optional, observe whether the relationship stays clear, and restore or revise support if needed."
+        },
+        {
+          "id": "b",
+          "text": "Require the identical frame permanently because EL status always means it is necessary."
+        },
+        {
+          "id": "c",
+          "text": "Remove every classroom and testing support immediately because one frame is less needed."
+        },
+        {
+          "id": "d",
+          "text": "Wait a fixed number of months before looking at any evidence of independent expression."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "a"
+        ],
+        "feedback": "Use observed performance to try a bounded reduction while preserving the target and monitoring the result. This is an authored classroom application; S10 supports review as proficiency grows but does not prescribe a classroom timetable or authorize wholesale testing changes. [S1 source.obj0007-0009.s1.2026-11-08] [S10 source.obj0007-0009.s10.2026-11-08]",
+        "wrongFeedback": {
+          "b": "Permanent assignment without checking need ignores the evidence in the scenario. S10 calls for review as proficiency grows; it does not make EL status proof that every support must remain unchanged. [S10 source.obj0007-0009.s10.2026-11-08]",
+          "c": "Evidence about one classroom frame does not justify removing all supports or authorized testing accommodations. S10 requires considered review of accessibility needs, not blanket removal. [S10 source.obj0007-0009.s10.2026-11-08]",
+          "d": "The supplied sources provide no fixed classroom fading calendar. S1 emphasizes access with high expectations, and S10 supports reviewing supports as proficiency develops. [S1 source.obj0007-0009.s1.2026-11-08] [S10 source.obj0007-0009.s10.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.rigorous-scaffolds"
+      ],
+      "familyId": "family.scaffold-adjustment",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0007.sheltered-planning.v1"
+    },
+    {
+      "id": "task.obj0007.sci-esl",
+      "version": 1,
+      "kind": "mc",
+      "title": "Preserve both core content and dedicated ESL",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. A school offers sheltered grade-level science and a dedicated ESL block. A proposed timetable puts ESL during the science investigation because the science teacher already uses visuals. Which revision best fits the supplied SEI guidance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cancel ESL because visuals in science supply all needed dedicated language instruction."
+        },
+        {
+          "id": "b",
+          "text": "Keep the conflict because missing core science is the intended role of ESL."
+        },
+        {
+          "id": "c",
+          "text": "Protect both core sheltered science and dedicated ESL, coordinating their language purposes without removing learners from core content."
+        },
+        {
+          "id": "d",
+          "text": "Replace both lessons with a general English worksheet period."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "c"
+        ],
+        "feedback": "SCI integrates grade-level content and academic language, while dedicated ESL provides focused language instruction. The guidance explicitly says not to remove ELs from core SEI content for ESL. [S4 source.obj0004-0006.s7.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Visual access in SCI does not replace the dedicated focus of ESL. The guidance distinguishes the roles and says content accessibility alone is insufficient. [S4 source.obj0004-0006.s7.2026-11-08]",
+          "b": "This reverses the guidance: schools should not remove EL students from core SEI content to participate in ESL. The timetable must preserve access to both. [S4 source.obj0004-0006.s7.2026-11-08]",
+          "d": "A general worksheet period discards the grade-level content and focused language functions. S4 pairs content and WIDA standards while retaining distinct, coordinated instruction. [S4 source.obj0004-0006.s7.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.shared-responsibility"
+      ],
+      "familyId": "family.shared-concept",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0007.sheltered-planning.v1"
+    },
+    {
+      "id": "task.obj0007.co-planning",
+      "version": 1,
+      "kind": "mc",
+      "title": "Make shared planning change the lesson",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. A content teacher prepares a civic debate while the ESL teacher teaches a separate vocabulary list. Students cannot connect source evidence to their claims. Which next planning action addresses the mismatch?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask the ESL teacher to correct every grammar error after the debate without seeing the content sources."
+        },
+        {
+          "id": "b",
+          "text": "Jointly inspect the sources, identify evidence/qualification language, align goals and agree what classroom observations will guide supports."
+        },
+        {
+          "id": "c",
+          "text": "Have the content teacher send only the Overall ACCESS result and then plan alone."
+        },
+        {
+          "id": "d",
+          "text": "Delete the debate so neither teacher needs to coordinate language demands."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "b"
+        ],
+        "feedback": "Common planning connects language demands, content reasoning and observations. S4 calls for common planning time and collective responsibility; S1 identifies the SEI teacher's partnership with ESL staff. [S4 source.obj0004-0006.s7.2026-11-08] [S1 source.obj0007-0009.s1.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Correction after the event does not resolve the unplanned evidence-language demand. S4's shared planning and concurrent standards call for coordinated instruction, not a correction handoff. [S4 source.obj0004-0006.s7.2026-11-08]",
+          "c": "A composite result does not analyze the debate text or align the two teachers' goals. S4 requires collaboration; S9 also cautions that composite scores can conceal domain differences. [S4 source.obj0004-0006.s7.2026-11-08] [S9 source.obj0007-0009.s9.2026-11-08]",
+          "d": "Deleting the debate removes the challenging opportunity rather than making it accessible. S1 explicitly links collaboration to comprehensive, challenging educational opportunities. [S1 source.obj0007-0009.s1.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.shared-responsibility"
+      ],
+      "familyId": "family.team-planning",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0007.sheltered-planning.v1"
+    },
+    {
+      "id": "task.obj0008.social-academic",
+      "version": 1,
+      "kind": "mc",
+      "title": "Plan beyond conversational fluency",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. A grade 8 learner chats fluently with classmates but gives a source-based history explanation with no link between claim and evidence. Which response best addresses the observation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat conversational fluency as proof that academic language instruction is unnecessary."
+        },
+        {
+          "id": "b",
+          "text": "Assign only basic greetings because any weak academic response shows no useful English."
+        },
+        {
+          "id": "c",
+          "text": "Wait for a universal academic-language acquisition deadline before teaching the relationship."
+        },
+        {
+          "id": "d",
+          "text": "Teach and rehearse how disciplinary claims connect to evidence, while checking the learner's content interpretation and preserving the source task."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "d"
+        ],
+        "feedback": "S1 explicitly distinguishes strong social language from limited academic language. Instruction should address the task's discourse demand; S4 identifies arguing with evidence and justifying conclusions as academic practices. [S1 source.obj0007-0009.s1.2026-11-08] [S4 source.obj0004-0006.s7.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Social ease does not establish proficiency for every disciplinary language purpose. S1 specifically names learners whose strong social language coexists with academic-language needs. [S1 source.obj0007-0009.s1.2026-11-08]",
+          "b": "The observation concerns one academic relation, not an absence of useful language or content capacity. WIDA language descriptions do not categorize a learner or justify restricting rigorous materials. [S2 source.obj0004-0006.s2.2026-11-08]",
+          "c": "The supplied sources do not give a fixed acquisition calendar for this decision. S1 calls for planning around actual academic-language needs, and WIDA performance depends on context. [S1 source.obj0007-0009.s1.2026-11-08] [S2 source.obj0004-0006.s2.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.academic-language"
+      ],
+      "familyId": "family.academic-concept",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0008.academic-discourse.v1"
+    },
+    {
+      "id": "task.obj0008.text-demands",
+      "version": 1,
+      "kind": "mc",
+      "title": "Analyze how a dense text makes meaning",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. A science passage reads: \"Although the covered soil retained moisture, water loss from the exposed soil after heating increased. This difference may reflect the covering, but another factor could contribute.\" Before teaching, what analysis most directly supports comprehension?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unpack the dense noun group, track the contrast and the referent of This difference, and examine how may qualifies the whole explanation."
+        },
+        {
+          "id": "b",
+          "text": "Choose twenty unfamiliar-looking words without reading the sentence or considering the explanation."
+        },
+        {
+          "id": "c",
+          "text": "Remove although and may because those words cannot affect scientific meaning."
+        },
+        {
+          "id": "d",
+          "text": "Count the sentence lengths and assume that shorter sentences always preserve the argument."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "a"
+        ],
+        "feedback": "The analysis joins word/phrase, sentence and discourse work: the event named by a noun group, clause relations, cohesion and a qualified explanatory claim. S1 specifies meaning-based analysis; WIDA supplies the three dimensions. [S1 source.obj0007-0009.s1.2026-11-08] [S2 source.obj0004-0006.s2.2026-11-08]",
+        "wrongFeedback": {
+          "b": "A disconnected word list can miss what the clauses and references mean together. S1 names rhetorical structure and clause-by-clause analysis, and S2 distinguishes dimensions beyond vocabulary. [S1 source.obj0007-0009.s1.2026-11-08] [S2 source.obj0004-0006.s2.2026-11-08]",
+          "c": "Although marks contrast and may marks uncertainty in this authored passage. Removing them can change the claim, contrary to S1's meaning-based analysis of demanding language. [S1 source.obj0007-0009.s1.2026-11-08]",
+          "d": "Length alone cannot show whether a contrast, causal relation or qualification remains. S2's discourse dimension concerns overall meaning and cohesion, not a universal sentence-length rule. [S2 source.obj0004-0006.s2.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.academic-language"
+      ],
+      "familyId": "family.discourse-analysis",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0008.academic-discourse.v1"
+    },
+    {
+      "id": "task.obj0009.domain-content",
+      "version": 1,
+      "kind": "mc",
+      "title": "Separate English reading from mathematical reasoning",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. A learner's synthetic ACCESS Reading result is lower than the Listening result. A teacher wants to use Reading to place the learner in a lower mathematics ability group before seeing any mathematics work. What is the sound response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the lower domain as a direct mathematics ability score."
+        },
+        {
+          "id": "b",
+          "text": "Average Reading and Listening to create a mathematics readiness score."
+        },
+        {
+          "id": "c",
+          "text": "Reject that inference; inspect the mathematics target and collect content evidence with appropriate language access while planning for the reading demand."
+        },
+        {
+          "id": "d",
+          "text": "Use Listening alone to decide that all mathematics and language support is unnecessary."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "c"
+        ],
+        "feedback": "ACCESS domain scores concern English language proficiency, not mathematics understanding, readiness or ability. S9 requires domain-specific interpretation; S1 supports content checks with reduced linguistic load and high expectations. [S9 source.obj0007-0009.s9.2026-11-08] [S1 source.obj0007-0009.s1.2026-11-08]",
+        "wrongFeedback": {
+          "a": "The Reading domain measures English language proficiency in that domain; it cannot establish mathematics ability. WIDA also lists cognitive ability and readiness among inappropriate proficiency-description uses. [S9 source.obj0007-0009.s9.2026-11-08] [S2 source.obj0004-0006.s2.2026-11-08]",
+          "b": "Combining language scores does not change the construct into mathematics readiness. S9 warns against treating domain measures interchangeably, and S2 rejects readiness inferences from language descriptions. [S9 source.obj0007-0009.s9.2026-11-08] [S2 source.obj0004-0006.s2.2026-11-08]",
+          "d": "A stronger Listening result does not establish every content or language need. S9 favors inspecting domains; content understanding still requires relevant classroom evidence. [S9 source.obj0007-0009.s9.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.assessment-purpose"
+      ],
+      "familyId": "family.construct-separation",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0009.assessment-decisions.v1"
+    },
+    {
+      "id": "task.obj0009.domain-composite",
+      "version": 1,
+      "kind": "mc",
+      "title": "Inspect what the composite hides",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. Two synthetic ACCESS profiles have the same reported Overall result. One has stronger Listening and Speaking with weaker Reading and Writing; the other is more even. A colleague proposes identical support removal based solely on Overall. Which response is best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proceed because equal composites guarantee identical language needs."
+        },
+        {
+          "id": "b",
+          "text": "Inspect all four domains and classroom demands, target the differing literacy needs, and keep current exit-policy decisions separate from this instructional comparison."
+        },
+        {
+          "id": "c",
+          "text": "Use only the strongest domain to define each learner's permanent language level."
+        },
+        {
+          "id": "d",
+          "text": "Treat the weaker literacy domains as evidence of low content ability or disability."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "b"
+        ],
+        "feedback": "A stronger domain can inflate a composite, masking different profiles. S9 says individual domain performance is more informative than one composite; classroom evidence helps plan the relevant reading/writing language instruction. No exit threshold follows. [S9 source.obj0007-0009.s9.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Equal Overall results can conceal different language portraits. S9 explicitly cautions that composites need careful consideration and directs attention to individual domains. [S9 source.obj0007-0009.s9.2026-11-08]",
+          "c": "One strong domain does not describe every language purpose and is not a permanent learner label. S9 requires domain-aware interpretation and S2 treats proficiency as a snapshot. [S9 source.obj0007-0009.s9.2026-11-08] [S2 source.obj0004-0006.s2.2026-11-08]",
+          "d": "Language proficiency does not establish cognitive/content ability or disability. S2 excludes those inferences and S7 says EL status itself is not a basis for a disability determination. [S2 source.obj0004-0006.s2.2026-11-08] [S7 source.obj0001.s9.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.domain-profiles"
+      ],
+      "familyId": "family.domain-concept",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0009.assessment-decisions.v1"
+    },
+    {
+      "id": "task.obj0009.formative-load",
+      "version": 1,
+      "kind": "mc",
+      "title": "Keep the science criterion visible",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. The formative goal is explaining why a material changes when heated, not producing an extended written essay. A learner has difficulty with the essay directions. Which check best preserves the intended content evidence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grade isolated vocabulary definitions as the entire science explanation."
+        },
+        {
+          "id": "b",
+          "text": "Award full science understanding solely for completing the worksheet."
+        },
+        {
+          "id": "c",
+          "text": "Remove the causal explanation target and ask only for a drawing of the equipment."
+        },
+        {
+          "id": "d",
+          "text": "Ask for a labeled diagram plus oral causal explanation, using the same science criterion and recording the separate language observations."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "d"
+        ],
+        "feedback": "The check reduces an incidental writing burden while retaining causal explanation. S1 explicitly describes lower linguistic load with high content expectations and using informal results to inform instruction. [S1 source.obj0007-0009.s1.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Vocabulary definitions alone do not show the targeted causal reasoning. S1 links formative assessment to the intended content purpose while preserving expectations. [S1 source.obj0007-0009.s1.2026-11-08]",
+          "b": "Completion is not evidence of the specified understanding. S1 emphasizes interpreting formative results to inform instruction, which requires examining the actual explanation. [S1 source.obj0007-0009.s1.2026-11-08]",
+          "c": "Drawing equipment without explaining the change omits the target. S1 permits changes to linguistic load while maintaining high content and knowledge expectations. [S1 source.obj0007-0009.s1.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.assessment-purpose"
+      ],
+      "familyId": "family.assessment-purpose",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0009.assessment-decisions.v1"
+    },
+    {
+      "id": "task.obj0009.accommodation",
+      "version": 1,
+      "kind": "mc",
+      "title": "Distinguish language access from a changed standard",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. For a classroom civics assessment of comparing arguments, a learner routinely uses a familiar bilingual glossary. A team also proposes removing the comparison goal. Which judgment is best supported?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The glossary can support classroom access while preserving comparison; removing the goal changes expectations. Check current MCAS rules separately before any state-test use and review support needs over time."
+        },
+        {
+          "id": "b",
+          "text": "Both changes preserve the same construct because any easier task is an accommodation."
+        },
+        {
+          "id": "c",
+          "text": "Introduce an unfamiliar glossary only on the state-test day, without classroom practice or eligibility review."
+        },
+        {
+          "id": "d",
+          "text": "Retain every support permanently without reviewing proficiency or task demands."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "a"
+        ],
+        "feedback": "S1 preserves high content expectations. S10 says EL supports address language barriers, require routine use and annual review, and warns against unfamiliar glossaries. The classroom example does not establish MCAS authorization. [S1 source.obj0007-0009.s1.2026-11-08] [S10 source.obj0007-0009.s10.2026-11-08]",
+        "wrongFeedback": {
+          "b": "Removing comparison changes the learning target; easier content is not merely improved language access. S1 explicitly maintains high content expectations when reducing linguistic load. [S1 source.obj0007-0009.s1.2026-11-08]",
+          "c": "S10 says accommodations should not be used solely for testing and discourages unfamiliar bilingual dictionaries/glossaries. Actual state-test use also requires applicable current rules. [S10 source.obj0007-0009.s10.2026-11-08]",
+          "d": "S10 calls for examining and revising supports annually as English proficiency grows. Review should consider evidence of need; EL status does not require unchanged supports indefinitely. [S10 source.obj0007-0009.s10.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.rigorous-scaffolds"
+      ],
+      "familyId": "family.scaffold-concept",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0009.assessment-decisions.v1"
+    },
+    {
+      "id": "task.obj0009.timely-evaluation",
+      "version": 1,
+      "kind": "mc",
+      "title": "Investigate a concern without a language gate",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. A synthetic team has documented persistent concerns across linguistically appropriate, supported classroom observations and has reason to suspect a disability. A colleague says evaluation must wait until English is fluent. Which response fits the supplied guidance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agree: EL status makes a warranted evaluation inappropriate until fluency."
+        },
+        {
+          "id": "b",
+          "text": "Diagnose a disability from EL status without evaluating the concern."
+        },
+        {
+          "id": "c",
+          "text": "Continue appropriate language support and domain-aware monitoring while pursuing the warranted evaluation; EL status neither proves disability nor justifies delay."
+        },
+        {
+          "id": "d",
+          "text": "Replace the observations with the Overall ACCESS result as the sole diagnostic evidence."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "c"
+        ],
+        "feedback": "S7 rejects both determining disability from EL status and delaying evaluation because of that status when disability is suspected. Its monitoring guidance is culturally/linguistically appropriate and attentive to domains; no diagnosis or timeline is inferred. [S7 source.obj0001.s9.2026-11-08]",
+        "wrongFeedback": {
+          "a": "This is the delay S7 explicitly rejects when there is reason to suspect disability. English fluency is not a prerequisite for a warranted evaluation. [S7 source.obj0001.s9.2026-11-08]",
+          "b": "S7 says EL status is not itself a basis for determining disability. A concern calls for appropriate evaluation and evidence, not a predetermined diagnosis. [S7 source.obj0001.s9.2026-11-08]",
+          "d": "A composite English proficiency result cannot diagnose disability. S9 warns that composites conceal domain variation; S7 rejects disability determination based on EL status. [S9 source.obj0007-0009.s9.2026-11-08] [S7 source.obj0001.s9.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.identification"
+      ],
+      "familyId": "family.obj0001.language-disability",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0009.assessment-decisions.v1"
+    },
+    {
+      "id": "task.obj0009.score-uncertainty",
+      "version": 1,
+      "kind": "mc",
+      "title": "Interpret a point score with measurement humility",
+      "prompt": "Original unaided check; synthetic illustrative practice, not an official examination item. A team proposes removing a support after one ACCESS administration because the point score looks higher. It has not examined confidence bands, domains or classroom work. What is the best next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat the point score as exact proof that every related language demand is now independent."
+        },
+        {
+          "id": "b",
+          "text": "Inspect domain results and SEM confidence bands, triangulate classroom observations, and make a bounded support decision with remaining uncertainty stated."
+        },
+        {
+          "id": "c",
+          "text": "Discard all language results because measurement error makes every observation useless."
+        },
+        {
+          "id": "d",
+          "text": "Compare equal scale-score numbers across different domains as if they represent the same proficiency, ignoring the guide's interpretive cautions."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "b"
+        ],
+        "feedback": "S9 explains that a scale score is one point in a range of possible performance and that domains are distinct. Confidence-band humility supports triangulation, not automatic support removal or dismissal of evidence. [S9 source.obj0007-0009.s9.2026-11-08]",
+        "wrongFeedback": {
+          "a": "S9 explicitly uses SEM confidence bands to remind readers that a scale score is not an exact description of all possible performance. One administration alone does not establish every instructional need. [S9 source.obj0007-0009.s9.2026-11-08]",
+          "c": "Uncertainty calls for careful interpretation, not discarding evidence. S9 provides domain and confidence-band guidance to make results more informative alongside other observations. [S9 source.obj0007-0009.s9.2026-11-08]",
+          "d": "S9 says scale scores may be compared across grades but not treated interchangeably across domains. Equal numbers do not establish equal proficiency in different domains. [S9 source.obj0007-0009.s9.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.domain-profiles"
+      ],
+      "familyId": "family.obj0009.score-uncertainty",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0009.assessment-decisions.v1"
+    },
+    {
+      "id": "task.obj0007.exhibition-plan-case",
+      "version": 1,
+      "kind": "case",
+      "title": "Co-plan a sheltered public-exhibition investigation",
+      "prompt": "Original unfamiliar non-math application. All texts, people, scores and observations are synthetic. This is not an official examination item, official writing prompt or five-part mentor task. No deterministic answer key. The response remains needs_review and provisional/manual pending judgment.\n\nA grade 7 class will design a small exhibition recommending how to protect a historic outdoor mural. The content target is to compare two protection proposals using evidence and acknowledge tradeoffs. Students have three original source summaries:\n\n- An observation log describes color fading on the sun-facing panel and surface damage near a drain. It does not establish which factor caused each change.\n- A transparent cover would reduce direct contact but the proposal gives no observations about moisture behind it.\n- A roof extension would reduce direct rainfall on part of the mural but would leave an edge exposed and change the view from the path.\n\nThe class must recommend a next investigation before making a final design recommendation. One group can show concerns on a labeled sketch but has difficulty connecting observations to claims in a written paragraph. Another repeats the teacher's model sentence without explaining its evidence. These observations are limited; no disability or fixed language profile is given. Some learners offer familiar-language notes to help plan their arguments. A colleague suggests giving ELs only a color-matching worksheet while other students evaluate the proposals. The proposed timetable places dedicated ESL during the exhibition investigation.\n\nYou and the ESL teacher have a planning meeting. Create and justify a coherent lesson sequence:\n1. State an observable content goal and a concurrent language goal aligned to a language function needed for this investigation. Identify the evidence, uncertainty and tradeoff learners must preserve. Do not invent a measured effect of either protection proposal.\n2. Analyze a particular input demand and design a visual, text or familiar-language support that changes access without replacing the grade-level comparison. Explain why the color-matching alternative fails the target.\n3. Design structured interaction in which students compare proposals, ask for evidence and revise. Specify what the listener must do and how learners can disagree safely without being judged by accent or speed. A teacher lecture followed by silent copying is not sufficient to demonstrate this interaction.\n4. Specify what the content and ESL teachers will co-plan, what each will observe and how dedicated ESL and core SCI can both remain available. Explain why successful sheltering does not substitute for dedicated ESL and why pulling students from the core investigation is a problem.\n5. Identify an initially useful scaffold and a later opportunity to observe its reduced use. State what evidence would justify making it optional, what would prompt restoration or revision and what remains uncertain. Do not invent a fixed calendar or automatic score threshold. Keep classroom fading distinct from authorization to remove a state-test accommodation.\n6. Describe a brief unaided follow-up on a fresh but comparable proposal, making clear that the scaffolded lesson observations themselves are assisted. Explain how you would separate evidence of content reasoning from control of the target English forms.\n\nUse S1's concurrent goals, interaction and partnership scope, S2's scaffold-up access, S3's language-resource principle and S4's SCI/ESL collaboration. S5/S6 support purposeful content talk in elementary/middle grades. S10 offers a bounded assessment-review analogy, not a classroom fading schedule. This case samples co-planning and responsive access; it does not establish a full SIOP protocol or comprehensive SEI-program design.\n\nReview boundary: judge the reasoning, use of evidence, tradeoffs and uncertainty through a real human action. There is no single required plan or keyword list. Keywords, completion, an unfamiliar tag or agreement with an example establish neither an authoritative judgment nor independent transfer evidence or mastery. Source-checked content denotes model wording comparison only, not human review. Do not infer ability, disability, culture traits or trauma from language background.",
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.rigorous-scaffolds",
+        "sei.skill.shared-responsibility",
+        "sei.skill.academic-language"
+      ],
+      "familyId": "family.obj0007.exhibition-plan-case",
+      "noveltyKind": "unfamiliar",
+      "lessonId": "lesson.obj0007.sheltered-planning.v1"
+    },
+    {
+      "id": "task.obj0008.archive-discourse-case",
+      "version": 1,
+      "kind": "case",
+      "title": "Analyze an archive passage and teach its argument",
+      "prompt": "Original unfamiliar non-math application. All texts, people, scores and observations are synthetic. This is not an official examination item, official writing prompt or five-part mentor task. No deterministic answer key. The response remains needs_review and provisional/manual pending judgment.\n\nA grade 8 history class is preparing an interpretation of why a neighborhood reading room changed its opening hours. The class has this original synthetic passage:\n\n\"Although the committee's adoption of shorter evening hours followed the petition, the meeting note attributes the change to staffing constraints. The petition's request for quiet on the adjacent street may have influenced discussion; however, neither document establishes that it determined the schedule. This distinction limits the claim that the petition alone caused the change.\"\n\nA source card says the petition was dated before the meeting note. Neither source reports what every committee member believed, and no other record is provided. The content target is to compare competing explanations, attribute claims to sources and qualify causation. Students readily discuss neighborhood events socially. A draft says, \"People asked. Then the hours changed. The petition caused it.\" A peer proposes adding several formal words without changing that claim. Another proposes a frame beginning, \"The only reason was ___.\"\n\nAnalyze the text and design a short sequence that leads to authentic academic discourse:\n1. Identify a defensible content claim and a limit on the available evidence. Explain why temporal sequence alone does not establish the claimed cause.\n2. Annotate one dense noun group, a clause relationship and a discourse connection. Unpack who acted in \"the committee's adoption\"; explain what although and however connect; identify the referent and argumentative role of \"This distinction.\" Connect each language feature to meaning, not simply a terminology label.\n3. Choose a small, purposeful set of everyday/cross-disciplinary/technical word or phrase demands for this passage. Explain why merely preteaching twenty random words would miss an important sentence or discourse demand. You need not invent a fixed classification for every word.\n4. Model how to unpack and reconstruct one sentence without deleting attribution or uncertainty. Supply an original short example, explaining a choice of form and its effect on the claim.\n5. Offer a frame that can help express claim, evidence and qualification without deciding the answer. Explain why \"The only reason was\" can distort this text. Design partner argument and revision in which a learner must respond to a competing explanation rather than only complete blanks.\n6. State observable content and language goals. Specify an assisted check and a later less-assisted new-passage check, describing the observations that would distinguish an evidentiary misunderstanding from needing English to express an understood relationship. Strong social conversation does not settle that distinction.\n\nUse S1's meaning-based analysis and discourse inclusion, S2's word/phrase, sentence and discourse dimensions, S4's academic practices and S5's contextual vocabulary/content-language instruction. Do not invent a fixed social-to-academic acquisition timeline, cultural explanation or private learner profile. This case samples analysis of one text; it leaves full disciplinary progressions and individualized intervention design as gaps.\n\nReview boundary: judge the reasoning, use of evidence, tradeoffs and uncertainty through a real human action. There is no single required plan or keyword list. Keywords, completion, an unfamiliar tag or agreement with an example establish neither an authoritative judgment nor independent transfer evidence or mastery. Source-checked content denotes model wording comparison only, not human review. Do not infer ability, disability, culture traits or trauma from language background.",
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.academic-language",
+        "sei.skill.oral-to-writing"
+      ],
+      "familyId": "family.obj0008.archive-discourse-case",
+      "noveltyKind": "unfamiliar",
+      "lessonId": "lesson.obj0008.academic-discourse.v1"
+    },
+    {
+      "id": "task.obj0009.garden-profile-case",
+      "version": 1,
+      "kind": "case",
+      "title": "Triangulate a language profile and classroom assessment",
+      "prompt": "Original unfamiliar non-math application. All texts, people, scores and observations are synthetic. This is not an official examination item, official writing prompt or five-part mentor task. No deterministic answer key. The response remains needs_review and provisional/manual pending judgment.\n\nA grade 6 science team is studying how shade and watering could affect a community garden. The content target is to compare explanations for different plant growth, use observations and acknowledge that the available data do not isolate a single cause. Here is an invented ACCESS proficiency-level profile used only as a scenario: Listening 4.8, Speaking 4.2, Reading 2.7, Writing 2.3. These are synthetic domain values, not scale-score conversions, exit criteria or a real score report. No Overall composite or confidence-band endpoints are supplied. Do not calculate a composite, fabricate SEM values or infer a learner label.\n\nClassroom observations are mixed:\n- With a labeled diagram and oral follow-up, the learner distinguishes an observation from a proposed cause and points out that shade and watering changed together.\n- On a dense written prompt, the learner leaves the causal justification incomplete. The teacher has not yet checked whether the directions were understood.\n- A familiar bilingual glossary is routinely available in instruction. The learner sometimes uses it to interpret directions; it supplies no scientific conclusion.\n- The team has documented a persistent additional concern across linguistically appropriate supported observations and has reason to suspect a disability. The packet does not supply enough information to diagnose it. A colleague proposes waiting until English is fluent before evaluating the concern.\n\nAnother colleague proposes using the Overall score alone to remove supports, giving a lower-level matching task as the science assessment, and introducing an unfamiliar dictionary only on the next state-test day.\n\nPrepare a reasoned assessment and consultation plan:\n1. Distinguish English language proficiency evidence from the science construct. Explain what the domain pattern suggests investigating and what it cannot establish about content ability, readiness, disability or identity. Explain why an Overall-only decision would be insufficient even if the composite were available.\n2. Design a low-linguistic-load formative check that preserves the comparison/causal-uncertainty target. State the content criterion and the separate language observations. Explain what would change if the target instead included an extended written argument.\n3. Distinguish the familiar classroom glossary from replacing the science standard with matching. Explain routine use, annual review as proficiency grows and why an unfamiliar test-day-only tool is problematic. For any actual MCAS use, state what current eligibility and administration rules must still be checked; do not provide code tables or claim classroom use alone authorizes a state-test support.\n4. Use SEM/confidence-band humility to explain the limits of one administration. Identify additional evidence or report details you would seek and how they could change the plan. Do not make up confidence intervals, conversions, growth rates or numerical Massachusetts exit thresholds. Explain why a comparison spanning the 2025-2026 scale reset needs the guide's new-baseline rule.\n5. Respond to the evaluation-delay proposal. Describe continued language support and domain-aware, culturally and linguistically appropriate monitoring alongside a warranted evaluation; do not require fluency first, prescribe an invented waiting period or diagnose from the scores.\n6. State an observable content goal, a language goal and a monitoring decision with an explicit uncertainty. Identify one plausible alternative explanation for incomplete written work and a way to investigate it without assigning a culture trait or fixed capacity.\n\nUse S1's assessment-purpose/high-content rule, S2's inapplicable uses, S7's dual-error and monitoring guidance, S9's domain/composite/SEM limits and S10's routine-use/review principles. This case requires judgment about evidence and construct preservation, not a single score-based answer. Individual evaluation, current state-test eligibility, full psychometrics and reclassification decisions remain outside its scope.\n\nReview boundary: judge the reasoning, use of evidence, tradeoffs and uncertainty through a real human action. There is no single required plan or keyword list. Keywords, completion, an unfamiliar tag or agreement with an example establish neither an authoritative judgment nor independent transfer evidence or mastery. Source-checked content denotes model wording comparison only, not human review. Do not infer ability, disability, culture traits or trauma from language background.",
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.assessment-purpose",
+        "sei.skill.domain-profiles",
+        "sei.skill.rigorous-scaffolds",
+        "sei.skill.identification"
+      ],
+      "familyId": "family.obj0009.garden-profile-case",
+      "noveltyKind": "unfamiliar",
+      "lessonId": "lesson.obj0009.assessment-decisions.v1"
     }
   ],
   "cards": [
@@ -5136,6 +6029,78 @@
       "tags": [
         "objective::0006",
         "skill::oral-to-writing",
+        "version::1",
+        "sei-study-lab"
+      ]
+    },
+    {
+      "id": "card.obj0007.dual-standards.v1",
+      "front": "Which two standards sources guide sheltered content and language instruction together?",
+      "back": "The subject-area Frameworks and WIDA Standards guide instruction in tandem: preserve the content goal while planning the academic language needed to engage with it.",
+      "source": "source.obj0004-0006.s7.2026-11-08",
+      "tags": [
+        "objective::0007",
+        "skill::rigorous-scaffolds",
+        "version::1",
+        "sei-study-lab"
+      ]
+    },
+    {
+      "id": "card.obj0007.core-esl.v1",
+      "front": "Does accessible SCI replace dedicated ESL, and should ESL remove learners from core SEI content?",
+      "back": "SCI and content accessibility alone do not provide enough dedicated language focus. Maintain dedicated ESL without removing EL students from core SEI content instruction.",
+      "source": "source.obj0004-0006.s7.2026-11-08",
+      "tags": [
+        "objective::0007",
+        "skill::shared-responsibility",
+        "version::1",
+        "sei-study-lab"
+      ]
+    },
+    {
+      "id": "card.obj0008.language-dimensions.v1",
+      "front": "What should a meaning-based analysis inspect at word/phrase, sentence and discourse dimensions?",
+      "back": "Inspect word/phrase precision and everyday, cross-disciplinary or technical choices; sentence grammatical complexity; and discourse meaning, cohesion and density across a text.",
+      "source": "source.obj0004-0006.s2.2026-11-08",
+      "tags": [
+        "objective::0008",
+        "skill::academic-language",
+        "version::1",
+        "sei-study-lab"
+      ]
+    },
+    {
+      "id": "card.obj0008.frames-purpose.v1",
+      "front": "How do sentence frames fit into academic-language instruction in Objective 0008?",
+      "back": "Frames are one practice alongside explicit vocabulary and language-structure instruction and inclusion in classroom academic discourse; they support participation rather than replacing it.",
+      "source": "source.obj0007-0009.s1.2026-11-08",
+      "tags": [
+        "objective::0008",
+        "skill::academic-language",
+        "version::1",
+        "sei-study-lab"
+      ]
+    },
+    {
+      "id": "card.obj0009.domain-composite.v1",
+      "front": "Why inspect ACCESS domains instead of relying only on an Overall composite?",
+      "back": "A higher result in one language domain can inflate a composite and mask differences. Individual domain performance is more informative than a single composite score.",
+      "source": "source.obj0007-0009.s9.2026-11-08",
+      "tags": [
+        "objective::0009",
+        "skill::domain-profiles",
+        "version::1",
+        "sei-study-lab"
+      ]
+    },
+    {
+      "id": "card.obj0009.routine-accommodations.v1",
+      "front": "What routine-use and review principles does the supplied MCAS manual give for EL accommodations?",
+      "back": "Do not use accommodations only for testing. Avoid unfamiliar bilingual dictionaries or glossaries, and examine and revise supports annually as English proficiency grows.",
+      "source": "source.obj0007-0009.s10.2026-11-08",
+      "tags": [
+        "objective::0009",
+        "skill::rigorous-scaffolds",
         "version::1",
         "sei-study-lab"
       ]
@@ -7392,6 +8357,573 @@
       ],
       "payloadSha256": "6f7f01d30b1f906e4f8be050bd61bc46c775a29f246c9d016b25b4c654b45757",
       "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0007-0009.source.source.obj0007-0009.s1.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0007-0009.s1.2026-11-08",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared all fifteen unchanged catalog statement strings (five per objective) with S1 scope. The packet provides no full HTML hash, retained as null; no proprietary protocol or official practice prompt is invented.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "86d1d11b83fad5a99b2b18a204a3be4444e0165b1981e8a1c3f2dabae7ea9d71",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.source.source.obj0007-0009.s9.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0007-0009.s9.2026-11-08",
+      "sourceVersionId": "source.obj0007-0009.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared exact S9 URL, full supplied SHA-256, spring/April 2026 edition cue and short domain/composite/SEM/reset excerpts. Measurement uncertainty and across-domain score limits remain explicit.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "76deed0263fae1d709837a60edaccdedb15232d3edbad58068808c55e7fe0ff1",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.source.source.obj0007-0009.s10.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0007-0009.s10.2026-11-08",
+      "sourceVersionId": "source.obj0007-0009.s10.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared exact S10 URL, full supplied SHA-256, 2026-27 cycle cue and short access/routine-use/annual-review excerpts. The no-reduced-expectations quote is identified as the disability-section principle; S1 independently supplies the EL high-content rule.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "7f65f49d63435cd87afb7f325ea8abf97f59358ffab7728135384efc9fa22305",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.lesson.lesson.obj0007.sheltered-planning.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0007.sheltered-planning.v1",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared observable concurrent goals, scaffold-up access, purposeful interaction, SCI alongside dedicated ESL, co-planning and evidence-responsive fading. Classroom examples are authored applications; assessment review does not authorize a classroom timetable or removal of state-test supports.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "308355f411f71a9b085a08718018d33607453b37a54a4cd95553cd6958600b73",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.lesson.lesson.obj0008.academic-discourse.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0008.academic-discourse.v1",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared social versus academic language without an acquisition calendar; word/phrase, sentence and discourse analysis; contextual vocabulary; frames leading into authentic evidence-based argument rather than completion alone. WWC use remains elementary/middle-grade scoped.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "497a6a00a3207618e3b4bcca09ec0b6d80051f61cf1babb5e19a608dda5c7f9e",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.lesson.lesson.obj0009.assessment-decisions.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0009.assessment-decisions.v1",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared ACCESS ELP versus content, domains versus composite, SEM confidence-band humility, explicit 2025-2026 baseline reset, construct-preserving formative checks, routine/annual accommodation review and timely warranted evaluation without diagnosis or EL-based delay.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "f2236d425551ee7f411919980cab735bef6911c739ad6bf24f79f9ad29259975",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.dual-objectives.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.dual-objectives",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Concurrent disciplinary and language goals are aligned to the same reasoning task (S1/S4).",
+        "Separately compared key b and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "f22f486824ce8405c6a29a42030edcbc659e210da6dcf92bcd1bb09a20d62c90",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.scaffold-up.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.scaffold-up",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Visual, familiar-language and peer supports preserve the same grade-level comparison (S1/S2).",
+        "Separately compared key d and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "b5389f906d70eb124d8e1e090bc12239159840ac1ee9f4fc9cea7fbc8a19d7ac",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.fade-support.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.fade-support",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "A bounded classroom fading trial follows evidence with monitoring, not a fixed calendar or blanket assessment changes (S1/S10).",
+        "Separately compared key a and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "c2896c067c424a56a6407eb48030e75eea97a39963df6d0e6cad5f4c66ae23cb",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.sci-esl.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.sci-esl",
+      "sourceVersionId": "source.obj0004-0006.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "SCI and dedicated ESL remain complementary without removing learners from core content (S4).",
+        "Separately compared key c and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "e63120f0d3a9fe4ed723608519e3999b7f25b6031c9657a6e5ad0ff5e2b9afa2",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.co-planning.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.co-planning",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Joint source/language-demand planning and observations replace isolated teacher handoffs (S1/S4/S9).",
+        "Separately compared key b and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "d6022e44cd8b244b0a3476a9b3035817b2715ca6029cd9c10d7b418562033ddf",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0008.social-academic.v1",
+      "entityType": "task",
+      "entityId": "task.obj0008.social-academic",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Social conversation does not establish academic discourse proficiency; teach evidence relationships without a calendar (S1/S2/S4).",
+        "Separately compared key d and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "b992f9098ea66a67097cc54a3b5780a13b28a1cac056825dec70e779fe22e25c",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0008.text-demands.v1",
+      "entityType": "task",
+      "entityId": "task.obj0008.text-demands",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Meaning-based noun-group, clause, referent and discourse analysis preserves qualification (S1/S2).",
+        "Separately compared key a and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "f46c3f860d1f88c7c3e6d7669deef8086ac2f54236202a3af4e5c4154b4b85e4",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.domain-content.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.domain-content",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "ACCESS English proficiency does not establish mathematics ability or readiness; collect content evidence (S1/S2/S9).",
+        "Separately compared key c and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "dbd04b78620721c96ae382cc1c8ddecafdbb50b6f16c8953e3496ca1770e5efd",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.domain-composite.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.domain-composite",
+      "sourceVersionId": "source.obj0004-0006.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Equal composites can conceal differing domains; inspect domains and separate current exit-policy decisions (S2/S7/S9).",
+        "Separately compared key b and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "1946a836c666699e86de872c01848e791e2e62aa5150d8d5087a8d989f927cad",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.formative-load.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.formative-load",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "A labeled diagram and oral causal explanation retain the formative content criterion while reducing incidental language load (S1).",
+        "Separately compared key d and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "196c59e2c2d88503c3c1b592653e63d7de8a9248d29cb768390d1476d7928223",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.accommodation.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.accommodation",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Routine familiar glossary access differs from deleting a content target; state-test authorization remains separate and review is required (S1/S10).",
+        "Separately compared key a and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "152bb56f7700d3308e4fbb09577dd864ec90406072dc6a060adb4fc215ec0a28",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.timely-evaluation.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.timely-evaluation",
+      "sourceVersionId": "source.obj0001.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "EL status neither determines disability nor delays a warranted evaluation; continue appropriate domain-aware monitoring (S7/S9).",
+        "Separately compared key c and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "e02012009cde3dd30a61a9a75ca7d8ebd875073775e1fa8131c971268a5a0ede",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.score-uncertainty.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.score-uncertainty",
+      "sourceVersionId": "source.obj0007-0009.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Interpret domains and SEM bands alongside classroom evidence instead of treating one point score as exact (S9).",
+        "Separately compared key b and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "397573d9fbd05eef531f0309f947c390cde4fae58cb5d21f983710c4b2175324",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.exhibition-plan-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.exhibition-plan-case",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared the novel mural-protection tradeoff investigation: concurrent goals, input access, structured interaction, SCI/ESL co-plan, monitored fading and fresh follow-up. No measured protection effect is invented; planning requires justification and uncertainty.",
+        "No answerKey or options; unfamiliar is not proof of transfer. Response remains needs_review, provisional and manual until a real human judgment. The case supplies no automatic keyword grading or independent evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "986715f6923d89c8438df8ffcf936208fd96bf657cd96084b5523da1ec494b8e",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0008.archive-discourse-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0008.archive-discourse-case",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared the novel reading-room archive argument: nominalization/clause/reference analysis, source attribution, causal qualification and authentic discourse beyond frames. Meaning-based analysis is required, not terminology matching.",
+        "No answerKey or options; unfamiliar is not proof of transfer. Response remains needs_review, provisional and manual until a real human judgment. The case supplies no automatic keyword grading or independent evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "54ef52172edc9e5c271a3de18ea61a4a048739285803c743f536f38789d7d8fa",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.garden-profile-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.garden-profile-case",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared the synthetic garden ACCESS profile and mixed classroom evidence: proficiency levels are explicitly not scale-score conversions or cutoffs; no Overall or SEM endpoints are invented. Requires construct preservation, routine access, current-MCAS caveats, monitoring and warranted evaluation without diagnosis.",
+        "No answerKey or options; unfamiliar is not proof of transfer. Response remains needs_review, provisional and manual until a real human judgment. The case supplies no automatic keyword grading or independent evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "25ce993b23cb67ea1b709703f41d9437d733d229040f4bd668ab765d977c69bc",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0007.dual-standards.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0007.dual-standards.v1",
+      "sourceVersionId": "source.obj0004-0006.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared S4 subject-area Frameworks and WIDA Standards taught in tandem; content and language remain connected.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "9112bafffbf4bf4a223b651fd4f5509816ff8f181d44a0bda07b03134567babf",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0007.core-esl.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0007.core-esl.v1",
+      "sourceVersionId": "source.obj0004-0006.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared S4 dedicated language focus and protection of core SCI from ESL scheduling conflicts.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "0f27614417a5c5c3741c182847c74d13837830e23680ecad7bab9e91494efee6",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0008.language-dimensions.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0008.language-dimensions.v1",
+      "sourceVersionId": "source.obj0004-0006.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared S2 word/phrase precision and language choices, sentence complexity, discourse meaning/cohesion/density.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "4014d08ad27f163bde6c5aedbad2afcc8d2fc97a3747844eac5ed0202d33fcc7",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0008.frames-purpose.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0008.frames-purpose.v1",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared unchanged S1 Objective 0008 ds.05: frames alongside vocabulary/structure instruction and participation in academic discourse.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "3a1e22440e7a0d1d610e1e91bd61d956c0c25aa986f19b483011056aa342b317",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0009.domain-composite.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0009.domain-composite.v1",
+      "sourceVersionId": "source.obj0007-0009.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared S9 warning that a strong domain can inflate a composite and individual domains are more informative.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "ddd2acb7d68211ceae20d6d7d782f7c1c433a6a3aa183d2eccb474f8aef0b67f",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0009.routine-accommodations.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0009.routine-accommodations.v1",
+      "sourceVersionId": "source.obj0007-0009.s10.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared S10 routine instructional use, avoiding unfamiliar glossaries and annual review as proficiency grows; no code or threshold is supplied.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "3a4f39b51554e3e5001363a02b801df125926e53e42157f975f0721b3d343485",
+      "createdAt": "2026-11-09T14:30:37.768Z"
     }
   ]
 }

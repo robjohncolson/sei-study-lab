@@ -2,7 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { DatabaseSync } from 'node:sqlite';
 import { Pool } from 'pg';
 import { createLocalJWKSet, exportJWK, generateKeyPair, SignJWT } from 'jose';
-import { afterAll, beforeAll, describe, expect, it } from 'vitest';
+import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
 import type { FastifyInstance } from 'fastify';
 import type { Catalog } from '../../../packages/shared/src/index.js';
 import type { NativeControlInput, NativeQueueItem, NativeQueueResponse, NativeReceipt, NativeReviewInput } from '../../../packages/shared/src/native-fsrs.js';
@@ -103,6 +103,99 @@ describe('hosted foundation on a disposable real Postgres database', () => {
     expect(history[1].config).toEqual(currentNativeConfig());
     expect(history[1].log).toMatchObject({ rating: 3, review: t0, due: t0 });
     expect((await run(owner, catalog, store => store.queue())).reviewsSynchronized).toBe(false);
+  });
+
+  it.each(['store', 'public HTTP'] as const)('enrolls only appended catalog cards through %s without rewriting earlier reviews or projections', async mode => {
+    const owner = randomUUID(), catalog = syntheticCatalog(3);
+    const originalIds = catalog.cards.map(card => card.id);
+    const appendedCards = syntheticCatalog(5).cards.slice(originalIds.length);
+    const config = readHostedConfig({ HOSTED_AUTH_MODE: 'public', PUBLIC_OWNER_ID: owner,
+      SEI_DATABASE_URL: harness.appUrl, APP_ORIGINS: 'http://127.0.0.1:4317', APP_HOSTS: '127.0.0.1:4317' });
+    const headers = { host: '127.0.0.1:4317', origin: 'http://127.0.0.1:4317', 'x-csrf-token': HOSTED_CSRF_TOKEN };
+    let app: FastifyInstance | undefined;
+    const open = async () => {
+      app = await createHostedSeiServer({ config, pool: harness.pool, catalog, clock: () => new Date(t0) });
+      apps.push(app);
+    };
+    if (mode === 'public HTTP') await open();
+    const request = async <T>(method: 'GET' | 'POST', url: string, payload?: NativeReviewInput) => {
+      const response = await app!.inject({ method, url, headers, ...(payload ? { payload } : {}) });
+      expect(response.statusCode).toBe(200);
+      return response.json<T>();
+    };
+    const initialize = () => mode === 'store'
+      ? run(owner, catalog, store => store.initialize())
+      : request<{ initialized: number }>('POST', '/api/native-flashcards/initialize');
+    const queue = () => mode === 'store'
+      ? withOwnerTransaction(harness.pool, claims(owner), async client => {
+        const queries = vi.spyOn(client, 'query');
+        try {
+          const result = await new PostgresNativeStore(client, owner, catalog, () => new Date(t0)).queue();
+          expect(queries.mock.calls.length).toBeGreaterThan(0);
+          for (const [sql] of queries.mock.calls) expect(sql).toMatch(/^\s*SELECT\b/i);
+          return result;
+        } finally { queries.mockRestore(); }
+      })
+      : request<NativeQueueResponse>('GET', '/api/native-flashcards');
+    const history = () => mode === 'store'
+      ? run(owner, catalog, store => store.history())
+      : request<Awaited<ReturnType<PostgresNativeStore['history']>>>('GET', '/api/native-flashcards/history');
+    const originalRows = async () => {
+      const result: Record<string, unknown> = {};
+      for (const table of tables) {
+        // Compare complete original rows, including the stored event hashes and schedules.
+        const filter = table === 'native_scheduler_configs' ? '' : ' AND card_id=ANY($2::text[])';
+        const values = table === 'native_scheduler_configs' ? [owner] : [owner, originalIds];
+        result[table] = (await harness.database.query(
+          `SELECT to_jsonb(t) AS row FROM sei.${table} t WHERE owner_id=$1${filter} ORDER BY to_jsonb(t)::text`, values,
+        )).rows;
+      }
+      return result;
+    };
+
+    expect(await initialize()).toEqual({ initialized: originalIds.length });
+    const initialQueue = await queue();
+    expect(initialQueue.queue).toHaveLength(originalIds.length);
+    const payload = review(initialQueue.queue[0]);
+    const receipt = mode === 'store'
+      ? await run(owner, catalog, store => store.review(payload))
+      : await request<NativeReceipt>('POST', '/api/native-flashcards/reviews', payload);
+    expect(receipt.version).toBe(2);
+    const previousHistory = await history();
+    expect(previousHistory).toHaveLength(originalIds.length + 1);
+    expect(previousHistory.filter(event => event.kind === 'review')).toHaveLength(1);
+    expect(previousHistory.at(-1)?.request).toEqual(payload);
+    const previousRows = await originalRows();
+    const beforeAppend = await snapshot(owner);
+    const beforeQueue = await queue();
+
+    catalog.cards.push(...appendedCards);
+    if (app) {
+      // The HTTP app validates/clones its catalog at startup, as a new deployment does.
+      await app.close(); apps.splice(apps.indexOf(app), 1);
+      await open();
+    }
+    expect(await queue()).toEqual(beforeQueue);
+    if (app) expect((await app.inject({ method: 'HEAD', url: '/api/native-flashcards', headers })).statusCode).toBe(200);
+    expect(await snapshot(owner)).toEqual(beforeAppend);
+    expect(await history()).toEqual(previousHistory);
+
+    expect(await initialize()).toEqual({ initialized: appendedCards.length });
+    expect(await originalRows()).toEqual(previousRows);
+    const nextHistory = await history();
+    expect(nextHistory.slice(0, previousHistory.length)).toEqual(previousHistory);
+    expect(nextHistory.filter(event => event.kind === 'review')).toEqual(previousHistory.filter(event => event.kind === 'review'));
+    expect(nextHistory.slice(previousHistory.length).map(event => ({ cardId: event.cardId, kind: event.kind, version: event.version })))
+      .toEqual(appendedCards.map(card => ({ cardId: card.id, kind: 'init', version: 1 })));
+    const nextQueue = await queue();
+    expect(nextQueue.queue.filter(item => originalIds.includes(item.card.id))).toEqual(beforeQueue.queue);
+    expect(nextQueue.queue.filter(item => appendedCards.some(card => card.id === item.card.id)).map(item => ({ card: item.card, version: item.version })))
+      .toEqual(appendedCards.map(card => ({ card, version: 1 })));
+    const synchronized = await snapshot(owner);
+    expect(await initialize()).toEqual({ initialized: 0 });
+    expect(await snapshot(owner)).toEqual(synchronized);
+    expect(await history()).toEqual(nextHistory);
+    expect(await queue()).toEqual(nextQueue);
   });
 
   it('filters other-user and absent claims and rejects forged owner inserts', async () => {

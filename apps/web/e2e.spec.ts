@@ -308,6 +308,9 @@ for (const lessonId of [
   'lesson.obj0004.forms-transfer.v1',
   'lesson.obj0005.profiles-environments.v1',
   'lesson.obj0006.vocabulary-talk.v1',
+  'lesson.obj0007.sheltered-planning.v1',
+  'lesson.obj0008.academic-discourse.v1',
+  'lesson.obj0009.assessment-decisions.v1',
 ]) {
   test(`${lessonId} opens assisted instruction, a linked check and its manual case without evidence writes`, async ({page}) => {
     const service = await mockDesk(page);

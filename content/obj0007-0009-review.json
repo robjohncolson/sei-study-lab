@@ -1,0 +1,584 @@
+{
+  "schemaVersion": 1,
+  "packetId": "obj0007-0009.supplied.2026-11-08.v1",
+  "suppliedPacketProvenance": "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+  "reviewLimits": "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery.",
+  "packetPayloadSha256": "50fef258d8f90fabeb3b1c0b8e2a4d3d252ba22ded80982539ae251ad815360a",
+  "reviewFindings": [
+    "Separate comparison followed authoring and covered three final sources, all ten packet bindings, three lessons, thirteen keys and thirty-nine wrong-option rationales, three unfamiliar manual cases and six recall-card backs.",
+    "Repaired literal question-mark punctuation damage before final comparison; all fifteen official statement strings remain unchanged.",
+    "Tightened the ACCESS 2025-2026 new-baseline rule to explicitly prohibit comparisons with previous-year scale scores, without inventing a conversion.",
+    "Seven source ids are reused only with exact matching URL and full SHA-256. S1, S9 and S10 receive appended snapshot ids; no earlier snapshot is rewritten.",
+    "Preserved twelve exposure families across thirteen decisions; scaffold-up and accommodation deliberately share the earlier scaffold-concept family. Interaction is taught and required in the planning case; one-domain and composite-inflation cautions form one decision.",
+    "Every objective retains gaps. No human-review promotion, learner data, automatic case grading, exit cut score, MCAS code table, proprietary SIOP feature list, timeline or effect size was introduced."
+  ],
+  "reviewEvents": [
+    {
+      "id": "review.obj0007-0009.source.source.obj0007-0009.s1.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0007-0009.s1.2026-11-08",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared all fifteen unchanged catalog statement strings (five per objective) with S1 scope. The packet provides no full HTML hash, retained as null; no proprietary protocol or official practice prompt is invented.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "86d1d11b83fad5a99b2b18a204a3be4444e0165b1981e8a1c3f2dabae7ea9d71",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.source.source.obj0007-0009.s9.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0007-0009.s9.2026-11-08",
+      "sourceVersionId": "source.obj0007-0009.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared exact S9 URL, full supplied SHA-256, spring/April 2026 edition cue and short domain/composite/SEM/reset excerpts. Measurement uncertainty and across-domain score limits remain explicit.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "76deed0263fae1d709837a60edaccdedb15232d3edbad58068808c55e7fe0ff1",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.source.source.obj0007-0009.s10.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0007-0009.s10.2026-11-08",
+      "sourceVersionId": "source.obj0007-0009.s10.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared exact S10 URL, full supplied SHA-256, 2026-27 cycle cue and short access/routine-use/annual-review excerpts. The no-reduced-expectations quote is identified as the disability-section principle; S1 independently supplies the EL high-content rule.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "7f65f49d63435cd87afb7f325ea8abf97f59358ffab7728135384efc9fa22305",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.lesson.lesson.obj0007.sheltered-planning.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0007.sheltered-planning.v1",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared observable concurrent goals, scaffold-up access, purposeful interaction, SCI alongside dedicated ESL, co-planning and evidence-responsive fading. Classroom examples are authored applications; assessment review does not authorize a classroom timetable or removal of state-test supports.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "308355f411f71a9b085a08718018d33607453b37a54a4cd95553cd6958600b73",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.lesson.lesson.obj0008.academic-discourse.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0008.academic-discourse.v1",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared social versus academic language without an acquisition calendar; word/phrase, sentence and discourse analysis; contextual vocabulary; frames leading into authentic evidence-based argument rather than completion alone. WWC use remains elementary/middle-grade scoped.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "497a6a00a3207618e3b4bcca09ec0b6d80051f61cf1babb5e19a608dda5c7f9e",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.lesson.lesson.obj0009.assessment-decisions.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0009.assessment-decisions.v1",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared ACCESS ELP versus content, domains versus composite, SEM confidence-band humility, explicit 2025-2026 baseline reset, construct-preserving formative checks, routine/annual accommodation review and timely warranted evaluation without diagnosis or EL-based delay.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "f2236d425551ee7f411919980cab735bef6911c739ad6bf24f79f9ad29259975",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.dual-objectives.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.dual-objectives",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Concurrent disciplinary and language goals are aligned to the same reasoning task (S1/S4).",
+        "Separately compared key b and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "f22f486824ce8405c6a29a42030edcbc659e210da6dcf92bcd1bb09a20d62c90",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.scaffold-up.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.scaffold-up",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Visual, familiar-language and peer supports preserve the same grade-level comparison (S1/S2).",
+        "Separately compared key d and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "b5389f906d70eb124d8e1e090bc12239159840ac1ee9f4fc9cea7fbc8a19d7ac",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.fade-support.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.fade-support",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "A bounded classroom fading trial follows evidence with monitoring, not a fixed calendar or blanket assessment changes (S1/S10).",
+        "Separately compared key a and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "c2896c067c424a56a6407eb48030e75eea97a39963df6d0e6cad5f4c66ae23cb",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.sci-esl.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.sci-esl",
+      "sourceVersionId": "source.obj0004-0006.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "SCI and dedicated ESL remain complementary without removing learners from core content (S4).",
+        "Separately compared key c and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "e63120f0d3a9fe4ed723608519e3999b7f25b6031c9657a6e5ad0ff5e2b9afa2",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.co-planning.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.co-planning",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Joint source/language-demand planning and observations replace isolated teacher handoffs (S1/S4/S9).",
+        "Separately compared key b and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "d6022e44cd8b244b0a3476a9b3035817b2715ca6029cd9c10d7b418562033ddf",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0008.social-academic.v1",
+      "entityType": "task",
+      "entityId": "task.obj0008.social-academic",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Social conversation does not establish academic discourse proficiency; teach evidence relationships without a calendar (S1/S2/S4).",
+        "Separately compared key d and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "b992f9098ea66a67097cc54a3b5780a13b28a1cac056825dec70e779fe22e25c",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0008.text-demands.v1",
+      "entityType": "task",
+      "entityId": "task.obj0008.text-demands",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Meaning-based noun-group, clause, referent and discourse analysis preserves qualification (S1/S2).",
+        "Separately compared key a and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "f46c3f860d1f88c7c3e6d7669deef8086ac2f54236202a3af4e5c4154b4b85e4",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.domain-content.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.domain-content",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "ACCESS English proficiency does not establish mathematics ability or readiness; collect content evidence (S1/S2/S9).",
+        "Separately compared key c and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "dbd04b78620721c96ae382cc1c8ddecafdbb50b6f16c8953e3496ca1770e5efd",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.domain-composite.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.domain-composite",
+      "sourceVersionId": "source.obj0004-0006.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Equal composites can conceal differing domains; inspect domains and separate current exit-policy decisions (S2/S7/S9).",
+        "Separately compared key b and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "1946a836c666699e86de872c01848e791e2e62aa5150d8d5087a8d989f927cad",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.formative-load.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.formative-load",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "A labeled diagram and oral causal explanation retain the formative content criterion while reducing incidental language load (S1).",
+        "Separately compared key d and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "196c59e2c2d88503c3c1b592653e63d7de8a9248d29cb768390d1476d7928223",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.accommodation.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.accommodation",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Routine familiar glossary access differs from deleting a content target; state-test authorization remains separate and review is required (S1/S10).",
+        "Separately compared key a and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "152bb56f7700d3308e4fbb09577dd864ec90406072dc6a060adb4fc215ec0a28",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.timely-evaluation.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.timely-evaluation",
+      "sourceVersionId": "source.obj0001.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "EL status neither determines disability nor delays a warranted evaluation; continue appropriate domain-aware monitoring (S7/S9).",
+        "Separately compared key c and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "e02012009cde3dd30a61a9a75ca7d8ebd875073775e1fa8131c971268a5a0ede",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.score-uncertainty.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.score-uncertainty",
+      "sourceVersionId": "source.obj0007-0009.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Interpret domains and SEM bands alongside classroom evidence instead of treating one point score as exact (S9).",
+        "Separately compared key b and each of the three wrong-option rationales for source-specific correctness and rejection of its own trap. Equivalent earlier decisions retain exposure families; no keyword or background-based inference is used.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "397573d9fbd05eef531f0309f947c390cde4fae58cb5d21f983710c4b2175324",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0007.exhibition-plan-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0007.exhibition-plan-case",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared the novel mural-protection tradeoff investigation: concurrent goals, input access, structured interaction, SCI/ESL co-plan, monitored fading and fresh follow-up. No measured protection effect is invented; planning requires justification and uncertainty.",
+        "No answerKey or options; unfamiliar is not proof of transfer. Response remains needs_review, provisional and manual until a real human judgment. The case supplies no automatic keyword grading or independent evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "986715f6923d89c8438df8ffcf936208fd96bf657cd96084b5523da1ec494b8e",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0008.archive-discourse-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0008.archive-discourse-case",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared the novel reading-room archive argument: nominalization/clause/reference analysis, source attribution, causal qualification and authentic discourse beyond frames. Meaning-based analysis is required, not terminology matching.",
+        "No answerKey or options; unfamiliar is not proof of transfer. Response remains needs_review, provisional and manual until a real human judgment. The case supplies no automatic keyword grading or independent evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "54ef52172edc9e5c271a3de18ea61a4a048739285803c743f536f38789d7d8fa",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.task.task.obj0009.garden-profile-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0009.garden-profile-case",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0001.s9.2026-11-08",
+        "source.obj0007-0009.s9.2026-11-08",
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared the synthetic garden ACCESS profile and mixed classroom evidence: proficiency levels are explicitly not scale-score conversions or cutoffs; no Overall or SEM endpoints are invented. Requires construct preservation, routine access, current-MCAS caveats, monitoring and warranted evaluation without diagnosis.",
+        "No answerKey or options; unfamiliar is not proof of transfer. Response remains needs_review, provisional and manual until a real human judgment. The case supplies no automatic keyword grading or independent evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "25ce993b23cb67ea1b709703f41d9437d733d229040f4bd668ab765d977c69bc",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0007.dual-standards.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0007.dual-standards.v1",
+      "sourceVersionId": "source.obj0004-0006.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared S4 subject-area Frameworks and WIDA Standards taught in tandem; content and language remain connected.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "9112bafffbf4bf4a223b651fd4f5509816ff8f181d44a0bda07b03134567babf",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0007.core-esl.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0007.core-esl.v1",
+      "sourceVersionId": "source.obj0004-0006.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared S4 dedicated language focus and protection of core SCI from ESL scheduling conflicts.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "0f27614417a5c5c3741c182847c74d13837830e23680ecad7bab9e91494efee6",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0008.language-dimensions.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0008.language-dimensions.v1",
+      "sourceVersionId": "source.obj0004-0006.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared S2 word/phrase precision and language choices, sentence complexity, discourse meaning/cohesion/density.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "4014d08ad27f163bde6c5aedbad2afcc8d2fc97a3747844eac5ed0202d33fcc7",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0008.frames-purpose.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0008.frames-purpose.v1",
+      "sourceVersionId": "source.obj0007-0009.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared unchanged S1 Objective 0008 ds.05: frames alongside vocabulary/structure instruction and participation in academic discourse.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "3a1e22440e7a0d1d610e1e91bd61d956c0c25aa986f19b483011056aa342b317",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0009.domain-composite.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0009.domain-composite.v1",
+      "sourceVersionId": "source.obj0007-0009.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared S9 warning that a strong domain can inflate a composite and individual domains are more informative.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "ddd2acb7d68211ceae20d6d7d782f7c1c433a6a3aa183d2eccb474f8aef0b67f",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    },
+    {
+      "id": "review.obj0007-0009.card.card.obj0009.routine-accommodations.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0009.routine-accommodations.v1",
+      "sourceVersionId": "source.obj0007-0009.s10.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0007-0009.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex separate comparison: legacy_checks agent and coordinator",
+      "checks": [
+        "Compared S10 routine instructional use, avoiding unfamiliar glossaries and annual review as proficiency grows; no code or threshold is supplied.",
+        "Native recall-card shape and objective/skill/version tags preserved. Back is supported by the referenced packet excerpt; no MCAS code table or numeric exit threshold. Card practice creates no assessment evidence.",
+        "User supplied packet obj0007-0009.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify supplied binary hashes. Seven matching existing snapshots were compared by exact URL and full SHA-256; their payloads remain unchanged.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet and unchanged matching source inventory only; not human review, independent retrieval, full-document inspection, eligibility certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "3a4f39b51554e3e5001363a02b801df125926e53e42157f975f0721b3d343485",
+      "createdAt": "2026-11-09T14:30:37.768Z"
+    }
+  ]
+}

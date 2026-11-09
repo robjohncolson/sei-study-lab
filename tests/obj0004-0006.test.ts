@@ -16,7 +16,7 @@ const baseline = readObjectives456Baseline();
 const module = read('content/obj0004-0006-module.json') as Pick<Catalog, 'lessons' | 'tasks' | 'cards'>;
 const checks = module.tasks.filter(t => t.kind === 'mc');
 const cases = module.tasks.filter(t => t.kind === 'case');
-const bindings = SOURCE_COVERAGE_CONTRACT.slice(baseContract.length);
+const bindings = SOURCE_COVERAGE_CONTRACT.slice(baseContract.length, baseContract.length + 24);
 const task = (suffix: string) => module.tasks.find(t => t.id === `task.${suffix}`)!;
 const empty = (): PlannerState => ({attempts: [], judgments: [], evidenceEvents: [], drafts: []});
 const stores: SeiStore[] = [];
@@ -32,7 +32,7 @@ describe('Objectives 0004–0006 append-only curriculum and evidence boundaries'
     expect(validateCatalog(catalog)).toEqual([]);
     const output = execFileSync(process.execPath, ['--experimental-strip-types', '--test-reporter=tap', 'scripts/verify-obj0004-0006.mjs'], {encoding: 'utf8'});
     expect(output).toMatch(/# fail 0/);
-    expect(output).toMatch(/# pass 11/);
+    expect(output).toMatch(/^# pass 11$/m);
   }, 20000);
 
   it('retains sixteen exact official statement texts, explicit gaps and zero seeded evidence', () => {
@@ -194,14 +194,15 @@ describe('Objectives 0004–0006 append-only curriculum and evidence boundaries'
       expectedVersion: first.version, clientNow: queue.serverNow, startedAt: queue.serverNow,
       revealedAt: queue.serverNow, revealed: true, response: original, hintCount: 0, assistance: [], rating: 3});
     const history = s.native.history();
-    Object.assign(live, structuredClone(catalog));
+    // Exercise this slice's six additions even when later modules are installed.
+    Object.assign(live, structuredClone({...catalog, cards: catalog.cards.slice(0, baseline.cards.length + module.cards.length)}));
     expect(s.native.initialize()).toEqual({initialized: module.cards.length});
     expect(s.native.initialize()).toEqual({initialized: 0});
     s.native.rebuild();
     const after = s.native.history();
     expect(after.slice(0, history.length)).toEqual(history);
     expect(after.find(event => event.kind === 'review')?.request).toMatchObject({response: original});
-    expect(after.filter(event => event.kind === 'init')).toHaveLength(catalog.cards.length);
+    expect(after.filter(event => event.kind === 'init')).toHaveLength(baseline.cards.length + module.cards.length);
     expect(s.state()).toMatchObject({attempts: [], judgments: [], evidenceEvents: []});
   });
 });

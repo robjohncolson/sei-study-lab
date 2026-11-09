@@ -12,7 +12,7 @@ const canonical = (value: unknown): string => JSON.stringify(value, (_key, v: un
     ? Object.fromEntries(Object.entries(v).sort(([a], [b]) => a.localeCompare(b))) : v);
 const payloadHash = (row: RecordRow) => createHash('sha256').update(canonical(row)).digest('hex');
 const catalog = read('./catalog.json');
-const modules = ['obj0001', 'obj0002-0003', 'obj0004-0006'].map(name => ({
+const modules = ['obj0001', 'obj0002-0003', 'obj0004-0006', 'obj0007-0009'].map(name => ({
   ...read(`./${name}-sources.json`),
   ...read(`./${name}-module.json`),
   reviewEvents: read(`./${name}-review.json`).reviewEvents,
@@ -47,4 +47,4 @@ for (const [table, rows] of Object.entries(additions)) {
   }
 }
 writeFileSync(new URL('./catalog.json', import.meta.url), JSON.stringify(catalog, null, 2) + '\n');
-console.log('Appended reviewed Objective 0001, 0002/0003 and 0004/0005/0006 slices; all installed records preserved.');
+console.log('Appended reviewed Objective 0001 through 0009 slices; all installed records preserved.');

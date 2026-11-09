@@ -209,7 +209,7 @@ describe('Objective 0002/0003 evidence boundaries and authoring safety', () => {
     // Validate before try so the cleanup guard cannot replace a test failure.
     if (!resolve(dir).startsWith(testRoot + sep)) throw new Error('Unsafe authoring test cleanup target');
     try {
-      for (const name of ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])]) {
+      for (const name of ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006', 'obj0007-0009'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])]) {
         copyFileSync(resolve('content', name), resolve(dir, name));
       }
       const path = resolve(dir, 'catalog.json');

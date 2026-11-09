@@ -214,7 +214,7 @@ test('portable recipe appends idempotently and rejects same-version conflicts or
   assert.ok(testRoot.startsWith(workspace + sep), 'Temporary fixture root must remain inside this repository');
   const dir = mkdtempSync(resolve(testRoot, '.authoring-check-'));
   try {
-    const names = ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])];
+    const names = ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006', 'obj0007-0009'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])];
     for (const name of names) copyFileSync(resolve('content', name), resolve(dir, name));
     const path = resolve(dir, 'catalog.json');
     writeFileSync(path, JSON.stringify(baseline, null, 2) + '\n');

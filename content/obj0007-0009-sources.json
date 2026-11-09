@@ -1,0 +1,462 @@
+{
+  "packetId": "obj0007-0009.supplied.2026-11-08.v1",
+  "sources": [
+    {
+      "id": "source.obj0007-0009.s1.2026-11-08",
+      "title": "MTEL Field 56 objectives: unchanged Objective 0007-0009 statements",
+      "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_OBJ_56.htm",
+      "documentVersion": "Live page 2026-11-08",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0007-0009-s1-v1",
+      "excerpt": "Apply understanding of the key features and goals of SEI, including types of SEI programming models, variations in SEI protocols (e.g., the Sheltered Instruction Observation Protocol [SIOP®] Model), and differences between English as a Second Language (ESL) and SEI.\n\nApply understanding of key procedures used in planning SEI instruction, including using model performance indicators and designing concurrent language and content instructional objectives.\n\nApply understanding of key strategies used in implementing SEI instruction (e.g., providing comprehensible input, promoting students' development of learning skills and strategies, providing opportunities for interaction).\n\nApply knowledge of how to create and maintain a safe and collaborative learning environment that values diversity, promotes student engagement, and motivates students to meet high standards of conduct, effort, and performance.\n\nRecognize the role of the SEI teacher as a partner to ESL staff and the importance of consulting and collaborating with ESL staff to provide English language learners with comprehensive, challenging educational opportunities.\n\nRecognize differences between social and academic language and the importance of these differences in planning, differentiating, and delivering effective instruction for English language learners at various grade, English proficiency, and literacy levels.\n\nRecognize the role of academic language in students' content knowledge and reading comprehension in the content areas and the needs of English language learners with limited academic language proficiency (e.g., students with strong social language skills but weak academic language skills, students with interrupted formal education [SIFE], students with disabilities).\n\nApply knowledge of the characteristic features of academic language at the word/phrase level (e.g., technical language), the sentence level (e.g., complexity of grammatical structures), and the discourse level (e.g., density of text) in the content areas of language arts, mathematics, science, and social studies as described in WIDA's Features of Academic Language, the WIDA ELD Standards, and the Massachusetts Curriculum Framework for English Language Arts and Literacy .\n\nDemonstrate ability to use meaning-based approaches to analyze the language of academic texts (e.g., analyzing the rhetorical structure of a text, deconstructing sentences, unpacking a text clause by clause to investigate language patterns used in the text) to identify areas that may be linguistically demanding for English language learners.\n\nAnalyze methods and practices for developing English language learners' academic language proficiency (e.g., explicit instruction in academic vocabulary, clear explanations of academic language structures and vocabulary, sentence frames) and for including students in classroom academic discourse.\n\nRecognize the challenges associated with assessing English language learners, including the nature and role of cultural bias and linguistic bias in assessment and consideration of linguistic factors that can influence special education assessment.\n\nApply knowledge of valid and reliable assessments for English language learners.\n\nApply knowledge of types and purposes of formative and summative classroom assessments (e.g., grading rubrics, textbook assessments, curriculum-based assessments, performance assessments, assessment portfolios) used with English language learners, including the benefits and features of performance-based content assessment for English language learners at various English proficiency levels, and how to interpret and use informal assessment results to inform classroom instruction (e.g., grading English language learners at various proficiency levels, providing appropriate assessment feedback).\n\nApply knowledge of types and purposes of standardized assessments used with English language learners, including the WIDA Assessing Comprehension and Communication in English State-to-State for English Language Learners (ACCESS for ELLs®) test and Massachusetts Comprehensive Assessment System (MCAS), and how to interpret and use data from standardized assessments to inform classroom instruction.\n\nApply knowledge of how to differentiate assessments for English language learners as appropriate for the purpose and their English proficiency level (e.g., modifying formative assessments by reducing the linguistic load while maintaining high content and knowledge expectations), including acceptable assessment accommodations (e.g., bilingual dictionaries, linguistic modifications) for English language learners on classroom assessments and state standardized assessments.",
+      "supportingExcerpts": [
+        {
+          "id": "mtel56.obj.0007.ds.01",
+          "text": "Apply understanding of the key features and goals of SEI, including types of SEI programming models, variations in SEI protocols (e.g., the Sheltered Instruction Observation Protocol [SIOP®] Model), and differences between English as a Second Language (ESL) and SEI."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.02",
+          "text": "Apply understanding of key procedures used in planning SEI instruction, including using model performance indicators and designing concurrent language and content instructional objectives."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.03",
+          "text": "Apply understanding of key strategies used in implementing SEI instruction (e.g., providing comprehensible input, promoting students' development of learning skills and strategies, providing opportunities for interaction)."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.04",
+          "text": "Apply knowledge of how to create and maintain a safe and collaborative learning environment that values diversity, promotes student engagement, and motivates students to meet high standards of conduct, effort, and performance."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.05",
+          "text": "Recognize the role of the SEI teacher as a partner to ESL staff and the importance of consulting and collaborating with ESL staff to provide English language learners with comprehensive, challenging educational opportunities."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.01",
+          "text": "Recognize differences between social and academic language and the importance of these differences in planning, differentiating, and delivering effective instruction for English language learners at various grade, English proficiency, and literacy levels."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.02",
+          "text": "Recognize the role of academic language in students' content knowledge and reading comprehension in the content areas and the needs of English language learners with limited academic language proficiency (e.g., students with strong social language skills but weak academic language skills, students with interrupted formal education [SIFE], students with disabilities)."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.03",
+          "text": "Apply knowledge of the characteristic features of academic language at the word/phrase level (e.g., technical language), the sentence level (e.g., complexity of grammatical structures), and the discourse level (e.g., density of text) in the content areas of language arts, mathematics, science, and social studies as described in WIDA's Features of Academic Language, the WIDA ELD Standards, and the Massachusetts Curriculum Framework for English Language Arts and Literacy ."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.04",
+          "text": "Demonstrate ability to use meaning-based approaches to analyze the language of academic texts (e.g., analyzing the rhetorical structure of a text, deconstructing sentences, unpacking a text clause by clause to investigate language patterns used in the text) to identify areas that may be linguistically demanding for English language learners."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.05",
+          "text": "Analyze methods and practices for developing English language learners' academic language proficiency (e.g., explicit instruction in academic vocabulary, clear explanations of academic language structures and vocabulary, sentence frames) and for including students in classroom academic discourse."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.01",
+          "text": "Recognize the challenges associated with assessing English language learners, including the nature and role of cultural bias and linguistic bias in assessment and consideration of linguistic factors that can influence special education assessment."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.02",
+          "text": "Apply knowledge of valid and reliable assessments for English language learners."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.03",
+          "text": "Apply knowledge of types and purposes of formative and summative classroom assessments (e.g., grading rubrics, textbook assessments, curriculum-based assessments, performance assessments, assessment portfolios) used with English language learners, including the benefits and features of performance-based content assessment for English language learners at various English proficiency levels, and how to interpret and use informal assessment results to inform classroom instruction (e.g., grading English language learners at various proficiency levels, providing appropriate assessment feedback)."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.04",
+          "text": "Apply knowledge of types and purposes of standardized assessments used with English language learners, including the WIDA Assessing Comprehension and Communication in English State-to-State for English Language Learners (ACCESS for ELLs®) test and Massachusetts Comprehensive Assessment System (MCAS), and how to interpret and use data from standardized assessments to inform classroom instruction."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.05",
+          "text": "Apply knowledge of how to differentiate assessments for English language learners as appropriate for the purpose and their English proficiency level (e.g., modifying formative assessments by reducing the linguistic load while maintaining high content and knowledge expectations), including acceptable assessment accommodations (e.g., bilingual dictionaries, linguistic modifications) for English language learners on classroom assessments and state standardized assessments."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "hashProvenance": "No full HTML SHA-256 supplied for this packet; no hash inferred from another snapshot.",
+      "derivedClaimRationale": "Exact existing official statements anchor narrow derived scopes. They do not supply proprietary SIOP features, exhaustive assessment procedures or official practice items.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0007-0009.s9.2026-11-08",
+      "title": "WIDA ACCESS Interpretive Guide for Score Reports",
+      "url": "https://wida.wisc.edu/sites/default/files/resource/Interpretive-Guide.pdf",
+      "documentVersion": "Spring 2026; last revised April 2026",
+      "sha256": "83593228d956c615f52b2fe80ef11679969c856bb82e55c65f78774b744eeb55",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0007-0009-s9-v1",
+      "excerpt": "Proficiency levels are domain specific.\n\nTo make comparisons across grade levels but not across domains.\n\nBecause a high score in one language domain can inflate a composite score, a student’s individual performance in each domain is more informative than a single composite score.\n\nConfidence bands … Standard Error of Measurement (SEM) … reminder that scale scores represent just one point in a range of potential student performance outcomes.\n\ntreat 2025–2026 ACCESS scale scores as a new baseline … (you can’t compare scale scores from previous years).",
+      "supportingExcerpts": [
+        {
+          "id": "domains",
+          "text": "Proficiency levels are domain specific."
+        },
+        {
+          "id": "scale-comparison",
+          "text": "To make comparisons across grade levels but not across domains."
+        },
+        {
+          "id": "composite",
+          "text": "Because a high score in one language domain can inflate a composite score, a student’s individual performance in each domain is more informative than a single composite score."
+        },
+        {
+          "id": "uncertainty",
+          "text": "Confidence bands … Standard Error of Measurement (SEM) … reminder that scale scores represent just one point in a range of potential student performance outcomes."
+        },
+        {
+          "id": "baseline",
+          "text": "treat 2025–2026 ACCESS scale scores as a new baseline … (you can’t compare scale scores from previous years)."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "hashProvenance": "Binary SHA-256 supplied by the researcher; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Interpret English language proficiency by domain; composite scores can hide differences. Scale scores are not interchangeable across domains. SEM cautions against treating one point score as exact. The 2025-2026 reset prevents unqualified scale-score comparisons to previous years; no growth formula is supplied.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0007-0009.s10.2026-11-08",
+      "title": "DESE MCAS Accessibility and Accommodations Manual",
+      "url": "https://www.doe.mass.edu/mcas/accessibility/manual.pdf",
+      "documentVersion": "2026-27 cycle, manual as retrieved",
+      "sha256": "8763f2ca8bba85f29c3f90b637d1475d3357fc5a1a8d96f997a62da1cb6db4ff",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0007-0009-s10-v1",
+      "excerpt": "Accessibility features and accommodations are intended to allow EL students to demonstrate their knowledge and skills more effectively due to barriers associated with English language proficiency.\n\nfeatures and accommodations should be examined and revised annually as the EL student makes progress toward attaining English proficiency.\n\naccommodations should not be used solely for testing.\n\nbilingual dictionary/glossaries are not recommended for ELs who are unfamiliar with these resources.\n\nAccommodations mitigate the effects of a student’s disability but do not reduce learning or performance expectations.",
+      "supportingExcerpts": [
+        {
+          "id": "purpose",
+          "text": "Accessibility features and accommodations are intended to allow EL students to demonstrate their knowledge and skills more effectively due to barriers associated with English language proficiency."
+        },
+        {
+          "id": "review",
+          "text": "features and accommodations should be examined and revised annually as the EL student makes progress toward attaining English proficiency."
+        },
+        {
+          "id": "routine",
+          "text": "accommodations should not be used solely for testing."
+        },
+        {
+          "id": "familiarity",
+          "text": "bilingual dictionary/glossaries are not recommended for ELs who are unfamiliar with these resources."
+        },
+        {
+          "id": "expectations",
+          "text": "Accommodations mitigate the effects of a student’s disability but do not reduce learning or performance expectations."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "hashProvenance": "Binary SHA-256 supplied by the researcher; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "EL access supports require routine instructional use and annual review. The no-lowered-expectations quotation is from the students-with-disabilities section; the classroom high-content rule is independently stated by S1. No particular state-test accommodation eligibility, code, authorization or numeric exit threshold is inferred.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    }
+  ],
+  "packetBindings": [
+    {
+      "packetSource": "S1",
+      "sourceId": "source.obj0007-0009.s1.2026-11-08",
+      "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_OBJ_56.htm",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "mtel56.obj.0007.ds.01",
+          "text": "Apply understanding of the key features and goals of SEI, including types of SEI programming models, variations in SEI protocols (e.g., the Sheltered Instruction Observation Protocol [SIOP®] Model), and differences between English as a Second Language (ESL) and SEI."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.02",
+          "text": "Apply understanding of key procedures used in planning SEI instruction, including using model performance indicators and designing concurrent language and content instructional objectives."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.03",
+          "text": "Apply understanding of key strategies used in implementing SEI instruction (e.g., providing comprehensible input, promoting students' development of learning skills and strategies, providing opportunities for interaction)."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.04",
+          "text": "Apply knowledge of how to create and maintain a safe and collaborative learning environment that values diversity, promotes student engagement, and motivates students to meet high standards of conduct, effort, and performance."
+        },
+        {
+          "id": "mtel56.obj.0007.ds.05",
+          "text": "Recognize the role of the SEI teacher as a partner to ESL staff and the importance of consulting and collaborating with ESL staff to provide English language learners with comprehensive, challenging educational opportunities."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.01",
+          "text": "Recognize differences between social and academic language and the importance of these differences in planning, differentiating, and delivering effective instruction for English language learners at various grade, English proficiency, and literacy levels."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.02",
+          "text": "Recognize the role of academic language in students' content knowledge and reading comprehension in the content areas and the needs of English language learners with limited academic language proficiency (e.g., students with strong social language skills but weak academic language skills, students with interrupted formal education [SIFE], students with disabilities)."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.03",
+          "text": "Apply knowledge of the characteristic features of academic language at the word/phrase level (e.g., technical language), the sentence level (e.g., complexity of grammatical structures), and the discourse level (e.g., density of text) in the content areas of language arts, mathematics, science, and social studies as described in WIDA's Features of Academic Language, the WIDA ELD Standards, and the Massachusetts Curriculum Framework for English Language Arts and Literacy ."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.04",
+          "text": "Demonstrate ability to use meaning-based approaches to analyze the language of academic texts (e.g., analyzing the rhetorical structure of a text, deconstructing sentences, unpacking a text clause by clause to investigate language patterns used in the text) to identify areas that may be linguistically demanding for English language learners."
+        },
+        {
+          "id": "mtel56.obj.0008.ds.05",
+          "text": "Analyze methods and practices for developing English language learners' academic language proficiency (e.g., explicit instruction in academic vocabulary, clear explanations of academic language structures and vocabulary, sentence frames) and for including students in classroom academic discourse."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.01",
+          "text": "Recognize the challenges associated with assessing English language learners, including the nature and role of cultural bias and linguistic bias in assessment and consideration of linguistic factors that can influence special education assessment."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.02",
+          "text": "Apply knowledge of valid and reliable assessments for English language learners."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.03",
+          "text": "Apply knowledge of types and purposes of formative and summative classroom assessments (e.g., grading rubrics, textbook assessments, curriculum-based assessments, performance assessments, assessment portfolios) used with English language learners, including the benefits and features of performance-based content assessment for English language learners at various English proficiency levels, and how to interpret and use informal assessment results to inform classroom instruction (e.g., grading English language learners at various proficiency levels, providing appropriate assessment feedback)."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.04",
+          "text": "Apply knowledge of types and purposes of standardized assessments used with English language learners, including the WIDA Assessing Comprehension and Communication in English State-to-State for English Language Learners (ACCESS for ELLs®) test and Massachusetts Comprehensive Assessment System (MCAS), and how to interpret and use data from standardized assessments to inform classroom instruction."
+        },
+        {
+          "id": "mtel56.obj.0009.ds.05",
+          "text": "Apply knowledge of how to differentiate assessments for English language learners as appropriate for the purpose and their English proficiency level (e.g., modifying formative assessments by reducing the linguistic load while maintaining high content and knowledge expectations), including acceptable assessment accommodations (e.g., bilingual dictionaries, linguistic modifications) for English language learners on classroom assessments and state standardized assessments."
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S2",
+      "sourceId": "source.obj0004-0006.s2.2026-11-08",
+      "url": "https://wida.wisc.edu/sites/default/files/resource/WIDA-ELD-Standards-Framework-2020.pdf",
+      "sha256": "0d92701e7cc5015fb1b98619561f2b22e5b813ddc476c0b799bfc94534b9fba7",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "grade-level-access",
+          "text": "Provide access for multilingual learners to rich, standards-based, grade-level content, including by scaffolding up"
+        },
+        {
+          "id": "interaction",
+          "text": "engage actively with each other in deep learning"
+        },
+        {
+          "id": "languages",
+          "text": "access and use multiple languages, including through translanguaging"
+        },
+        {
+          "id": "rigor",
+          "text": "Nor should they be used to limit access to complex texts and grade-level materials, participation in rigorous learning, or engagement in meaningful classroom discussions."
+        },
+        {
+          "id": "dimensions",
+          "text": "Discourse … overall meaning … cohesion … density … Sentence … grammatical complexity … Word/phrase … Everyday … Cross-disciplinary … Technical language …"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S3",
+      "sourceId": "source.obj0004-0006.s3.2026-11-08",
+      "url": "https://wida.wisc.edu/sites/default/files/resource/Guiding-Principles-of-Language-Development.pdf",
+      "sha256": "c53f8e011cfe2928dd9f34fba598f167ae9878947027d199bf25c6d49761b11e",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "assets",
+          "text": "Multilingual learners’ languages and cultures are valuable resources to be leveraged for schooling and classroom life"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Multilingual-resource anchor also preserved in the installed matching snapshot."
+    },
+    {
+      "packetSource": "S4",
+      "sourceId": "source.obj0004-0006.s7.2026-11-08",
+      "url": "https://www.doe.mass.edu/ele/guidance/sei/sei.docx",
+      "sha256": "99df99b285a23eafc727bb3eed13839f4489e6525216eb7a74eb568f756e584a",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "content-language",
+          "text": "ELs can meaningfully engage with grade-level content, and develop discipline-specific academic language."
+        },
+        {
+          "id": "standards",
+          "text": "Teachers derive instructional focus from two sets of standards taught in tandem: the Frameworks for the subject area and the WIDA Standards"
+        },
+        {
+          "id": "esl-distinction",
+          "text": "SCI and content accessibility alone do not provide enough dedicated focus"
+        },
+        {
+          "id": "core-access",
+          "text": "schools should not remove EL students from core SEI content instruction to participate in ESL instruction."
+        },
+        {
+          "id": "planning",
+          "text": "content and language educators need common planning time"
+        },
+        {
+          "id": "responsibility",
+          "text": "collective responsibility for EL achievement."
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S5",
+      "sourceId": "source.obj0004-0006.s5.2026-11-08",
+      "url": "https://ies.ed.gov/ncee/wwc/Docs/PracticeGuide/english_learners_pg_040114.pdf",
+      "sha256": "6f39b0f96514344b3773b21ff6f53b7cc2503407ce0e325d7525463115893596",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "rec1",
+          "text": "Recommendation 1: Teach a set of academic vocabulary words intensively across several days using a variety of instructional activities."
+        },
+        {
+          "id": "rec2",
+          "text": "Recommendation 2: Integrate oral and written English language instruction into content-area teaching."
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S6",
+      "sourceId": "source.obj0004-0006.s6.2026-11-08",
+      "url": "https://ies.ed.gov/ncee/wwc/Docs/ReferenceResources/WWC_ELs_tips_2022.pdf",
+      "sha256": "7019d7bbeeef366d6e2ca0c9ce0320da7ff8a5e3acb3926de44117534224e8dc",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "daily-talk",
+          "text": "Provide daily opportunities for students to talk about content in pairs or small groups."
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S7",
+      "sourceId": "source.obj0001.s9.2026-11-08",
+      "url": "https://www.doe.mass.edu/ele/guidance/disabilities.docx",
+      "sha256": "e5ee4b9dcb28aad2cab8261d5bbb72ad7a9493fdb3e91225f8ee8c1abc0751ee",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "dual-error",
+          "text": "a student’s status as an EL is not, in and of itself, a basis for determining whether the student has a disability. Conversely, a student’s status as an EL should not be reason to delay a special education evaluation where there is a reason to suspect the student may have a disability."
+        },
+        {
+          "id": "monitoring",
+          "text": "comparably valid, culturally and linguistically appropriate"
+        },
+        {
+          "id": "domains",
+          "text": "particular consideration is given to proficiency levels in individual language domains (listening, speaking, reading, and writing)."
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S8",
+      "sourceId": "source.obj0001.s7.2026-11-08",
+      "url": "https://www.doe.mass.edu/ele/guidance/services-programming.docx",
+      "sha256": "127e17d03df6ef48c7a8ed691f4a1596dcb8183942e86bfb423bd6ed8842ef95",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Inventory context only: no numeric exit or reclassification rule is taught."
+    },
+    {
+      "packetSource": "S9",
+      "sourceId": "source.obj0007-0009.s9.2026-11-08",
+      "url": "https://wida.wisc.edu/sites/default/files/resource/Interpretive-Guide.pdf",
+      "sha256": "83593228d956c615f52b2fe80ef11679969c856bb82e55c65f78774b744eeb55",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "domains",
+          "text": "Proficiency levels are domain specific."
+        },
+        {
+          "id": "scale-comparison",
+          "text": "To make comparisons across grade levels but not across domains."
+        },
+        {
+          "id": "composite",
+          "text": "Because a high score in one language domain can inflate a composite score, a student’s individual performance in each domain is more informative than a single composite score."
+        },
+        {
+          "id": "uncertainty",
+          "text": "Confidence bands … Standard Error of Measurement (SEM) … reminder that scale scores represent just one point in a range of potential student performance outcomes."
+        },
+        {
+          "id": "baseline",
+          "text": "treat 2025–2026 ACCESS scale scores as a new baseline … (you can’t compare scale scores from previous years)."
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S10",
+      "sourceId": "source.obj0007-0009.s10.2026-11-08",
+      "url": "https://www.doe.mass.edu/mcas/accessibility/manual.pdf",
+      "sha256": "8763f2ca8bba85f29c3f90b637d1475d3357fc5a1a8d96f997a62da1cb6db4ff",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "purpose",
+          "text": "Accessibility features and accommodations are intended to allow EL students to demonstrate their knowledge and skills more effectively due to barriers associated with English language proficiency."
+        },
+        {
+          "id": "review",
+          "text": "features and accommodations should be examined and revised annually as the EL student makes progress toward attaining English proficiency."
+        },
+        {
+          "id": "routine",
+          "text": "accommodations should not be used solely for testing."
+        },
+        {
+          "id": "familiarity",
+          "text": "bilingual dictionary/glossaries are not recommended for ELs who are unfamiliar with these resources."
+        },
+        {
+          "id": "expectations",
+          "text": "Accommodations mitigate the effects of a student’s disability but do not reduce learning or performance expectations."
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Separate model comparison to supplied packet only; not human review, full-document review, independent retrieval or evidence of learner mastery."
+    }
+  ],
+  "remainingGaps": [
+    "Full proprietary SIOP protocol details.",
+    "Exhaustive current-year MCAS accommodation codes and individual eligibility decisions.",
+    "Numeric Massachusetts exit or reclassification thresholds.",
+    "Psychometric analysis beyond supplied ACCESS interpretive rules.",
+    "Private learner scores or records; all scenarios are original and synthetic."
+  ]
+}
