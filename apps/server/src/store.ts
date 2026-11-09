@@ -171,9 +171,11 @@ export class SeiStore {
       if(Date.parse(a.submittedAt)<Date.parse(a.startedAt)||Date.parse(a.submittedAt)>Date.now()||a.exposureGroupId!==task.familyId||a.noveltyKind!==task.noveltyKind)throw new Error('Attempt metadata mismatch');
       if(a.parentAttemptId&&(a.parentAttemptId===a.id||!attempts.has(a.parentAttemptId)||attempts.get(a.parentAttemptId)?.taskId!==a.taskId||Date.parse(attempts.get(a.parentAttemptId)!.submittedAt)>Date.parse(a.submittedAt)))throw new Error('Invalid parent attempt reference');
       const visited=new Set([a.id]);let parent=a.parentAttemptId;while(parent){if(visited.has(parent))throw new Error('Cyclic attempt revision history');visited.add(parent);parent=attempts.get(parent)?.parentAttemptId??null;}
-      const mentor=task.mentorTextId&&a.mentorText?this.existing<Catalog['mentorTexts'][number]>('mentor_texts',task.mentorTextId,a.mentorText.version):undefined;
+      const mentorVersion=task.mentorTextVersion;
+      const mentor=task.mentorTextId&&(typeof mentorVersion==='string'||typeof mentorVersion==='number')?this.existing<Catalog['mentorTexts'][number]>('mentor_texts',task.mentorTextId,mentorVersion):undefined;
+      if(task.kind==='writing'&&(!mentor||mentor.sha256!==task.mentorTextSha256||sha256(mentor.text)!==mentor.sha256))throw new Error('Writing task mentor binding is missing or mismatched');
       if(canonical(a.mentorText)!==canonical(mentor?{id:mentor.id,version:mentor.version,sha256:mentor.sha256}:null))throw new Error('Mentor text mismatch');
-      if(task.kind==='writing'&&mentor)validateWritingAnswer(task,a.originalAnswer,mentor);
+      if(task.kind==='writing')validateWritingAnswer(task,a.originalAnswer,mentor!);
     }
     for(const j of payload.judgments){
       const a=attempts.get(j.attemptId);if(!a)throw new Error('Unknown judgment attempt');

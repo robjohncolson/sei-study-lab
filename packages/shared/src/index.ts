@@ -68,7 +68,7 @@ export function getReadiness(skillId:string,catalog:Pick<Catalog,'tasks'>&Partia
  const enriched=attempts.map(a=>({...a,exposureGroupId:a.exposureGroupId??taskMap.get(`${a.taskId}@${a.taskVersion}`)?.familyId}));
  const seen=enriched.filter(a=>taskMap.get(`${a.taskId}@${a.taskVersion}`)?.skillIds.includes(skillId)||evidenceEvents.some(e=>e.attemptId===a.id&&e.skillId===skillId));
  const exclusions:{attemptId:string;reason:string}[]=[];
- const ambiguousFailureDates:number[]=[];
+ const recordedFailureDates:number[]=[];
  let retirement=false;
  const historicalVersionCount=seen.filter(a=>String(currentById.get(a.taskId)?.version)!==String(a.taskVersion)).length;
  const eligible=seen.flatMap(a=>{
@@ -81,10 +81,10 @@ export function getReadiness(skillId:string,catalog:Pick<Catalog,'tasks'>&Partia
   const j=js.filter(j=>!superseded.has(j.id)).sort((x,y)=>Date.parse(x.createdAt??a.submittedAt)-Date.parse(y.createdAt??a.submittedAt)).at(-1);
   const ev=evidenceEvents.find(e=>e.attemptId===a.id&&e.judgmentId===j?.id&&e.skillId===skillId);
   if(!policy.eligible&&ev?.eligible&&j?.result?.status==='incorrect'){
-   const instant=Date.parse(a.submittedAt);
-   const tied=enriched.some(b=>b.id!==a.id&&Date.parse(b.submittedAt)===instant&&(b.taskId===a.taskId||b.exposureGroupId===a.exposureGroupId));
-   const earlier=enriched.filter(b=>b.id===a.id||Date.parse(b.submittedAt)<instant);
-   if(tied&&getAttemptEligibility(a,earlier).eligible)ambiguousFailureDates.push(instant);
+   // Recorded eligibility and effective merged-history eligibility are distinct.
+   // Losing eligibility cannot itself supply evidence of recovery. Keep the
+   // latest authoritative failure as uncertainty, without changing its event.
+   recordedFailureDates.push(Date.parse(a.submittedAt));
   }
   if(!policy.eligible||!j||!ev?.eligible||!['source_checked','human_reviewed'].includes(task.reviewState)){
    exclusions.push({attemptId:a.id,reason:policy.reason??ev?.exclusionReason??'A checked task and authoritative eligible judgment are required.'});return [];
@@ -99,7 +99,7 @@ export function getReadiness(skillId:string,catalog:Pick<Catalog,'tasks'>&Partia
  const exclusionNote=exclusions.length?` ${exclusions.length} observation(s) excluded under evidence policy v2; see the recorded reasons.`:'';
  const explain=(s:string)=>s+versionNote+exclusionNote;
  if(retirement)return {...base,status:'needs_recheck',explanation:explain('Historical practice remains recorded, but retired/missing task or source versions need a recheck.')};
- if(ambiguousFailureDates.some(date=>!eligible.length||date>=Date.parse(eligible.at(-1)!.date)))return {...base,status:'needs_recheck',explanation:explain('A recorded failure has ambiguous same-time feedback ordering. It remains a recheck signal until a strictly later independent observation; simultaneous corrections cannot restore readiness.')};
+ if(recordedFailureDates.some(date=>!successes.some(e=>Date.parse(e.date)>date)))return {...base,status:'needs_recheck',explanation:explain('A recorded eligible failure is excluded by merged feedback history, including ambiguous same-time ordering. It remains a recheck signal until a strictly later independent success under the 24-hour retest policy; exclusion or feedback-trained corrections cannot restore readiness.')};
  if(eligible.at(-1)?.correct===false)return {...base,status:'needs_recheck',explanation:explain('The latest independent observation was a failure. Feedback-trained corrections cannot clear the recheck.')};
  const pair=successes.some((a,i)=>successes.slice(i+1).some(b=>a.family!==b.family&&Date.parse(b.date)-Date.parse(a.date)>=RETEST_DELAY_MS));
  if(pair){const transfer=successes.some(e=>e.novelty==='unfamiliar'&&successes.some(a=>a.family!==e.family&&Date.parse(e.date)-Date.parse(a.date)>=RETEST_DELAY_MS));return {...base,status:transfer?'transfer_evidence':'independent_evidence',explanation:explain('At least two reviewed, unaided successes from distinct item families, separated by 24 hours; repeated-family retests begin after a 24-hour feedback cooldown.')};}
