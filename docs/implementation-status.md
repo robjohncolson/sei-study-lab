@@ -1,11 +1,52 @@
 ﻿# Implementation status and actual verification
 
-The hosted storage/auth foundation is additive behind `STORAGE_MODE=postgres`;
-SQLite remains the default. It supports native flashcards and owner identity only,
-with private-schema Postgres migrations and an isolated real-Postgres test suite.
-No history upload, hosted browser login, or deployment is included. Dependencies
-are absent in this sandbox, so runtime verification remains with the coordinator.
-See [hosted architecture, provisioning, hash checks, and limits](hosted-mode.md).
+The hosted app supports everyday practice, writing, state, versioned drafts, Anki
+TSV, and native flashcards behind `STORAGE_MODE=postgres`. Required
+`HOSTED_AUTH_MODE` selects public shared history or the existing Supabase JWT
+owner API. Public mode needs no login; anyone with the URL can read and write its
+study history. Shared pure logic keeps both adapters on the same validation,
+scoring, and eligibility rules; SQLite remains the default. Migration 002 adds
+private owner-scoped study tables, and a lazy ESM Vercel Node entry is included.
+Exchange actions still return 501 and the UI explains their local-only status.
+
+This slice starts from `7fb5c93cce813be90fca509d77b7d54bff211e92`. It does not
+provision, deploy, upload local history, or alter protected/dependency files.
+`package.json` must stay byte-identical but lacks `build:web`; adding that script
+and protected `vercel.json` remains coordinator work. Exact config, environment
+lists, and provisioning order 000 → 001 → 002 for curriculum_renderer are in
+[hosted mode and deployment handoff](hosted-mode.md).
+
+Current verification: Node 22.17.1; dependencies absent. Typecheck, lint, and
+default tests were attempted but could not start because tsc/eslint/vitest are
+unavailable. No install, network, database DDL, private runtime access, or browser
+execution was attempted. Dependency-free hosted configuration checks passed.
+New default parity/auth/entry tests and real-Postgres HTTP/parity/security tests
+are present but unrun. Build and browser/runtime checks remain coordinator work;
+historical passing counts below do not validate this slice.
+
+Available checks passed: syntax parsing of all 17 changed/new `.ts` files using
+Node's TypeScript transform (not a typecheck or JSX compilation), resolution of
+all 15 source/assets in the Vercel runtime import graph, the bundled parity
+fixture's same-family tasks, and `git diff --check`. Both dependency manifests
+were byte-compared with the base and remain identical. GitNexus upstream impact
+could not resolve app symbols (UNKNOWN); pre-commit `detect_changes --scope all
+--repo Projects` was attempted but its parent index reports “Not a git repository”.
+Local caller/diff review supplies the applicable scope check, not a GitNexus risk
+rating. No HIGH/CRITICAL rating was returned.
+
+Files in this slice:
+
+- Entry/config: `api/[...path].ts`, `tsconfig.json`.
+- Server: `apps/server/src/hosted-app.ts`, `hosted-config.ts`, `hosted-auth.ts`,
+  `study-logic.ts`, `store.ts`, `anki.ts`, and `app.ts` in the same source directory.
+- Postgres: `apps/server/src/postgres/study-store.ts`,
+  `apps/server/src/postgres/migrations/002-sei-study.sql`, and its `README.md`.
+- Web: `apps/web/src/App.tsx`, `Exchange.tsx`, and `api.ts`.
+- Default tests: `tests/hosted-config.test.ts`, `hosted-auth.test.ts`,
+  `study-logic.test.ts`, and `vercel-entry.test.ts`.
+- Opt-in Postgres tests: `apps/server/postgres/harness.ts`, `hosted.pg.test.ts`,
+  and `public-study.pg.test.ts`.
+- Documentation: `docs/hosted-mode.md` and this implementation status.
 
 The native flashcard slice is implemented on top of clean base `9d977577844f65eb9d4895d3d01666774eec3beb`, with the supplied exact ts-fsrs 5.4.2 manifest patch. **Its library-dependent checks are unrun in Athena:** dependencies are absent, and typecheck/lint/test cannot start. No install was attempted. The successful counts below are historical, not validation of the native slice. See [native changes, available smoke checks, and preservation blockers](native-flashcards.md). Native JSON interchange is deferred and legacy export is blocked after deck initialization; consistent SQLite backup preserves accepted native history.
 

@@ -9,13 +9,11 @@ import { SeiStore, ROOT } from './store.js';
 import { JsonSchema } from './types.js';
 import { approveProposal, createHandoff, inspectProposal } from './handoff.js';
 import { NativeStoreError } from './native-store.js';
+import { exportAnkiTsv } from './anki.js';
+export { exportAnkiTsv } from './anki.js';
 
 const ImportBody=z.object({payload:z.unknown(),confirm:z.literal(true).optional()}).strict();
 const ProposalBody=z.object({proposal:z.unknown(),confirm:z.literal(true).optional()}).strict();
-export function exportAnkiTsv(catalog:Catalog):string {
-  const escape=(s:string)=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/\t/g,' ').replace(/\r?\n/g,'<br>');
-  return '#separator:Tab\n#html:true\n#columns:StableID\tFront\tBack\tSource\tTags\n'+catalog.cards.map(c=>[c.id,c.front,c.back,c.source,c.tags.join(' ')].map(escape).join('\t')).join('\n')+'\n';
-}
 export async function createSeiServer(options:{dbPath?:string;catalog?:Catalog;serveWeb?:boolean;testPorts?:{api:number;web:number};clock?:()=>Date}={}){
   const ports=z.object({api:z.number().int().min(1024).max(65535),web:z.number().int().min(1024).max(65535)}).strict().refine(p=>p.api!==p.web,'Test API and web ports must differ').parse(options.testPorts??{api:4317,web:5173});
   if(options.testPorts&&!options.dbPath)throw new Error('Alternate test ports require an explicit isolated test database');

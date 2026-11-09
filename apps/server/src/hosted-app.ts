@@ -1,17 +1,24 @@
 import Fastify, { type FastifyRequest } from 'fastify';
-import { readFileSync } from 'node:fs';
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { resolve } from 'node:path';
 import type { JWTVerifyGetKey } from 'jose';
 import type { Pool } from 'pg';
 import { z } from 'zod';
 import { CatalogSchema, validateCatalog, type Catalog } from '../../../packages/shared/src/index.js';
+import bundledCatalog from '../../../content/catalog.json' with { type: 'json' };
+import { exportAnkiTsv } from './anki.js';
 import { createOwnerVerifier, HostedAuthError, type VerifiedOwnerClaims } from './hosted-auth.js';
 import { readHostedConfig, type HostedConfig } from './hosted-config.js';
 import { NativeStoreError } from './native-store.js';
 import type { NativeStoragePort } from './native-storage.js';
 import { PostgresNativeStore } from './postgres/native-store.js';
+import { PostgresStudyError, PostgresStudyStore } from './postgres/study-store.js';
 import { createHostedPool, withOwnerTransaction } from './postgres/transaction.js';
+import { StudyValidationError } from './study-logic.js';
+import { JsonSchema } from './types.js';
+
+// No secret or server session: the custom header plus exact Origin guard prevents
+// browser cross-origin writes. The server never approves CORS preflights.
+export const HOSTED_CSRF_TOKEN = 'hosted-origin-checked';
 
 export type HostedServerOptions = {
   config?: HostedConfig;
@@ -25,7 +32,7 @@ export type HostedServerOptions = {
 /** Hosted routes are isolated from the local store, cookies, CSRF sessions, and runtime files. */
 export async function createHostedSeiServer(options: HostedServerOptions = {}) {
   const config = options.config ?? readHostedConfig(options.env);
-  const catalog = CatalogSchema.parse(options.catalog ?? JSON.parse(readFileSync(resolve('content/catalog.json'), 'utf8')));
+  const catalog = CatalogSchema.parse(options.catalog ?? bundledCatalog);
   if (validateCatalog(catalog).length) throw new Error('Invalid content catalog');
   const verifyOwner = createOwnerVerifier(config, options.key);
   const pool = options.pool ?? createHostedPool(config);
@@ -42,14 +49,27 @@ export async function createHostedSeiServer(options: HostedServerOptions = {}) {
         (!['GET', 'HEAD', 'OPTIONS'].includes(request.method) && origin === undefined)) {
       return reply.code(403).send({ error: 'A trusted Origin is required' });
     }
+    if (!['GET', 'HEAD', 'OPTIONS'].includes(request.method) && request.headers['x-csrf-token'] !== HOSTED_CSRF_TOKEN) {
+      return reply.code(403).send({ error: 'The hosted session CSRF token is required' });
+    }
+  });
+  app.addHook('preValidation', async request => {
+    const queue = [{ value: request.body, depth: 0 }];
+    let count = 0;
+    while (queue.length) {
+      const { value, depth } = queue.pop()!;
+      if (++count > 100000 || depth > 40) throw new StudyValidationError('JSON structure exceeds the safe nesting or item limit');
+      if (value && typeof value === 'object') for (const child of Object.values(value)) queue.push({ value: child, depth: depth + 1 });
+    }
   });
   app.addHook('preHandler', async request => {
     identities.set(request, await verifyOwner(request.headers.authorization));
   });
   app.setErrorHandler((error, _request, reply) => {
-    if (error instanceof HostedAuthError || error instanceof NativeStoreError) {
+    if (error instanceof HostedAuthError || error instanceof NativeStoreError || error instanceof PostgresStudyError) {
       return reply.code(error.statusCode).send({ error: error.message });
     }
+    if (error instanceof StudyValidationError) return reply.code(400).send({ error: error.message });
     if (error instanceof z.ZodError) return reply.code(400).send({ error: 'Invalid data schema' });
     const code = (error as { code?: string }).code;
     if (code === 'FST_ERR_CTP_BODY_TOO_LARGE') return reply.code(413).send({ error: 'Request exceeds the 2 MB limit' });
@@ -68,6 +88,10 @@ export async function createHostedSeiServer(options: HostedServerOptions = {}) {
     const claims = claimsFor(request);
     return withOwnerTransaction(pool, claims, client => operation(new PostgresNativeStore(client, claims.sub, catalog, options.clock)));
   }
+  function study<T>(request: FastifyRequest, operation: (store: PostgresStudyStore) => Promise<T>) {
+    const claims = claimsFor(request);
+    return withOwnerTransaction(pool, claims, client => operation(new PostgresStudyStore(client, claims.sub, catalog, options.clock)));
+  }
   const identity = async (request: FastifyRequest) => {
     const claims = claimsFor(request);
     return withOwnerTransaction(pool, claims, async client => {
@@ -78,6 +102,21 @@ export async function createHostedSeiServer(options: HostedServerOptions = {}) {
   };
   app.get('/api/health', identity);
   app.get('/api/identity', identity);
+  app.get('/api/session', async () => ({ csrfToken: HOSTED_CSRF_TOKEN, storageMode: 'postgres', authMode: config.authMode }));
+  app.get('/api/catalog', async () => catalog);
+  app.get('/api/state', request => study(request, store => store.state()));
+  app.post('/api/attempts', request => {
+    // Server-derived UTC day is only a study-history label, never evidence authority.
+    const sessionId = `hosted-${(options.clock?.() ?? new Date()).toISOString().slice(0, 10)}`;
+    return study(request, store => store.submit(request.body, sessionId));
+  });
+  app.get<{ Params: { taskId: string } }>('/api/drafts/:taskId', request => study(request, store => store.draft(request.params.taskId)));
+  app.put<{ Params: { taskId: string } }>('/api/drafts/:taskId', request => {
+    const body = z.object({ taskVersion: z.union([z.string().min(1), z.number().int().positive()]), answer: JsonSchema }).strict().parse(request.body);
+    return study(request, store => store.saveDraft(request.params.taskId, body.taskVersion, body.answer));
+  });
+  app.get('/api/anki.tsv', async (_request, reply) => reply.type('text/tab-separated-values; charset=utf-8')
+    .header('Content-Disposition', 'attachment; filename="sei-study-lab-anki.tsv"').send(exportAnkiTsv(catalog)));
   app.get('/api/native-flashcards', request => native(request, store => store.queue()));
   app.post('/api/native-flashcards/initialize', request => native(request, store => store.initialize()));
   app.post('/api/native-flashcards/reviews', request => native(request, store => store.review(request.body)));
@@ -91,7 +130,7 @@ export async function createHostedSeiServer(options: HostedServerOptions = {}) {
   return app;
 }
 
-/** Adapter for a later Node hosting entry point; creates no listener or deployment config. */
+/** Node hosting adapter: forwards requests without opening a listener. */
 export async function createHostedHandler(options: HostedServerOptions = {}) {
   const app = await createHostedSeiServer(options);
   return Object.assign((request: IncomingMessage, response: ServerResponse) => {

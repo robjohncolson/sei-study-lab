@@ -65,13 +65,15 @@ export async function createPostgresHarness() {
     `);
     await database.query(migration('000-sei-app-role.sql'));
     createdRole = true;
+    await database.query(migration('000-sei-app-role.sql'));
     // Password is random, test-only, memory-only, and never printed or written.
     const password = randomBytes(32).toString('hex');
     await database.query(`ALTER ROLE sei_app LOGIN PASSWORD '${password}'`);
     await database.query('REVOKE ALL ON SCHEMA auth FROM PUBLIC; REVOKE ALL ON FUNCTION auth.uid() FROM PUBLIC; GRANT USAGE ON SCHEMA auth TO sei_app; GRANT EXECUTE ON FUNCTION auth.uid() TO sei_app;');
-    const schema = migration('001-sei-hosted.sql');
-    await database.query(schema);
-    await database.query(schema);
+    for (let pass = 0; pass < 2; pass++) {
+      await database.query(migration('001-sei-hosted.sql'));
+      await database.query(migration('002-sei-study.sql'));
+    }
     databaseUrl.username = 'sei_app';
     databaseUrl.password = password;
     const appUrl = databaseUrl.toString();

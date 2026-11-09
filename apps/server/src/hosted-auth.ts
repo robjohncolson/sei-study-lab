@@ -10,6 +10,12 @@ export class HostedAuthError extends Error {
 
 /** No cookies, user_metadata, database calls, or token logging participate in authorization. */
 export function createOwnerVerifier(config: HostedConfig, key?: JWTVerifyGetKey) {
+  if (config.authMode === 'public') {
+    // The only owner source is validated server configuration. No request value,
+    // even a signed bearer token, can select a different public study history.
+    const owner = config.ownerUserId;
+    return async (_authorization: string | undefined): Promise<VerifiedOwnerClaims> => ({ sub: owner, role: 'authenticated' });
+  }
   const verificationKey = key ?? createRemoteJWKSet(new URL(`${config.supabaseUrl}/auth/v1/.well-known/jwks.json`));
   return async (authorization: string | undefined): Promise<VerifiedOwnerClaims> => {
     const match = authorization?.match(/^Bearer ([A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]*)$/);

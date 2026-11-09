@@ -1,10 +1,12 @@
 let csrfToken = '';
+export type SessionInfo = { csrfToken: string; storageMode?: 'sqlite' | 'postgres'; authMode?: 'public' | 'supabase-jwt' };
 export class ApiError extends Error {
   constructor(message:string,readonly status:number){super(message);this.name='ApiError';}
 }
 export async function initializeSession() {
-  const session = await api<{csrfToken:string}>('/session');
+  const session = await api<SessionInfo>('/session');
   csrfToken = session.csrfToken;
+  return session;
 }
 export async function api<T>(path: string, method = 'GET', data?: unknown): Promise<T> {
   const response = await fetch(`/api${path}`, { method, credentials: 'same-origin', headers: { ...(data === undefined ? {} : {'Content-Type':'application/json'}), ...(method === 'GET' ? {} : {'x-csrf-token':csrfToken}) }, ...(data === undefined ? {} : {body:JSON.stringify(data)}) });

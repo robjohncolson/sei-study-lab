@@ -1,141 +1,200 @@
-# Hosted flashcard foundation
+﻿# Public hosted study app
 
-`STORAGE_MODE` defaults to `sqlite`. The existing local server, SQLite store,
-session cookies, CSRF checks, and native scheduler remain the default. Setting
-`STORAGE_MODE` to `postgres` selects a separate bearer-authenticated API. Other
-values fail startup. No local history is uploaded, copied, or synchronized.
+`STORAGE_MODE` defaults to `sqlite`. The local server retains SQLite storage,
+loopback binding, cookies, CSRF checks, and its existing workflows. Explicit
+`STORAGE_MODE=postgres` requires `HOSTED_AUTH_MODE=public` or `supabase-jwt`, with
+no authentication default. Invalid hosted configuration fails before connecting.
 
-Hosted mode currently supports native flashcards only: explicit initialization,
-queue, review, control, history, and health/identity. Attempts, drafts, writing,
-imports, exports, handoff, and all other routes return HTTP 501 with
-`{"error":"Not yet available in hosted mode"}` after the hosted request guards.
-The local browser application has not been converted to hosted login. There is
-no model integration, AnkiConnect, telemetry, or readiness promotion from reviews.
+**Public mode means anyone with the URL can read and write this study history.**
+There is no login or individual visitor account. All visitors share the single
+server-configured `PUBLIC_OWNER_ID`. This UUID is a storage namespace, not a secret
+or access credential; it does not require a Supabase Auth user. Changing it selects
+a separate history. The hosted copy starts empty. No local history is uploaded,
+copied, or synchronized.
 
-## Storage and authorization
+## Everyday routes and shared behavior
 
-`NativeStoragePort` is an asynchronous boundary. `SQLiteNativeStorage` delegates
-to the unchanged `NativeStore`. `PostgresNativeStore` stores full configuration,
-content, and event JSON under the private `sei` schema. Both use the existing
-`native-scheduler.ts` and exactly ts-fsrs 5.4.2, including Manual reset logs with
-signed `scheduled_days`. Immutable events retain original responses and receipts;
-projections can be rebuilt from validated event replay. GET/HEAD queue reads do
-not initialize, repair, or write anything. Initialization is an explicit,
-idempotent POST. Client event IDs are unique per owner; conflicting payloads and
-stale expected versions return 409. Writes serialize and lock projection rows.
+Hosted mode serves session metadata, bundled catalog, study state, attempts,
+versioned drafts, Anki TSV, and native flashcard queue/initialization/reviews/
+controls/history. Practice, writing, coverage, planning, and saved responses use
+the same state shape as the local app. `/api/export`, `/api/import*`,
+`/api/handoff`, and `/api/proposals/*` still return HTTP 501. Exchange shows
+“Not available in the hosted copy; use the local app” and retains Anki download.
 
-Fastify verifies bearer tokens with `jose.jwtVerify` and the project's Auth JWKS.
-Only ES256/RS256, the project issuer, the authenticated audience and role, a valid
-expiration/not-before window, and a UUID subject exactly matching `OWNER_USER_ID`
-are accepted. A five-second clock tolerance is allowed. Authentication failure is
-401; an otherwise valid non-owner is 403. Neither result accesses Postgres.
-`user_metadata` and cookies never authorize hosted requests. Host and Origin are
-checked against exact allowlists; unsafe methods require an Origin.
+`study-logic.ts` contains pure task lookup, submission validation, bounded scoring,
+policy-v2 evidence derivation, writing mentor identity/five-part checks, draft
+validation, and state shaping. Both `SeiStore` and `PostgresStudyStore` use it.
+Original answer strings remain exact; open writing remains pending review.
+Drafts and hinted/assisted practice never become independent evidence. No
+automatic action counts as human review.
 
-Every operation checks out one `pg` client, begins one transaction, and first
-sets verified `request.jwt.claims` and `request.jwt.claim.sub` using transaction-local
-`set_config`. Queries are unnamed and parameterized for transaction pooling.
-The transaction commits or rolls back before releasing the client. Production
-connections verify TLS certificates; optional CA text supplies trusted CA certificates. Only
-`localhost` and `127.0.0.1` test connections may use plain TCP. Pools default to
-one connection, have a five-second idle timeout, and are capped at five.
+Hosted attempts use the server-derived UTC-day session label `hosted-YYYY-MM-DD`.
+It is descriptive only: eligibility uses persisted attempts, exposure groups,
+retest timing, and assistance through `getAttemptEligibility`, never session IDs
+or client-supplied owners. A transaction-local owner lock serializes study work.
+One transaction saves the attempt, judgment, and evidence; failure rolls it all
+back. Bundled tasks are inserted if absent per owner; conflicting entities with
+the same ID/version fail. State includes older `sei.task_versions`. Reading study
+state/drafts can seed new bundled versions; native queue GET/HEAD stays read-only.
 
-The `sei_app` role has no superuser, database creation, role creation, replication,
-inheritance, or RLS bypass capability. All `sei` tables enable and force RLS with
-owner policies using Supabase's `auth.uid()`. The role can select/insert immutable
-tables and select/insert/update projections. It cannot delete or truncate them.
-Immutable tables also reject UPDATE/DELETE/TRUNCATE through statement triggers.
-The migrations never create or alter Supabase's `auth.uid()` or neighbor schemas.
-The schema is not exposed through the Data API/PostgREST. No service-role key is
-used.
+Native flashcards still use the shared scheduler and ts-fsrs 5.4.2, immutable
+reviews, per-owner client-event idempotency, and replayable projections. Reviews
+do not establish readiness or transfer evidence. No models, AnkiConnect,
+telemetry, external assets, or automatic history transfers are introduced.
 
-## Environment settings
+## Request and database boundaries
 
-Keep these settings backend-only in the deployment secret/configuration manager;
-do not commit values or use frontend-prefixed environment variables.
+Public mode synthesizes exactly `{sub: PUBLIC_OWNER_ID, role: 'authenticated'}`
+on the server. Bodies, queries, cookies, bearer tokens, and headers cannot select
+an owner. It never creates a JWKS client. `supabase-jwt` retains existing `jose`
+verification: ES256/RS256, configured project issuer, authenticated audience and
+role, expiration/not-before with five-second tolerance, and UUID subject matching
+`OWNER_USER_ID`. Invalid tokens return 401; a valid non-owner gets 403. This
+preserves the bearer API; browser login/refresh UI remains outside this slice.
 
-| Name | Purpose |
-| --- | --- |
-| `STORAGE_MODE` | Select `postgres`; omitted means `sqlite` |
-| `SEI_DATABASE_URL` | Direct PostgreSQL or transaction-pooler connection as `sei_app` |
-| `SUPABASE_URL` | Project HTTPS origin used for issuer and JWKS |
-| `OWNER_USER_ID` | Exact UUID of the single authorized Auth user |
-| `APP_ORIGINS` | Comma-separated exact permitted web origins |
-| `APP_HOSTS` | Comma-separated exact permitted Host headers, including ports when used |
-| `SEI_DATABASE_POOL_MAX` | Optional pool limit, default one, maximum five |
-| `SEI_DATABASE_CA_PEM` | Optional PEM CA text for verified TLS |
-| `SEI_TEST_ADMIN_DATABASE_URL` | Test harness only; disposable Postgres 17 cluster administrator |
+Both modes require exact `APP_HOSTS` and `APP_ORIGINS` allowlists. Unsafe methods
+require a trusted Origin and `x-csrf-token` matching `GET /api/session`. That
+stateless value is `hosted-origin-checked`: the custom header forces a browser
+CORS preflight that the server never approves. No CORS headers or hosted cookies
+are set. This guards browser cross-origin writes; it is not authentication for
+the deliberately public copy. Session metadata includes `storageMode: 'postgres'`
+and `authMode`, enabling accurate hosted/public UI labels. Internal database and
+configuration errors are not echoed in responses.
 
-All required hosted settings are validated before connections are opened. Error
-messages name settings without echoing credentials. Database URLs must specify
-the restricted username and database without query options, so URL options cannot
-disable certificate verification. Local `SEI_DB_PATH` is not read in hosted mode.
+All DB work runs in `withOwnerTransaction`: BEGIN, set `request.jwt.claims` and
+`request.jwt.claim.sub` transaction-locally, parameterized unnamed queries, then
+COMMIT or ROLLBACK before releasing the client. Remote TLS verifies certificates;
+optional CA text supplies trust. Only explicit localhost tests allow plain TCP.
+Pools default to one connection and are capped at five.
 
-## Operator provisioning, not performed by this change
+`sei_app` cannot bypass RLS or create roles/databases and has no superuser,
+inheritance, or replication capability. All tables enable and force RLS with
+owner policies using `auth.uid()`. Migration 002 adds full entity JSON and
+owner-scoped foreign keys in `task_versions`, `attempts`, `judgments`, and
+`evidence_events`. These are append-only with SELECT/INSERT only. Drafts also
+permit UPDATE, as native projections do in 001. No DELETE/TRUNCATE or
+PUBLIC/anon/authenticated grants are added. Ownership guards refuse app/API-owned
+objects. The private `sei` schema is never exposed in the Data API.
 
-The existing Supabase project is **curriculum_renderer**, reference
-`bzqbhtrurzzavhqbgqrs`. Review these additive scripts before applying them:
+User answer-bearing columns use PostgreSQL `json` so escaped U+0000 and lone
+surrogates accepted by SQLite remain intact; bundled tasks and evidence use
+`jsonb`. These choices do not change append-only or owner boundaries.
 
-1. Run `apps/server/src/postgres/migrations/000-sei-app-role.sql` as `postgres`
-   through the SQL editor. It creates a `NOLOGIN` placeholder with connection
-   limit five and rejects an unsafe pre-existing role or role memberships.
-2. Run `apps/server/src/postgres/migrations/001-sei-hosted.sql` as `postgres`.
-   Reruns preserve data and re-establish the named `sei` policies and grants.
-3. Set a generated `sei_app` password and enable LOGIN out-of-band. Store it only
-   in the backend secret manager. Never grant `sei_app` to another role. Use the
-   Supabase transaction pooler on port **6543**, with username
-   **sei_app.bzqbhtrurzzavhqbgqrs**. Retain certificate verification.
-4. Keep `sei` private: do **not** add it to the Data API exposed schemas. Do not
-   alter `public`, `auth`, `storage`, `lesson_planning`, or their grants/policies.
-5. Create the single intended owner Auth user through an authorized operator
-   action and configure `OWNER_USER_ID`. Do not change Auth signup, providers,
-   or global settings. Add only the required redirect URLs; preserve existing
-   redirect entries. Browser login and token refresh remain future work.
+## Exact environment settings
 
-`createHostedSeiServer(options)` supports injected pools, local JWKS verification,
-catalogs, and clocks for isolated tests. Injected pools remain caller-owned.
-`createHostedHandler(options)` exports a plain Node request handler with a close
-method for later hosting integration. `main.ts` continues to bind only loopback.
-Vercel entry routing/build configuration and packaging the catalog remain pending:
-the protected deployment paths require the coordinator. Nothing was deployed.
+Keep these backend-only in deployment configuration, never frontend-prefixed or
+committed. Public mode requires:
 
-## Verification and boundaries
+```text
+STORAGE_MODE=postgres
+HOSTED_AUTH_MODE=public
+PUBLIC_OWNER_ID=<uuid>
+SEI_DATABASE_URL=postgresql://sei_app.bzqbhtrurzzavhqbgqrs:<url-encoded-password>@<transaction-pooler-host>:6543/postgres
+APP_ORIGINS=https://<deployment-host>
+APP_HOSTS=<deployment-host>
+```
 
-`npm test` excludes `apps/server/postgres/**`. Run `npm run test:postgres`
-separately against an explicitly provisioned disposable Postgres 17 cluster. It
-fails when `SEI_TEST_ADMIN_DATABASE_URL` is missing. The administrator must be able
-to create/drop a disposable database and the test-owned cluster role. The harness
-refuses an existing `sei_app` role rather than changing its password; do not point
-it at Supabase or any shared/live cluster. It generates a password in memory,
-creates synthetic neighbor data and a test-only `auth.uid()`, applies migrations
-twice, connects as `sei_app`, and tears down its database and role. It exercises
-RLS, neighbor denial, append-only restrictions, transaction-local claims, HTTP
-authentication, concurrency, idempotency, restarts, read-only queues, and parity
-with an in-memory SQLite adapter.
+`SUPABASE_URL` and `OWNER_USER_ID` are neither required nor used in public mode.
+The existing JWT API mode instead requires:
 
-This sandbox has Node 22.17.1 but no installed application dependencies. No npm
-installation, network request, real database DDL, browser download, or private
-runtime access was performed. Dependency-backed typecheck, lint, unit/integration,
-browser, build, and real-Postgres execution remain coordinator checks. Existing
-189 unit/integration and 26 browser tests were left unchanged; those counts are
-the supplied baseline, not a claim that this change passed them here.
+```text
+STORAGE_MODE=postgres
+HOSTED_AUTH_MODE=supabase-jwt
+SUPABASE_URL=https://bzqbhtrurzzavhqbgqrs.supabase.co
+OWNER_USER_ID=<authorized-auth-user-uuid>
+SEI_DATABASE_URL=postgresql://sei_app.bzqbhtrurzzavhqbgqrs:<url-encoded-password>@<transaction-pooler-host>:6543/postgres
+APP_ORIGINS=https://<deployment-host>
+APP_HOSTS=<deployment-host>
+```
 
-The supplied dependency-only patches were verified with SHA256 before adding
-the separately required `test:postgres` script:
+Optional in both modes:
 
-- `package.json`: `35048c4fd505c8d25b370d4908928ad07a14116b7d21c9e2859d631844ae572f`
-- `package-lock.json`: `fdb13e1e7ccb71df70f106e3984b8c5ac5f0750772aea7394de0edb940bf84d1`
+```text
+SEI_DATABASE_POOL_MAX=1
+SEI_DATABASE_CA_PEM=<Supabase root CA PEM if Node trust store fails>
+```
 
-The final lockfile retains that exact hash. The additional test script changes
-the final manifest hash to
-`e0b22be62192dc70e069f75184ae05f15626c562c2b27a25b94bbc4210a4681a`.
-Dependency-free configuration smoke checks, syntax parsing of all 14 changed/new
-TypeScript files, relative import resolution, and `git diff --check` passed.
-Twenty-five existing SQLite/domain/test files were compared with the base and
-remain byte-identical. The modified-path audit found no protected files.
+Multiple exact Hosts/Origins may be comma-separated; include ports when used.
+Database URLs must name `sei_app` or its pooler user and a database, with no query
+options. Do not disable TLS verification. Local `SEI_DB_PATH` is unused. Test-only
+`SEI_TEST_ADMIN_DATABASE_URL` is never a deployment setting.
 
-GitNexus's parent Projects index cannot resolve these application symbols.
-The required `detect_changes --scope all --repo Projects` was attempted before
-commit but its indexed directory failed with "Not a git repository". It cannot
-provide a meaningful risk rating here; local caller/file-scope inspection was
-used, and the coordinator's runtime checks are still required.
+## Coordinator provisioning and Vercel handoff
+
+No provisioning or deployment was performed here. For the existing Supabase
+**curriculum_renderer** project, ref **bzqbhtrurzzavhqbgqrs**:
+
+1. Review and run `apps/server/src/postgres/migrations/000-sei-app-role.sql` as
+   `postgres` through the Supabase SQL editor.
+2. Run `001-sei-hosted.sql`, then `002-sei-study.sql`, from that directory as
+   `postgres`. Reruns preserve data and restore named policies/triggers/grants.
+   These are operator scripts, never startup migrations.
+3. Set `sei_app LOGIN` and a generated password out-of-band. Use transaction
+   pooler port **6543**, username **sei_app.bzqbhtrurzzavhqbgqrs**, with verified
+   TLS. Keep the connection string backend-only; never grant role membership.
+4. Never expose `sei` in Data API schemas. Do not change Auth signup/providers,
+   global settings, or `public`, `auth`, `storage`, `lesson_planning` objects or
+   grants. Public mode requires a chosen UUID, with no Auth account changes.
+5. Set the exact environment/Host/Origin above. Start empty; no local history upload.
+
+The coordinator must create this exact **vercel.json** (protected in this slice):
+
+```json
+{
+  "framework": null,
+  "buildCommand": "npm run build:web",
+  "outputDirectory": "dist/web",
+  "installCommand": "npm ci --ignore-scripts",
+  "functions": {
+    "api/[...path].ts": {
+      "maxDuration": 15
+    }
+  }
+}
+```
+
+**Manifest prerequisite:** the supplied base lacks `build:web`. This slice also
+explicitly requires `package.json` and `package-lock.json` to stay byte-identical,
+so it cannot add the script. Before deploying, the coordinator must separately
+authorize/add this entry to `package.json`'s `scripts`:
+
+```json
+"build:web": "vite build --config apps/web/vite.config.ts"
+```
+
+Keep existing `build` semantics unchanged. Until that manifest edit and protected
+Vercel config are supplied, the build command above cannot run. Dependencies stay
+exactly as supplied, including pg 8.23.1 and jose 6.2.16.
+
+`api/[...path].ts` is an ESM Node function that lazily caches one
+`createHostedHandler` promise per warm instance, forwards requests, and never
+listens. Importing it creates no app, pool, or connection. The hosted app uses a
+static JSON import of `content/catalog.json` for file tracing. Relative imports
+use `.js` extensions to TypeScript sources with no aliases; tsconfig includes
+`api`. `main.ts` retains loopback binding. Injected test pools remain caller-owned.
+
+## Verification in this slice
+
+Required base: `7fb5c93cce813be90fca509d77b7d54bff211e92`. Available runtime:
+Node 22.17.1, with experimental built-in SQLite. Dependencies are absent, and
+installation/network/database actions are prohibited. `npm run typecheck`,
+`npm run lint`, and `npm test` were attempted but could not start because
+`tsc`, `eslint`, and `vitest` are missing. No passing dependency-backed check is
+claimed. Build, content validation, browser tests, and real Postgres execution
+remain coordinator checks after an authorized install.
+
+Default tests add config/public owner-spoof guards, shared-logic parity, and
+side-effect-free entry import. The separate Postgres suite extends the original
+eleven tests with public HTTP study workflows, SQLite state/eligibility parity,
+writing, versioned drafts, rollback/concurrency, isolation, immutable mutation
+rejection, and neighbor denial. The harness applies 000, 001, and 002 twice.
+Run `npm run test:postgres` only against an explicitly provisioned disposable
+Postgres 17+ cluster: it creates/drops a synthetic database and role and refuses
+an existing `sei_app`. Never point it at Supabase or a shared/live DB. The supplied
+239 default tests and eleven Postgres tests are baseline counts, not results here.
+
+Dependency-free configuration, syntax/import tracing, scope checks, and
+`git diff --check` are recorded in the implementation status. GitNexus's parent
+Projects index cannot resolve these application symbols (UNKNOWN risk); local
+callers and repository diff provide scope checks. No protected paths, dependency
+manifests, learner data, or local history were changed.

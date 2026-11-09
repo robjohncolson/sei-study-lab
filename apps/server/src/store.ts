@@ -4,16 +4,15 @@ import { existsSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { z } from 'zod';
 import type { Catalog } from '../../../packages/shared/src/index.js';
-import { getAttemptEligibility } from '../../../packages/shared/src/index.js';
-import { InterchangeSchema, SubmitSchema, type Attempt, type Evidence, type Interchange, type Judgment, type Json } from './types.js';
+import { InterchangeSchema, type Attempt, type Evidence, type Interchange, type Judgment, type Json } from './types.js';
 import { NativeStore, NativeStoreError } from './native-store.js';
+import { lookupTask, prepareStudyAttempt, scoreStudyAttempt, deriveStudyEvidence, validateStudyDraft, validateWritingAnswer, shapeStudyDraft, shapeStudyState } from './study-logic.js';
 
 export const ROOT = resolve(process.cwd());
 export const DEFAULT_DB = resolve(ROOT,'runtime/study.sqlite');
 export const utcNow=()=>new Date().toISOString();
 export const canonical=(value:unknown):string=>JSON.stringify(value,(_key,v:unknown)=>v && typeof v==='object' && !Array.isArray(v) ? Object.fromEntries(Object.entries(v).sort(([a],[b])=>a.localeCompare(b))) : v);
 export const sha256=(value:string)=>createHash('sha256').update(value).digest('hex');
-const normalize=(text:string)=>text.trim().toLowerCase().replace(/\s+/g,' ').replace(/[.!?]+$/,'');
 type Entity={id:string;[key:string]:unknown};
 const mutableTables=new Set(['drafts','anki_links']);
 const entityTables=new Set(['source_versions','review_events','objectives','statements','skills','alignments','prerequisites','mentor_texts','rubrics','tasks','attempts','judgments','evidence_events','anki_review_events']);
@@ -93,67 +92,33 @@ export class SeiStore {
     for(const r of c.reviewEvents){const e=r as unknown as Record<string,unknown>;this.seedRecord('review_events',e as Entity,{id:e.id,entity_type:e.entityType??'source',entity_id:e.entityId??e.sourceVersionId,source_version_id:e.sourceVersionId,reviewer_kind:e.reviewerKind??'model',reviewer_label:e.reviewerLabel??'content author',checks_json:canonical(e.checks??[]),created_at:e.createdAt??utcNow()});}
   }
   task(id:string,version?:string|number){
-    const t=version===undefined?this.catalog.tasks.find(t=>t.id===id):this.existing<Catalog['tasks'][number]>('tasks',id,version);
-    if(!t)throw new Error('Unknown task or immutable task version');return t;
+    const versions=version===undefined?[]:[this.existing<Catalog['tasks'][number]>('tasks',id,version)].filter((task):task is Catalog['tasks'][number]=>task!==undefined);
+    return lookupTask(this.catalog,versions,id,version);
   }
   score(attempt:Attempt):Judgment {
-    const task=this.task(attempt.taskId,attempt.taskVersion),key=task.answerKey;
-    const answer=typeof attempt.originalAnswer==='string'?attempt.originalAnswer:null;
-    let status:Judgment['result']['status']='needs_review';
-    let feedback='Saved for review. An open response needs evidence-based human judgment; missing keywords alone do not make it wrong.';
-    if(answer!==null && normalize(answer)==="i don't know"){status='incorrect';feedback=key?.feedback??'Use the lesson to build an explanation, then return for a new attempt.';}
-    else if(key && answer!==null && ['mc','short'].includes(task.kind)){
-      if(key.accepted.some(a=>normalize(a)===normalize(answer))){status='correct';feedback=key.feedback;}
-      else if(task.kind==='mc'){status='incorrect';feedback=key.wrongFeedback[answer]??key.feedback;}
-      else feedback=`This wording is not in the bounded answer key, so it remains unscored. Compare your reasoning with: ${key.feedback}`;
-    }
-    const checked=['source_checked','human_reviewed'].includes(task.reviewState)&&task.sourceRefs.length>0&&task.sourceRefs.every(id=>{const source=this.existing<Catalog['sources'][number]>('source_versions',id);return source&&['source_compared','human_reviewed'].includes(source.reviewState);});
-    return {id:randomUUID(),attemptId:attempt.id,judgeKind:'authored_key',judgeVersion:'bounded-key-v1',rubricVersionId:task.rubricVersionId??null,result:{status,feedback,provisional:status==='needs_review',sourceChecked:checked},quotedEvidence:answer&&status!=='needs_review'?[answer]:[],uncertaintyReason:status==='needs_review'?'Unmatched or open response requires review':null,supersedesId:null,createdAt:attempt.submittedAt};
+    return scoreStudyAttempt(this.task(attempt.taskId,attempt.taskVersion),attempt,this.entities<Catalog['sources'][number]>('source_versions'),randomUUID());
   }
   deriveEvidence(attempt:Attempt,judgment:Judgment,allAttempts:Attempt[]=this.entities<Attempt>('attempts'),policyVersion:1|2=2):Evidence[]{
     const task=this.task(attempt.taskId,attempt.taskVersion);
-    const context=allAttempts.filter(a=>a.id!==attempt.id&&(a.taskId===attempt.taskId||a.exposureGroupId===attempt.exposureGroupId)&&Date.parse(a.submittedAt)<=Date.parse(attempt.submittedAt));
-    const policy=policyVersion===2?getAttemptEligibility(attempt,context):{eligible:attempt.hintCount===0&&attempt.assistance.length===0,reason:'Hints or assistance recorded'};
-    const unaided=policy.eligible;
-    const eligible=unaided&&judgment.result.sourceChecked&&!judgment.result.provisional&&judgment.result.status!=='needs_review';
-    return task.skillIds.map(skillId=>({id:randomUUID(),attemptId:attempt.id,judgmentId:judgment.id,skillId,evidenceKind:judgment.result.status==='correct'?'success':judgment.result.status==='incorrect'?'failure':'pending',independence:unaided?'unaided':'assisted',eligible,exclusionReason:eligible?null:!unaided?policy.reason:!judgment.result.sourceChecked?'Task or source has not been source checked':'Judgment awaits review',createdAt:judgment.createdAt,familyId:task.familyId,noveltyKind:attempt.noveltyKind,sourceChecked:judgment.result.sourceChecked,hintCount:attempt.hintCount,...(policyVersion===2?{eligibilityPolicyVersion:2 as const,eligibilityContextAttemptIds:context.map(a=>a.id).sort()}:{})}));
+    return deriveStudyEvidence(task,attempt,judgment,allAttempts,task.skillIds.map(()=>randomUUID()),policyVersion);
   }
   saveAttempt(a:Attempt){this.insert('attempts',{id:a.id,task_id:a.taskId,task_version:String(a.taskVersion),session_id:a.sessionId,original_answer_json:canonical(a.originalAnswer),started_at:a.startedAt,submitted_at:a.submittedAt,hint_count:a.hintCount,assistance_json:canonical(a.assistance),exposure_group_id:a.exposureGroupId,novelty_kind:a.noveltyKind,parent_attempt_id_nullable:a.parentAttemptId},a);}
   saveJudgment(j:Judgment){this.insert('judgments',{id:j.id,attempt_id:j.attemptId,judge_kind:j.judgeKind,judge_version:j.judgeVersion,rubric_version_id_nullable:j.rubricVersionId,result_json:canonical(j.result),quoted_evidence_json:canonical(j.quotedEvidence),uncertainty_reason_nullable:j.uncertaintyReason,supersedes_id_nullable:j.supersedesId,created_at:j.createdAt},j);}
   saveEvidence(e:Evidence){this.insert('evidence_events',{id:e.id,attempt_id:e.attemptId,judgment_id:e.judgmentId,skill_id:e.skillId,evidence_kind:e.evidenceKind,independence:e.independence,eligible:e.eligible?1:0,exclusion_reason_nullable:e.exclusionReason,created_at:e.createdAt},e);}
   submit(raw:unknown,sessionId:string){
-    const body=SubmitSchema.parse(raw),task=this.task(body.taskId,body.taskVersion);
-    if(String(this.task(body.taskId).version)!==String(body.taskVersion)||task.reviewState==='retired')throw new Error('Task version changed or retired. Recover your draft and review the active prompt before submitting.');
-    if(task.kind==='mc'&&typeof body.answer==='string'&&!task.options?.some(o=>o.id===body.answer)&&body.answer!=="I don't know")throw new Error('Choose one of the authored options');
-    const now=utcNow();
-    if(body.startedAt&&Date.parse(body.startedAt)>Date.parse(now))throw new Error('Start time cannot be in the future');
-    if(body.parentAttemptId){const parent=this.existing<Attempt>('attempts',body.parentAttemptId);if(!parent||parent.taskId!==task.id)throw new Error('Revision must reference an attempt on this task');}
-    const mentor=this.catalog.mentorTexts.find(m=>m.id===task.mentorTextId);
-    if(task.kind==='writing'){
-      const obj=body.answer as Record<string,Json>;
-      if(!obj||typeof obj!=='object'||Array.isArray(obj)||!mentor||obj.mentorTextId!==mentor.id||String(obj.mentorTextVersion)!==String(mentor.version)||obj.mentorTextHash!==mentor.sha256)throw new Error('Writing answer must retain the exact mentor text identity');
-      validateWritingAnswer(task,body.answer,mentor);
-    }
-    const attempt:Attempt={id:randomUUID(),taskId:task.id,taskVersion:task.version,sessionId,originalAnswer:body.answer,startedAt:body.startedAt??now,submittedAt:now,hintCount:body.hintCount,assistance:body.assistance,exposureGroupId:task.familyId,noveltyKind:task.noveltyKind,parentAttemptId:body.parentAttemptId??null,mentorText:mentor?{id:mentor.id,version:mentor.version,sha256:mentor.sha256}:null};
+    const attempt=prepareStudyAttempt(raw,sessionId,{catalog:this.catalog,taskVersions:this.entities<Catalog['tasks'][number]>('tasks'),attempts:this.entities<Attempt>('attempts')},utcNow(),randomUUID());
     const judgment=this.score(attempt),evidenceEvents=this.deriveEvidence(attempt,judgment);
     this.transaction(()=>{this.saveAttempt(attempt);this.saveJudgment(judgment);for(const e of evidenceEvents)this.saveEvidence(e);});
     return {attempt,judgment,evidenceEvents};
   }
-  state(){return {attempts:this.entities<Attempt>('attempts'),judgments:this.entities<Judgment>('judgments'),evidenceEvents:this.entities<Evidence>('evidence_events'),taskVersions:this.entities<Catalog['tasks'][number]>('tasks'),drafts:this.db.prepare('SELECT task_id AS taskId,task_version AS taskVersion,answer_json AS answerJson,updated_at AS updatedAt FROM drafts').all().map(r=>({...r,answer:JSON.parse(String(r.answerJson)),answerJson:undefined})),anki:{mode:'tsv',reviewsSynchronized:false,message:'reviews not synchronized'},models:{enabled:false,calls:0}};}
+  state(){return shapeStudyState({attempts:this.entities<Attempt>('attempts'),judgments:this.entities<Judgment>('judgments'),evidenceEvents:this.entities<Evidence>('evidence_events'),taskVersions:this.entities<Catalog['tasks'][number]>('tasks'),drafts:this.db.prepare('SELECT task_id AS taskId,task_version AS taskVersion,answer_json AS answerJson,updated_at AS updatedAt FROM drafts').all().map(r=>({taskId:String(r.taskId),taskVersion:String(r.taskVersion),updatedAt:String(r.updatedAt),answer:JSON.parse(String(r.answerJson)) as Json,answerJson:undefined}))});}
   draft(taskId:string){
     const task=this.task(taskId);
     const rows=this.db.prepare('SELECT task_version,answer_json,updated_at FROM drafts WHERE task_id=? ORDER BY updated_at DESC').all(taskId);
-    const decode=(row:typeof rows[number])=>({answer:JSON.parse(String(row.answer_json)) as Json,taskVersion:String(row.task_version),updatedAt:String(row.updated_at)});
-    const current=rows.find(row=>String(row.task_version)===String(task.version));
-    return {...(current?decode(current):{answer:null,taskVersion:String(task.version)}),currentTaskVersion:String(task.version),olderDrafts:rows.filter(row=>String(row.task_version)!==String(task.version)).map(decode)};
+    return shapeStudyDraft(task,rows.map(row=>({answer:JSON.parse(String(row.answer_json)) as Json,taskVersion:String(row.task_version),updatedAt:String(row.updated_at)})));
   }
   saveDraft(taskId:string,taskVersion:string|number,answer:Json){
-    const task=this.task(taskId);if(String(task.version)!==String(taskVersion)||task.reviewState==='retired')throw new Error('Draft task version changed or retired. Preserve the old draft and deliberately copy it into the current prompt.');
-    if(task.kind==='writing'){
-      const mentor=this.catalog.mentorTexts.find(m=>m.id===task.mentorTextId);
-      if(!mentor)throw new Error('Writing mentor text is unavailable');
-      validateWritingAnswer(task,answer,mentor,true);
-    }
+    const task=validateStudyDraft(this.catalog,taskId,taskVersion,answer);
     const updatedAt=utcNow();this.db.prepare('INSERT INTO drafts(task_id,task_version,answer_json,updated_at) VALUES(?,?,?,?) ON CONFLICT(task_id,task_version) DO UPDATE SET answer_json=excluded.answer_json,updated_at=excluded.updated_at').run(taskId,String(task.version),canonical(answer),updatedAt);return {saved:true,taskVersion:String(task.version),updatedAt};
   }
   exportData():Interchange {
@@ -205,9 +170,4 @@ export class SeiStore {
 }
 
 export function answerText(answer:Json):string {if(typeof answer==='string')return answer;if(Array.isArray(answer))return answer.map(answerText).join('\n');if(answer&&typeof answer==='object')return Object.values(answer).map(answerText).join('\n');return '';}
-function validateWritingAnswer(task:Catalog['tasks'][number],answer:Json,mentor:Catalog['mentorTexts'][number],draft=false){
-  if(!answer||typeof answer!=='object'||Array.isArray(answer)||answer.mentorTextId!==mentor.id||String(answer.mentorTextVersion)!==String(mentor.version)||answer.mentorTextHash!==mentor.sha256)throw new Error('Writing answer must retain the exact mentor text identity');
-  if((draft||answer.rubricVersionId!==undefined)&&answer.rubricVersionId!==task.rubricVersionId)throw new Error('Writing rubric version mismatch');
-  const parts=answer.parts;if(!parts||typeof parts!=='object'||Array.isArray(parts)||(!draft&&(Object.keys(parts).length!==5||task.parts?.some(p=>typeof parts[p.id]!=='string')))||Object.entries(parts).some(([id,value])=>typeof value!=='string'||!task.parts?.some(p=>p.id===id)))throw new Error('Keep all five derived parts attached to the same mentor text');
-}
 export const DraftSchema=z.object({answer:z.lazy(()=>z.unknown())}).strict();

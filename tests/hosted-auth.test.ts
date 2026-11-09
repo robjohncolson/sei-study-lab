@@ -10,6 +10,7 @@ import type { Catalog } from '../packages/shared/src/index.js';
 const owner = '05bce282-b04e-4fc6-8ddc-f3c3b271e131';
 const other = 'cc434f8a-2a41-49c6-a563-e44cb412efcf';
 const config = readHostedConfig({
+  HOSTED_AUTH_MODE: 'supabase-jwt',
   SEI_DATABASE_URL: 'postgresql://sei_app:synthetic-password@127.0.0.1/synthetic',
   SUPABASE_URL: 'https://synthetic.example.test', OWNER_USER_ID: owner,
   APP_ORIGINS: 'http://127.0.0.1:4317', APP_HOSTS: '127.0.0.1:4317',
@@ -113,6 +114,15 @@ describe('real asymmetric JWT authorization with a local JWKS', () => {
       headers: { host: headers.host, authorization } })).statusCode).toBe(403);
     expect(connect).not.toHaveBeenCalled();
   });
+  it('also requires the hosted session CSRF token in JWT mode', async () => {
+    const { app, connect } = await setup();
+    const authorization = `Bearer ${await token()}`;
+    const session = await app.inject({ url: '/api/session', headers: { ...headers, authorization } });
+    expect(session.json()).toEqual({ csrfToken: 'hosted-origin-checked', storageMode: 'postgres', authMode: 'supabase-jwt' });
+    expect((await app.inject({ method: 'POST', url: '/api/native-flashcards/initialize',
+      headers: { ...headers, authorization } })).statusCode).toBe(403);
+    expect(connect).not.toHaveBeenCalled();
+  });
 });
 
 describe('hosted transaction ownership', () => {
@@ -145,5 +155,72 @@ describe('hosted transaction ownership', () => {
     expect(query.mock.calls.map(call => call[0])).toEqual(['BEGIN',
       "select set_config('request.jwt.claims', $1, true), set_config('request.jwt.claim.sub', $2, true)", 'ROLLBACK']);
     expect(release).toHaveBeenCalledExactlyOnceWith(false);
+  });
+});
+
+describe('public hosted authorization', () => {
+  const publicConfig = readHostedConfig({
+    HOSTED_AUTH_MODE: 'public', PUBLIC_OWNER_ID: owner,
+    SEI_DATABASE_URL: 'postgresql://sei_app:synthetic-password@127.0.0.1/synthetic',
+    APP_ORIGINS: headers.origin, APP_HOSTS: headers.host,
+  });
+  it('synthesizes only server-configured claims and ignores authorization data', async () => {
+    const verify = createOwnerVerifier(publicConfig);
+    for (const authorization of [undefined, '', 'Bearer invalid', `Bearer ${await token({ sub: other })}`]) {
+      expect(await verify(authorization)).toEqual({ sub: owner, role: 'authenticated' });
+    }
+  });
+  it('cannot select another owner using headers, query parameters, or cookies', async () => {
+    const query = vi.fn(async (_text: string, _values?: unknown[]) => ({ rows: [{ role: 'sei_app' }] }));
+    const release = vi.fn();
+    const client = { query, release } as unknown as PoolClient;
+    const pool = { connect: vi.fn(async () => client) } as unknown as Pool;
+    const app = await createHostedSeiServer({ config: publicConfig, pool, catalog });
+    apps.push(app);
+    const response = await app.inject({ url: `/api/identity?ownerId=${other}&sub=${other}`, headers: {
+      ...headers, authorization: `Bearer ${await token({ sub: other })}`,
+      'x-owner-id': other, 'x-user-id': other, 'x-public-owner-id': other,
+      'x-jwt-claims': JSON.stringify({ sub: other, role: 'service_role' }),
+      cookie: `ownerId=${other}; sei_session=${other}`,
+    } });
+    expect(response.statusCode).toBe(200);
+    expect(response.json()).toMatchObject({ ownerId: owner, databaseRole: 'sei_app' });
+    expect(query.mock.calls[1]).toEqual([
+      "select set_config('request.jwt.claims', $1, true), set_config('request.jwt.claim.sub', $2, true)",
+      [JSON.stringify({ sub: owner, role: 'authenticated' }), owner],
+    ]);
+    expect(response.headers['set-cookie']).toBeUndefined();
+    expect(response.headers['access-control-allow-origin']).toBeUndefined();
+  });
+  it('returns a stateless session token without a database call and rejects unsafe requests without it', async () => {
+    const connect = vi.fn(async () => { throw new Error('Request guards must run before database access'); });
+    const app = await createHostedSeiServer({ config: publicConfig, pool: { connect } as unknown as Pool, catalog });
+    apps.push(app);
+    const session = await app.inject({ url: '/api/session', headers });
+    expect(session.statusCode).toBe(200);
+    expect(session.json()).toEqual({ csrfToken: 'hosted-origin-checked', storageMode: 'postgres', authMode: 'public' });
+    expect(session.headers['set-cookie']).toBeUndefined();
+    const again = await app.inject({ url: '/api/session', headers });
+    expect(again.json()).toEqual(session.json());
+    const content = await app.inject({ url: '/api/catalog', headers });
+    expect(content.statusCode).toBe(200);
+    expect(content.json()).toEqual(catalog);
+    const anki = await app.inject({ url: '/api/anki.tsv', headers });
+    expect(anki.statusCode).toBe(200);
+    expect(anki.headers['content-type']).toContain('text/tab-separated-values');
+    expect(anki.body).toContain('#columns:StableID\tFront\tBack\tSource\tTags');
+    for (const csrf of [undefined, '', 'incorrect']) {
+      const response = await app.inject({ method: 'POST', url: '/api/native-flashcards/initialize', headers: {
+        ...headers, ...(csrf === undefined ? {} : { 'x-csrf-token': csrf }),
+      } });
+      expect(response.statusCode).toBe(403);
+      expect(response.headers['access-control-allow-origin']).toBeUndefined();
+    }
+    const preflight = await app.inject({ method: 'OPTIONS', url: '/api/attempts', headers: {
+      ...headers, 'access-control-request-method': 'POST', 'access-control-request-headers': 'x-csrf-token',
+    } });
+    expect(preflight.headers['access-control-allow-origin']).toBeUndefined();
+    expect(preflight.headers['access-control-allow-headers']).toBeUndefined();
+    expect(connect).not.toHaveBeenCalled();
   });
 });

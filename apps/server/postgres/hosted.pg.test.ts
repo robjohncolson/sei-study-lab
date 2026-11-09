@@ -12,7 +12,7 @@ import { SQLiteNativeStorage } from '../src/sqlite-native-storage.js';
 import { PostgresNativeStore } from '../src/postgres/native-store.js';
 import { withOwnerTransaction } from '../src/postgres/transaction.js';
 import { readHostedConfig } from '../src/hosted-config.js';
-import { createHostedSeiServer } from '../src/hosted-app.js';
+import { createHostedSeiServer, HOSTED_CSRF_TOKEN } from '../src/hosted-app.js';
 import { createPostgresHarness, type PostgresHarness } from './harness.js';
 
 const t0 = '2026-11-09T00:00:00.000Z';
@@ -252,14 +252,15 @@ describe('hosted foundation on a disposable real Postgres database', () => {
 
   it('serves owner-only HTTP, makes GET/HEAD read-only, persists after restart, and explicitly rejects unsupported routes', async () => {
     const owner = randomUUID(), catalog = syntheticCatalog();
-    const config = readHostedConfig({ SEI_DATABASE_URL: harness.appUrl, SUPABASE_URL: 'https://synthetic.invalid',
+    const config = readHostedConfig({ HOSTED_AUTH_MODE: 'supabase-jwt', SEI_DATABASE_URL: harness.appUrl, SUPABASE_URL: 'https://synthetic.invalid',
       OWNER_USER_ID: owner, APP_ORIGINS: 'http://127.0.0.1:4317', APP_HOSTS: '127.0.0.1:4317' });
+    if (config.authMode !== 'supabase-jwt') throw new Error('JWT test requires JWT configuration');
     const { privateKey, publicKey } = await generateKeyPair('ES256');
     const publicJwk = await exportJWK(publicKey);
     const key = createLocalJWKSet({ keys: [{ ...publicJwk, alg: 'ES256', use: 'sig', kid: 'synthetic' }] });
     const token = (sub: string) => new SignJWT({ role: 'authenticated' }).setProtectedHeader({ alg: 'ES256', kid: 'synthetic' })
       .setIssuer(config.issuer).setAudience('authenticated').setSubject(sub).setIssuedAt().setExpirationTime('10m').sign(privateKey);
-    const headers = { host: '127.0.0.1:4317', origin: 'http://127.0.0.1:4317', authorization: `Bearer ${await token(owner)}` };
+    const headers = { host: '127.0.0.1:4317', origin: 'http://127.0.0.1:4317', authorization: `Bearer ${await token(owner)}`, 'x-csrf-token': HOSTED_CSRF_TOKEN };
     const open = async () => {
       const app = await createHostedSeiServer({ config, pool: harness.pool, key, catalog, clock: () => new Date(t0) });
       apps.push(app); return app;
@@ -290,8 +291,8 @@ describe('hosted foundation on a disposable real Postgres database', () => {
     expect(history.statusCode).toBe(200);
     expect(history.json()).toHaveLength(2);
     expect((await app.inject({ url: '/api/identity', headers })).json()).toMatchObject({ ownerId: owner, storageMode: 'postgres', databaseRole: 'sei_app' });
-    for (const [method, url] of [['POST', '/api/attempts'], ['GET', '/api/drafts/synthetic'], ['POST', '/api/import'],
-      ['GET', '/api/export'], ['POST', '/api/writing'], ['POST', '/api/handoff'], ['GET', '/api/session'], ['GET', '/api/state']] as const) {
+    for (const [method, url] of [['POST', '/api/import'], ['GET', '/api/export'], ['POST', '/api/writing'],
+      ['POST', '/api/handoff'], ['POST', '/api/proposals/preview'], ['POST', '/api/proposals/approve']] as const) {
       const response = await app.inject({ method, url, headers });
       expect(response.statusCode).toBe(501);
       expect(response.json()).toEqual({ error: 'Not yet available in hosted mode' });

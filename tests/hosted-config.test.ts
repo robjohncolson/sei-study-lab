@@ -3,6 +3,7 @@ import { readHostedConfig, readStorageMode } from '../apps/server/src/hosted-con
 import { hostedPoolOptions } from '../apps/server/src/postgres/transaction.js';
 
 const environment = (): NodeJS.ProcessEnv => ({
+  HOSTED_AUTH_MODE: 'supabase-jwt',
   SEI_DATABASE_URL: 'postgresql://sei_app:synthetic-password@db.example.test:6543/synthetic',
   SUPABASE_URL: 'https://synthetic.example.test',
   OWNER_USER_ID: '05bce282-b04e-4fc6-8ddc-f3c3b271e131',
@@ -19,13 +20,16 @@ describe('hosted configuration, without network or database connections', () => 
       expect(() => readStorageMode({ STORAGE_MODE })).toThrow('STORAGE_MODE');
     }
   });
-  it.each(['SEI_DATABASE_URL', 'SUPABASE_URL', 'OWNER_USER_ID', 'APP_ORIGINS', 'APP_HOSTS'])('requires %s with a secret-free message', name => {
+  it.each(['HOSTED_AUTH_MODE', 'SEI_DATABASE_URL', 'SUPABASE_URL', 'OWNER_USER_ID', 'APP_ORIGINS', 'APP_HOSTS'])('requires %s with a secret-free message', name => {
     const env = environment();
     delete env[name];
     expect(() => readHostedConfig(env)).toThrow(name);
     expect(() => readHostedConfig({ ...environment(), [name]: ' ' })).toThrow(name);
   });
   it.each([
+    ['HOSTED_AUTH_MODE', 'PUBLIC'],
+    ['HOSTED_AUTH_MODE', 'public '],
+    ['HOSTED_AUTH_MODE', 'none'],
     ['SEI_DATABASE_URL', 'not-a-url-containing-secret'],
     ['SEI_DATABASE_URL', 'postgresql://postgres:secret@db.example.test/db'],
     ['SEI_DATABASE_URL', 'postgresql://service_role:secret@db.example.test/db'],
@@ -95,5 +99,22 @@ describe('hosted configuration, without network or database connections', () => 
       const config = readHostedConfig({ ...environment(), SEI_DATABASE_URL: `postgresql://sei_app:synthetic-password@${host}/synthetic` });
       expect(hostedPoolOptions(config).ssl).toEqual({ rejectUnauthorized: true });
     }
+  });
+  it('public mode needs only its server-configured owner and the common hosted settings', () => {
+    const env: NodeJS.ProcessEnv = { ...environment(), HOSTED_AUTH_MODE: 'public', PUBLIC_OWNER_ID: environment().OWNER_USER_ID };
+    delete env.SUPABASE_URL;
+    delete env.OWNER_USER_ID;
+    const config = readHostedConfig(env);
+    expect(config.authMode).toBe('public');
+    expect(config.ownerUserId).toBe(env.PUBLIC_OWNER_ID);
+    expect(config).not.toHaveProperty('issuer');
+    expect(config).not.toHaveProperty('supabaseUrl');
+    for (const name of ['PUBLIC_OWNER_ID', 'APP_HOSTS', 'APP_ORIGINS']) {
+      const missing: NodeJS.ProcessEnv = { ...env };
+      delete missing[name];
+      expect(() => readHostedConfig(missing)).toThrow(name);
+    }
+    expect(() => readHostedConfig({ ...env, PUBLIC_OWNER_ID: 'not-a-uuid' })).toThrow('PUBLIC_OWNER_ID must be a UUID');
+    expect(() => readHostedConfig({ ...env, PUBLIC_OWNER_ID: undefined, OWNER_USER_ID: environment().OWNER_USER_ID })).toThrow('PUBLIC_OWNER_ID');
   });
 });
