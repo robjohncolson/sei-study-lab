@@ -274,3 +274,55 @@ test('standards show every objective gap and distinguish the integration referra
   await expect(integration).toContainText('mtel56.obj.0013.reference.0001-0012');
   expect(service.attempts).toEqual([]);expect(service.external).toEqual([]);
 });
+
+test('Objective 0001 lesson opens its own checks without treating guided practice as evidence',async({page})=>{
+  const service=await mockDesk(page);
+  const lessonId='lesson.obj0001.identification-shared.v1';
+  const moduleTasks=catalog.tasks.filter(t=>t.lessonId===lessonId);
+  expect(moduleTasks).toHaveLength(8);
+  await page.goto('/');
+  await page.getByRole('button',{name:'Learn & practice',exact:false}).click();
+  await page.getByLabel('Short lesson',{exact:true}).selectOption(lessonId);
+  const lesson=page.locator('.lesson');
+  await expect(lesson).toContainText(/guided/i);
+  await expect(lesson).toContainText('create no attempts or independent evidence');
+  const checks=page.getByRole('navigation',{name:'Checks for this lesson',exact:true});
+  await expect(checks.getByRole('button')).toHaveCount(8);
+  await expect(page.getByRole('button',{name:'Save draft now',exact:true})).toBeEnabled();
+  await lesson.getByRole('button',{name:'Try a related check',exact:true}).click();
+  await expect(page.locator('.practice-card h2')).toHaveText(moduleTasks[0]!.title);
+  await expect(page.getByRole('button',{name:'Save draft now',exact:true})).toBeEnabled();
+  const transfer=moduleTasks.find(t=>t.kind==='case')!;
+  await checks.getByRole('button',{name:transfer.title,exact:true}).click();
+  await expect(page.locator('.practice-card h2')).toHaveText(transfer.title);
+  await expect(page.getByLabel('Your response',{exact:true})).toBeEnabled();
+  await expect(page.getByLabel('Your response',{exact:true})).toHaveValue('');
+  expect(service.attempts).toEqual([]);
+  expect(service.writes).toEqual([]);
+  expect(service.external).toEqual([]);
+});
+
+for (const timezoneId of ['America/New_York', 'Asia/Tokyo']) {
+  test.describe(`source retrieval calendar dates in ${timezoneId}`, () => {
+    test.use({timezoneId, locale: 'en-US'});
+
+    test('source library displays the supplied retrieval date without an invented time', async ({page}) => {
+      const service = await mockDesk(page);
+      const sources = catalog.sources.filter(source => source.id.startsWith('source.obj0001.'));
+      expect(sources).toHaveLength(9);
+      await page.goto('/');
+      await page.getByRole('button', {name: 'Source library', exact: false}).click();
+      await expect(page.getByRole('heading', {name: 'Know what supports the content.', exact: true})).toBeVisible();
+      for (const source of sources) {
+        expect(source.retrievedAt).toBe('2026-11-08');
+        const card = page.locator('article.source').filter({has: page.getByRole('heading', {name: source.title, exact: true})});
+        const provenance = card.locator('p.small').first();
+        await expect(provenance).toBeVisible();
+        await expect(provenance).toHaveText(/^Retrieved: 2026-11-08\s*Effective date:/);
+      }
+      expect(service.attempts).toEqual([]);
+      expect(service.writes).toEqual([]);
+      expect(service.external).toEqual([]);
+    });
+  });
+}

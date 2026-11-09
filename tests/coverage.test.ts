@@ -23,7 +23,8 @@ describe('source-backed statement coverage contract', () => {
     expect(catalog.objectives).toEqual(inventory.objectives);
     expect(catalog.statements).toEqual(inventory.statements);
     const report = deriveCoverage(catalog);
-    expect(report.totals).toMatchObject({objectiveCount: 13, statementCount: 60, bulletCount: 59, referralCount: 1, mappedStatementCount: 9, partialInstructionCount: 8, reviewedPracticeCount: 9, gapCount: 60, sourceCheckedTaskCount: 29, humanReviewedTaskCount: 0});
+    expect(report.contractVersion).toBe(2);
+    expect(report.totals).toMatchObject({objectiveCount: 13, statementCount: 60, bulletCount: 59, referralCount: 1, mappedStatementCount: 9, partialInstructionCount: 8, reviewedPracticeCount: 9, gapCount: 60, sourceCheckedTaskCount: 37, humanReviewedTaskCount: 0});
     expect(report.objectives.find(o => o.objectiveId === 'mtel56.obj.0013')).toMatchObject({statementCount: 1, bulletCount: 0, referralCount: 1, complete: false});
     expect(report.statements.find(s => s.statementId === INTEGRATION_REFERRAL_ID)?.kind).toBe('integration_referral');
     expect(catalog.competencies).toHaveLength(11);
@@ -40,13 +41,33 @@ describe('source-backed statement coverage contract', () => {
   });
 
   it('binds only inspected scopes and keeps unreviewed legal specifics as gaps', () => {
-    expect(SOURCE_COVERAGE_CONTRACT).toHaveLength(9);
+    expect(SOURCE_COVERAGE_CONTRACT).toHaveLength(11);
     const policy = row(empty, 'mtel56.obj.0001.ds.03');
     expect(policy.gaps.join(' ')).toContain('exit thresholds');
-    expect(policy.gaps.join(' ')).toContain('monitoring durations');
+    expect(policy.gaps.join(' ')).not.toContain('monitoring durations');
+    expect(policy.gaps.join(' ')).toContain('reclassification');
+    expect(policy.partialInstruction.map(l => l.lessonId)).toContain('lesson.obj0001.identification-shared.v1');
+    expect(policy.partialInstruction.map(l => l.lessonId)).not.toContain('lesson.current-former');
     expect(row(empty, 'mtel56.obj.0001.ds.02').reviewedPractice).toEqual([]);
     expect(row(empty, 'mtel56.obj.0009.ds.04').gaps.join(' ')).toContain('ACCESS/MCAS');
     expect(row(empty, INTEGRATION_REFERRAL_ID).gaps.join(' ')).toContain('official Parts II–V');
+  });
+
+  it('adds reviewed partial Objective 0001 practice without claiming legal or objective completion', () => {
+    const report = deriveCoverage(catalog);
+    const policy = row(empty, 'mtel56.obj.0001.ds.03');
+    const shared = row(empty);
+    expect(shared.reviewedPractice.map(t => t.taskId)).toContain('task.obj0001.shared-services');
+    expect(shared.reviewedPractice.map(t => t.taskId)).toContain('task.obj0001.community-archive-case');
+    expect(shared.reviewedPractice.find(t => t.taskId === 'task.shared-plan')?.scope).toBe('Shared classroom responsibility and communicating content/language observations to colleagues.');
+    expect(policy.reviewedPractice.find(t => t.taskId === 'task.survey-purpose')?.scope).toBe('Survey versus proficiency, family communication preferences, and evidence-responsive support for current/former ELs; recognizing the need to verify policy.');
+    expect(shared.reviewedPractice.find(t => t.taskId === 'task.obj0001.shared-services')?.scope).toContain('preserving ESL instruction');
+    expect(policy.reviewedPractice.find(t => t.taskId === 'task.obj0001.fel-support')?.scope).toContain('January 2026 guidance four-year FEL monitoring');
+    for (const suffix of ['evidence-chain', 'family-access', 'notice-record', 'opt-out', 'fel-support', 'language-disability', 'community-archive-case']) {
+      expect(policy.reviewedPractice.map(t => t.taskId)).toContain(`task.obj0001.${suffix}`);
+    }
+    expect(report.objectives.find(o => o.objectiveId === 'mtel56.obj.0001')).toMatchObject({partialInstructionCount: 2, reviewedPracticeCount: 2, independentEvidenceCount: 0, complete: false});
+    expect(row(empty, 'mtel56.obj.0001.ds.02')).toMatchObject({partialInstruction: [], reviewedPractice: [], complete: false});
   });
 
   it('never turns a broad skill alignment into statement instruction or evidence', () => {
@@ -149,6 +170,8 @@ describe('source-backed statement coverage contract', () => {
     expect(row(state, sharedStatement, c)).toMatchObject({partialInstruction: [], reviewedPractice: [], independentEvidence: [], needsRecheck: true});
     const changed = structuredClone(catalog);
     changed.lessons.find(l => l.id === 'lesson.shared')!.body = 'Synthetic replacement body';
+    expect(row(empty, sharedStatement, changed).partialInstruction.map(l => l.lessonId)).toEqual(['lesson.obj0001.identification-shared.v1']);
+    changed.lessons.find(l => l.id === 'lesson.obj0001.identification-shared.v1')!.body = 'Synthetic replacement module';
     expect(row(empty, sharedStatement, changed).partialInstruction).toEqual([]);
     const missing = {...catalog, sources: []};
     expect(deriveCoverage(missing).totals.reviewedPracticeCount).toBe(0);

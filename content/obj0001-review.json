@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "packetId": "obj0001.supplied.2026-11-08.v1",
+  "reviewEvents": [
+    {
+      "id": "review.obj0001.source.source.obj0001.s1.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s1.2026-11-08",
+      "sourceVersionId": "source.obj0001.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "099dcfbace1a59f3412e15b8b1a4f2989d8f4df5e446cfebc5070fc10c930011",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s2.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s2.2026-11-08",
+      "sourceVersionId": "source.obj0001.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "74d8d6838883da03ed093d3912e9ecfbdca586b11aeb529447779bcf834b4114",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s3.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s3.2026-11-08",
+      "sourceVersionId": "source.obj0001.s3.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s3.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "54528b674cefe4d16cf9f42b37c086b45923d2a74060b5f198f440d2fcab8ffc",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s4.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s4.2026-11-08",
+      "sourceVersionId": "source.obj0001.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s4.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "e8bfe014733d99bb81cc8e0937289ae195939492710bcb40a6f82e8f1a2d00d9",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s5.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s5.2026-11-08",
+      "sourceVersionId": "source.obj0001.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "333cfebb3f30c02d7e0ee52bb78c23d3ea9c3f2f13cd288881af545f7dcbb716",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s6.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s6.2026-11-08",
+      "sourceVersionId": "source.obj0001.s6.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "71ed6d7506ff242f46cf842b5201cc9a58fde8d938cc8e22f479581531d280da",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s7.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s7.2026-11-08",
+      "sourceVersionId": "source.obj0001.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "d6c84685a6fb96792ece28f2c71ce6c1e130165fe35618a607756c5ce5da5dd2",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s8.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s8.2026-11-08",
+      "sourceVersionId": "source.obj0001.s8.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "2b1bfde4fe3e9d34a784a045f35bc33c7e66fe8f5526cc1846e490485af57261",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s9.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s9.2026-11-08",
+      "sourceVersionId": "source.obj0001.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "92ebc772f0c72396d06a2795b9d3c83663417a95a120f2c7ac66ccb5128493d1",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.lesson.lesson.obj0001.identification-shared.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0001.identification-shared.v1",
+      "sourceVersionId": "source.obj0001.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s3.2026-11-08",
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s6.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08",
+        "source.obj0001.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Read the full authored staged module against supplied S1-S9 excerpts.",
+        "Confirmed initial-identification rubric exceptions, separate family access, notice/records without clocks, shared content/ESL responsibility, voluntary opt-out, January 2026 and retrieval-qualified FEL period, and February 2019 disability limits.",
+        "Confirmed two worked examples with counterexamples, three guided assisted/nonrecorded pauses, explicit goals and remaining gaps.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "a80c4c8cec6d8212aa966833ade64621b30973f3a00a6ef3d164d9d481d8251c",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.evidence-chain.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.evidence-chain",
+      "sourceVersionId": "source.obj0001.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "a3e6c373cedde5a05f3e26fb05069f845666bc785d4d8a271077eea0e1374356",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.family-access.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.family-access",
+      "sourceVersionId": "source.obj0001.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "0f96795889165c9f5772f50a93704745426e9768948add869f6b8718d2809767",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.shared-services.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.shared-services",
+      "sourceVersionId": "source.obj0001.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "87da246db8bd252cfdc0814d1d8db99000cacc879119407ea27469aff30f5c89",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.notice-record.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.notice-record",
+      "sourceVersionId": "source.obj0001.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "31fd165f10da753e59c3bd4cb1c8520abc9d58f7ddbf90c5e52f342eaeb014da",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.opt-out.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.opt-out",
+      "sourceVersionId": "source.obj0001.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "ee0563a6225f5a2f0a3e0adadf89d6a9ccbeeaa1dbbd41e3261fcec996516706",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.fel-support.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.fel-support",
+      "sourceVersionId": "source.obj0001.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "ba1d01b29875c1abeabb6f37f15d11b64ec930b9861943b75b5252366cfb1285",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.language-disability.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.language-disability",
+      "sourceVersionId": "source.obj0001.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "1540f7df843a4bd30aedcfa7b5e164d848b79530f1cce72bf9e40bebac14db9f",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.community-archive-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.community-archive-case",
+      "sourceVersionId": "source.obj0001.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s3.2026-11-08",
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s6.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08",
+        "source.obj0001.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "4bc49cd68555738714613db01a69163c6434de446a6c71d4ac7e5145191a0ea5",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    }
+  ]
+}

@@ -156,6 +156,298 @@
       "reviewState": "source_compared",
       "version": "2026-11-08",
       "checks": "DOCX read separately in memory with PowerShell ZipArchive; matched paragraph text. Publication June 2025, effective date not established."
+    },
+    {
+      "id": "source.obj0001.s1.2026-11-08",
+      "title": "MTEL Test Information Guide — Overview and Test Objectives, Field 56: Sheltered English Immersion",
+      "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_OBJ_56.htm",
+      "documentVersion": "Live NES study-guide page; no separate edition date in supplied page body",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s1-v1",
+      "excerpt": "Apply understanding of all educators' shared responsibility to educate and support all English language learners.\n\nApply knowledge of school policies related to English language learners, including initial identification of English language learners and required data, assessment, and support systems for current and former English language learners.",
+      "supportingExcerpts": [
+        {
+          "id": "shared",
+          "text": "Apply understanding of all educators' shared responsibility to educate and support all English language learners."
+        },
+        {
+          "id": "systems",
+          "text": "Apply knowledge of school policies related to English language learners, including initial identification of English language learners and required data, assessment, and support systems for current and former English language learners."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Bounds this derived module to descriptive statements 0001.ds.01 and 0001.ds.03. The framework's historical Question 2 example remains inventory, not current-law narrative; no complete Objective 0001 or legal coverage claim.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s2.2026-11-08",
+      "title": "603 CMR 14.02: Identification and Assessment of Students",
+      "url": "https://www.doe.mass.edu/lawsregs/603cmr14.html?section=02",
+      "documentVersion": "Most recently amended June 26, 2018; last updated July 23, 2018",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s2-v1",
+      "excerpt": "(1) Each school district shall establish procedures, in accordance with Department guidelines, to identify those students who may be English learners and assess their level of English proficiency upon their enrollment in the school district.\n\n(2) The parent or guardian of any student enrolled in the school district may request that the school district assess the child's level of English proficiency.\n\n(3) The school district shall notify the parent or guardian and place in the student's school record the following information: (a) the school district's determination as to whether the student is an English learner; and (b) the student's program placement.\n\n(4) Each school district shall establish criteria, in accordance with Department guidelines, to identify students who may no longer be English learners.",
+      "supportingExcerpts": [
+        {
+          "id": "procedures",
+          "text": "(1) Each school district shall establish procedures, in accordance with Department guidelines, to identify those students who may be English learners and assess their level of English proficiency upon their enrollment in the school district."
+        },
+        {
+          "id": "request",
+          "text": "(2) The parent or guardian of any student enrolled in the school district may request that the school district assess the child's level of English proficiency."
+        },
+        {
+          "id": "notice-record",
+          "text": "(3) The school district shall notify the parent or guardian and place in the student's school record the following information: (a) the school district's determination as to whether the student is an English learner; and (b) the student's program placement."
+        },
+        {
+          "id": "reclassification",
+          "text": "(4) Each school district shall establish criteria, in accordance with Department guidelines, to identify students who may no longer be English learners."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Separates identification/assessment, determination/placement notice and student-record duties, and reclassification criteria. Does not supply deadlines, cut scores or a complete protocol.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s3.2026-11-08",
+      "title": "603 CMR 14.04: Placement of Students in English Learner Education Programs",
+      "url": "https://www.doe.mass.edu/lawsregs/603cmr14.html?section=04",
+      "documentVersion": "Most recently amended June 26, 2018; last updated July 23, 2018",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s3-v1",
+      "excerpt": "(1) Each school district shall provide a student who is an English learner with an appropriate English learner education through a sheltered English immersion program or an alternative instructional program that meets the requirements of federal and state law.\n\n(3) Each school district shall commence language assistance services upon a student's identification as an English learner.\n\n(7) A parent or guardian of an English learner may withdraw the student from an English learner education program in accordance with state and federal law.",
+      "supportingExcerpts": [
+        {
+          "id": "program",
+          "text": "(1) Each school district shall provide a student who is an English learner with an appropriate English learner education through a sheltered English immersion program or an alternative instructional program that meets the requirements of federal and state law."
+        },
+        {
+          "id": "commencement",
+          "text": "(3) Each school district shall commence language assistance services upon a student's identification as an English learner."
+        },
+        {
+          "id": "withdrawal",
+          "text": "(7) A parent or guardian of an English learner may withdraw the student from an English learner education program in accordance with state and federal law."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Supports appropriate ELE and assistance upon identification, with parent withdrawal rights acknowledged separately. Not a local compliance conclusion or notification timing rule.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s4.2026-11-08",
+      "title": "Guidance and Laws (ELE index)",
+      "url": "https://www.doe.mass.edu/ele/guidance/",
+      "documentVersion": "Last Updated: September 2, 2026",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s4-v1",
+      "excerpt": "Last Updated: September 2, 2026",
+      "supportingExcerpts": [
+        {
+          "id": "version-cue",
+          "text": "Last Updated: September 2, 2026"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Supplied inventory identifies this as the canonical index linking S5–S9, including the still-linked older February 2019 disability guidance. Index establishes discovery context, not detailed procedural evidence.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s5.2026-11-08",
+      "title": "Massachusetts Language Survey Protocol",
+      "url": "https://www.doe.mass.edu/ele/guidance/ma-language-survey-protocol.docx",
+      "documentVersion": "June 2025",
+      "sha256": "6720f402f61ab4cb158eebbede7cfa5e9354edda2ddb1da46a6deddfe7403854",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s5-v1",
+      "excerpt": "The Language Survey (LS) is the first step in identifying ELs … There should also be procedures for analyzing LS results to determine whether or not the student is a potential EL and should complete an English Language Proficiency (ELP) screening test.\n\nQ: Can an LEA place a student into ELE services if it is apparent immediately after completing the LS that the student has very little English language proficiency?\nA: No; LEAs must utilize the LS to determine if there is a need to screen the student. … After the screening is completed and scored, then the LEA may determine placement for ELE services, notify the parents as required, and update the student’s SIMS coding.\n\nScenario 9: Q1 other language, but Q2–Q3 English/ASL → Administer screener N (“Consult with parents to gather more information.”)",
+      "supportingExcerpts": [
+        {
+          "id": "first-step",
+          "text": "The Language Survey (LS) is the first step in identifying ELs … There should also be procedures for analyzing LS results to determine whether or not the student is a potential EL and should complete an English Language Proficiency (ELP) screening test."
+        },
+        {
+          "id": "screen-before-initial-placement",
+          "text": "Q: Can an LEA place a student into ELE services if it is apparent immediately after completing the LS that the student has very little English language proficiency?\nA: No; LEAs must utilize the LS to determine if there is a need to screen the student. … After the screening is completed and scored, then the LEA may determine placement for ELE services, notify the parents as required, and update the student’s SIMS coding."
+        },
+        {
+          "id": "rubric-exception",
+          "text": "Scenario 9: Q1 other language, but Q2–Q3 English/ASL → Administer screener N (“Consult with parents to gather more information.”)"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "SHA-256 of downloaded binary as supplied; not recomputed by Codex.",
+      "derivedClaimRationale": "Survey interpretation identifies potential needs; it is neither automatic classification nor unconditional screening for every other-language response. Interpret the June 2025 rubric and clarify with parents; do not invent universal rules or transfer/exception procedures.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s6.2026-11-08",
+      "title": "Language Survey (form)",
+      "url": "https://www.doe.mass.edu/ele/guidance/language-survey.docx",
+      "documentVersion": "Hosted with June 2025 protocol; no separate form edition supplied",
+      "sha256": "fbfdadd7d8c8ae2c684aae27d17e8204b34760a0dcb3e5339f3777f3d421cbbd",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s6-v1",
+      "excerpt": "SECTION 1 … If your response to any question 1-3 is a language other than English, your child will be tested on their use and understanding of English to determine if English language supports are needed.\n\nSECTION 2 … This section is for informational purposes only and is not used to identify if your child needs support to learn English.",
+      "supportingExcerpts": [
+        {
+          "id": "section-one",
+          "text": "SECTION 1 … If your response to any question 1-3 is a language other than English, your child will be tested on their use and understanding of English to determine if English language supports are needed."
+        },
+        {
+          "id": "section-two",
+          "text": "SECTION 2 … This section is for informational purposes only and is not used to identify if your child needs support to learn English."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "SHA-256 of downloaded binary as supplied; not recomputed by Codex.",
+      "derivedClaimRationale": "Section 2 family communication preference is distinct from the child's identification evidence. Read the form's Section 1 wording with S5's rubric and documented exceptions, not as an unconditional screening mandate.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s7.2026-11-08",
+      "title": "Guidance on English Learner Education Services and Programming",
+      "url": "https://www.doe.mass.edu/ele/guidance/services-programming.docx",
+      "documentVersion": "January 2026",
+      "sha256": "127e17d03df6ef48c7a8ed691f4a1596dcb8183942e86bfb423bd6ed8842ef95",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s7-v1",
+      "excerpt": "Step 3: Use the rubric in the LS Protocol to determine whether an ELP screening test needs to be administered … Provide the parents with Parent Notification Regarding English Language Education.\n\nStep 4: Determine whether the student is an EL using screening test results and make an initial placement decision.\n\nStep 5: Notify parents and/or legal guardians of screening test results and initial placement decision.\n\nStep 6: Code the student as an EL … until the student is reclassified as a Former English Learner (FEL).\n\nWhen a parent declines ELE services, the student remains identified as an English Learner (EL) … Continue to classify the student as an EL … Continue annual English language proficiency testing (WIDA ACCESS)…\n\nDistricts must also identify Former English learners (FELs) upon their registration in the district and monitor them…\n\nWhen a student is reclassified as FEL, the district must: … design and implement a process for routinely monitoring the students’ academic progress for four years.\n\nELs spend the majority of their school day in content classes, which makes supporting their success a shared responsibility. Core content teachers are expected to use sheltering strategies and scaffolds…\n\nAcademic tutoring in content subjects or sheltering the content for ELs in a core content classroom is not a substitute for ESL instruction.",
+      "supportingExcerpts": [
+        {
+          "id": "screening",
+          "text": "Step 3: Use the rubric in the LS Protocol to determine whether an ELP screening test needs to be administered … Provide the parents with Parent Notification Regarding English Language Education."
+        },
+        {
+          "id": "determination",
+          "text": "Step 4: Determine whether the student is an EL using screening test results and make an initial placement decision."
+        },
+        {
+          "id": "notice",
+          "text": "Step 5: Notify parents and/or legal guardians of screening test results and initial placement decision."
+        },
+        {
+          "id": "status",
+          "text": "Step 6: Code the student as an EL … until the student is reclassified as a Former English Learner (FEL)."
+        },
+        {
+          "id": "opt-out",
+          "text": "When a parent declines ELE services, the student remains identified as an English Learner (EL) … Continue to classify the student as an EL … Continue annual English language proficiency testing (WIDA ACCESS)…"
+        },
+        {
+          "id": "fel-registration",
+          "text": "Districts must also identify Former English learners (FELs) upon their registration in the district and monitor them…"
+        },
+        {
+          "id": "fel-monitoring",
+          "text": "When a student is reclassified as FEL, the district must: … design and implement a process for routinely monitoring the students’ academic progress for four years."
+        },
+        {
+          "id": "shared",
+          "text": "ELs spend the majority of their school day in content classes, which makes supporting their success a shared responsibility. Core content teachers are expected to use sheltering strategies and scaffolds…"
+        },
+        {
+          "id": "esl",
+          "text": "Academic tutoring in content subjects or sheltering the content for ELs in a core content classroom is not a substitute for ESL instruction."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "SHA-256 of downloaded binary as supplied; not recomputed by Codex.",
+      "derivedClaimRationale": "January 2026 guidance, supplied retrieval 2026-11-08, supports the bounded identification chain, continued EL status/annual ACCESS after voluntary parent opt-out, continued content access, shared responsibilities with distinct ESL, and four-year FEL academic-progress monitoring. Recognize documented EL/FEL status on transfer; no fresh clock or annual monitoring procedure is inferred. Different notification clocks are deliberately not taught.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s8.2026-11-08",
+      "title": "Important Changes in the 2026 Guidance on English Learner Education Services and Programming",
+      "url": "https://www.doe.mass.edu/ele/guidance/services-programming-changes.docx",
+      "documentVersion": "Companion change summary to January 2026 guidance; separate edition date not supplied",
+      "sha256": "3ef15cc97628b3b9c33e23632c4239b687014d14232170955ab5a2ce7096cc98",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s8-v1",
+      "excerpt": "District identification procedures have been updated to align to the Massachusetts Language Survey protocol…\n\nIdentification of Former English Learners (FELs) … initiate required four-year monitoring immediately…\n\nELD is explicitly described as occurring both in ESL classes and in content classrooms. Responsibility for language development is shared among ESL teachers, SEI‑endorsed content teachers, and bilingual educators.\n\n…districts must not recommend that parents decline all or some services within an English learner program for any reason, including scheduling of special education or other services.",
+      "supportingExcerpts": [
+        {
+          "id": "alignment",
+          "text": "District identification procedures have been updated to align to the Massachusetts Language Survey protocol…"
+        },
+        {
+          "id": "fel",
+          "text": "Identification of Former English Learners (FELs) … initiate required four-year monitoring immediately…"
+        },
+        {
+          "id": "shared",
+          "text": "ELD is explicitly described as occurring both in ESL classes and in content classrooms. Responsibility for language development is shared among ESL teachers, SEI‑endorsed content teachers, and bilingual educators."
+        },
+        {
+          "id": "decline",
+          "text": "…districts must not recommend that parents decline all or some services within an English learner program for any reason, including scheduling of special education or other services."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "SHA-256 of downloaded binary as supplied; not recomputed by Codex.",
+      "derivedClaimRationale": "Corroborates S7's shared language-development responsibility and four-year monitoring, explicitly qualified by January 2026 guidance and supplied retrieval 2026-11-08. Scheduling does not justify steering families to decline services; no transfer clock restart is inferred.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s9.2026-11-08",
+      "title": "Guidance for Supporting English Learners with Disabilities",
+      "url": "https://www.doe.mass.edu/ele/guidance/disabilities.docx",
+      "documentVersion": "February 2019; still linked by S4 as of September 2, 2026 per supplied inventory",
+      "sha256": "e5ee4b9dcb28aad2cab8261d5bbb72ad7a9493fdb3e91225f8ee8c1abc0751ee",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s9-v1",
+      "excerpt": "Moreover, a student’s status as an EL is not, in and of itself, a basis for determining whether the student has a disability. Conversely, a student’s status as an EL should not be reason to delay a special education evaluation where there is a reason to suspect the student may have a disability.\n\nSchool districts must not identify or determine that EL students are students with disabilities because of their English language proficiency.",
+      "supportingExcerpts": [
+        {
+          "id": "dual-error",
+          "text": "Moreover, a student’s status as an EL is not, in and of itself, a basis for determining whether the student has a disability. Conversely, a student’s status as an EL should not be reason to delay a special education evaluation where there is a reason to suspect the student may have a disability."
+        },
+        {
+          "id": "proficiency-not-disability",
+          "text": "School districts must not identify or determine that EL students are students with disabilities because of their English language proficiency.",
+          "context": "S9 quotes the 2015 Dear Colleague Letter, page 25; only this short supplied excerpt is retained."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "SHA-256 of downloaded binary as supplied; not recomputed by Codex.",
+      "derivedClaimRationale": "Older February 2019 guidance supports avoiding both misidentification based on English proficiency and delay solely because of EL status when disability is suspected. No IDEA timelines, evaluation procedures, diagnostic conclusions or accommodations entitlements are derived.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
     }
   ],
   "objectives": [
@@ -1132,6 +1424,26 @@
         "source.indicators.2026-11-08"
       ],
       "body": "A scaffold helps a learner participate in a demanding task while building increasing independence. Examples include a labeled representation, chunked directions, a modeled comparison, rehearsal, or a sentence frame that leaves the substantive reasoning to the student. Choose the support in response to a specific language demand and assess whether it helps.\n\nFor a goal of comparing two rates and defending a decision, a graph with clear labels can reduce unnecessary reading load. Asking the student to copy a worked answer removes the reasoning you meant to observe. Replacing comparison with simple counting lowers the content target. A scaffold should be adjusted or faded as evidence supports greater independence, rather than removed on an arbitrary date.\n\nCounterexample: calling every easier worksheet a scaffold obscures what is being learned. State the original content objective, identify the barrier, and explain how the changed task still elicits that objective. If language itself is the assessment target, a support that supplies that language may change the construct. Record assistance when judging independent evidence."
+    },
+    {
+      "id": "lesson.obj0001.identification-shared.v1",
+      "title": "From language information to shared support: an Objective 0001 module",
+      "skillIds": [
+        "sei.skill.identification",
+        "sei.skill.shared-responsibility",
+        "sei.skill.current-former"
+      ],
+      "sourceRefs": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s3.2026-11-08",
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s6.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08",
+        "source.obj0001.s9.2026-11-08"
+      ],
+      "body": "ORIGINAL UNOFFICIAL LEARNING MODULE — PARTIAL OBJECTIVE 0001\n\nThis module samples shared responsibility (0001.ds.01) and identification, data, assessment and support systems for current/former ELs (0001.ds.03). It does not complete Objective 0001 or establish mastery. Its regulation discussion is limited to selected 603 CMR 14.02/14.04 duties, not comprehensive legal familiarity. The framework's historical Question 2 example remains part of the official inventory, not a current-law narrative. These explanations and scenarios are authored instruction, not official test questions. Sources are supplied excerpts retrieved by the packet researcher on 2026-11-08; Codex did not fetch the documents. Source comparison is model-assisted, not human review.\n\nLEARNING GOALS\nContent goal: distinguish the evidence supporting identification, placement and ongoing support; choose an appropriate next action without inferring status from language background, family preference or one classroom performance. Explain how content teachers and ESL colleagues share responsibility while retaining distinct instructional roles.\nLanguage goal: explain an evidence-to-action chain using because, therefore and does not yet establish; compare two proposed actions and identify what remains unknown. In a short team note, distinguish observed content understanding, observed language use and the assistance provided. These are practice goals, not proficiency cut scores.\n\nSTAGE 1 — SORT INFORMATION BEFORE MAKING A DECISION\nA Language Survey supplies information for an identification process. It does not itself supply an English proficiency result or EL determination. Section 1 concerns the child's language background. Section 2 concerns family communication preferences and is informational; it is not child EL-identification evidence. A family may need interpretation or translated communication even when its child does not need English language instruction. Keep those questions separate. [S5/S6]\n\nThe form's broad other-language wording must be interpreted with the June 2025 Language Survey Protocol, including its rubric and exceptions. Do not turn it into a universal rule that every other-language response always requires screening. Apply the protocol and clarify relevant information with parents. Where the rubric indicates screening for an initial identification, use the screening results to determine EL status and initial placement. An impression that a child has little English does not authorize skipping the screener. Notify parents of the determination and placement and place both in the student record. The regulation and guidance describe distinct notification duties; this module supplies no deadline or combined clock. [S2/S5/S7]\n\nThis is an initial-enrollment explanation, with protocol exceptions. A student arriving with documented prior EL/FEL status is not simply an undocumented first identification. Attend to existing status information through the appropriate district process. The supplied January 2026 guidance specifically requires identifying FELs on registration and monitoring them. The excerpts do not establish a complete transfer-record procedure or authorize inventing new screening requirements for every transfer. [S7]\n\nWORKED EXAMPLE 1 — A SURVEY WITH MIXED ANSWERS\nNila enrolls in a school. Her family reports another language for Q1, but English for Q2 and Q3, and requests translated messages in Section 2. A staff member proposes immediate EL placement; another says every other-language response requires a screener.\nReasoning: First separate the questions. Section 2 identifies the family's communication preference, not Nila's EL status. Next consult the June 2025 rubric. The supplied Scenario 9 is Q1 other language with Q2–Q3 English/ASL: its screener entry is N and it directs consultation with parents. Clarification matters; do not erase contradictory or incomplete information. Neither immediate classification nor an unconditional screening rule follows from these facts. Honor the family communication need while following the protocol for the child. [S5/S6]\nCounterexample: suppose clarified Section 1 information instead fits a rubric scenario requiring screening. Then a pleasant English conversation does not replace the required proficiency evidence. The appropriate chain is protocol interpretation, indicated screening, results-based determination and initial placement, followed by notice and documentation. This example does not teach score thresholds. [S2/S5/S7]\n\nGUIDED PAUSE A — THINK, THEN COMPARE (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nExplain why 'the parent wants translation, therefore the child is an EL' fails. Feedback: the conclusion substitutes a family communication preference for child identification evidence. Section 2 expressly excludes that use. A better sentence is: 'Because Section 2 describes family communication needs, it guides family access; it does not yet establish the child's EL status.' No response or success is recorded by this lesson. [S5/S6]\n\nSTAGE 2 — CONNECT PLACEMENT WITH SHARED INSTRUCTION\nAn identified EL is to receive appropriate English learner education and language assistance begins upon identification, under the selected 14.04 provisions. Supporting language development is shared work: content teachers use sheltering strategies and scaffolds, and ESL teachers contribute dedicated ESL instruction. Sheltering a content lesson or offering academic tutoring does not substitute for ESL instruction. This distinction does not cancel a parent's separate right to make a voluntary informed decision to decline ELE services. Do not recommend declining services to solve a scheduling conflict. [S1/S3/S7/S8]\n\nWORKED EXAMPLE 2 — A SCHOOL MUSEUM EXPLANATION\nIn a history class, students compare two original exhibit proposals and justify which better explains a community change. Tomas, an identified EL receiving services, can connect images to historical events but needs support linking evidence in an English explanation. A colleague suggests replacing scheduled ESL with the history teacher's illustrated worksheet.\nReasoning: Keep the historical comparison goal. The content teacher can model how a claim connects to evidence, offer labeled images and allow rehearsal before a distinct written explanation. The ESL colleague and content teacher can share observations about language demands and progress. The note 'connected images to the event; used a supplied linking phrase in writing' separates content reasoning, language production and assistance. These are authored classroom choices illustrating shared responsibility, not prescribed official methods. The illustrated worksheet supports access, but it does not become ESL instruction merely because it helps Tomas. Coordinate the two roles instead of treating one as interchangeable with the other. [S1/S7/S8]\nCounterexample: 'ESL will handle all language, so the history class needs no scaffolds' also fails. Shared responsibility includes content classrooms. Likewise, lowering the task to copying exhibit labels removes the comparison that the lesson intended students to learn. A scheduling difficulty is not a reason to advise a parent to decline services. [S7/S8]\n\nGUIDED PAUSE B — COMPARE TWO TEAM NOTES (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nWhich note helps planning: 'ESL should fix the writing,' or 'Tomas selected relevant historical evidence, rehearsed a claim orally, and needed a connector frame to link the evidence in writing'? Feedback: the second identifies content understanding, language use and assistance, giving colleagues a concrete instructional starting point. It does not change official EL status or prove independent writing. Then explain why the frame cannot replace ESL. Feedback: a content scaffold and ESL have related but distinct functions; S7 explicitly rejects substitution. No guided response is submitted or counted as independent evidence. [S7/S8]\n\nSTAGE 3 — KEEP STATUS, SERVICES AND SUPPORT DISTINCT\nNotification and records: under 603 CMR 14.02, notify the parent or guardian of the EL determination and program placement, and place both in the student's school record. Keeping a screener score without those decisions does not fulfill that described documentation duty. A teacher's informal impression is not a replacement for the authorized process. [S2]\n\nOpt-out: when a parent declines ELE services, the student remains an EL until reclassified through the appropriate process. Annual English proficiency testing (WIDA ACCESS) continues under January 2026 guidance, and access to learning still needs support. Do not code voluntary opt-out as FEL status or treat it as permission to withdraw classroom access. No exit thresholds or assessment accommodation rules are taught here. [S7; shared access context S1/S3]\n\nFEL support: January 2026 services/programming guidance, supplied retrieval 2026-11-08, describes routine monitoring of academic progress for four years after reclassification; its companion changes summary corroborates the four-year requirement. Identify FELs upon registration and continue attention to academic progress and needed support. A transfer does not create a new reclassification event or restart that period. A writing difficulty alone does not automatically restore EL status. This bounded duration claim supersedes the old starter lesson's statement that monitoring duration remains wholly unsupported; the older lesson is retained as historical content. The supplied excerpts do not establish a complete monitoring schedule, annual procedures, reclassification thresholds or transfer-record workflow. [S7/S8]\n\nLanguage and disability: the still-linked February 2019 guidance is older than the January 2026 programming guidance. It states that EL status alone is not a basis for disability identification, and EL status is not a reason to delay a special education evaluation when disability is suspected. Avoid both 'limited English proves disability' and 'wait until English is mastered before considering a suspected disability.' Describe the actual concern and use the appropriate team/process. These excerpts support the distinction, not a full current IDEA procedure, evaluation timeline or accommodation entitlement. [S9]\n\nGUIDED PAUSE C — KEEP THE REASON FOR ACTION VISIBLE (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nA parent declines ELE services; another student has documented FEL status and needs help explaining a historical source; a third student is an EL with a separately suspected disability. Name the mistaken shortcut in each situation. Feedback: declining services is not reclassification; FEL status does not erase academic support needs; EL status neither proves disability nor justifies delaying an evaluation when disability is suspected. Each action follows a different kind of evidence. Reading these feedback statements does not create an attempt, judgment or learner success. [S7/S8/S9]\n\nSTAGE 4 — PRACTICE WITHOUT THE WORKED ANSWER\nThe linked seven authored checks each sample a different decision family. Close or set aside the lesson before attempting them; record any help used through the existing practice controls. Guided pauses and hinted practice are not independent evidence. Equivalent older starter tasks share exposure families, so a renamed item does not reset the existing feedback cooldown. The unfamiliar community-archive case asks for a reasoned plan in a new setting. Its explanation remains pending review; keywords cannot automatically establish correctness or transfer. A finite keyed answer supports only its narrow distinction, never completion of this objective.\n\nREMAINING GAPS\nThis module does not cover full statutes or IDEA, the full legal framework, exit/reclassification thresholds, screening cut scores, accommodation rules, complete transfer procedures, or broader operational programming guidance. No numeric notification deadlines are supplied. Use the versioned source inventory to see exactly which supplied excerpts support each bounded claim."
     }
   ],
   "tasks": [
@@ -2152,6 +2464,342 @@
           "prompt": "Describe formative evidence from all four language domains and evidence of content learning. Distinguish content reasoning from English control. Explain how you will respond to two possible wrong turns and justify your choices using the same mentor text."
         }
       ]
+    },
+    {
+      "id": "task.obj0001.evidence-chain",
+      "version": 1,
+      "kind": "mc",
+      "title": "Build the initial identification evidence chain",
+      "prompt": "Original unaided check. A newly enrolling child has no documented prior EL/FEL determination. After clarification with the family, the June 2025 Language Survey rubric indicates that screening is needed. A teacher observes very little English during an informal conversation. Which next-action sequence is supported?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the informal conversation to determine EL status, start a placement, and administer the screener later to confirm it."
+        },
+        {
+          "id": "b",
+          "text": "Treat the survey's other-language information as the proficiency result, determine EL status, and document placement."
+        },
+        {
+          "id": "c",
+          "text": "Complete and score the indicated ELP screening, use results for determination and initial placement, then notify the family and document the decisions."
+        },
+        {
+          "id": "d",
+          "text": "Use success in a supported content lesson to decide whether the indicated screener can be omitted."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "c"
+        ],
+        "feedback": "The protocol determines whether screening is indicated; when it is needed for initial identification, screening results support determination and placement. Notice and recording the determination/placement follow. The scenario supplies no transfer exception and no cut score. [S5 source.obj0001.s5.2026-11-08; S7 source.obj0001.s7.2026-11-08; S2 source.obj0001.s2.2026-11-08]",
+        "wrongFeedback": {
+          "a": "An impression of very little English does not justify initial placement before required screening. The S5 FAQ explicitly rejects that shortcut. [S5 source.obj0001.s5.2026-11-08]",
+          "b": "A Language Survey is background information interpreted through the protocol, not an English proficiency result or automatic classification. [S5 source.obj0001.s5.2026-11-08; S7 source.obj0001.s7.2026-11-08]",
+          "d": "Content success does not replace the ELP screening indicated in this scenario. Use the required language evidence; do not invent an exception from a classroom observation. [S5 source.obj0001.s5.2026-11-08; S7 source.obj0001.s7.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s7.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.identification"
+      ],
+      "familyId": "family.survey-concept",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0001.identification-shared.v1"
+    },
+    {
+      "id": "task.obj0001.family-access",
+      "version": 1,
+      "kind": "mc",
+      "title": "Interpret Section 2 for family communication",
+      "prompt": "Original unaided check. A family's Language Survey Section 2 requests interpreted meetings and translated messages. A staff member wants to use that request as evidence that the child needs EL placement. Which correction best fits the supplied protocol?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use Section 2 to support family communication access; determine the child's identification needs from the appropriate child information and protocol."
+        },
+        {
+          "id": "b",
+          "text": "Use the family's preferred language as the child's screening result when the parent cannot explain the child's English proficiency."
+        },
+        {
+          "id": "c",
+          "text": "Postpone responding to the communication preference until the child's EL determination is complete."
+        },
+        {
+          "id": "d",
+          "text": "Treat Section 2 as an additional identification question that overrides the Section 1 rubric."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "a"
+        ],
+        "feedback": "Section 2 is informational and is not used to identify whether the child needs support learning English. Family communication access and child identification need separate attention. [S5 source.obj0001.s5.2026-11-08; S6 source.obj0001.s6.2026-11-08]",
+        "wrongFeedback": {
+          "b": "A parent's language preference is neither the child's proficiency nor a screening result. Preserve the distinction between family access and child identification evidence. [S6 source.obj0001.s6.2026-11-08]",
+          "c": "Section 2's communication purpose does not depend on establishing the child's EL status. It can inform family communication while child identification follows its own process. [S5 source.obj0001.s5.2026-11-08; S6 source.obj0001.s6.2026-11-08]",
+          "d": "The form expressly excludes Section 2 from child identification. It does not override the Section 1 protocol or rubric. [S5 source.obj0001.s5.2026-11-08; S6 source.obj0001.s6.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.identification"
+      ],
+      "familyId": "family.family-communication",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0001.identification-shared.v1"
+    },
+    {
+      "id": "task.obj0001.shared-services",
+      "version": 1,
+      "kind": "mc",
+      "title": "Coordinate content access and ESL",
+      "prompt": "Original unaided check. An identified EL receives ESL instruction and participates in a science investigation. A scheduling conflict leads a team to propose replacing ESL with a sheltered science worksheet. The parent has not declined services. Which plan best fits shared responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Count the sheltered worksheet as ESL because it includes vocabulary and the student remains in a content classroom."
+        },
+        {
+          "id": "b",
+          "text": "Have content and ESL teachers coordinate language support and observations while preserving ESL instruction and access to the science goal."
+        },
+        {
+          "id": "c",
+          "text": "Assign language development exclusively to the ESL teacher and remove language scaffolds from science to avoid duplication."
+        },
+        {
+          "id": "d",
+          "text": "Recommend that the parent decline ESL so the science timetable can remain unchanged."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "b"
+        ],
+        "feedback": "Language development is shared across content and ESL settings, but sheltering content is not a substitute for ESL. A scheduling problem does not justify recommending that a parent decline services. Voluntary informed parent opt-out is a separate matter. [S7 source.obj0001.s7.2026-11-08; S8 source.obj0001.s8.2026-11-08]",
+        "wrongFeedback": {
+          "a": "A useful content scaffold does not become ESL instruction by including vocabulary. S7 explicitly rejects sheltering as a substitute for ESL. [S7 source.obj0001.s7.2026-11-08]",
+          "c": "Shared responsibility includes content classrooms. Specialist expertise does not remove the content teacher's responsibility to support language access. [S1 source.obj0001.s1.2026-11-08; S7 source.obj0001.s7.2026-11-08]",
+          "d": "The S8 changes summary says districts must not recommend declining services to resolve scheduling issues. Parent choice must remain separate from a timetable workaround. [S8 source.obj0001.s8.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.shared-responsibility"
+      ],
+      "familyId": "family.shared-concept",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0001.identification-shared.v1"
+    },
+    {
+      "id": "task.obj0001.notice-record",
+      "version": 1,
+      "kind": "mc",
+      "title": "Complete determination and placement communication",
+      "prompt": "Original unaided check. A district has made a student's EL determination and program placement decision through the appropriate process. Its record currently contains only the screener result. Which completion action matches the supplied 603 CMR 14.02 duty? No notification deadline is being tested.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retain the screener result alone because the determination and placement can be inferred from its score."
+        },
+        {
+          "id": "b",
+          "text": "Tell the classroom teacher the placement; notify the parent only if the parent asks for an explanation."
+        },
+        {
+          "id": "c",
+          "text": "Notify the parent of the determination but record only placement, since the two decisions refer to the same student."
+        },
+        {
+          "id": "d",
+          "text": "Notify the parent or guardian of both the EL determination and program placement, and place both in the student's school record."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "d"
+        ],
+        "feedback": "603 CMR 14.02(3) names both the EL determination and program placement for parent/guardian notification and the student's school record. A screening result alone does not state both decisions. No different notification clocks are combined here. [S2 source.obj0001.s2.2026-11-08]",
+        "wrongFeedback": {
+          "a": "The regulation requires recording the determination and placement, not relying on a reader to infer them from a screener result. [S2 source.obj0001.s2.2026-11-08]",
+          "b": "Internal teacher communication does not replace the named parent/guardian notification duty. It is not conditional on a parent request. [S2 source.obj0001.s2.2026-11-08]",
+          "c": "The duty covers both decisions in both places: parent notification and the student record. Splitting the information leaves the stated duty incomplete. [S2 source.obj0001.s2.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0001.s2.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.identification"
+      ],
+      "familyId": "family.obj0001.notice-record",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0001.identification-shared.v1"
+    },
+    {
+      "id": "task.obj0001.opt-out",
+      "version": 1,
+      "kind": "short",
+      "title": "Retrieve the status after voluntary opt-out",
+      "prompt": "Original unaided finite recall. An identified EL's parent voluntarily declines ELE services. No reclassification has occurred. What status does the student retain? Respond with only the status label or acronym; explanations beyond this finite key need review.",
+      "answerKey": {
+        "accepted": [
+          "EL",
+          "English learner",
+          "an English learner"
+        ],
+        "feedback": "The student remains an English Learner (EL). Opt-out is a service choice, not reclassification or FEL status. January 2026 guidance says annual English proficiency testing (WIDA ACCESS) continues. Shared responsibility for learning access also continues; this answer does not establish any exit criterion. Other wording or nuanced explanations remain pending review. [S7 source.obj0001.s7.2026-11-08; S1 source.obj0001.s1.2026-11-08]",
+        "wrongFeedback": {}
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s7.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.current-former"
+      ],
+      "familyId": "family.obj0001.opt-out-status",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0001.identification-shared.v1"
+    },
+    {
+      "id": "task.obj0001.fel-support",
+      "version": 1,
+      "kind": "mc",
+      "title": "Continue support for a documented FEL",
+      "prompt": "Original unaided check. A student registers with documented FEL status and is still within the four-year monitoring period after reclassification described by January 2026 guidance (supplied retrieval 2026-11-08). The student explains a historical image well but struggles to connect evidence in writing. Which response is supported by the supplied excerpts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat the writing difficulty as sufficient evidence to change the student's official status back to EL."
+        },
+        {
+          "id": "b",
+          "text": "Provide no language-related support because reclassification establishes that all later academic language demands are secure."
+        },
+        {
+          "id": "c",
+          "text": "Recognize the documented FEL status, continue routine academic-progress monitoring and respond to the observed need without restarting the period or inferring a status change."
+        },
+        {
+          "id": "d",
+          "text": "Begin a new four-year period at registration, because monitoring belongs only to the district that currently enrolls the student."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "c"
+        ],
+        "feedback": "January 2026 guidance, supplied retrieval 2026-11-08, requires identifying FELs on registration and routine academic-progress monitoring for four years after reclassification; S8 corroborates the duration. A transfer is not a new reclassification event. Support the observed need; the excerpts do not supply a complete monitoring schedule or a rule for automatic status change. [S7 source.obj0001.s7.2026-11-08; S8 source.obj0001.s8.2026-11-08]",
+        "wrongFeedback": {
+          "a": "A classroom difficulty calls for evidence-responsive support; it does not itself establish a new official determination. Use the appropriate process rather than inventing a reclassification rule. [S2 source.obj0001.s2.2026-11-08; S7 source.obj0001.s7.2026-11-08]",
+          "b": "FEL monitoring would have little purpose if status guaranteed success on every future academic task. Attend to actual academic progress and support needs. [S7 source.obj0001.s7.2026-11-08; S8 source.obj0001.s8.2026-11-08]",
+          "d": "S7 anchors the monitoring period to reclassification and requires recognizing FELs at registration. Do not invent a fresh reclassification date or restart the clock on transfer. The four-year statement here is qualified to January 2026 guidance, retrieved 2026-11-08. [S7 source.obj0001.s7.2026-11-08; S8 source.obj0001.s8.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.current-former"
+      ],
+      "familyId": "family.former-support",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0001.identification-shared.v1"
+    },
+    {
+      "id": "task.obj0001.language-disability",
+      "version": 1,
+      "kind": "mc",
+      "title": "Avoid both disability misidentification and delay",
+      "prompt": "Original unaided check. An EL's English proficiency is developing, and the school team also has a reason to suspect a disability. One colleague treats EL status as proof of disability; another wants to wait until English is mastered before considering evaluation. Which response reflects the still-linked February 2019 guidance's bounded principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reject both shortcuts: EL status alone establishes neither disability nor a reason to delay evaluation when disability is suspected; use the appropriate team and evidence."
+        },
+        {
+          "id": "b",
+          "text": "Prefer the first proposal, because difficulty learning English is enough to distinguish disability from language acquisition."
+        },
+        {
+          "id": "c",
+          "text": "Prefer the second proposal, because evaluation can become relevant only after the student no longer has EL status."
+        },
+        {
+          "id": "d",
+          "text": "Set aside the suspected disability whenever the student benefits from a language scaffold, because improvement resolves the question."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "a"
+        ],
+        "feedback": "The February 2019 guidance says EL status alone is not a basis for disability determination and should not delay a special education evaluation when disability is suspected. This is an older, still-linked source; the item teaches that principle only, not current IDEA timelines or a complete evaluation procedure. [S9 source.obj0001.s9.2026-11-08]",
+        "wrongFeedback": {
+          "b": "English proficiency alone cannot establish disability. The 2019 guidance explicitly warns against disability identification because of ELP. [S9 source.obj0001.s9.2026-11-08]",
+          "c": "The same guidance rejects using EL status to delay evaluation where there is reason to suspect disability. Reclassification is not a prerequisite supplied by this excerpt. [S9 source.obj0001.s9.2026-11-08]",
+          "d": "Benefit from one scaffold does not remove the separately stated reason for suspecting disability. Do not substitute that classroom observation for the appropriate evaluation process or use EL status to delay it. [S9 source.obj0001.s9.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0001.s9.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.identification"
+      ],
+      "familyId": "family.obj0001.language-disability",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0001.identification-shared.v1"
+    },
+    {
+      "id": "task.obj0001.community-archive-case",
+      "version": 1,
+      "kind": "case",
+      "title": "Unfamiliar transfer: a community archive project",
+      "prompt": "Original unfamiliar application in history/civics; not an official prompt. No deterministic answer key. Your reasoning remains pending review.\n\nA class is designing an audio-and-text community archive about how a neighborhood public space has changed. Students must compare accounts, identify an uncertainty and justify an interpretation with evidence. All scenario information is synthetic.\n\nMara is newly enrolling without documented prior EL/FEL status. Her family's clarified Language Survey information fits a rubric scenario requiring an ELP screener, but no result is yet available. Section 2 requests translated messages. A colleague proposes immediate EL placement because Mara hesitated in an English interview.\n\nDev arrives with documented FEL status and an existing reclassification date. The school knows Dev remains within the monitoring period described by the January 2026 guidance, supplied retrieval 2026-11-08. Dev organizes historical images convincingly but has difficulty connecting the account and claim in writing. A staff member proposes restarting the monitoring period on registration.\n\nLin is an identified EL whose parent has voluntarily declined ELE services without reclassification. Lin can explain an interview source orally with help. A separate concern gives the team reason to suspect a disability. The scheduling group suggests treating opt-out as exit and waiting for English fluency before considering the disability concern. The history teacher also asks whether a vocabulary worksheet can count as ESL for students still receiving ESL.\n\nPrepare a reasoned team plan with these connected parts:\n1. For Mara, distinguish Section 1/protocol evidence, Section 2 family communication information and the interview observation. Explain the justified next step and what cannot yet be concluded. Name the determination/placement notification and record duties when decisions are made, without supplying deadlines or cut scores.\n2. For Dev, explain how documented FEL status, academic observations and monitoring relate. Qualify any duration statement by the January 2026 guidance and supplied retrieval date. Address the proposed restart without inventing transfer procedures or annual schedules.\n3. For Lin, distinguish service choice from status, annual English proficiency assessment and learning access. Address both disability shortcuts using the older February 2019 source's limited principle; do not invent evaluation timelines.\n4. Design a short sequence for the archive task that preserves its historical reasoning goal, identifies an observable language goal, and explains content/ESL collaboration. Explain why a content scaffold cannot replace ESL, while acknowledging voluntary informed parent opt-out separately.\n5. Write a concise evidence-sharing note that distinguishes content understanding, language use, assistance and unanswered questions. Justify your decisions with the relevant supplied sources and name at least one remaining policy-research gap.\n\nReview focus: evidence-to-action reasoning, family access distinct from child identification, accurate notice/record scope, status versus service choice, qualified FEL continuity, shared instructional responsibility and the bounded disability principle. Several defensible instructional sequences are possible. Keyword matches, a copied model or completion of all parts do not establish an authoritative judgment, independence, transfer evidence or mastery. Source-checked refers only to model wording-to-source comparison, never human review of your response.",
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s3.2026-11-08",
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s6.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08",
+        "source.obj0001.s9.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.identification",
+        "sei.skill.shared-responsibility",
+        "sei.skill.current-former"
+      ],
+      "familyId": "family.obj0001.community-archive-transfer",
+      "noveltyKind": "unfamiliar",
+      "lessonId": "lesson.obj0001.identification-shared.v1"
     }
   ],
   "cards": [
@@ -2953,6 +3601,370 @@
         "Model author and reviewer are the same agent; this is not independent human validation."
       ],
       "createdAt": "2026-11-08T22:13:05.360Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s1.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s1.2026-11-08",
+      "sourceVersionId": "source.obj0001.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "099dcfbace1a59f3412e15b8b1a4f2989d8f4df5e446cfebc5070fc10c930011",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s2.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s2.2026-11-08",
+      "sourceVersionId": "source.obj0001.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "74d8d6838883da03ed093d3912e9ecfbdca586b11aeb529447779bcf834b4114",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s3.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s3.2026-11-08",
+      "sourceVersionId": "source.obj0001.s3.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s3.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "54528b674cefe4d16cf9f42b37c086b45923d2a74060b5f198f440d2fcab8ffc",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s4.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s4.2026-11-08",
+      "sourceVersionId": "source.obj0001.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s4.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "e8bfe014733d99bb81cc8e0937289ae195939492710bcb40a6f82e8f1a2d00d9",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s5.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s5.2026-11-08",
+      "sourceVersionId": "source.obj0001.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "333cfebb3f30c02d7e0ee52bb78c23d3ea9c3f2f13cd288881af545f7dcbb716",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s6.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s6.2026-11-08",
+      "sourceVersionId": "source.obj0001.s6.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "71ed6d7506ff242f46cf842b5201cc9a58fde8d938cc8e22f479581531d280da",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s7.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s7.2026-11-08",
+      "sourceVersionId": "source.obj0001.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "d6c84685a6fb96792ece28f2c71ce6c1e130165fe35618a607756c5ce5da5dd2",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s8.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s8.2026-11-08",
+      "sourceVersionId": "source.obj0001.s8.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "2b1bfde4fe3e9d34a784a045f35bc33c7e66fe8f5526cc1846e490485af57261",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.source.source.obj0001.s9.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0001.s9.2026-11-08",
+      "sourceVersionId": "source.obj0001.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared exact supporting excerpts, supplied document versions, URL, retrieval date and supplied binary SHA with the user packet.",
+        "S9 missing ELP-warning excerpt was added and re-inspected before approval. HTML hashes remain null.",
+        "Supplied researcher retrieval, not Codex fetching or binary verification.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "92ebc772f0c72396d06a2795b9d3c83663417a95a120f2c7ac66ccb5128493d1",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.lesson.lesson.obj0001.identification-shared.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0001.identification-shared.v1",
+      "sourceVersionId": "source.obj0001.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s3.2026-11-08",
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s6.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08",
+        "source.obj0001.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Read the full authored staged module against supplied S1-S9 excerpts.",
+        "Confirmed initial-identification rubric exceptions, separate family access, notice/records without clocks, shared content/ESL responsibility, voluntary opt-out, January 2026 and retrieval-qualified FEL period, and February 2019 disability limits.",
+        "Confirmed two worked examples with counterexamples, three guided assisted/nonrecorded pauses, explicit goals and remaining gaps.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "a80c4c8cec6d8212aa966833ade64621b30973f3a00a6ef3d164d9d481d8251c",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.evidence-chain.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.evidence-chain",
+      "sourceVersionId": "source.obj0001.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "a3e6c373cedde5a05f3e26fb05069f845666bc785d4d8a271077eea0e1374356",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.family-access.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.family-access",
+      "sourceVersionId": "source.obj0001.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "0f96795889165c9f5772f50a93704745426e9768948add869f6b8718d2809767",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.shared-services.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.shared-services",
+      "sourceVersionId": "source.obj0001.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "87da246db8bd252cfdc0814d1d8db99000cacc879119407ea27469aff30f5c89",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.notice-record.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.notice-record",
+      "sourceVersionId": "source.obj0001.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "31fd165f10da753e59c3bd4cb1c8520abc9d58f7ddbf90c5e52f342eaeb014da",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.opt-out.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.opt-out",
+      "sourceVersionId": "source.obj0001.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "ee0563a6225f5a2f0a3e0adadf89d6a9ccbeeaa1dbbd41e3261fcec996516706",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.fel-support.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.fel-support",
+      "sourceVersionId": "source.obj0001.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "ba1d01b29875c1abeabb6f37f15d11b64ec930b9861943b75b5252366cfb1285",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.language-disability.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.language-disability",
+      "sourceVersionId": "source.obj0001.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "1540f7df843a4bd30aedcfa7b5e164d848b79530f1cce72bf9e40bebac14db9f",
+      "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0001.task.task.obj0001.community-archive-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0001.community-archive-case",
+      "sourceVersionId": "source.obj0001.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0001.s1.2026-11-08",
+        "source.obj0001.s2.2026-11-08",
+        "source.obj0001.s3.2026-11-08",
+        "source.obj0001.s5.2026-11-08",
+        "source.obj0001.s6.2026-11-08",
+        "source.obj0001.s7.2026-11-08",
+        "source.obj0001.s8.2026-11-08",
+        "source.obj0001.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex curriculum_regressions agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared prompt, every keyed choice and wrong-turn rationale or open-response demand with supplied cited excerpts.",
+        "Confirmed finite labels/choices only; nuanced short answers and unfamiliar case remain pending. No scoring thresholds, deadlines or human-review claims.",
+        "Checked seven distinct standalone concepts, four correlated starter exposure groups, and one original unfamiliar history/civics integration case without an answer key.",
+        "Separate model review of authored wording and supplied excerpts only; not human review, independent source validation, full-document inspection or current-law certification."
+      ],
+      "payloadSha256": "4bc49cd68555738714613db01a69163c6434de446a6c71d4ac7e5145191a0ea5",
+      "createdAt": "2026-11-09T01:10:27.004Z"
     }
   ]
 }

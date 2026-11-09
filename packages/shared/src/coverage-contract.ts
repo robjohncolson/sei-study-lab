@@ -14,7 +14,7 @@ export type CoverageBinding = {
 };
 
 export const INTEGRATION_REFERRAL_ID = 'mtel56.obj.0013.reference.0001-0012';
-export const COVERAGE_CONTRACT_VERSION = 1;
+export const COVERAGE_CONTRACT_VERSION = 2;
 const sourceVersionId = 'source.framework.2026-11-08';
 const lesson = (lessonId: string, fingerprint: string) => ({lessonId, fingerprint});
 const tasks = (skillId: string, ids: string[]): CoverageBinding['tasks'] =>
@@ -28,12 +28,23 @@ export const SOURCE_COVERAGE_CONTRACT: readonly CoverageBinding[] = [
     'These short examples do not establish comprehensive implementation across educator roles and settings.',
     [lesson('lesson.shared', '10ec0e2e')],
     tasks('shared-responsibility', ['shared-plan', 'team-evidence', 'shared-recall', 'case-new-student'])),
+  binding('mtel56.obj.0001.ds.01',
+    'Shared content/ESL responsibility, evidence-sharing, and preserving ESL instruction alongside sheltered content; voluntary informed parent opt-out is distinct.',
+    'These bounded classroom and team decisions do not establish comprehensive implementation across educator roles and settings.',
+    [lesson('lesson.obj0001.identification-shared.v1', '94eb964a')],
+    tasks('shared-responsibility', ['obj0001.shared-services', 'obj0001.community-archive-case'])),
   binding('mtel56.obj.0001.ds.03',
     'Survey versus proficiency, family communication preferences, and evidence-responsive support for current/former ELs; recognizing the need to verify policy.',
-    'Complete identification/placement procedures, current exit thresholds, monitoring durations, accommodations, and detailed 2026 programming guidance remain research gaps.',
-    [lesson('lesson.identification', '8c09a860'), lesson('lesson.current-former', 'd550f631')],
+    'Full statutes/IDEA, current exit thresholds and detailed reclassification criteria, accommodation rules, and broader operational guidance remain gaps. This slice establishes neither a complete identification procedure nor all legal coverage.',
+    [lesson('lesson.identification', '8c09a860')],
     [...tasks('identification', ['survey-purpose', 'translation-preference', 'survey-recall', 'case-new-student']),
       ...tasks('current-former', ['former-support', 'policy-date', 'policy-recall', 'case-former-el'])]),
+  binding('mtel56.obj.0001.ds.03',
+    'Protocol-qualified survey/screening/determination/placement; separate family communication access; determination/placement notice and records; opt-out versus status; January 2026 guidance four-year FEL monitoring (supplied retrieval 2026-11-08); language acquisition versus disability principles from February 2019 guidance.',
+    'Full statutes/IDEA, current exit thresholds and detailed reclassification criteria, accommodation rules, and broader operational guidance remain gaps. This slice establishes neither a complete identification procedure nor all legal coverage.',
+    [lesson('lesson.obj0001.identification-shared.v1', '94eb964a')],
+    [...tasks('identification', ['obj0001.evidence-chain', 'obj0001.family-access', 'obj0001.notice-record', 'obj0001.language-disability', 'obj0001.community-archive-case']),
+      ...tasks('current-former', ['obj0001.opt-out', 'obj0001.fel-support'])]),
   binding('mtel56.obj.0006.ds.01',
     'Oral rehearsal as one bridge into written explanations.',
     'The wider role of listening comprehension and oral language across the curriculum is not fully instructed or assessed.',

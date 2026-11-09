@@ -8,11 +8,12 @@ import { SessionPlan } from './SessionPlan';
 import { Exchange } from './Exchange';
 import { getReadiness } from '../../../packages/shared/src/index';
 import { useDraftNavigation } from './DraftNavigation';
+import { dateLabel } from './date-label';
+export { dateLabel } from './date-label';
 
 type View = 'desk'|'practice'|'writing'|'evidence'|'coverage'|'sources'|'exchange';
 const navigation: {id:View; label:string; mark:string}[] = [{id:'desk',label:'Study desk',mark:'01'},{id:'practice',label:'Learn & practice',mark:'02'},{id:'writing',label:'Writing studio',mark:'03'},{id:'evidence',label:'Learning evidence',mark:'04'},{id:'coverage',label:'Standards map',mark:'05'},{id:'sources',label:'Source library',mark:'06'},{id:'exchange',label:'Take it with you',mark:'07'}];
 export function statusName(value: string) { return value.replaceAll('_',' '); }
-export function dateLabel(value?: string|null) { return value && !Number.isNaN(Date.parse(value)) ? new Date(value).toLocaleString() : 'Not recorded'; }
 export function Badge({value}:{value:string}) { return <span className={`badge ${value === 'draft'||value === 'unverified'||value === 'needs_recheck'?'amber':value.includes('evidence')||value==='source_checked'?'green':''}`}>{statusName(value)}</span>; }
 export function AnswerHistory({state, taskId}:{state:StudyState;taskId?:string}) {
   const attempts=state.attempts.filter(a=>!taskId||a.taskId===taskId).slice().reverse();

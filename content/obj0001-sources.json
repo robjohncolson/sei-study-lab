@@ -1,0 +1,297 @@
+{
+  "packetId": "obj0001.supplied.2026-11-08.v1",
+  "sources": [
+    {
+      "id": "source.obj0001.s1.2026-11-08",
+      "title": "MTEL Test Information Guide — Overview and Test Objectives, Field 56: Sheltered English Immersion",
+      "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_OBJ_56.htm",
+      "documentVersion": "Live NES study-guide page; no separate edition date in supplied page body",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s1-v1",
+      "excerpt": "Apply understanding of all educators' shared responsibility to educate and support all English language learners.\n\nApply knowledge of school policies related to English language learners, including initial identification of English language learners and required data, assessment, and support systems for current and former English language learners.",
+      "supportingExcerpts": [
+        {
+          "id": "shared",
+          "text": "Apply understanding of all educators' shared responsibility to educate and support all English language learners."
+        },
+        {
+          "id": "systems",
+          "text": "Apply knowledge of school policies related to English language learners, including initial identification of English language learners and required data, assessment, and support systems for current and former English language learners."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Bounds this derived module to descriptive statements 0001.ds.01 and 0001.ds.03. The framework's historical Question 2 example remains inventory, not current-law narrative; no complete Objective 0001 or legal coverage claim.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s2.2026-11-08",
+      "title": "603 CMR 14.02: Identification and Assessment of Students",
+      "url": "https://www.doe.mass.edu/lawsregs/603cmr14.html?section=02",
+      "documentVersion": "Most recently amended June 26, 2018; last updated July 23, 2018",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s2-v1",
+      "excerpt": "(1) Each school district shall establish procedures, in accordance with Department guidelines, to identify those students who may be English learners and assess their level of English proficiency upon their enrollment in the school district.\n\n(2) The parent or guardian of any student enrolled in the school district may request that the school district assess the child's level of English proficiency.\n\n(3) The school district shall notify the parent or guardian and place in the student's school record the following information: (a) the school district's determination as to whether the student is an English learner; and (b) the student's program placement.\n\n(4) Each school district shall establish criteria, in accordance with Department guidelines, to identify students who may no longer be English learners.",
+      "supportingExcerpts": [
+        {
+          "id": "procedures",
+          "text": "(1) Each school district shall establish procedures, in accordance with Department guidelines, to identify those students who may be English learners and assess their level of English proficiency upon their enrollment in the school district."
+        },
+        {
+          "id": "request",
+          "text": "(2) The parent or guardian of any student enrolled in the school district may request that the school district assess the child's level of English proficiency."
+        },
+        {
+          "id": "notice-record",
+          "text": "(3) The school district shall notify the parent or guardian and place in the student's school record the following information: (a) the school district's determination as to whether the student is an English learner; and (b) the student's program placement."
+        },
+        {
+          "id": "reclassification",
+          "text": "(4) Each school district shall establish criteria, in accordance with Department guidelines, to identify students who may no longer be English learners."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Separates identification/assessment, determination/placement notice and student-record duties, and reclassification criteria. Does not supply deadlines, cut scores or a complete protocol.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s3.2026-11-08",
+      "title": "603 CMR 14.04: Placement of Students in English Learner Education Programs",
+      "url": "https://www.doe.mass.edu/lawsregs/603cmr14.html?section=04",
+      "documentVersion": "Most recently amended June 26, 2018; last updated July 23, 2018",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s3-v1",
+      "excerpt": "(1) Each school district shall provide a student who is an English learner with an appropriate English learner education through a sheltered English immersion program or an alternative instructional program that meets the requirements of federal and state law.\n\n(3) Each school district shall commence language assistance services upon a student's identification as an English learner.\n\n(7) A parent or guardian of an English learner may withdraw the student from an English learner education program in accordance with state and federal law.",
+      "supportingExcerpts": [
+        {
+          "id": "program",
+          "text": "(1) Each school district shall provide a student who is an English learner with an appropriate English learner education through a sheltered English immersion program or an alternative instructional program that meets the requirements of federal and state law."
+        },
+        {
+          "id": "commencement",
+          "text": "(3) Each school district shall commence language assistance services upon a student's identification as an English learner."
+        },
+        {
+          "id": "withdrawal",
+          "text": "(7) A parent or guardian of an English learner may withdraw the student from an English learner education program in accordance with state and federal law."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Supports appropriate ELE and assistance upon identification, with parent withdrawal rights acknowledged separately. Not a local compliance conclusion or notification timing rule.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s4.2026-11-08",
+      "title": "Guidance and Laws (ELE index)",
+      "url": "https://www.doe.mass.edu/ele/guidance/",
+      "documentVersion": "Last Updated: September 2, 2026",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s4-v1",
+      "excerpt": "Last Updated: September 2, 2026",
+      "supportingExcerpts": [
+        {
+          "id": "version-cue",
+          "text": "Last Updated: September 2, 2026"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Supplied inventory identifies this as the canonical index linking S5–S9, including the still-linked older February 2019 disability guidance. Index establishes discovery context, not detailed procedural evidence.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s5.2026-11-08",
+      "title": "Massachusetts Language Survey Protocol",
+      "url": "https://www.doe.mass.edu/ele/guidance/ma-language-survey-protocol.docx",
+      "documentVersion": "June 2025",
+      "sha256": "6720f402f61ab4cb158eebbede7cfa5e9354edda2ddb1da46a6deddfe7403854",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s5-v1",
+      "excerpt": "The Language Survey (LS) is the first step in identifying ELs … There should also be procedures for analyzing LS results to determine whether or not the student is a potential EL and should complete an English Language Proficiency (ELP) screening test.\n\nQ: Can an LEA place a student into ELE services if it is apparent immediately after completing the LS that the student has very little English language proficiency?\nA: No; LEAs must utilize the LS to determine if there is a need to screen the student. … After the screening is completed and scored, then the LEA may determine placement for ELE services, notify the parents as required, and update the student’s SIMS coding.\n\nScenario 9: Q1 other language, but Q2–Q3 English/ASL → Administer screener N (“Consult with parents to gather more information.”)",
+      "supportingExcerpts": [
+        {
+          "id": "first-step",
+          "text": "The Language Survey (LS) is the first step in identifying ELs … There should also be procedures for analyzing LS results to determine whether or not the student is a potential EL and should complete an English Language Proficiency (ELP) screening test."
+        },
+        {
+          "id": "screen-before-initial-placement",
+          "text": "Q: Can an LEA place a student into ELE services if it is apparent immediately after completing the LS that the student has very little English language proficiency?\nA: No; LEAs must utilize the LS to determine if there is a need to screen the student. … After the screening is completed and scored, then the LEA may determine placement for ELE services, notify the parents as required, and update the student’s SIMS coding."
+        },
+        {
+          "id": "rubric-exception",
+          "text": "Scenario 9: Q1 other language, but Q2–Q3 English/ASL → Administer screener N (“Consult with parents to gather more information.”)"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "SHA-256 of downloaded binary as supplied; not recomputed by Codex.",
+      "derivedClaimRationale": "Survey interpretation identifies potential needs; it is neither automatic classification nor unconditional screening for every other-language response. Interpret the June 2025 rubric and clarify with parents; do not invent universal rules or transfer/exception procedures.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s6.2026-11-08",
+      "title": "Language Survey (form)",
+      "url": "https://www.doe.mass.edu/ele/guidance/language-survey.docx",
+      "documentVersion": "Hosted with June 2025 protocol; no separate form edition supplied",
+      "sha256": "fbfdadd7d8c8ae2c684aae27d17e8204b34760a0dcb3e5339f3777f3d421cbbd",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s6-v1",
+      "excerpt": "SECTION 1 … If your response to any question 1-3 is a language other than English, your child will be tested on their use and understanding of English to determine if English language supports are needed.\n\nSECTION 2 … This section is for informational purposes only and is not used to identify if your child needs support to learn English.",
+      "supportingExcerpts": [
+        {
+          "id": "section-one",
+          "text": "SECTION 1 … If your response to any question 1-3 is a language other than English, your child will be tested on their use and understanding of English to determine if English language supports are needed."
+        },
+        {
+          "id": "section-two",
+          "text": "SECTION 2 … This section is for informational purposes only and is not used to identify if your child needs support to learn English."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "SHA-256 of downloaded binary as supplied; not recomputed by Codex.",
+      "derivedClaimRationale": "Section 2 family communication preference is distinct from the child's identification evidence. Read the form's Section 1 wording with S5's rubric and documented exceptions, not as an unconditional screening mandate.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s7.2026-11-08",
+      "title": "Guidance on English Learner Education Services and Programming",
+      "url": "https://www.doe.mass.edu/ele/guidance/services-programming.docx",
+      "documentVersion": "January 2026",
+      "sha256": "127e17d03df6ef48c7a8ed691f4a1596dcb8183942e86bfb423bd6ed8842ef95",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s7-v1",
+      "excerpt": "Step 3: Use the rubric in the LS Protocol to determine whether an ELP screening test needs to be administered … Provide the parents with Parent Notification Regarding English Language Education.\n\nStep 4: Determine whether the student is an EL using screening test results and make an initial placement decision.\n\nStep 5: Notify parents and/or legal guardians of screening test results and initial placement decision.\n\nStep 6: Code the student as an EL … until the student is reclassified as a Former English Learner (FEL).\n\nWhen a parent declines ELE services, the student remains identified as an English Learner (EL) … Continue to classify the student as an EL … Continue annual English language proficiency testing (WIDA ACCESS)…\n\nDistricts must also identify Former English learners (FELs) upon their registration in the district and monitor them…\n\nWhen a student is reclassified as FEL, the district must: … design and implement a process for routinely monitoring the students’ academic progress for four years.\n\nELs spend the majority of their school day in content classes, which makes supporting their success a shared responsibility. Core content teachers are expected to use sheltering strategies and scaffolds…\n\nAcademic tutoring in content subjects or sheltering the content for ELs in a core content classroom is not a substitute for ESL instruction.",
+      "supportingExcerpts": [
+        {
+          "id": "screening",
+          "text": "Step 3: Use the rubric in the LS Protocol to determine whether an ELP screening test needs to be administered … Provide the parents with Parent Notification Regarding English Language Education."
+        },
+        {
+          "id": "determination",
+          "text": "Step 4: Determine whether the student is an EL using screening test results and make an initial placement decision."
+        },
+        {
+          "id": "notice",
+          "text": "Step 5: Notify parents and/or legal guardians of screening test results and initial placement decision."
+        },
+        {
+          "id": "status",
+          "text": "Step 6: Code the student as an EL … until the student is reclassified as a Former English Learner (FEL)."
+        },
+        {
+          "id": "opt-out",
+          "text": "When a parent declines ELE services, the student remains identified as an English Learner (EL) … Continue to classify the student as an EL … Continue annual English language proficiency testing (WIDA ACCESS)…"
+        },
+        {
+          "id": "fel-registration",
+          "text": "Districts must also identify Former English learners (FELs) upon their registration in the district and monitor them…"
+        },
+        {
+          "id": "fel-monitoring",
+          "text": "When a student is reclassified as FEL, the district must: … design and implement a process for routinely monitoring the students’ academic progress for four years."
+        },
+        {
+          "id": "shared",
+          "text": "ELs spend the majority of their school day in content classes, which makes supporting their success a shared responsibility. Core content teachers are expected to use sheltering strategies and scaffolds…"
+        },
+        {
+          "id": "esl",
+          "text": "Academic tutoring in content subjects or sheltering the content for ELs in a core content classroom is not a substitute for ESL instruction."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "SHA-256 of downloaded binary as supplied; not recomputed by Codex.",
+      "derivedClaimRationale": "January 2026 guidance, supplied retrieval 2026-11-08, supports the bounded identification chain, continued EL status/annual ACCESS after voluntary parent opt-out, continued content access, shared responsibilities with distinct ESL, and four-year FEL academic-progress monitoring. Recognize documented EL/FEL status on transfer; no fresh clock or annual monitoring procedure is inferred. Different notification clocks are deliberately not taught.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s8.2026-11-08",
+      "title": "Important Changes in the 2026 Guidance on English Learner Education Services and Programming",
+      "url": "https://www.doe.mass.edu/ele/guidance/services-programming-changes.docx",
+      "documentVersion": "Companion change summary to January 2026 guidance; separate edition date not supplied",
+      "sha256": "3ef15cc97628b3b9c33e23632c4239b687014d14232170955ab5a2ce7096cc98",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s8-v1",
+      "excerpt": "District identification procedures have been updated to align to the Massachusetts Language Survey protocol…\n\nIdentification of Former English Learners (FELs) … initiate required four-year monitoring immediately…\n\nELD is explicitly described as occurring both in ESL classes and in content classrooms. Responsibility for language development is shared among ESL teachers, SEI‑endorsed content teachers, and bilingual educators.\n\n…districts must not recommend that parents decline all or some services within an English learner program for any reason, including scheduling of special education or other services.",
+      "supportingExcerpts": [
+        {
+          "id": "alignment",
+          "text": "District identification procedures have been updated to align to the Massachusetts Language Survey protocol…"
+        },
+        {
+          "id": "fel",
+          "text": "Identification of Former English Learners (FELs) … initiate required four-year monitoring immediately…"
+        },
+        {
+          "id": "shared",
+          "text": "ELD is explicitly described as occurring both in ESL classes and in content classrooms. Responsibility for language development is shared among ESL teachers, SEI‑endorsed content teachers, and bilingual educators."
+        },
+        {
+          "id": "decline",
+          "text": "…districts must not recommend that parents decline all or some services within an English learner program for any reason, including scheduling of special education or other services."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "SHA-256 of downloaded binary as supplied; not recomputed by Codex.",
+      "derivedClaimRationale": "Corroborates S7's shared language-development responsibility and four-year monitoring, explicitly qualified by January 2026 guidance and supplied retrieval 2026-11-08. Scheduling does not justify steering families to decline services; no transfer clock restart is inferred.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0001.s9.2026-11-08",
+      "title": "Guidance for Supporting English Learners with Disabilities",
+      "url": "https://www.doe.mass.edu/ele/guidance/disabilities.docx",
+      "documentVersion": "February 2019; still linked by S4 as of September 2, 2026 per supplied inventory",
+      "sha256": "e5ee4b9dcb28aad2cab8261d5bbb72ad7a9493fdb3e91225f8ee8c1abc0751ee",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-s9-v1",
+      "excerpt": "Moreover, a student’s status as an EL is not, in and of itself, a basis for determining whether the student has a disability. Conversely, a student’s status as an EL should not be reason to delay a special education evaluation where there is a reason to suspect the student may have a disability.\n\nSchool districts must not identify or determine that EL students are students with disabilities because of their English language proficiency.",
+      "supportingExcerpts": [
+        {
+          "id": "dual-error",
+          "text": "Moreover, a student’s status as an EL is not, in and of itself, a basis for determining whether the student has a disability. Conversely, a student’s status as an EL should not be reason to delay a special education evaluation where there is a reason to suspect the student may have a disability."
+        },
+        {
+          "id": "proficiency-not-disability",
+          "text": "School districts must not identify or determine that EL students are students with disabilities because of their English language proficiency.",
+          "context": "S9 quotes the 2015 Dear Colleague Letter, page 25; only this short supplied excerpt is retained."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independently verified source packet supplied by the user from a separate researcher. Codex did not fetch these URLs, inspect the original binaries, or establish independent human validation.",
+      "hashProvenance": "SHA-256 of downloaded binary as supplied; not recomputed by Codex.",
+      "derivedClaimRationale": "Older February 2019 guidance supports avoiding both misidentification based on English proficiency and delay solely because of EL status when disability is suspected. No IDEA timelines, evaluation procedures, diagnostic conclusions or accommodations entitlements are derived.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    }
+  ]
+}
