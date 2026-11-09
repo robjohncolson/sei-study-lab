@@ -311,12 +311,16 @@ for (const lessonId of [
   'lesson.obj0007.sheltered-planning.v1',
   'lesson.obj0008.academic-discourse.v1',
   'lesson.obj0009.assessment-decisions.v1',
+  'lesson.obj0010.reading-diagnosis.v1',
+  'lesson.obj0011.writing-process.v1',
+  'lesson.obj0012.content-language.v1',
+  'lesson.obj0013.integrated-analysis.v1',
 ]) {
-  test(`${lessonId} opens assisted instruction, a linked check and its manual case without evidence writes`, async ({page}) => {
+  test(`${lessonId} opens assisted instruction, a linked check and manual practice without evidence writes`, async ({page}) => {
     const service = await mockDesk(page);
-    const lessonTasks = catalog.tasks.filter(t => t.lessonId === lessonId);
+    const lessonTasks = catalog.tasks.filter(t => t.lessonId === lessonId && t.kind !== 'writing');
     const check = lessonTasks.find(t => t.kind === 'mc')!;
-    const application = lessonTasks.find(t => t.kind === 'case')!;
+    const application = catalog.tasks.find(t => t.lessonId === lessonId && (t.kind === 'case' || t.kind === 'writing'))!;
     expect(check).toBeDefined();
     expect(application.answerKey).toBeUndefined();
     await page.goto('/');
@@ -333,11 +337,30 @@ for (const lessonId of [
     await expect(page.locator('.practice-card h2')).toHaveText(check.title);
     await expect(page.getByRole('radio')).toHaveCount(4);
     await expect(page.getByRole('button', {name: 'Save draft now', exact: true})).toBeEnabled();
-    await links.getByRole('button', {name: application.title, exact: true}).click();
-    await expect(page.locator('.practice-card h2')).toHaveText(application.title);
-    await expect(page.locator('.practice-card')).toContainText(/pending|provisional/i);
-    await expect(page.getByLabel('Your response', {exact: true})).toHaveValue('');
-    await expect(page.getByLabel('Your response', {exact: true})).toBeEnabled();
+    if (application.kind === 'writing') {
+      expect(application.id).toBe('task.writing.mentor.community-archive');
+      expect(application.rubricVersionId).toBe('rubric.mtel56.public@1');
+      const mentor = catalog.mentorTexts.find(m => m.id === application.mentorTextId)!;
+      await page.getByRole('button', {name: 'Writing studio', exact: false}).click();
+      await page.getByLabel('Practice text and task').selectOption(application.id);
+      await expect(page.getByRole('status')).toContainText('Ready to begin');
+      await expect(page.locator('.writing-editor')).toContainText(/original.*unofficial/i);
+      await expect(page.getByRole('navigation', {name: 'Writing parts'}).getByRole('button')).toHaveCount(5);
+      for (const [index, part] of application.parts!.entries()) {
+        await page.getByRole('button', {name: `Part ${index + 1} `, exact: false}).click();
+        await expect(page.getByRole('heading', {name: mentor.title, exact: true})).toBeVisible();
+        await expect(page.getByLabel(`Your response for ${part.title}`, {exact: true})).toHaveValue('');
+        await expect(page.getByLabel(`Your response for ${part.title}`, {exact: true})).toBeEnabled();
+      }
+      await expect(page.getByRole('button', {name: 'Preserve all five parts', exact: true})).toBeDisabled();
+      await expect(page.locator('.writing-editor')).toContainText('No model evaluates this writing automatically');
+    } else {
+      await links.getByRole('button', {name: application.title, exact: true}).click();
+      await expect(page.locator('.practice-card h2')).toHaveText(application.title);
+      await expect(page.locator('.practice-card')).toContainText(/pending|provisional/i);
+      await expect(page.getByLabel('Your response', {exact: true})).toHaveValue('');
+      await expect(page.getByLabel('Your response', {exact: true})).toBeEnabled();
+    }
     expect(service.attempts).toEqual([]);
     expect(service.drafts.size).toBe(0);
     expect(service.writes).toEqual([]);

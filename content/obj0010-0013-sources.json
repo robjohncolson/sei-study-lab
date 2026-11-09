@@ -1,0 +1,502 @@
+{
+  "packetId": "obj0010-0013.supplied.2026-11-08.v1",
+  "sources": [
+    {
+      "id": "source.obj0010-0013.s3.2026-11-08",
+      "title": "Field 56 Practice Test PDF",
+      "url": "https://www.mtel.nesinc.com/content/Docs/MA_FLD056_PRACTICE_TEST.pdf",
+      "documentVersion": "Footer 12/18; copyright 2018 Pearson",
+      "sha256": "314f4a449a7eebd0a6f2f80c5f7a9cdcf27e3b17e522cd858ecaa444dcaf1b73",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0010-0013-s3-v1",
+      "excerpt": "The practice test reprints the public Part I sample, the same-mentor requirement across all five parts, and the holistic rubric. It does not disclose official Parts II-V prompts or responses.\n\nLink to the public PDF for the sample mentor and strong Part I response. Neither that copyrighted mentor passage nor the sample response is copied into this slice.",
+      "supportingExcerpts": [
+        {
+          "id": "part-i-only",
+          "text": "The practice test reprints the public Part I sample, the same-mentor requirement across all five parts, and the holistic rubric. It does not disclose official Parts II-V prompts or responses.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        },
+        {
+          "id": "copyright-limit",
+          "text": "Link to the public PDF for the sample mentor and strong Part I response. Neither that copyrighted mentor passage nor the sample response is copied into this slice.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "hashProvenance": "Full SHA-256 supplied in the user packet; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Only the labeled supplied excerpts/summaries support the bounded derived lessons and practice; no broader full-document claim.",
+      "reviewLimits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0010-0013.s4.2026-11-08",
+      "title": "Field 56 Practice Test Appendix",
+      "url": "https://www.mtel.nesinc.com/content/Docs/MA_FLD056_PT_appendix.pdf",
+      "documentVersion": "Practice-test appendix family; supplied snapshot 2026-11-08",
+      "sha256": "b294e3704aff8e4b82679e271b0744cc11a5b5f7ae6535c6b4c413f380b63300",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0010-0013-s4-v1",
+      "excerpt": "The appendix provides multiple-choice analyses. It is not a source for official open-response Parts II-V wording.",
+      "supportingExcerpts": [
+        {
+          "id": "mc-analysis-only",
+          "text": "The appendix provides multiple-choice analyses. It is not a source for official open-response Parts II-V wording.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "hashProvenance": "Full SHA-256 supplied in the user packet; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Only the labeled supplied excerpts/summaries support the bounded derived lessons and practice; no broader full-document claim.",
+      "reviewLimits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0010-0013.s7.2026-11-08",
+      "title": "603 CMR 7.14 Endorsements",
+      "url": "https://www.doe.mass.edu/lawsregs/603cmr7.html?section=14",
+      "documentVersion": "Most recently amended April 28, 2026; page updated May 22, 2026",
+      "sha256": "f45d76f981075d90ceaffe28ad2001eca73eea427c548891f341cd68485fbdfa",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0010-0013-s7-v1",
+      "excerpt": "Section 7.14(1) connects SEI Teacher Endorsement to the knowledge and skills in 7.08(3)(a)-(e) and 7.14(1)(b). Routes include a Department-approved course, approved assessment, approved major or graduate training, ESL/ELL license, or approved equivalent out-of-state credential. Field 56 is an approved assessment pathway, not every route or the whole of classroom competence.\n\nThe supplied crosswalk includes SEI principles and discourse, coordinating SEI and ELD, EL laws, diversity and family collaboration, reading and writing theory/research/practice, oral language in literacy, formative and summative assessment, and academic language and vocabulary.\n\ndo not constitute educator licenses",
+      "supportingExcerpts": [
+        {
+          "id": "pathways",
+          "text": "Section 7.14(1) connects SEI Teacher Endorsement to the knowledge and skills in 7.08(3)(a)-(e) and 7.14(1)(b). Routes include a Department-approved course, approved assessment, approved major or graduate training, ESL/ELL license, or approved equivalent out-of-state credential. Field 56 is an approved assessment pathway, not every route or the whole of classroom competence.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        },
+        {
+          "id": "knowledge-skills",
+          "text": "The supplied crosswalk includes SEI principles and discourse, coordinating SEI and ELD, EL laws, diversity and family collaboration, reading and writing theory/research/practice, oral language in literacy, formative and summative assessment, and academic language and vocabulary.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        },
+        {
+          "id": "endorsement-not-license",
+          "text": "do not constitute educator licenses",
+          "kind": "supplied_short_verbatim_excerpt"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "hashProvenance": "Full SHA-256 supplied in the user packet; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Only the labeled supplied excerpts/summaries support the bounded derived lessons and practice; no broader full-document claim.",
+      "reviewLimits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0010-0013.s8.2026-11-08",
+      "title": "603 CMR 7.08 Professional Standards for Teachers",
+      "url": "https://www.doe.mass.edu/lawsregs/603cmr7.html?section=08",
+      "documentVersion": "Most recently amended April 28, 2026; page updated May 22, 2026",
+      "sha256": "aaac41c2524f742e40b777a3b325adf1d0645d208a2d7482fb98451e274db797",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0010-0013-s8-v1",
+      "excerpt": "Section 7.08(3)(a)-(e), referenced by 7.14, covers planning for culturally and linguistically diverse learners, accessible content, social versus academic language in differentiation, safe collaborative high-expectation environments, and family collaboration recognizing native language and culture. Passing one assessment does not certify every aspect of ongoing professional practice.",
+      "supportingExcerpts": [
+        {
+          "id": "indicators-a-e",
+          "text": "Section 7.08(3)(a)-(e), referenced by 7.14, covers planning for culturally and linguistically diverse learners, accessible content, social versus academic language in differentiation, safe collaborative high-expectation environments, and family collaboration recognizing native language and culture. Passing one assessment does not certify every aspect of ongoing professional practice.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "hashProvenance": "Full SHA-256 supplied in the user packet; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Only the labeled supplied excerpts/summaries support the bounded derived lessons and practice; no broader full-document claim.",
+      "reviewLimits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0010-0013.s12.2026-11-08",
+      "title": "WWC Improving Adolescent Literacy",
+      "url": "https://ies.ed.gov/ncee/wwc/Docs/PracticeGuide/adlit_pg_082608.pdf",
+      "documentVersion": "2008; NCEE 2008-4027",
+      "sha256": "893db948fe7bf4add870a2729da1cfb41c738de4b232e28da6cf116962a16bc0",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0010-0013-s12-v1",
+      "excerpt": "The 2008 adolescent-literacy guide supports explicit vocabulary and comprehension strategy instruction (Strong), with discussion and motivation (Moderate). It is not EL-specific; pair it with the 2014 EL guide for EL claims and do not infer EL-specific causal effects or timelines from this older guide alone.",
+      "supportingExcerpts": [
+        {
+          "id": "scope-and-evidence",
+          "text": "The 2008 adolescent-literacy guide supports explicit vocabulary and comprehension strategy instruction (Strong), with discussion and motivation (Moderate). It is not EL-specific; pair it with the 2014 EL guide for EL claims and do not infer EL-specific causal effects or timelines from this older guide alone.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "hashProvenance": "Full SHA-256 supplied in the user packet; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Only the labeled supplied excerpts/summaries support the bounded derived lessons and practice; no broader full-document claim.",
+      "reviewLimits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    }
+  ],
+  "packetBindings": [
+    {
+      "packetSource": "S1",
+      "sourceId": "source.framework.2026-11-08",
+      "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_OBJ_56.htm",
+      "sha256": "1e7192674b87161d80b9ef64b3d1af043c3a76679d615a4494b18aa264342ef2",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "mtel56.obj.0010.ds.01",
+          "text": "Recognize the interrelationships between oral and written language, including the role of oral language in literacy development, and how to use oral language to promote literacy and vice versa.",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0010.ds.02",
+          "text": "Recognize the role of the first language in English language learners' reading development, including the relationship and transfer of existing first-language reading skills to the second language and differences in initial literacy instruction for students who are and are not literate in their first language.",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0010.ds.03",
+          "text": "Apply knowledge of the range, quality, and complexity of student reading as described in the Massachusetts Curriculum Framework for English Language Arts and Literacy (e.g., Standard 10) to identify areas that may be linguistically demanding or conceptually unfamiliar to English language learners at different English proficiency levels and to provide English language learners with exposure to and explicit instruction in a range of literary text types (e.g., stories, drama, poetry) and informational text types (e.g., literary nonfiction, historical texts, scientific texts, technical texts).",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0010.ds.04",
+          "text": "Apply knowledge of evidence-based principles of effective reading instruction (e.g., creating literacy-rich classroom environments, promoting students' metacognitive and metalinguistic awareness during literacy tasks, activating and building background knowledge, encouraging close reading, using multicultural and high-interest reading materials, using computers and multimedia activities to encourage reading) for English language learners at various grade, English proficiency, and literacy levels.",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0010.ds.05",
+          "text": "Analyze sheltered strategies for reading that emphasize making content comprehensible and methods and practices for developing the foundational reading skills (e.g., print concepts, phonological awareness, phonics and word recognition, fluency) and reading comprehension skills of English language learners at various grade, English proficiency, and literacy levels, including purposes for different types of reading (e.g., silent reading, oral reading, choral reading, partner reading).",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0010.ds.06",
+          "text": "Analyze methods and practices (e.g., think-alouds) for promoting English language learners' understanding and use of reading strategies (e.g., predicting, skimming, scanning, visualizing, questioning, monitoring for understanding, summarizing, identifying important information, using visual/graphic features).",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0011.ds.01",
+          "text": "Recognize the interrelationships between reading and writing and how to use writing to promote reading and vice versa.",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0011.ds.02",
+          "text": "Recognize the role of the first language in English language learners' writing development, including the relationship and possible transfer of existing first-language writing skills to the second language and cultural differences in written discourse structures (e.g., rhetorical traditions, organizational patterns).",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0011.ds.03",
+          "text": "Apply knowledge of text types and genres as described in the Massachusetts Curriculum Framework for English Language Arts and Literacy to provide English language learners with explicit instruction in how to write in a range of literary text types (e.g., stories, poems) and informational text types (e.g., lab reports, research reports), including helping students understand the writing-reading connection.",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0011.ds.04",
+          "text": "Apply knowledge of formal elements of written English as described in the Massachusetts Curriculum Framework for English Language Arts and Literacy (e.g., Language Progressive Skills chart) to provide English language learners with explicit, systematic instruction in different text structures (e.g., narrative, expository, persuasive) and conventions of written Standard English (e.g., mechanics, syntax, grammar, spelling).",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0011.ds.05",
+          "text": "Apply knowledge of evidence-based principles of effective writing instruction (e.g., using first-language writing skills as a bridge to writing in English, using technology to build and encourage writing skills, providing responsive feedback on written assignments) for English language learners at various grade, English proficiency, and literacy levels.",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0011.ds.06",
+          "text": "Analyze scaffolded strategies for writing (e.g., using graphic organizers, writing templates, semantic maps) and methods and practices (e.g., collaborative writing, facilitated writing, shared writing, process writing, journal writing) for developing the writing skills of English language learners at various grade, English proficiency, and literacy levels.",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0012.ds.01",
+          "text": "Apply knowledge of relevant Massachusetts content-area standards as described in the Massachusetts curriculum frameworks to anticipate areas of greatest need for English language learners.",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0012.ds.02",
+          "text": "Apply knowledge of the WIDA ELD Standards, including social and instructional language, as related to the content areas of language arts, mathematics, science, and social studies to promote English language learners' ability to communicate information, ideas, and concepts necessary for academic success in the content areas.",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0012.ds.03",
+          "text": "Apply knowledge of how to plan content instruction guided by both language and content objectives that is aligned with the WIDA ELD Standards and the Massachusetts curriculum frameworks and is appropriate for English language learners at various grade, English proficiency, and literacy levels.",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0012.ds.04",
+          "text": "Apply knowledge of methods and practices for making content comprehensible and accessible to English language learners (e.g., activating and building background knowledge, using visual and contextual aids, using graphic organizers, checking for understanding).",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0012.ds.05",
+          "text": "Apply knowledge of supplementary materials for making content comprehensible and accessible to English language learners (e.g., additional readings, first-language materials, audiovisual and multimedia devices) and strategies for supporting English language learners' access to and comprehension of authentic content-area texts (e.g., scaffolding complex texts, breaking large passages into smaller chunks).",
+          "kind": "unchanged_official_catalog_wording"
+        },
+        {
+          "id": "mtel56.obj.0013.reference.0001-0012",
+          "text": "(Refer to objectives 0001 through 0012 and associated descriptive statements.)",
+          "kind": "unchanged_official_catalog_wording"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S2",
+      "sourceId": "source.rubric.2026-11-08",
+      "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_CRI_56.asp",
+      "sha256": "49de2c87e507644fe99c66234b81b3eba41400ab73bd0d3954309064ffe4c3fc",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "public-sample-limit",
+          "text": "The public sample supplies Part I only. The full assignment has five parts using the same selected mentor text; identify that mentor in Part I(a). No official Parts II-V wording or sample response is supplied here.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        },
+        {
+          "id": "part-i-shape",
+          "text": "Part I identifies the grade-level cluster and relevant secondary discipline, a content objective, Tier One/Two/Three vocabulary, sentence-level and discourse-level academic language features, and three language objectives for vocabulary development and oracy, reading comprehension, and written discourse, supported with mentor examples.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        },
+        {
+          "id": "purpose",
+          "text": "The extent to which the response achieves the purpose of the assignment.",
+          "kind": "unchanged_official_rubric_wording"
+        },
+        {
+          "id": "subject-matter-knowledge",
+          "text": "Accuracy and appropriateness in the application of subject matter knowledge.",
+          "kind": "unchanged_official_rubric_wording"
+        },
+        {
+          "id": "support",
+          "text": "Quality and relevance of supporting details.",
+          "kind": "unchanged_official_rubric_wording"
+        },
+        {
+          "id": "rationale",
+          "text": "Soundness of argument and degree of understanding of the subject matter.",
+          "kind": "unchanged_official_rubric_wording"
+        },
+        {
+          "id": "holistic-scale",
+          "text": "The existing rubric has one holistic 1-4 score informed by Purpose, Subject Matter Knowledge, Support and Rationale, plus U/B. B means no response; U includes unrelated, illegible, primarily non-English, insufficient length or repetition. Apply U/B gates before 1-4. Criterion comments are allowed; invented numeric analytic scores are not official scoring.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S3",
+      "sourceId": "source.obj0010-0013.s3.2026-11-08",
+      "url": "https://www.mtel.nesinc.com/content/Docs/MA_FLD056_PRACTICE_TEST.pdf",
+      "sha256": "314f4a449a7eebd0a6f2f80c5f7a9cdcf27e3b17e522cd858ecaa444dcaf1b73",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "part-i-only",
+          "text": "The practice test reprints the public Part I sample, the same-mentor requirement across all five parts, and the holistic rubric. It does not disclose official Parts II-V prompts or responses.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        },
+        {
+          "id": "copyright-limit",
+          "text": "Link to the public PDF for the sample mentor and strong Part I response. Neither that copyrighted mentor passage nor the sample response is copied into this slice.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S4",
+      "sourceId": "source.obj0010-0013.s4.2026-11-08",
+      "url": "https://www.mtel.nesinc.com/content/Docs/MA_FLD056_PT_appendix.pdf",
+      "sha256": "b294e3704aff8e4b82679e271b0744cc11a5b5f7ae6535c6b4c413f380b63300",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "mc-analysis-only",
+          "text": "The appendix provides multiple-choice analyses. It is not a source for official open-response Parts II-V wording.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S5",
+      "sourceId": "source.exam.2026-11-08",
+      "url": "https://www.mtel.nesinc.com/TestView.aspx?f=HTML_FRAG/MA056_TestPage.html",
+      "sha256": "c378d7ea840b4f8bade63fc547bbd04e43275add7fc2f9f27ed1ec97401dfbc2",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "dated-format",
+          "text": "At the supplied 2026-11-08 retrieval, Field 56 lists 60 multiple-choice items and one open-response assignment consisting of five tasks. This slice makes no fee or testing-time claim.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S7",
+      "sourceId": "source.obj0010-0013.s7.2026-11-08",
+      "url": "https://www.doe.mass.edu/lawsregs/603cmr7.html?section=14",
+      "sha256": "f45d76f981075d90ceaffe28ad2001eca73eea427c548891f341cd68485fbdfa",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "pathways",
+          "text": "Section 7.14(1) connects SEI Teacher Endorsement to the knowledge and skills in 7.08(3)(a)-(e) and 7.14(1)(b). Routes include a Department-approved course, approved assessment, approved major or graduate training, ESL/ELL license, or approved equivalent out-of-state credential. Field 56 is an approved assessment pathway, not every route or the whole of classroom competence.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        },
+        {
+          "id": "knowledge-skills",
+          "text": "The supplied crosswalk includes SEI principles and discourse, coordinating SEI and ELD, EL laws, diversity and family collaboration, reading and writing theory/research/practice, oral language in literacy, formative and summative assessment, and academic language and vocabulary.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        },
+        {
+          "id": "endorsement-not-license",
+          "text": "do not constitute educator licenses",
+          "kind": "supplied_short_verbatim_excerpt"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S8",
+      "sourceId": "source.obj0010-0013.s8.2026-11-08",
+      "url": "https://www.doe.mass.edu/lawsregs/603cmr7.html?section=08",
+      "sha256": "aaac41c2524f742e40b777a3b325adf1d0645d208a2d7482fb98451e274db797",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "indicators-a-e",
+          "text": "Section 7.08(3)(a)-(e), referenced by 7.14, covers planning for culturally and linguistically diverse learners, accessible content, social versus academic language in differentiation, safe collaborative high-expectation environments, and family collaboration recognizing native language and culture. Passing one assessment does not certify every aspect of ongoing professional practice.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S9",
+      "sourceId": "source.obj0004-0006.s2.2026-11-08",
+      "url": "https://wida.wisc.edu/sites/default/files/resource/WIDA-ELD-Standards-Framework-2020.pdf",
+      "sha256": "0d92701e7cc5015fb1b98619561f2b22e5b813ddc476c0b799bfc94534b9fba7",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "grade-level-language",
+          "text": "Scaffold up to rich standards-based grade-level content. Plan language at word/phrase, sentence and discourse levels, using multiple modes and the full linguistic repertoire. English language proficiency describes ELP, not content ability; language supports must not permanently dilute the content target.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S10",
+      "sourceId": "source.obj0004-0006.s3.2026-11-08",
+      "url": "https://wida.wisc.edu/sites/default/files/resource/Guiding-Principles-of-Language-Development.pdf",
+      "sha256": "c53f8e011cfe2928dd9f34fba598f167ae9878947027d199bf25c6d49761b11e",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "repertoire",
+          "text": "Multimodal learning and learners' full linguistic repertoires are resources. First-language literacy and translanguaging can support learning without assuming identical literacy or rhetorical preferences from a language label.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S11",
+      "sourceId": "source.obj0004-0006.s5.2026-11-08",
+      "url": "https://ies.ed.gov/ncee/wwc/Docs/PracticeGuide/english_learners_pg_040114.pdf",
+      "sha256": "6f39b0f96514344b3773b21ff6f53b7cc2503407ce0e325d7525463115893596",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "evidence-levels",
+          "text": "Recommendation 1 academic vocabulary and Recommendation 2 oral/written English integrated with content have Strong evidence. Recommendation 3 writing has Minimal evidence; Recommendation 4 small-group intervention has Moderate evidence. Do not call every writing support causally established.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        },
+        {
+          "id": "rec3-writing",
+          "text": "Recommendation 3 supports content-anchored writing, language-based supports, pairs or small groups talking through writing, periodic assessment and positive constructive feedback. Its Minimal evidence rating is a limit on the research claim, not a reason to omit writing.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        },
+        {
+          "id": "rec4-reading",
+          "text": "For foundational reading difficulties, instruction includes basic skills alongside vocabulary, listening and reading comprehension, and scaffolded opportunities to practice and review. Reading difficulty is not always a phonics-only need.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S12",
+      "sourceId": "source.obj0010-0013.s12.2026-11-08",
+      "url": "https://ies.ed.gov/ncee/wwc/Docs/PracticeGuide/adlit_pg_082608.pdf",
+      "sha256": "893db948fe7bf4add870a2729da1cfb41c738de4b232e28da6cf116962a16bc0",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "scope-and-evidence",
+          "text": "The 2008 adolescent-literacy guide supports explicit vocabulary and comprehension strategy instruction (Strong), with discussion and motivation (Moderate). It is not EL-specific; pair it with the 2014 EL guide for EL claims and do not infer EL-specific causal effects or timelines from this older guide alone.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    },
+    {
+      "packetSource": "S13",
+      "sourceId": "source.obj0004-0006.s7.2026-11-08",
+      "url": "https://www.doe.mass.edu/ele/guidance/sei/sei.docx",
+      "sha256": "99df99b285a23eafc727bb3eed13839f4489e6525216eb7a74eb568f756e584a",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "supportingExcerpts": [
+        {
+          "id": "concurrent-standards",
+          "text": "Teach Massachusetts subject-area frameworks and WIDA ELD Standards in tandem. SEI aims at English proficiency/literacy and content achievement; sheltered content instruction gives access to grade-level content and discipline-specific academic language. Oral entry supports reading and extended writing rather than replacing them.",
+          "kind": "supplied_packet_summary_not_verbatim"
+        }
+      ],
+      "provenance": "Researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs, inspect original binaries or independently verify supplied hashes. Model comparison only; not human review.",
+      "limits": "Supplied packet comparison only; not human review, independent retrieval, full-document review, eligibility certification or evidence of learner mastery."
+    }
+  ],
+  "excludedSources": [
+    {
+      "packetSource": "S6",
+      "url": "https://www.mtel.nesinc.com/PageView.aspx?f=HTML_FRAG/MA056_PrepMaterials.html",
+      "reason": "Supplied index locator only, with no full SHA-256. It differs from the existing prep source URL; neither reused nor added as a teaching snapshot."
+    }
+  ],
+  "remainingGaps": [
+    "Official wording of live Parts II-V is not public and is not invented.",
+    "The full set of ten live mentor texts is unavailable; the new mentor is original, unofficial authored practice.",
+    "Secret scoring keys and benchmark papers beyond the public strong Part I sample are unavailable.",
+    "Exact MA ELA Framework Standard 10 grade bands and Language Progressive Skills chart were not supplied or re-fetched; no standard numbers are invented.",
+    "Proprietary reading programs and SIOP checklists are outside this slice.",
+    "The 2008 adolescent-literacy guide is not EL-specific; no EL-specific causal overclaim.",
+    "Every objective remains incomplete; synthetic practice, assisted guided checks and model content review are not learner mastery or human review."
+  ]
+}

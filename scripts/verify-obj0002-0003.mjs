@@ -39,7 +39,7 @@ test('portable base and legacy contract are digest-pinned; all prior entities re
     assert.deepEqual(Array.isArray(rows) ? catalog[key].slice(0, rows.length) : catalog[key], rows, key);
   }
   for (const key of ['objectives', 'statements', 'competencies', 'indicators', 'skills', 'alignments', 'prerequisites', 'mentorTexts', 'rubrics', 'cards']) {
-    assert.deepEqual(key === 'cards' ? catalog.cards.slice(0, baseline.cards.length) : catalog[key], baseline[key], key);
+    assert.deepEqual(['cards', 'mentorTexts'].includes(key) ? catalog[key].slice(0, baseline[key].length) : catalog[key], baseline[key], key);
   }
   assert.deepEqual(SOURCE_COVERAGE_CONTRACT.slice(0, baselineContract.length), baselineContract);
 });
@@ -160,7 +160,7 @@ test('assisted staged instruction is substantial and creates no seeded learning 
     assert.ok(lesson.body.length > 4000, lesson.id);
   }
   for (const key of ['attempts', 'judgments', 'evidenceEvents', 'drafts']) assert.equal(catalog[key], undefined);
-  assert.deepEqual(catalog.tasks.filter(t => t.kind === 'writing'), baseline.tasks.filter(t => t.kind === 'writing'));
+  assert.deepEqual(catalog.tasks.slice(0, baseline.tasks.length).filter(t => t.kind === 'writing'), baseline.tasks.filter(t => t.kind === 'writing'));
 });
 
 test('the original eight statements have narrow explicit v3 scopes and remaining gaps', () => {
@@ -214,7 +214,7 @@ test('portable recipe appends idempotently and rejects same-version conflicts or
   assert.ok(testRoot.startsWith(workspace + sep), 'Temporary fixture root must remain inside this repository');
   const dir = mkdtempSync(resolve(testRoot, '.authoring-check-'));
   try {
-    const names = ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006', 'obj0007-0009'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])];
+    const names = ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006', 'obj0007-0009', 'obj0010-0013'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])];
     for (const name of names) copyFileSync(resolve('content', name), resolve(dir, name));
     const path = resolve(dir, 'catalog.json');
     writeFileSync(path, JSON.stringify(baseline, null, 2) + '\n');

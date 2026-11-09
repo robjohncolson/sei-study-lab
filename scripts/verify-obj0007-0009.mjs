@@ -19,7 +19,7 @@ const reviewFile = read('content/obj0007-0009-review.json');
 const reviews = reviewFile.reviewEvents;
 const checks = module.tasks.filter(t => t.kind === 'mc');
 const cases = module.tasks.filter(t => t.kind === 'case');
-const bindings = SOURCE_COVERAGE_CONTRACT.slice(baselineContract.length);
+const bindings = SOURCE_COVERAGE_CONTRACT.slice(baselineContract.length, baselineContract.length + 24);
 const task = suffix => module.tasks.find(t => t.id === `task.${suffix}`);
 const selected = item => item.options.find(o => item.answerKey.accepted.includes(o.id)).text;
 const sourceIds = {
@@ -51,9 +51,9 @@ test('79040cd fixtures pin exact prior catalog entity bytes, order and coverage 
   for (const [key, rows] of Object.entries(baseline)) {
     assert.equal(JSON.stringify(Array.isArray(rows) ? catalog[key].slice(0, rows.length) : catalog[key]), JSON.stringify(rows), key);
     if (key in additions) {
-      assert.deepEqual(catalog[key].slice(rows.length), additions[key], key);
-      assert.equal(catalog[key].length, rows.length + additions[key].length, key);
-    } else assert.deepEqual(catalog[key], rows, key);
+      assert.deepEqual(catalog[key].slice(rows.length, rows.length + additions[key].length), additions[key], key);
+      assert.equal(catalog[key].slice(0, rows.length + additions[key].length).length, rows.length + additions[key].length, key);
+    } else assert.deepEqual(key === 'mentorTexts' ? catalog[key].slice(0, rows.length) : catalog[key], rows, key);
   }
   assert.deepEqual(SOURCE_COVERAGE_CONTRACT.slice(0, baselineContract.length), baselineContract);
   assert.equal(COVERAGE_CONTRACT_VERSION, 3);
@@ -339,7 +339,7 @@ test('offline append recipe is idempotent and refuses stale reviews and same-key
   const dir = mkdtempSync(resolve(root, '.authoring-789-'));
   if (!realpathSync(dir).startsWith(root + sep)) throw new Error('Unsafe source-only cleanup target');
   try {
-    const names = ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006', 'obj0007-0009'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])];
+    const names = ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006', 'obj0007-0009', 'obj0010-0013'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])];
     for (const name of names) copyFileSync(resolve('content', name), resolve(dir, name));
     const path = resolve(dir, 'catalog.json');
     writeFileSync(path, JSON.stringify(baseline, null, 2) + '\n');

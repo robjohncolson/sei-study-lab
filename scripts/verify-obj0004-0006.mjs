@@ -58,7 +58,7 @@ test('189d52f fixture digests and every prior entity preserve exact content and 
       const rows = additions[key];
       assert.deepEqual(catalog[key].slice(baseline[key].length, baseline[key].length + rows.length), rows, key);
       assert.equal(catalog[key].slice(0, baseline[key].length + rows.length).length, baseline[key].length + rows.length, key);
-    } else assert.deepEqual(catalog[key], baseline[key], key);
+    } else assert.deepEqual(key === 'mentorTexts' ? catalog[key].slice(0, baseline[key].length) : catalog[key], baseline[key], key);
   }
   assert.deepEqual(SOURCE_COVERAGE_CONTRACT.slice(0, baselineContract.length), baselineContract);
   assert.equal(COVERAGE_CONTRACT_VERSION, 3);
@@ -344,7 +344,7 @@ test('offline append recipe is idempotent and rejects stale reviews and existing
   const dir = mkdtempSync(resolve(root, '.authoring-456-'));
   if (!realpathSync(dir).startsWith(root + sep)) throw new Error('Unsafe source-only cleanup target');
   try {
-    const names = ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006', 'obj0007-0009'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])];
+    const names = ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006', 'obj0007-0009', 'obj0010-0013'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])];
     for (const name of names) copyFileSync(resolve('content', name), resolve(dir, name));
     const path = resolve(dir, 'catalog.json');
     writeFileSync(path, JSON.stringify(baseline, null, 2) + '\n');

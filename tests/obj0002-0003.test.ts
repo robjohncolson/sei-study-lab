@@ -29,6 +29,12 @@ const store = (value = catalog) => {const s = new SeiStore(value, ':memory:'); s
 afterEach(() => stores.splice(0).forEach(s => s.close()));
 
 describe('Objective 0002/0003 exact additive content and bounded review', () => {
+  it('passes the portable verifier with explicit TAP totals', () => {
+    const output = execFileSync(process.execPath, ['--experimental-strip-types', '--test-reporter=tap', 'scripts/verify-obj0002-0003.mjs'], {encoding: 'utf8'});
+    expect(output).toMatch(/# fail 0/);
+    expect(output).toMatch(/^# pass 10$/m);
+  }, 20000);
+
   it('loads digest-verified source archive fixtures without Git history and preserves every older entity', () => {
     expect(validateCatalog(catalog)).toEqual([]);
     expect(() => verifySliceContractFixture()).not.toThrow();
@@ -41,9 +47,9 @@ describe('Objective 0002/0003 exact additive content and bounded review', () => 
       expect(Array.isArray(rows) ? (current as unknown[]).slice(0, rows.length) : current, key).toEqual(rows);
     }
     for (const key of ['objectives', 'statements', 'competencies', 'indicators', 'alignments', 'skills', 'prerequisites', 'mentorTexts', 'rubrics', 'cards'] as const) {
-      expect(key === 'cards' ? catalog.cards.slice(0, baseline.cards.length) : catalog[key], key).toEqual(baseline[key]);
+      expect(key === 'cards' || key === 'mentorTexts' ? catalog[key].slice(0, baseline[key].length) : catalog[key], key).toEqual(baseline[key]);
     }
-    expect(catalog.tasks.filter(t => t.kind === 'writing')).toEqual(baseline.tasks.filter(t => t.kind === 'writing'));
+    expect(catalog.tasks.slice(0, baseline.tasks.length).filter(t => t.kind === 'writing')).toEqual(baseline.tasks.filter(t => t.kind === 'writing'));
     expect(SOURCE_COVERAGE_CONTRACT.slice(0, baseContract.length)).toEqual(baseContract);
     expect(catalog.lessons.slice(baseline.lessons.length, baseline.lessons.length + module.lessons.length)).toEqual(module.lessons);
     expect(catalog.tasks.slice(baseline.tasks.length, baseline.tasks.length + module.tasks.length)).toEqual(module.tasks);
@@ -209,7 +215,7 @@ describe('Objective 0002/0003 evidence boundaries and authoring safety', () => {
     // Validate before try so the cleanup guard cannot replace a test failure.
     if (!resolve(dir).startsWith(testRoot + sep)) throw new Error('Unsafe authoring test cleanup target');
     try {
-      for (const name of ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006', 'obj0007-0009'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])]) {
+      for (const name of ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006', 'obj0007-0009', 'obj0010-0013'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])]) {
         copyFileSync(resolve('content', name), resolve(dir, name));
       }
       const path = resolve(dir, 'catalog.json');

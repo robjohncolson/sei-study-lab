@@ -79,7 +79,9 @@ test('mobile keyboard reveal preserves exact drafts across navigation/reload and
   await page.getByRole('button', { name: 'Flashcards', exact: false }).click();
   await expect(page.getByLabel('Optional typed recall', { exact: true })).toHaveValue(exactRecall);
   await expect(page.getByLabel('I consulted materials or received help', { exact: true })).toBeChecked();
-  await page.getByRole('button', { name: 'Reveal answer', exact: true }).focus();
+  const revealButton = page.getByRole('button', { name: 'Reveal answer', exact: true });
+  await expect(revealButton).toBeEnabled();
+  await revealButton.focus();
   await page.keyboard.press('Enter');
   await expect(page.getByRole('heading', { name: 'Answer revealed', exact: true })).toBeFocused();
   await expect(page.getByText(card.back, { exact: true })).toBeVisible();

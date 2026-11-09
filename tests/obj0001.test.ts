@@ -1,4 +1,5 @@
 import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
 import {readFileSync} from 'node:fs';
 import {afterEach, describe, expect, it} from 'vitest';
 import {getAttemptEligibility, type Catalog, validateCatalog} from '../packages/shared/src/index.js';
@@ -26,6 +27,12 @@ const store = (value = catalog) => {
 afterEach(() => stores.splice(0).forEach(s => s.close()));
 
 describe('Objective 0001 supplied-packet curriculum boundaries', () => {
+  it('passes the portable verifier with explicit TAP totals', () => {
+    const output = execFileSync(process.execPath, ['--experimental-strip-types', '--test-reporter=tap', 'scripts/verify-obj0001.mjs'], {encoding: 'utf8'});
+    expect(output).toMatch(/# fail 0/);
+    expect(output).toMatch(/^# pass 8$/m);
+  }, 20000);
+
   it('appends content without changing any installed inventory or versioned record', () => {
     expect(validateCatalog(catalog)).toEqual([]);
     for (const [key, oldRows] of Object.entries(base)) {
@@ -39,7 +46,7 @@ describe('Objective 0001 supplied-packet curriculum boundaries', () => {
       }
     }
     for (const key of ['objectives', 'statements', 'competencies', 'indicators', 'alignments', 'skills', 'prerequisites', 'mentorTexts', 'rubrics', 'cards'] as const) {
-      expect(key === 'cards' ? catalog.cards.slice(0, base.cards.length) : catalog[key]).toEqual(base[key]);
+      expect(key === 'cards' || key === 'mentorTexts' ? catalog[key].slice(0, base[key].length) : catalog[key]).toEqual(base[key]);
     }
     expect(catalog.objectives).toHaveLength(13);
     expect(catalog.statements).toHaveLength(60);
