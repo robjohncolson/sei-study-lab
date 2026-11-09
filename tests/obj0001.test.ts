@@ -43,8 +43,9 @@ describe('Objective 0001 supplied-packet curriculum boundaries', () => {
     }
     expect(catalog.objectives).toHaveLength(13);
     expect(catalog.statements).toHaveLength(60);
-    expect(catalog.lessons).toHaveLength(base.lessons.length + 1);
-    expect(catalog.tasks).toHaveLength(base.tasks.length + 8);
+    // Preserve the exact first-wave count while permitting later additive slices.
+    expect(catalog.lessons.filter(l => base.lessons.some(old => old.id === l.id) || l.id === moduleLessonId)).toHaveLength(base.lessons.length + 1);
+    expect(catalog.tasks.filter(t => base.tasks.some(old => old.id === t.id) || t.id.startsWith('task.obj0001.'))).toHaveLength(base.tasks.length + 8);
   });
 
   it('provides exactly seven conceptual families and one separate unfamiliar case', () => {

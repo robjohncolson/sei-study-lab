@@ -1,0 +1,309 @@
+{
+  "packetId": "obj0002-0003.supplied.2026-11-08.v1",
+  "sources": [
+    {
+      "id": "source.obj0002-0003.s1.2026-11-08",
+      "title": "MTEL Field 56 objectives: original Objective 0002 and 0003 statements",
+      "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_OBJ_56.htm",
+      "documentVersion": "Live page; no separate publication date supplied",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s1-v1",
+      "excerpt": "Apply knowledge of the characteristics of special populations of English language learners (e.g., newcomers, refugees, long-term English language learners, English language learners with disabilities, students with interrupted formal education [SIFE] or limited formal education, undocumented immigrants, migrants, English language learners with trauma, English language learners with low socioeconomic status) and the distinct strengths and challenges of each special population.\n\nRecognize the individual social, cultural, and educational experiences of English language learners and the unique skills and abilities that English language learners possess.\n\nApply knowledge of a variety of appropriate educational and support services, both in and out of the classroom, in addition to creating a classroom culture of access and inclusion, for promoting English language learners' ability to grow and achieve to their full potential.\n\nApply knowledge of cultural differences in educational practices, including culturally influenced approaches to learning (e.g., cooperation vs. competition, inductive vs. deductive), and the effects of these differences on English language learners' learning and achievement.\n\nRecognize the nature of culture, major concepts related to culture (e.g., deep vs. surface culture, collectivism vs. individualism) and cultural adaptation (e.g., cultural shock), and the influence of cultural differences (e.g., cultural assumptions, beliefs, and values; communication patterns; socioeconomic differences; cultural views on literacy) on the teaching and learning of English language learners.\n\nApply knowledge of attitudes, practices, and strategies for creating a culturally inclusive and welcoming classroom environment, helping English language learners understand and successfully navigate the differences between the home and school cultures, and drawing on English language learners' cultural and linguistic resources to inform instruction.\n\nDemonstrate understanding of English language learners' families, including the structure of family constellations (e.g., transnational families, separated families) in immigrant and newcomer homes, the importance of viewing families from a \"strengths\" perspective, and how English language learners' families and communities can and do support students' learning and achievement.\n\nApply understanding of the role of families as cultural and heritage-language resources for supporting student learning and development both at home and at school and of the importance of establishing and maintaining strong school-home-community partnerships and communicating in a linguistically and culturally relevant manner with families (e.g., translation of written communications, effective use of interpreters).",
+      "supportingExcerpts": [
+        {
+          "id": "mtel56.obj.0002.ds.01",
+          "text": "Apply knowledge of the characteristics of special populations of English language learners (e.g., newcomers, refugees, long-term English language learners, English language learners with disabilities, students with interrupted formal education [SIFE] or limited formal education, undocumented immigrants, migrants, English language learners with trauma, English language learners with low socioeconomic status) and the distinct strengths and challenges of each special population."
+        },
+        {
+          "id": "mtel56.obj.0002.ds.02",
+          "text": "Recognize the individual social, cultural, and educational experiences of English language learners and the unique skills and abilities that English language learners possess."
+        },
+        {
+          "id": "mtel56.obj.0002.ds.03",
+          "text": "Apply knowledge of a variety of appropriate educational and support services, both in and out of the classroom, in addition to creating a classroom culture of access and inclusion, for promoting English language learners' ability to grow and achieve to their full potential."
+        },
+        {
+          "id": "mtel56.obj.0002.ds.04",
+          "text": "Apply knowledge of cultural differences in educational practices, including culturally influenced approaches to learning (e.g., cooperation vs. competition, inductive vs. deductive), and the effects of these differences on English language learners' learning and achievement."
+        },
+        {
+          "id": "mtel56.obj.0003.ds.01",
+          "text": "Recognize the nature of culture, major concepts related to culture (e.g., deep vs. surface culture, collectivism vs. individualism) and cultural adaptation (e.g., cultural shock), and the influence of cultural differences (e.g., cultural assumptions, beliefs, and values; communication patterns; socioeconomic differences; cultural views on literacy) on the teaching and learning of English language learners."
+        },
+        {
+          "id": "mtel56.obj.0003.ds.02",
+          "text": "Apply knowledge of attitudes, practices, and strategies for creating a culturally inclusive and welcoming classroom environment, helping English language learners understand and successfully navigate the differences between the home and school cultures, and drawing on English language learners' cultural and linguistic resources to inform instruction."
+        },
+        {
+          "id": "mtel56.obj.0003.ds.03",
+          "text": "Demonstrate understanding of English language learners' families, including the structure of family constellations (e.g., transnational families, separated families) in immigrant and newcomer homes, the importance of viewing families from a \"strengths\" perspective, and how English language learners' families and communities can and do support students' learning and achievement."
+        },
+        {
+          "id": "mtel56.obj.0003.ds.04",
+          "text": "Apply understanding of the role of families as cultural and heritage-language resources for supporting student learning and development both at home and at school and of the importance of establishing and maintaining strong school-home-community partnerships and communicating in a linguistically and culturally relevant manner with families (e.g., translation of written communications, effective use of interpreters)."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Exact eight descriptive statements copied from the installed versioned inventory, whose wording is explicitly required by the supplied packet. This distinct snapshot supplies only framework scope; it does not prescribe a teaching method or make historical SIFE wording a current Massachusetts identification definition.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s4.2026-11-08",
+      "title": "SLIFE Guidance for Identification, Services, and Support",
+      "url": "https://www.doe.mass.edu/ele/slife/guidance.pdf",
+      "documentVersion": "June 2024",
+      "sha256": "ec354921b1ed96a59f15ed32be73213df132d791de3fe13f8883736cfcbefd5b",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s4-v1",
+      "excerpt": "To be identified as SLIFE in Massachusetts, a student must meet all the following criteria:\n\nThe DOE025 SIMS field indicates the student is an English learner.\n\nThe student is 8 to 21 years old.\n\nThe student enrolled in a school in the United States after grade 2 or exited the U.S. for 6 months or more and did not attend school during this time.\n\nPrior exposure to formal schooling is characterized by one of the following: No formal schooling; Significant interruptions in formal schooling; Consistent but limited formal schooling (e.g., school days were significantly shorter)\n\nUltimately, districts should use a holistic approach to determine whether students’ gaps in education indicate that they will need significant support beyond what is provided in existing English learner education (ELE) programs\n\nbeing identified as SLIFE does not reflect negatively on the learner's abilities or potential.\n\nFrequently, students identified as SLIFE share some of the following experiences, strengths and needs: May have emerging literacy skills … May need intensive support … May function approximately 2 or more years below … May have strengths in pragmatic life skills … May be used to oral communication over written communication. May experience cultural dissonance …\n\nStudents identified as SLIFE … are experts on topics related to their lived experiences and backgrounds. … bring a wealth of knowledge and varying levels of literacy in one or more languages … bring multiple and varied cultural lenses …\n\nImplement a system for communicating essential details that prevents students or caregivers from having to repeatedly recount their experiences, especially potentially sensitive or traumatic ones. This approach helps create a supportive educational environment while protecting the student's and family's right to privacy and emotional well-being.\n\nSome of these experiences may lead to a need for individualized clinical care … while others may be addressed through regular social-emotional learning (SEL) activities …\n\nDoes not impose any new requirements on schools or districts. Does not abrogate, amend, or diminish any existing requirements …",
+      "supportingExcerpts": [
+        {
+          "id": "exhibit-1-all",
+          "text": "To be identified as SLIFE in Massachusetts, a student must meet all the following criteria:"
+        },
+        {
+          "id": "exhibit-1-el",
+          "text": "The DOE025 SIMS field indicates the student is an English learner."
+        },
+        {
+          "id": "exhibit-1-age",
+          "text": "The student is 8 to 21 years old."
+        },
+        {
+          "id": "exhibit-1-enrollment",
+          "text": "The student enrolled in a school in the United States after grade 2 or exited the U.S. for 6 months or more and did not attend school during this time."
+        },
+        {
+          "id": "exhibit-1-schooling",
+          "text": "Prior exposure to formal schooling is characterized by one of the following: No formal schooling; Significant interruptions in formal schooling; Consistent but limited formal schooling (e.g., school days were significantly shorter)"
+        },
+        {
+          "id": "holistic-support",
+          "text": "Ultimately, districts should use a holistic approach to determine whether students’ gaps in education indicate that they will need significant support beyond what is provided in existing English learner education (ELE) programs"
+        },
+        {
+          "id": "not-ability",
+          "text": "being identified as SLIFE does not reflect negatively on the learner's abilities or potential."
+        },
+        {
+          "id": "exhibit-2-may",
+          "text": "Frequently, students identified as SLIFE share some of the following experiences, strengths and needs: May have emerging literacy skills … May need intensive support … May function approximately 2 or more years below … May have strengths in pragmatic life skills … May be used to oral communication over written communication. May experience cultural dissonance …"
+        },
+        {
+          "id": "assets",
+          "text": "Students identified as SLIFE … are experts on topics related to their lived experiences and backgrounds. … bring a wealth of knowledge and varying levels of literacy in one or more languages … bring multiple and varied cultural lenses …"
+        },
+        {
+          "id": "privacy",
+          "text": "Implement a system for communicating essential details that prevents students or caregivers from having to repeatedly recount their experiences, especially potentially sensitive or traumatic ones. This approach helps create a supportive educational environment while protecting the student's and family's right to privacy and emotional well-being."
+        },
+        {
+          "id": "support-varies",
+          "text": "Some of these experiences may lead to a need for individualized clinical care … while others may be addressed through regular social-emotional learning (SEL) activities …"
+        },
+        {
+          "id": "authority-limit",
+          "text": "Does not impose any new requirements on schools or districts. Does not abrogate, amend, or diminish any existing requirements …"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "Primary June 2024 Exhibit 1 supplies all conjunctive Massachusetts SLIFE criteria and holistic support reasoning. Exhibit 2 examples are MAY characteristics, including approximately two or more years below; they are not additional universal identification criteria. Privacy and varying support support responsive classroom planning, never automatic trauma diagnosis. Historical SIFE framework wording and current MA SLIFE practice remain distinguished.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s5.2026-11-08",
+      "title": "Enrolling and Supporting Newcomer Students: FAQ",
+      "url": "https://www.doe.mass.edu/ele/guidance/newcomer-faq.docx",
+      "documentVersion": "Updated July 31, 2024",
+      "sha256": "2e4f4d00b2a94c20236f4460e91b33cc11df5e29491d0e0d01b16e1cbbad8595",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s5-v1",
+      "excerpt": "For the purposes of this document, “newcomer students” refers to students from other countries who have recently arrived in the United States. While newcomer students arrive in U.S. schools from diverse backgrounds and bring a wide range of experiences, they often share the common challenges of adjusting to a new home, navigating a new language and culture, and learning how to function effectively in a school environment that may be very different from their prior school experience.\n\nschools and districts also have an obligation to provide parents and guardians essential information … in a language they understand.",
+      "supportingExcerpts": [
+        {
+          "id": "newcomer-diversity",
+          "text": "For the purposes of this document, “newcomer students” refers to students from other countries who have recently arrived in the United States. While newcomer students arrive in U.S. schools from diverse backgrounds and bring a wide range of experiences, they often share the common challenges of adjusting to a new home, navigating a new language and culture, and learning how to function effectively in a school environment that may be very different from their prior school experience."
+        },
+        {
+          "id": "family-access",
+          "text": "schools and districts also have an obligation to provide parents and guardians essential information … in a language they understand."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "Use for diverse newcomer experiences and family access only. The packet flags its compressed SLIFE definition as incomplete against S4 Exhibit 1; do not use the FAQ as identification authority or teach its two-years-below phrasing as a mandatory criterion. No enrollment procedure, deadline or immigration procedure is derived.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s6.2026-11-08",
+      "title": "Guidance for Oral Language Interpretation",
+      "url": "https://www.doe.mass.edu/language-access/interpreters/district-guidance.docx",
+      "documentVersion": "Supplied linked DESE guidance; no publication date supplied",
+      "sha256": "9861c45ab952d2d926304b58f487c60bdbf5e47171f8c2bb8bfc1225e5fc2673",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s6-v1",
+      "excerpt": "Families have a civil right to equal participation in their students’ educational experience, including families who speak a language other than English. … school districts must have systems in place to provide translation and interpretation services …\n\nschools must provide translation or interpretation from appropriate and competent individuals and may not rely on or ask students, siblings, friends, or untrained school staff to translate or interpret for parents\n\nthe ability of a person to speak two languages does not necessarily produce the skills or knowledge necessary to provide high-quality interpretation.",
+      "supportingExcerpts": [
+        {
+          "id": "participation",
+          "text": "Families have a civil right to equal participation in their students’ educational experience, including families who speak a language other than English. … school districts must have systems in place to provide translation and interpretation services …"
+        },
+        {
+          "id": "joint-guidance-competence",
+          "text": "schools must provide translation or interpretation from appropriate and competent individuals and may not rely on or ask students, siblings, friends, or untrained school staff to translate or interpret for parents"
+        },
+        {
+          "id": "bilingual-not-qualification",
+          "text": "the ability of a person to speak two languages does not necessarily produce the skills or knowledge necessary to provide high-quality interpretation."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "DESE source quotes DOJ/ED joint guidance. Supports competent interpretation and rejecting pupils, siblings, friends or untrained staff as substitutes; bilingualism alone is not qualification. The underlying Jan 7, 2015 OCR PDF was blocked in researcher retrieval; no independent OCR text is claimed and no interpreter credential or procedural deadline is invented.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s7.2026-11-08",
+      "title": "Guidance for English Learner Parent Advisory Councils",
+      "url": "https://www.doe.mass.edu/ele/guidance/elpac.docx",
+      "documentVersion": "August 2018",
+      "sha256": "7d9380242addf428def85445f1f7bf4a17dc9d40722e838c1987f4ec560fabab",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s7-v1",
+      "excerpt": "Families and their communities foster a child’s academic and social and emotional development and growth. … collaborative partnerships among schools, families, and community organizations are crucial …\n\nELs and their families bring a depth of personal, social, cultural resources, as well as their academic, workplace, and world experiences …\n\nEffective ELPACs build on school-family partnerships that regard student learning and school improvement as a shared responsibility … relationships based on mutual respect and trust …",
+      "supportingExcerpts": [
+        {
+          "id": "partnership",
+          "text": "Families and their communities foster a child’s academic and social and emotional development and growth. … collaborative partnerships among schools, families, and community organizations are crucial …"
+        },
+        {
+          "id": "family-assets",
+          "text": "ELs and their families bring a depth of personal, social, cultural resources, as well as their academic, workplace, and world experiences …"
+        },
+        {
+          "id": "shared-responsibility",
+          "text": "Effective ELPACs build on school-family partnerships that regard student learning and school improvement as a shared responsibility … relationships based on mutual respect and trust …"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "August 2018 guidance supports the partnership concept and asset framing only. No ELPAC numeric compliance threshold, current establishment rule, membership entitlement or legal deadline is taught. PTA attendance is not a proxy for family care or available resources; this is an authored application of asset-based partnership, not a quoted legal test.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s8.2026-11-08",
+      "title": "US ED / OELA Newcomer Toolkit",
+      "url": "https://ncela.ed.gov/sites/default/files/2023-09/NewcomerToolkit-09152023-508.pdf",
+      "documentVersion": "June 2023",
+      "sha256": "ed27e44982c0de465f5b3cce294ed7942733a6b20389fa5fce57bb2c1b627ce9",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s8-v1",
+      "excerpt": "For the purposes of this toolkit, newcomers are defined as K-12 students born outside the United States who have arrived in the country in the last three years and are still learning English.\n\nThe term newcomer is often seen as an umbrella term that refers to many different types of students new to the country, such as refugees or students with limited or interrupted formal education (SLIFE).\n\nnewcomer is a temporary designation.\n\nNewcomers to the United States are a highly heterogeneous group with different needs.\n\nSupport the cultural and linguistic assets of newcomers and help educators begin to support these assets in the classroom\n\nDue to the heterogeneity among newcomers, the specific type, intensity, and causes of their social, emotional, and mental health needs also vary.",
+      "supportingExcerpts": [
+        {
+          "id": "publisher-definition",
+          "text": "For the purposes of this toolkit, newcomers are defined as K-12 students born outside the United States who have arrived in the country in the last three years and are still learning English."
+        },
+        {
+          "id": "umbrella",
+          "text": "The term newcomer is often seen as an umbrella term that refers to many different types of students new to the country, such as refugees or students with limited or interrupted formal education (SLIFE)."
+        },
+        {
+          "id": "temporary",
+          "text": "newcomer is a temporary designation."
+        },
+        {
+          "id": "heterogeneity",
+          "text": "Newcomers to the United States are a highly heterogeneous group with different needs."
+        },
+        {
+          "id": "assets",
+          "text": "Support the cultural and linguistic assets of newcomers and help educators begin to support these assets in the classroom"
+        },
+        {
+          "id": "needs-vary",
+          "text": "Due to the heterogeneity among newcomers, the specific type, intensity, and causes of their social, emotional, and mental health needs also vary."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "Publisher-specific June 2023 toolkit definition, including three years, is not universal law or a Massachusetts criterion. Umbrella wording supports potentially overlapping labels, not equivalence or mutually exclusive categories. Toolkit assets and heterogeneous needs support individual observations and responsive access, not national learning styles or diagnosis. Portal supplied: https://ncela.ed.gov/educator-support/toolkits/newcomer-toolkit; not fetched.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s9.2026-11-08",
+      "title": "NCELA Long-Term English Learners Fact Sheet",
+      "url": "https://ncela.ed.gov/sites/default/files/2024-11/longtermels-508.pdf",
+      "documentVersion": "Posted/file dated November 2024",
+      "sha256": "edb483ae8abb80b9df647b6cf224de44a02db42795d3cf3b4ea4988d129105a8",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s9-v1",
+      "excerpt": "While “long-term EL” is not defined in the ESEA, students who do not exit from EL status within five to six years are often labeled as “long-term ELs.”\n\nHigh numbers of long-term ELs can be a sign that programs and instruction for EL students may not be well-matched to certain students’ strengths or needs. … students who retain EL status into secondary school may experience inequitable access to grade-level or higher core-content courses …",
+      "supportingExcerpts": [
+        {
+          "id": "not-esea-definition",
+          "text": "While “long-term EL” is not defined in the ESEA, students who do not exit from EL status within five to six years are often labeled as “long-term ELs.”"
+        },
+        {
+          "id": "program-access",
+          "text": "High numbers of long-term ELs can be a sign that programs and instruction for EL students may not be well-matched to certain students’ strengths or needs. … students who retain EL status into secondary school may experience inequitable access to grade-level or higher core-content courses …"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "Five-to-six-year usage is qualified as common usage in this fact sheet, not an ESEA statutory definition, universal cutoff, ability measure or cause attributable to an individual student. Attend to access and program fit.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s10.2026-11-08",
+      "title": "WIDA: Reframing How We Think About Our Long-Term English Learners (LTELs)",
+      "url": "https://wida.wisc.edu/news/reframing-how-we-think-about-our-long-term-english-learners-ltels",
+      "documentVersion": "February 2, 2026",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s10-v1",
+      "excerpt": "While there are no standardized criteria for the length of stay … most states consider … more than five years.\n\nGetting to know your students’ individual stories, combating deficit-based assumptions, and ensuring their access to authentic learning opportunities …",
+      "supportingExcerpts": [
+        {
+          "id": "no-standardized-criteria",
+          "text": "While there are no standardized criteria for the length of stay … most states consider … more than five years."
+        },
+        {
+          "id": "individual-access",
+          "text": "Getting to know your students’ individual stories, combating deficit-based assumptions, and ensuring their access to authentic learning opportunities …"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Consortium professional-learning perspective, February 2, 2026; no standardized LTEL criteria. Source-specific duration usage must not become a legal threshold. Individual stories, assets and authentic access guide support; the label does not explain ability or instructional cause.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    }
+  ]
+}

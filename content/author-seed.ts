@@ -1,6 +1,6 @@
 ﻿// Offline, append-only authoring recipe. Run with Node 22.17 --experimental-strip-types.
 // The installed catalog is the immutable baseline, not regenerated from templates.
-// Author drafts in obj0001-module.json; a separate recorded model comparison must
+// Author drafts in the module files; a separate recorded model comparison must
 // approve exact payload hashes before this recipe installs source_checked tasks.
 import {readFileSync, writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -12,9 +12,15 @@ const canonical = (value: unknown): string => JSON.stringify(value, (_key, v: un
     ? Object.fromEntries(Object.entries(v).sort(([a], [b]) => a.localeCompare(b))) : v);
 const payloadHash = (row: RecordRow) => createHash('sha256').update(canonical(row)).digest('hex');
 const catalog = read('./catalog.json');
-const {sources} = read('./obj0001-sources.json') as {sources: RecordRow[]};
-const {lessons, tasks} = read('./obj0001-module.json') as {lessons: RecordRow[]; tasks: RecordRow[]};
-const {reviewEvents} = read('./obj0001-review.json') as {reviewEvents: RecordRow[]};
+const modules = ['obj0001', 'obj0002-0003'].map(name => ({
+  ...read(`./${name}-sources.json`),
+  ...read(`./${name}-module.json`),
+  reviewEvents: read(`./${name}-review.json`).reviewEvents,
+})) as {sources: RecordRow[]; lessons: RecordRow[]; tasks: RecordRow[]; reviewEvents: RecordRow[]}[];
+const sources = modules.flatMap(m => m.sources);
+const lessons = modules.flatMap(m => m.lessons);
+const tasks = modules.flatMap(m => m.tasks);
+const reviewEvents = modules.flatMap(m => m.reviewEvents);
 
 for (const [kind, rows] of [['source', sources], ['lesson', lessons], ['task', tasks]] as const) {
   for (const row of rows) {
@@ -40,4 +46,4 @@ for (const [table, rows] of Object.entries(additions)) {
   }
 }
 writeFileSync(new URL('./catalog.json', import.meta.url), JSON.stringify(catalog, null, 2) + '\n');
-console.log('Appended reviewed Objective 0001 slice; all installed records preserved.');
+console.log('Appended reviewed Objective 0001 and 0002/0003 slices; all installed records preserved.');

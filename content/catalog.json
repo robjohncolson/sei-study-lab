@@ -448,6 +448,310 @@
       "hashProvenance": "SHA-256 of downloaded binary as supplied; not recomputed by Codex.",
       "derivedClaimRationale": "Older February 2019 guidance supports avoiding both misidentification based on English proficiency and delay solely because of EL status when disability is suspected. No IDEA timelines, evaluation procedures, diagnostic conclusions or accommodations entitlements are derived.",
       "reviewLimits": "Model wording-to-supplied-excerpt comparison only; not human review, full-document review, current-law certification or district compliance advice."
+    },
+    {
+      "id": "source.obj0002-0003.s1.2026-11-08",
+      "title": "MTEL Field 56 objectives: original Objective 0002 and 0003 statements",
+      "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_OBJ_56.htm",
+      "documentVersion": "Live page; no separate publication date supplied",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s1-v1",
+      "excerpt": "Apply knowledge of the characteristics of special populations of English language learners (e.g., newcomers, refugees, long-term English language learners, English language learners with disabilities, students with interrupted formal education [SIFE] or limited formal education, undocumented immigrants, migrants, English language learners with trauma, English language learners with low socioeconomic status) and the distinct strengths and challenges of each special population.\n\nRecognize the individual social, cultural, and educational experiences of English language learners and the unique skills and abilities that English language learners possess.\n\nApply knowledge of a variety of appropriate educational and support services, both in and out of the classroom, in addition to creating a classroom culture of access and inclusion, for promoting English language learners' ability to grow and achieve to their full potential.\n\nApply knowledge of cultural differences in educational practices, including culturally influenced approaches to learning (e.g., cooperation vs. competition, inductive vs. deductive), and the effects of these differences on English language learners' learning and achievement.\n\nRecognize the nature of culture, major concepts related to culture (e.g., deep vs. surface culture, collectivism vs. individualism) and cultural adaptation (e.g., cultural shock), and the influence of cultural differences (e.g., cultural assumptions, beliefs, and values; communication patterns; socioeconomic differences; cultural views on literacy) on the teaching and learning of English language learners.\n\nApply knowledge of attitudes, practices, and strategies for creating a culturally inclusive and welcoming classroom environment, helping English language learners understand and successfully navigate the differences between the home and school cultures, and drawing on English language learners' cultural and linguistic resources to inform instruction.\n\nDemonstrate understanding of English language learners' families, including the structure of family constellations (e.g., transnational families, separated families) in immigrant and newcomer homes, the importance of viewing families from a \"strengths\" perspective, and how English language learners' families and communities can and do support students' learning and achievement.\n\nApply understanding of the role of families as cultural and heritage-language resources for supporting student learning and development both at home and at school and of the importance of establishing and maintaining strong school-home-community partnerships and communicating in a linguistically and culturally relevant manner with families (e.g., translation of written communications, effective use of interpreters).",
+      "supportingExcerpts": [
+        {
+          "id": "mtel56.obj.0002.ds.01",
+          "text": "Apply knowledge of the characteristics of special populations of English language learners (e.g., newcomers, refugees, long-term English language learners, English language learners with disabilities, students with interrupted formal education [SIFE] or limited formal education, undocumented immigrants, migrants, English language learners with trauma, English language learners with low socioeconomic status) and the distinct strengths and challenges of each special population."
+        },
+        {
+          "id": "mtel56.obj.0002.ds.02",
+          "text": "Recognize the individual social, cultural, and educational experiences of English language learners and the unique skills and abilities that English language learners possess."
+        },
+        {
+          "id": "mtel56.obj.0002.ds.03",
+          "text": "Apply knowledge of a variety of appropriate educational and support services, both in and out of the classroom, in addition to creating a classroom culture of access and inclusion, for promoting English language learners' ability to grow and achieve to their full potential."
+        },
+        {
+          "id": "mtel56.obj.0002.ds.04",
+          "text": "Apply knowledge of cultural differences in educational practices, including culturally influenced approaches to learning (e.g., cooperation vs. competition, inductive vs. deductive), and the effects of these differences on English language learners' learning and achievement."
+        },
+        {
+          "id": "mtel56.obj.0003.ds.01",
+          "text": "Recognize the nature of culture, major concepts related to culture (e.g., deep vs. surface culture, collectivism vs. individualism) and cultural adaptation (e.g., cultural shock), and the influence of cultural differences (e.g., cultural assumptions, beliefs, and values; communication patterns; socioeconomic differences; cultural views on literacy) on the teaching and learning of English language learners."
+        },
+        {
+          "id": "mtel56.obj.0003.ds.02",
+          "text": "Apply knowledge of attitudes, practices, and strategies for creating a culturally inclusive and welcoming classroom environment, helping English language learners understand and successfully navigate the differences between the home and school cultures, and drawing on English language learners' cultural and linguistic resources to inform instruction."
+        },
+        {
+          "id": "mtel56.obj.0003.ds.03",
+          "text": "Demonstrate understanding of English language learners' families, including the structure of family constellations (e.g., transnational families, separated families) in immigrant and newcomer homes, the importance of viewing families from a \"strengths\" perspective, and how English language learners' families and communities can and do support students' learning and achievement."
+        },
+        {
+          "id": "mtel56.obj.0003.ds.04",
+          "text": "Apply understanding of the role of families as cultural and heritage-language resources for supporting student learning and development both at home and at school and of the importance of establishing and maintaining strong school-home-community partnerships and communicating in a linguistically and culturally relevant manner with families (e.g., translation of written communications, effective use of interpreters)."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Exact eight descriptive statements copied from the installed versioned inventory, whose wording is explicitly required by the supplied packet. This distinct snapshot supplies only framework scope; it does not prescribe a teaching method or make historical SIFE wording a current Massachusetts identification definition.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s4.2026-11-08",
+      "title": "SLIFE Guidance for Identification, Services, and Support",
+      "url": "https://www.doe.mass.edu/ele/slife/guidance.pdf",
+      "documentVersion": "June 2024",
+      "sha256": "ec354921b1ed96a59f15ed32be73213df132d791de3fe13f8883736cfcbefd5b",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s4-v1",
+      "excerpt": "To be identified as SLIFE in Massachusetts, a student must meet all the following criteria:\n\nThe DOE025 SIMS field indicates the student is an English learner.\n\nThe student is 8 to 21 years old.\n\nThe student enrolled in a school in the United States after grade 2 or exited the U.S. for 6 months or more and did not attend school during this time.\n\nPrior exposure to formal schooling is characterized by one of the following: No formal schooling; Significant interruptions in formal schooling; Consistent but limited formal schooling (e.g., school days were significantly shorter)\n\nUltimately, districts should use a holistic approach to determine whether students’ gaps in education indicate that they will need significant support beyond what is provided in existing English learner education (ELE) programs\n\nbeing identified as SLIFE does not reflect negatively on the learner's abilities or potential.\n\nFrequently, students identified as SLIFE share some of the following experiences, strengths and needs: May have emerging literacy skills … May need intensive support … May function approximately 2 or more years below … May have strengths in pragmatic life skills … May be used to oral communication over written communication. May experience cultural dissonance …\n\nStudents identified as SLIFE … are experts on topics related to their lived experiences and backgrounds. … bring a wealth of knowledge and varying levels of literacy in one or more languages … bring multiple and varied cultural lenses …\n\nImplement a system for communicating essential details that prevents students or caregivers from having to repeatedly recount their experiences, especially potentially sensitive or traumatic ones. This approach helps create a supportive educational environment while protecting the student's and family's right to privacy and emotional well-being.\n\nSome of these experiences may lead to a need for individualized clinical care … while others may be addressed through regular social-emotional learning (SEL) activities …\n\nDoes not impose any new requirements on schools or districts. Does not abrogate, amend, or diminish any existing requirements …",
+      "supportingExcerpts": [
+        {
+          "id": "exhibit-1-all",
+          "text": "To be identified as SLIFE in Massachusetts, a student must meet all the following criteria:"
+        },
+        {
+          "id": "exhibit-1-el",
+          "text": "The DOE025 SIMS field indicates the student is an English learner."
+        },
+        {
+          "id": "exhibit-1-age",
+          "text": "The student is 8 to 21 years old."
+        },
+        {
+          "id": "exhibit-1-enrollment",
+          "text": "The student enrolled in a school in the United States after grade 2 or exited the U.S. for 6 months or more and did not attend school during this time."
+        },
+        {
+          "id": "exhibit-1-schooling",
+          "text": "Prior exposure to formal schooling is characterized by one of the following: No formal schooling; Significant interruptions in formal schooling; Consistent but limited formal schooling (e.g., school days were significantly shorter)"
+        },
+        {
+          "id": "holistic-support",
+          "text": "Ultimately, districts should use a holistic approach to determine whether students’ gaps in education indicate that they will need significant support beyond what is provided in existing English learner education (ELE) programs"
+        },
+        {
+          "id": "not-ability",
+          "text": "being identified as SLIFE does not reflect negatively on the learner's abilities or potential."
+        },
+        {
+          "id": "exhibit-2-may",
+          "text": "Frequently, students identified as SLIFE share some of the following experiences, strengths and needs: May have emerging literacy skills … May need intensive support … May function approximately 2 or more years below … May have strengths in pragmatic life skills … May be used to oral communication over written communication. May experience cultural dissonance …"
+        },
+        {
+          "id": "assets",
+          "text": "Students identified as SLIFE … are experts on topics related to their lived experiences and backgrounds. … bring a wealth of knowledge and varying levels of literacy in one or more languages … bring multiple and varied cultural lenses …"
+        },
+        {
+          "id": "privacy",
+          "text": "Implement a system for communicating essential details that prevents students or caregivers from having to repeatedly recount their experiences, especially potentially sensitive or traumatic ones. This approach helps create a supportive educational environment while protecting the student's and family's right to privacy and emotional well-being."
+        },
+        {
+          "id": "support-varies",
+          "text": "Some of these experiences may lead to a need for individualized clinical care … while others may be addressed through regular social-emotional learning (SEL) activities …"
+        },
+        {
+          "id": "authority-limit",
+          "text": "Does not impose any new requirements on schools or districts. Does not abrogate, amend, or diminish any existing requirements …"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "Primary June 2024 Exhibit 1 supplies all conjunctive Massachusetts SLIFE criteria and holistic support reasoning. Exhibit 2 examples are MAY characteristics, including approximately two or more years below; they are not additional universal identification criteria. Privacy and varying support support responsive classroom planning, never automatic trauma diagnosis. Historical SIFE framework wording and current MA SLIFE practice remain distinguished.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s5.2026-11-08",
+      "title": "Enrolling and Supporting Newcomer Students: FAQ",
+      "url": "https://www.doe.mass.edu/ele/guidance/newcomer-faq.docx",
+      "documentVersion": "Updated July 31, 2024",
+      "sha256": "2e4f4d00b2a94c20236f4460e91b33cc11df5e29491d0e0d01b16e1cbbad8595",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s5-v1",
+      "excerpt": "For the purposes of this document, “newcomer students” refers to students from other countries who have recently arrived in the United States. While newcomer students arrive in U.S. schools from diverse backgrounds and bring a wide range of experiences, they often share the common challenges of adjusting to a new home, navigating a new language and culture, and learning how to function effectively in a school environment that may be very different from their prior school experience.\n\nschools and districts also have an obligation to provide parents and guardians essential information … in a language they understand.",
+      "supportingExcerpts": [
+        {
+          "id": "newcomer-diversity",
+          "text": "For the purposes of this document, “newcomer students” refers to students from other countries who have recently arrived in the United States. While newcomer students arrive in U.S. schools from diverse backgrounds and bring a wide range of experiences, they often share the common challenges of adjusting to a new home, navigating a new language and culture, and learning how to function effectively in a school environment that may be very different from their prior school experience."
+        },
+        {
+          "id": "family-access",
+          "text": "schools and districts also have an obligation to provide parents and guardians essential information … in a language they understand."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "Use for diverse newcomer experiences and family access only. The packet flags its compressed SLIFE definition as incomplete against S4 Exhibit 1; do not use the FAQ as identification authority or teach its two-years-below phrasing as a mandatory criterion. No enrollment procedure, deadline or immigration procedure is derived.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s6.2026-11-08",
+      "title": "Guidance for Oral Language Interpretation",
+      "url": "https://www.doe.mass.edu/language-access/interpreters/district-guidance.docx",
+      "documentVersion": "Supplied linked DESE guidance; no publication date supplied",
+      "sha256": "9861c45ab952d2d926304b58f487c60bdbf5e47171f8c2bb8bfc1225e5fc2673",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s6-v1",
+      "excerpt": "Families have a civil right to equal participation in their students’ educational experience, including families who speak a language other than English. … school districts must have systems in place to provide translation and interpretation services …\n\nschools must provide translation or interpretation from appropriate and competent individuals and may not rely on or ask students, siblings, friends, or untrained school staff to translate or interpret for parents\n\nthe ability of a person to speak two languages does not necessarily produce the skills or knowledge necessary to provide high-quality interpretation.",
+      "supportingExcerpts": [
+        {
+          "id": "participation",
+          "text": "Families have a civil right to equal participation in their students’ educational experience, including families who speak a language other than English. … school districts must have systems in place to provide translation and interpretation services …"
+        },
+        {
+          "id": "joint-guidance-competence",
+          "text": "schools must provide translation or interpretation from appropriate and competent individuals and may not rely on or ask students, siblings, friends, or untrained school staff to translate or interpret for parents"
+        },
+        {
+          "id": "bilingual-not-qualification",
+          "text": "the ability of a person to speak two languages does not necessarily produce the skills or knowledge necessary to provide high-quality interpretation."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "DESE source quotes DOJ/ED joint guidance. Supports competent interpretation and rejecting pupils, siblings, friends or untrained staff as substitutes; bilingualism alone is not qualification. The underlying Jan 7, 2015 OCR PDF was blocked in researcher retrieval; no independent OCR text is claimed and no interpreter credential or procedural deadline is invented.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s7.2026-11-08",
+      "title": "Guidance for English Learner Parent Advisory Councils",
+      "url": "https://www.doe.mass.edu/ele/guidance/elpac.docx",
+      "documentVersion": "August 2018",
+      "sha256": "7d9380242addf428def85445f1f7bf4a17dc9d40722e838c1987f4ec560fabab",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s7-v1",
+      "excerpt": "Families and their communities foster a child’s academic and social and emotional development and growth. … collaborative partnerships among schools, families, and community organizations are crucial …\n\nELs and their families bring a depth of personal, social, cultural resources, as well as their academic, workplace, and world experiences …\n\nEffective ELPACs build on school-family partnerships that regard student learning and school improvement as a shared responsibility … relationships based on mutual respect and trust …",
+      "supportingExcerpts": [
+        {
+          "id": "partnership",
+          "text": "Families and their communities foster a child’s academic and social and emotional development and growth. … collaborative partnerships among schools, families, and community organizations are crucial …"
+        },
+        {
+          "id": "family-assets",
+          "text": "ELs and their families bring a depth of personal, social, cultural resources, as well as their academic, workplace, and world experiences …"
+        },
+        {
+          "id": "shared-responsibility",
+          "text": "Effective ELPACs build on school-family partnerships that regard student learning and school improvement as a shared responsibility … relationships based on mutual respect and trust …"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "August 2018 guidance supports the partnership concept and asset framing only. No ELPAC numeric compliance threshold, current establishment rule, membership entitlement or legal deadline is taught. PTA attendance is not a proxy for family care or available resources; this is an authored application of asset-based partnership, not a quoted legal test.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s8.2026-11-08",
+      "title": "US ED / OELA Newcomer Toolkit",
+      "url": "https://ncela.ed.gov/sites/default/files/2023-09/NewcomerToolkit-09152023-508.pdf",
+      "documentVersion": "June 2023",
+      "sha256": "ed27e44982c0de465f5b3cce294ed7942733a6b20389fa5fce57bb2c1b627ce9",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s8-v1",
+      "excerpt": "For the purposes of this toolkit, newcomers are defined as K-12 students born outside the United States who have arrived in the country in the last three years and are still learning English.\n\nThe term newcomer is often seen as an umbrella term that refers to many different types of students new to the country, such as refugees or students with limited or interrupted formal education (SLIFE).\n\nnewcomer is a temporary designation.\n\nNewcomers to the United States are a highly heterogeneous group with different needs.\n\nSupport the cultural and linguistic assets of newcomers and help educators begin to support these assets in the classroom\n\nDue to the heterogeneity among newcomers, the specific type, intensity, and causes of their social, emotional, and mental health needs also vary.",
+      "supportingExcerpts": [
+        {
+          "id": "publisher-definition",
+          "text": "For the purposes of this toolkit, newcomers are defined as K-12 students born outside the United States who have arrived in the country in the last three years and are still learning English."
+        },
+        {
+          "id": "umbrella",
+          "text": "The term newcomer is often seen as an umbrella term that refers to many different types of students new to the country, such as refugees or students with limited or interrupted formal education (SLIFE)."
+        },
+        {
+          "id": "temporary",
+          "text": "newcomer is a temporary designation."
+        },
+        {
+          "id": "heterogeneity",
+          "text": "Newcomers to the United States are a highly heterogeneous group with different needs."
+        },
+        {
+          "id": "assets",
+          "text": "Support the cultural and linguistic assets of newcomers and help educators begin to support these assets in the classroom"
+        },
+        {
+          "id": "needs-vary",
+          "text": "Due to the heterogeneity among newcomers, the specific type, intensity, and causes of their social, emotional, and mental health needs also vary."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "Publisher-specific June 2023 toolkit definition, including three years, is not universal law or a Massachusetts criterion. Umbrella wording supports potentially overlapping labels, not equivalence or mutually exclusive categories. Toolkit assets and heterogeneous needs support individual observations and responsive access, not national learning styles or diagnosis. Portal supplied: https://ncela.ed.gov/educator-support/toolkits/newcomer-toolkit; not fetched.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s9.2026-11-08",
+      "title": "NCELA Long-Term English Learners Fact Sheet",
+      "url": "https://ncela.ed.gov/sites/default/files/2024-11/longtermels-508.pdf",
+      "documentVersion": "Posted/file dated November 2024",
+      "sha256": "edb483ae8abb80b9df647b6cf224de44a02db42795d3cf3b4ea4988d129105a8",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s9-v1",
+      "excerpt": "While “long-term EL” is not defined in the ESEA, students who do not exit from EL status within five to six years are often labeled as “long-term ELs.”\n\nHigh numbers of long-term ELs can be a sign that programs and instruction for EL students may not be well-matched to certain students’ strengths or needs. … students who retain EL status into secondary school may experience inequitable access to grade-level or higher core-content courses …",
+      "supportingExcerpts": [
+        {
+          "id": "not-esea-definition",
+          "text": "While “long-term EL” is not defined in the ESEA, students who do not exit from EL status within five to six years are often labeled as “long-term ELs.”"
+        },
+        {
+          "id": "program-access",
+          "text": "High numbers of long-term ELs can be a sign that programs and instruction for EL students may not be well-matched to certain students’ strengths or needs. … students who retain EL status into secondary school may experience inequitable access to grade-level or higher core-content courses …"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "Binary SHA-256 copied exactly from supplied packet; not recomputed or independently downloaded by Codex.",
+      "derivedClaimRationale": "Five-to-six-year usage is qualified as common usage in this fact sheet, not an ESEA statutory definition, universal cutoff, ability measure or cause attributable to an individual student. Attend to access and program fit.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
+    },
+    {
+      "id": "source.obj0002-0003.s10.2026-11-08",
+      "title": "WIDA: Reframing How We Think About Our Long-Term English Learners (LTELs)",
+      "url": "https://wida.wisc.edu/news/reframing-how-we-think-about-our-long-term-english-learners-ltels",
+      "documentVersion": "February 2, 2026",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0002-0003-s10-v1",
+      "excerpt": "While there are no standardized criteria for the length of stay … most states consider … more than five years.\n\nGetting to know your students’ individual stories, combating deficit-based assumptions, and ensuring their access to authentic learning opportunities …",
+      "supportingExcerpts": [
+        {
+          "id": "no-standardized-criteria",
+          "text": "While there are no standardized criteria for the length of stay … most states consider … more than five years."
+        },
+        {
+          "id": "individual-access",
+          "text": "Getting to know your students’ individual stories, combating deficit-based assumptions, and ensuring their access to authentic learning opportunities …"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Curated first-party evidence packet supplied by the user from an independent researcher; researcher retrieval 2026-11-08, America/New_York. Codex did not fetch these URLs or inspect the original binaries. Supplied-packet comparison is model-assisted, not human validation.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Consortium professional-learning perspective, February 2, 2026; no standardized LTEL criteria. Source-specific duration usage must not become a legal threshold. Individual stories, assets and authentic access guide support; the label does not explain ability or instructional cause.",
+      "reviewLimits": "Model wording-to-supplied-excerpt comparison only. Not human review, full-document review, current-law certification, clinical guidance or complete objective coverage."
     }
   ],
   "objectives": [
@@ -1444,6 +1748,45 @@
         "source.obj0001.s9.2026-11-08"
       ],
       "body": "ORIGINAL UNOFFICIAL LEARNING MODULE — PARTIAL OBJECTIVE 0001\n\nThis module samples shared responsibility (0001.ds.01) and identification, data, assessment and support systems for current/former ELs (0001.ds.03). It does not complete Objective 0001 or establish mastery. Its regulation discussion is limited to selected 603 CMR 14.02/14.04 duties, not comprehensive legal familiarity. The framework's historical Question 2 example remains part of the official inventory, not a current-law narrative. These explanations and scenarios are authored instruction, not official test questions. Sources are supplied excerpts retrieved by the packet researcher on 2026-11-08; Codex did not fetch the documents. Source comparison is model-assisted, not human review.\n\nLEARNING GOALS\nContent goal: distinguish the evidence supporting identification, placement and ongoing support; choose an appropriate next action without inferring status from language background, family preference or one classroom performance. Explain how content teachers and ESL colleagues share responsibility while retaining distinct instructional roles.\nLanguage goal: explain an evidence-to-action chain using because, therefore and does not yet establish; compare two proposed actions and identify what remains unknown. In a short team note, distinguish observed content understanding, observed language use and the assistance provided. These are practice goals, not proficiency cut scores.\n\nSTAGE 1 — SORT INFORMATION BEFORE MAKING A DECISION\nA Language Survey supplies information for an identification process. It does not itself supply an English proficiency result or EL determination. Section 1 concerns the child's language background. Section 2 concerns family communication preferences and is informational; it is not child EL-identification evidence. A family may need interpretation or translated communication even when its child does not need English language instruction. Keep those questions separate. [S5/S6]\n\nThe form's broad other-language wording must be interpreted with the June 2025 Language Survey Protocol, including its rubric and exceptions. Do not turn it into a universal rule that every other-language response always requires screening. Apply the protocol and clarify relevant information with parents. Where the rubric indicates screening for an initial identification, use the screening results to determine EL status and initial placement. An impression that a child has little English does not authorize skipping the screener. Notify parents of the determination and placement and place both in the student record. The regulation and guidance describe distinct notification duties; this module supplies no deadline or combined clock. [S2/S5/S7]\n\nThis is an initial-enrollment explanation, with protocol exceptions. A student arriving with documented prior EL/FEL status is not simply an undocumented first identification. Attend to existing status information through the appropriate district process. The supplied January 2026 guidance specifically requires identifying FELs on registration and monitoring them. The excerpts do not establish a complete transfer-record procedure or authorize inventing new screening requirements for every transfer. [S7]\n\nWORKED EXAMPLE 1 — A SURVEY WITH MIXED ANSWERS\nNila enrolls in a school. Her family reports another language for Q1, but English for Q2 and Q3, and requests translated messages in Section 2. A staff member proposes immediate EL placement; another says every other-language response requires a screener.\nReasoning: First separate the questions. Section 2 identifies the family's communication preference, not Nila's EL status. Next consult the June 2025 rubric. The supplied Scenario 9 is Q1 other language with Q2–Q3 English/ASL: its screener entry is N and it directs consultation with parents. Clarification matters; do not erase contradictory or incomplete information. Neither immediate classification nor an unconditional screening rule follows from these facts. Honor the family communication need while following the protocol for the child. [S5/S6]\nCounterexample: suppose clarified Section 1 information instead fits a rubric scenario requiring screening. Then a pleasant English conversation does not replace the required proficiency evidence. The appropriate chain is protocol interpretation, indicated screening, results-based determination and initial placement, followed by notice and documentation. This example does not teach score thresholds. [S2/S5/S7]\n\nGUIDED PAUSE A — THINK, THEN COMPARE (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nExplain why 'the parent wants translation, therefore the child is an EL' fails. Feedback: the conclusion substitutes a family communication preference for child identification evidence. Section 2 expressly excludes that use. A better sentence is: 'Because Section 2 describes family communication needs, it guides family access; it does not yet establish the child's EL status.' No response or success is recorded by this lesson. [S5/S6]\n\nSTAGE 2 — CONNECT PLACEMENT WITH SHARED INSTRUCTION\nAn identified EL is to receive appropriate English learner education and language assistance begins upon identification, under the selected 14.04 provisions. Supporting language development is shared work: content teachers use sheltering strategies and scaffolds, and ESL teachers contribute dedicated ESL instruction. Sheltering a content lesson or offering academic tutoring does not substitute for ESL instruction. This distinction does not cancel a parent's separate right to make a voluntary informed decision to decline ELE services. Do not recommend declining services to solve a scheduling conflict. [S1/S3/S7/S8]\n\nWORKED EXAMPLE 2 — A SCHOOL MUSEUM EXPLANATION\nIn a history class, students compare two original exhibit proposals and justify which better explains a community change. Tomas, an identified EL receiving services, can connect images to historical events but needs support linking evidence in an English explanation. A colleague suggests replacing scheduled ESL with the history teacher's illustrated worksheet.\nReasoning: Keep the historical comparison goal. The content teacher can model how a claim connects to evidence, offer labeled images and allow rehearsal before a distinct written explanation. The ESL colleague and content teacher can share observations about language demands and progress. The note 'connected images to the event; used a supplied linking phrase in writing' separates content reasoning, language production and assistance. These are authored classroom choices illustrating shared responsibility, not prescribed official methods. The illustrated worksheet supports access, but it does not become ESL instruction merely because it helps Tomas. Coordinate the two roles instead of treating one as interchangeable with the other. [S1/S7/S8]\nCounterexample: 'ESL will handle all language, so the history class needs no scaffolds' also fails. Shared responsibility includes content classrooms. Likewise, lowering the task to copying exhibit labels removes the comparison that the lesson intended students to learn. A scheduling difficulty is not a reason to advise a parent to decline services. [S7/S8]\n\nGUIDED PAUSE B — COMPARE TWO TEAM NOTES (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nWhich note helps planning: 'ESL should fix the writing,' or 'Tomas selected relevant historical evidence, rehearsed a claim orally, and needed a connector frame to link the evidence in writing'? Feedback: the second identifies content understanding, language use and assistance, giving colleagues a concrete instructional starting point. It does not change official EL status or prove independent writing. Then explain why the frame cannot replace ESL. Feedback: a content scaffold and ESL have related but distinct functions; S7 explicitly rejects substitution. No guided response is submitted or counted as independent evidence. [S7/S8]\n\nSTAGE 3 — KEEP STATUS, SERVICES AND SUPPORT DISTINCT\nNotification and records: under 603 CMR 14.02, notify the parent or guardian of the EL determination and program placement, and place both in the student's school record. Keeping a screener score without those decisions does not fulfill that described documentation duty. A teacher's informal impression is not a replacement for the authorized process. [S2]\n\nOpt-out: when a parent declines ELE services, the student remains an EL until reclassified through the appropriate process. Annual English proficiency testing (WIDA ACCESS) continues under January 2026 guidance, and access to learning still needs support. Do not code voluntary opt-out as FEL status or treat it as permission to withdraw classroom access. No exit thresholds or assessment accommodation rules are taught here. [S7; shared access context S1/S3]\n\nFEL support: January 2026 services/programming guidance, supplied retrieval 2026-11-08, describes routine monitoring of academic progress for four years after reclassification; its companion changes summary corroborates the four-year requirement. Identify FELs upon registration and continue attention to academic progress and needed support. A transfer does not create a new reclassification event or restart that period. A writing difficulty alone does not automatically restore EL status. This bounded duration claim supersedes the old starter lesson's statement that monitoring duration remains wholly unsupported; the older lesson is retained as historical content. The supplied excerpts do not establish a complete monitoring schedule, annual procedures, reclassification thresholds or transfer-record workflow. [S7/S8]\n\nLanguage and disability: the still-linked February 2019 guidance is older than the January 2026 programming guidance. It states that EL status alone is not a basis for disability identification, and EL status is not a reason to delay a special education evaluation when disability is suspected. Avoid both 'limited English proves disability' and 'wait until English is mastered before considering a suspected disability.' Describe the actual concern and use the appropriate team/process. These excerpts support the distinction, not a full current IDEA procedure, evaluation timeline or accommodation entitlement. [S9]\n\nGUIDED PAUSE C — KEEP THE REASON FOR ACTION VISIBLE (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nA parent declines ELE services; another student has documented FEL status and needs help explaining a historical source; a third student is an EL with a separately suspected disability. Name the mistaken shortcut in each situation. Feedback: declining services is not reclassification; FEL status does not erase academic support needs; EL status neither proves disability nor justifies delaying an evaluation when disability is suspected. Each action follows a different kind of evidence. Reading these feedback statements does not create an attempt, judgment or learner success. [S7/S8/S9]\n\nSTAGE 4 — PRACTICE WITHOUT THE WORKED ANSWER\nThe linked seven authored checks each sample a different decision family. Close or set aside the lesson before attempting them; record any help used through the existing practice controls. Guided pauses and hinted practice are not independent evidence. Equivalent older starter tasks share exposure families, so a renamed item does not reset the existing feedback cooldown. The unfamiliar community-archive case asks for a reasoned plan in a new setting. Its explanation remains pending review; keywords cannot automatically establish correctness or transfer. A finite keyed answer supports only its narrow distinction, never completion of this objective.\n\nREMAINING GAPS\nThis module does not cover full statutes or IDEA, the full legal framework, exit/reclassification thresholds, screening cut scores, accommodation rules, complete transfer procedures, or broader operational programming guidance. No numeric notification deadlines are supplied. Use the versioned source inventory to see exactly which supplied excerpts support each bounded claim."
+    },
+    {
+      "id": "lesson.obj0002.diversity.v1",
+      "title": "Learner diversity: observations, labels and responsive access",
+      "skillIds": [
+        "sei.skill.identification",
+        "sei.skill.current-former",
+        "sei.skill.shared-responsibility",
+        "sei.skill.rigorous-scaffolds",
+        "sei.skill.domain-profiles"
+      ],
+      "sourceRefs": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0002-0003.s9.2026-11-08",
+        "source.obj0002-0003.s10.2026-11-08"
+      ],
+      "body": "ORIGINAL UNOFFICIAL LEARNING MODULE — PARTIAL OBJECTIVE 0002\n\nThis original synthetic instruction samples the existing four Objective 0002 descriptive statements. It is not an official examination item, an identification instrument or a complete treatment of the objective. Source labels S1, S4–S10 refer to this module's supplied-packet source inventory. The researcher supplied retrieval date 2026-11-08, America/New_York; Codex did not fetch the documents. Model wording comparison does not constitute human review. Historical exam terminology and source-specific practice definitions are kept distinct.\n\nLEARNING GOALS\nContent goal: compare two learner profiles, identify an observed asset and an instructional uncertainty for each, and justify an access plan without assigning ability or needs from a label. Distinguish all June 2024 Massachusetts SLIFE identification criteria from possible characteristics; qualify newcomer and LTEL duration language by publisher and date.\nLanguage goal: write or say an evidence-to-action explanation using “we observed,” “this may support,” and “this does not establish.” Compare two plans with because and whereas, naming both an instructional reason and information still needed. These are learning goals, not proficiency thresholds.\n\nSTAGE 1 — USE LABELS AS QUESTIONS, NOT ANSWER KEYS\nNewcomer, refugee, SLIFE and long-term English learner (LTEL) refer to different aspects of a student's experience or classification. They can overlap across a learner's history, but they are not interchangeable or mutually exclusive categories. A newcomer may have extensive prior schooling or interrupted schooling; refugee experience does not itself establish SLIFE status, disability, trauma or an instructional profile. Do not infer immigration status or refugee history from language, appearance, name or country. This module does not teach immigration classifications or procedures. Ask what information is relevant to instruction, and do not seek private stories simply to complete a label. [S1/S4/S8]\n\nThe July 31, 2024 Massachusetts newcomer FAQ uses “recently arrived” for its own purposes. The June 2023 US ED/OELA toolkit defines newcomers for that toolkit as K–12 students born outside the United States, arriving within the last three years and still learning English; it calls newcomer temporary. Its three-year wording is publisher-specific, not a universal legal limit, a Massachusetts identification rule or a deadline for ending support. Both sources emphasize diversity. Look at individual schooling, literacy, languages, interests, relationships and observed classroom performance. [S5/S8]\n\nWORKED EXAMPLE 1 — TWO NEWCOMERS, ONE SCIENCE GOAL\nA class must explain which observations support a claim about a local habitat. Hana reads extended science explanations in a familiar language and organizes evidence logically, but needs English words for her explanation. Luis has experienced interrupted schooling, explains local ecological observations orally in a familiar language, and is still learning how this classroom organizes written sources. These are synthetic observations, not traits assigned to a nationality. Neither profile by itself completes Massachusetts SLIFE identification.\nReasoning: keep the same evidence-and-claim goal. For Hana, connect existing reading knowledge to a short English text and useful comparison phrases, then check her own explanation. For Luis, pair observable images with an oral explanation, model how a written source is organized and invite an oral rehearsal before supported writing. Both plans use assets; the needed support differs. Ask what each can explain with and without the particular support. These are authored instructional possibilities, not official required methods. [S1/S4/S8]\nCounterexample: a single easy copying sheet for “all newcomers” removes the evidence reasoning and conceals both students' strengths. Giving Hana only elementary decoding because she is new also ignores evidence. Assuming Luis cannot reason because written schooling is unfamiliar confuses opportunity with ability. The next step is to observe, scaffold and adjust, not diagnose from the label. [S4/S8]\n\nGUIDED PAUSE A — THINK, THEN COMPARE (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nPropose one difference between the two plans and one shared goal. Feedback: the shared goal is a justified habitat claim. The distinction might be linking Hana's established reading strategies to English, whereas Luis benefits from explicit modeling of written-source routines and an oral bridge. Other plans can be defensible if tied to observations. “They are newcomers, so they need the same worksheet” lacks that link. Reading or answering this pause records no response, attempt, judgment or success. [S1/S4/S8]\n\nSTAGE 2 — READ THE PRIMARY SLIFE CRITERIA AS A CONJUNCTION\nThe official exam inventory uses SIFE, including interrupted or limited formal education. Massachusetts practice in the supplied June 2024 guidance uses SLIFE. Literature and toolkits may use either term with varying definitions; an exam term is not an automatic Massachusetts designation. For a Massachusetts identification claim, use S4 Exhibit 1, not a compressed FAQ sentence. [S1/S4]\n\nJune 2024 Exhibit 1 requires ALL of the following:\n• The DOE025 SIMS field indicates the student is an English learner.\n• The student is 8 to 21 years old.\n• The student enrolled in a school in the United States after grade 2 OR exited the U.S. for 6 months or more and did not attend school during that time.\n• Prior formal schooling involved no formal schooling, significant interruptions, OR consistent but limited formal schooling, such as significantly shorter school days.\nDistricts also use a holistic approach to determine whether educational gaps indicate significant support beyond existing ELE programs. This is a support-oriented process; a teacher should not mechanically assign the designation from an anecdote. The guidance says identification does not reflect negatively on ability or potential. [S4]\n\nExhibit 2 describes characteristics students MAY share, including emerging literacy, life skills, oral communication strengths or functioning approximately two or more years below expectations. “Two years below” is not a mandatory Exhibit 1 criterion. The July 31, 2024 FAQ compresses the definition in a way that can suggest it is mandatory; the primary June 2024 Exhibit 1 governs the identification explanation in this lesson. Do not replace “all criteria” with either a single schooling interruption or a score gap. [S4; S5 source limitation]\n\nWORKED EXAMPLE 2 — A CHECKLIST WITH A MISSING CONDITION\nAn adult proposes identifying a seven-year-old as SLIFE because the child has had interrupted schooling and is described as “two years behind.” Reasoning: the supplied Exhibit 1 age range is 8–21, so the account does not meet all its criteria. The two-years description cannot substitute for age, DOE025 EL information, the enrollment/absence condition or the schooling condition. Instructional help can still respond to observed needs; declining an unsupported label does not mean withholding support. [S4]\nCounterexample: a 14-year-old has documented DOE025 EL status, first enrolled in a U.S. school after grade 2, and experienced significant schooling interruptions. Those supplied facts address each Exhibit 1 condition. It would be wrong to reject consideration solely because no two-years-below result is available. The district's holistic support assessment still matters; this synthetic comparison is not a determination about a real learner. [S4]\n\nGUIDED PAUSE B — THINK, THEN COMPARE (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nExplain the difference between “all” in Exhibit 1 and “may” in Exhibit 2. Feedback: “all” links required identification conditions; “may” introduces variable strengths, experiences and needs. Turning a possible characteristic into a universal deficit changes the source. A student may need support even when the available information is insufficient for a label. No pause response or success is stored. [S4]\n\nSTAGE 3 — INVESTIGATE ACCESS, EXPECTATIONS AND WELL-BEING\nThe November 2024 NCELA fact sheet says LTEL is not defined in ESEA; five-to-six-year usage is common, not a statutory cutoff. WIDA's February 2, 2026 discussion likewise notes no standardized criteria and urges individual stories, avoiding deficit assumptions and access to authentic learning. Continuing EL status should prompt questions about opportunities and program fit; it does not show low ability or lack of effort. This lesson teaches no reclassification rule. [S9/S10]\n\nCulturally influenced educational practices are possible questions about expectations, not national learning-style prescriptions. A student may be used to listening before contributing, rehearsing with peers, approaching examples before a generalization, or another routine. Ask about the individual's prior opportunities and explain the current task. Offer ways to observe, practice and demonstrate the intended learning, then examine responses. Do not infer cooperation, competition, inductive or deductive preference from a country or assign a permanent learning type. These conceptual examples illustrate the framework's awareness scope; they are not a validated cultural taxonomy or a promise that any one method fits a group. [S1/S8]\n\nA trauma-informed classroom protects privacy and makes support accessible without requiring personal disclosure. S4 recommends communicating essential details so students and caregivers need not repeatedly recount sensitive experiences; S8 says emotional needs vary. A quiet response, refugee label, language preference or SLIFE label does not diagnose trauma. Use observed difficulties to consider predictable routines, a trusted support contact and optional appropriate referral pathways, not forced retelling or clinical conclusions. These classroom choices illustrate support; clinical assessment is outside this lesson. [S4/S8]\n\nGUIDED PAUSE C — THINK, THEN COMPARE (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nA teacher says, “A newcomer did not volunteer during a debate, so their national culture is passive and they must be traumatized.” What can the observation establish? Feedback: it establishes only that the student did not volunteer in that situation. Privately clarify the task and preferred participation supports, observe responses across opportunities and make help accessible. Neither a national learning style nor a diagnosis follows. Do not make disclosure a condition of support. No guided response becomes independent evidence. [S1/S4/S8]\n\nSTAGE 4 — TRY THE LINKED CHECKS AND CASE\nSet aside this lesson before an unaided check; record any assistance through the existing practice controls. The seven linked checks sample distinct, narrow decisions. The unfamiliar contrasting-schooling case asks for an evidence-based plan, uncertainty and justification, and remains provisional/manual pending judgment. Its unfamiliar tag alone establishes neither independence nor transfer. Equivalent access-scaffold concepts retain their starter exposure family and feedback cooldown. Lesson reading and guided pauses create no attempts or evidence.\n\nREMAINING GAPS\nThis is partial coverage of all four statements, not Objective 0002 completion. It does not comprehensively address disability, migrants, undocumented students, socioeconomic conditions, refugee experiences, clinical care, legal eligibility, district SLIFE procedures or every out-of-class service. It offers awareness of culturally influenced practices, not a taxonomy or exhaustive comparison. Source-specific excerpt support, authored instruction, reviewed practice and independent learner evidence are separate claims."
+    },
+    {
+      "id": "lesson.obj0003.culture-partnerships.v1",
+      "title": "Culture and family partnerships: inquiry, assets and language access",
+      "skillIds": [
+        "sei.skill.shared-responsibility",
+        "sei.skill.identification",
+        "sei.skill.rigorous-scaffolds"
+      ],
+      "sourceRefs": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s6.2026-11-08",
+        "source.obj0002-0003.s7.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "body": "ORIGINAL UNOFFICIAL LEARNING MODULE — PARTIAL OBJECTIVE 0003\n\nThis module samples the original four Objective 0003 descriptive statements, using synthetic situations and authored instructional choices. It is not official exam material, a copyrighted mentor passage or a complete legal guide. S1 and S5–S8 below identify supplied source snapshots; S4 supports privacy. Researcher retrieval was 2026-11-08, America/New_York. Codex did not fetch these sources. Model comparison is not human review. August 2018 ELPAC guidance is used only for the partnership concept, never to teach a current numerical compliance threshold.\n\nLEARNING GOALS\nContent goal: distinguish a cultural hypothesis from an observation, revise an exclusionary classroom or partnership plan, and justify how family languages and community resources support learning. Select competent language access without inferring a student's status or ability from family preferences.\nLanguage goal: explain a revision using “the observation is,” “one possibility is,” and “we should ask rather than assume”; propose an invitation and justify it with because. In a partnership note, separate what a family shared from what staff still need to clarify. The goals are observable practice targets, not certification criteria.\n\nSTAGE 1 — NOTICE CULTURE WITHOUT TURNING IT INTO A STEREOTYPE\nThe framework names deep/surface culture, collectivism/individualism and cultural adaptation such as cultural shock. As conceptual tools, surface/deep contrasts invite attention beyond visible food, clothing or celebrations to expectations about communication, authority, participation and learning. Individualism/collectivism can help pose questions about individual and shared responsibilities; neither assigns a whole nationality one personality. Adaptation can involve unfamiliar routines, but a student's hesitation does not prove culture shock. Culture is a possible context to explore respectfully alongside task clarity, language access and individual experience. The supplied framework supports awareness and responsive practice; this lesson does not offer diagnostic categories or an exhaustive cultural theory. [S1]\n\nWORKED EXAMPLE 1 — PARTICIPATION IN A LITERATURE DISCUSSION\nThe class compares two characters' reasons for a decision. Noor writes an evidence-rich note, speaks quietly in a whole-class discussion and later explains the note with a partner. A teacher proposes marking Noor as unprepared because “participation means interrupting quickly.”\nReasoning: the note and partner explanation are evidence of engagement with the text. The teacher should explain the discussion routine and invite input about what makes participation accessible. Possible authored supports include previewing the question, offering a turn after rehearsal, or using written evidence as a bridge to speaking. Keep the comparison goal and observe what changes. A cultural expectation about speaking may be relevant, but language demands, wait time, familiarity and individual preference are also unresolved. [S1/S8]\nCounterexample: “Students from Noor's country avoid disagreement, so assign them all the same silent role” converts a hypothesis into a national type and limits learning opportunities. A food festival would not itself resolve the participation barrier either: welcoming visible traditions can coexist with unexamined classroom expectations. [S1]\n\nGUIDED PAUSE A — THINK, THEN COMPARE (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nRewrite “Noor's culture prevents discussion” as an observation and an inquiry. Feedback: “Noor produced a relevant written comparison and spoke more with a partner; I will explain the whole-class routine and ask which preparation supports participation.” This names evidence, leaves the reason open and preserves access. The suggested wording is a model, not a required script. No response, attempt, judgment or success is recorded. [S1/S8]\n\nSTAGE 2 — TREAT FAMILY RESOURCES AS INSTRUCTIONAL ASSETS\nThe August 2018 ELPAC guidance describes family and community personal, social, cultural, academic, workplace and world experiences as resources, and partnerships as shared responsibility based on respect and trust. The June 2023 toolkit encourages cultural and linguistic assets in classrooms. A family can support learning through discussing a story in a familiar language, describing work or community knowledge, asking questions, sharing a perspective or helping a child notice a pattern. These are authored examples, not requirements for a particular family or obligations to donate private experiences. Invite choices and provide an alternative if a family does not wish to contribute. [S7/S8]\n\nTransnational or separated family arrangements appear in the framework, but their structure does not tell us a caregiver's commitment, availability, literacy, legal authority or the child's emotional state. Ask respectfully who should receive communication and how the family wants to participate, within the school's appropriate processes; do not invent custody rules here. Lack of PTA attendance is not evidence of lack of care. Time, access, preferences and circumstances remain questions, not conclusions. Do not infer ability, trauma, disability, immigration status or EL status from family language preferences. [S1/S7; family access S5/S6]\n\nWORKED EXAMPLE 2 — A COMMUNITY STORY EXHIBITION\nA school plans an original student exhibition about how a community place is used. Its first invitation is an English-only evening PTA meeting. Staff assume families who do not attend have nothing to contribute. One caregiver has shared an oral account in a preferred language; another can comment by telephone but cannot attend the meeting. No family has agreed to public use of its story.\nReasoning: begin with the learning goal—students compare accounts and justify what an exhibition caption can claim. Ask families which languages and communication forms work, arrange competent interpretation or translation, and offer accessible ways to contribute or decline. Invite the oral account as a resource if the family wishes; students can compare it with another permitted source. Make the purpose and audience clear and avoid requiring private histories. An advisory conversation can shape the exhibition question itself, making partnership more than collecting decorations. These are authored planning options, not a mandated procedure. [S5/S6/S7/S8; privacy S4]\nCounterexample: assigning a pupil to interpret the meeting makes access depend on an inappropriate substitute. Simply translating a fixed decision without inviting family ideas addresses part of communication but does not establish the shared planning relationship described in S7. Equating English fluency, public attendance or written contributions with care discards other resources. [S6/S7]\n\nGUIDED PAUSE B — THINK, THEN COMPARE (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nExplain two changes to the invitation and their purposes. Feedback: a translated invitation and competent interpretation make essential information understandable; flexible opportunities to offer ideas or decline support a respectful two-way relationship. A family-language contribution can support reasoning rather than serve only as decoration. A defensible plan names who will listen and how input can alter a decision. Other practical plans may work. No guided response is saved as learner evidence. [S5/S6/S7/S8]\n\nSTAGE 3 — DISTINGUISH LANGUAGE ACCESS FROM CLASSIFICATION\nS5 says essential information must be in a language families understand. S6 describes equal participation and systems for translation and interpretation. In its quotation of DOJ/ED joint guidance, S6 says schools may not rely on students, siblings, friends or untrained school staff to translate or interpret for parents; appropriate and competent individuals are required. Speaking two languages alone does not establish the skills or knowledge for high-quality interpretation. Do not ask a child to carry an adult's meeting or treat an available bilingual adult as automatically qualified. This lesson supplies no credential, procurement rule or deadline. [S5/S6]\n\nFamily access and student EL identification are different questions. The existing Objective 0001 Language Survey snapshot expressly treats family Section 2 preferences as informational, not child identification evidence. Arrange appropriate access while the child's identification follows its own evidence and process; the family's preferred language neither proves nor disproves EL status. The same preference supplies no basis for an inference about ability, disability, trauma or immigration status. [Obj0001 S6; S5/S6]\n\nELPAC is a formal partnership context in the August 2018 source. Here its useful principle is shared responsibility, respect and trust among families, schools and communities. We do not teach its numeric establishment threshold as current policy. A current compliance question remains a source-verification gap outside this packet. Likewise, the source's citation of the Jan 7, 2015 OCR letter is a secondary pointer: the researcher could not retrieve that PDF, and no text is invented from it. [S6/S7]\n\nGUIDED PAUSE C — THINK, THEN COMPARE (ASSISTED; NOT AN INDEPENDENT ATTEMPT)\nA colleague says, “The caregiver wants interpretation; ask the bilingual older sibling, and record the child as an EL.” Identify the two errors. Feedback: a sibling is not the appropriate competent interpretation system required by S6, and family preference is not child identification evidence. Honor access and use the appropriate child process separately. A bilingual adult's availability alone also does not establish interpretation competence. This explanatory pause creates no attempt or independent evidence. [S6; Obj0001 S6]\n\nSTAGE 4 — APPLY, THEN KEEP UNCERTAINTY VISIBLE\nSet aside the lesson for the five linked unaided checks; record any help used in the existing controls. The preference/status check retains the earlier family-communication exposure family, so wording changes do not reset the feedback cooldown. The unfamiliar school-community partnership case requires a plan, reasons, an unresolved question and a revision strategy. It has no deterministic key and stays provisional/manual pending judgment; an unfamiliar tag or completed checklist is not independence, transfer evidence or mastery. Lesson navigation, reading and guided pauses create no attempts or successes.\n\nREMAINING GAPS\nAll four statements retain gaps: comprehensive cultural theory and adaptation, the range of classroom practices, family constellations and their distinct circumstances, and complete sustained partnership and language-access procedures. This source-only slice offers bounded awareness and planning, not whole-objective completion, legal compliance certification or clinical interpretation. A mapped statement, taught example, reviewed task and independent learner observation remain separate."
     }
   ],
   "tasks": [
@@ -2800,6 +3143,617 @@
       "familyId": "family.obj0001.community-archive-transfer",
       "noveltyKind": "unfamiliar",
       "lessonId": "lesson.obj0001.identification-shared.v1"
+    },
+    {
+      "id": "task.obj0002.label-overlap",
+      "version": 1,
+      "kind": "mc",
+      "title": "Keep population labels distinct and qualified",
+      "prompt": "Original unaided check; synthetic illustrative practice. A planning note says the June 2023 toolkit makes newcomer a universal three-year legal category, and each learner must fit exactly one of newcomer, refugee, SLIFE or LTEL. Which correction is supported?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep the three-year rule as a universal deadline, but allow refugee and newcomer to overlap."
+        },
+        {
+          "id": "b",
+          "text": "Use refugee and SLIFE as interchangeable terms whenever prior schooling records are missing."
+        },
+        {
+          "id": "c",
+          "text": "Qualify the toolkit definition by publisher/date; labels concern different aspects of experience, can overlap across a history, and do not supply an individual learning profile."
+        },
+        {
+          "id": "d",
+          "text": "Replace the toolkit rule with the claim that every recently arrived learner meets Massachusetts SLIFE criteria."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "c"
+        ],
+        "feedback": "The June 2023 toolkit defines newcomer for its own purposes and calls the group heterogeneous. Labels may overlap but are not interchangeable; S4 requires specific MA SLIFE criteria. [S8 source.obj0002-0003.s8.2026-11-08] NCELA’s November 2024 common LTEL duration usage concerns continuing EL status, not the June 2023 toolkit’s newcomer scope or a universal statutory cutoff. [S9 source.obj0002-0003.s9.2026-11-08]",
+        "wrongFeedback": {
+          "a": "The toolkit explicitly limits the definition to its own purposes. Its three-year wording is not a universal legal deadline for services or support. [S8 source.obj0002-0003.s8.2026-11-08]",
+          "b": "Missing records or refugee experience alone do not establish the full June 2024 SLIFE criteria. The label cannot substitute for individual information. [S4 source.obj0002-0003.s4.2026-11-08]",
+          "d": "Recent arrival does not establish DOE025 EL status, the age range, the enrollment/absence condition and the prior-schooling condition together. [S4 source.obj0002-0003.s4.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0002-0003.s9.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.identification"
+      ],
+      "familyId": "family.obj0002.labels",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0002.diversity.v1"
+    },
+    {
+      "id": "task.obj0002.slife-criteria",
+      "version": 1,
+      "kind": "mc",
+      "title": "Read all Massachusetts SLIFE conditions together",
+      "prompt": "Original unaided check; synthetic illustrative practice. A June 2024 MA SLIFE review has documented DOE025 EL status, age 15, and first U.S. school enrollment after grade 2. Information about prior formal schooling remains unclear. Which next statement is accurate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The three known facts alone establish SLIFE; schooling history only affects the lesson plan."
+        },
+        {
+          "id": "b",
+          "text": "Clarify the prior-schooling condition and use the district holistic support approach; the known facts alone do not establish all Exhibit 1 criteria."
+        },
+        {
+          "id": "c",
+          "text": "Identify SLIFE only if a test first shows at least two years below grade expectations, regardless of schooling history."
+        },
+        {
+          "id": "d",
+          "text": "Treat a family request for interpretation as the missing evidence of interrupted schooling."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "b"
+        ],
+        "feedback": "All Exhibit 1 conditions are conjunctive. Prior schooling must involve no formal schooling, significant interruptions or consistent but limited schooling, with holistic attention to significant support beyond existing ELE. [S4 source.obj0002-0003.s4.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Exhibit 1 explicitly includes prior formal schooling as a condition. The other three conditions cannot replace it. [S4 source.obj0002-0003.s4.2026-11-08]",
+          "c": "Approximately two or more years below appears among Exhibit 2 MAY characteristics, not as a required Exhibit 1 test cutoff. [S4 source.obj0002-0003.s4.2026-11-08]",
+          "d": "The required information concerns actual exposure to schooling. A family language preference does not establish that history. [S4 source.obj0002-0003.s4.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s4.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.identification"
+      ],
+      "familyId": "family.obj0002.slife-criteria",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0002.diversity.v1"
+    },
+    {
+      "id": "task.obj0002.slife-characteristics",
+      "version": 1,
+      "kind": "mc",
+      "title": "Distinguish possible characteristics from required criteria",
+      "prompt": "Original unaided check; synthetic illustrative practice. A study guide says every student identified as SLIFE must function two or more years below grade level and that this establishes low ability. Which revision follows the primary June 2024 guidance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retain the two-years requirement, but remove the low-ability claim."
+        },
+        {
+          "id": "b",
+          "text": "Remove all attention to literacy or schooling because assets mean support needs should not be discussed."
+        },
+        {
+          "id": "c",
+          "text": "Use the FAQ sentence as the complete definition and assume its shorter wording supersedes Exhibit 1."
+        },
+        {
+          "id": "d",
+          "text": "Treat the two-years feature as a possible characteristic, apply all Exhibit 1 criteria with holistic support, and avoid equating identification with ability or potential."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "d"
+        ],
+        "feedback": "Exhibit 2 uses MAY; Exhibit 1 supplies the required conditions. The guidance explicitly rejects a negative inference about ability or potential. Assets and support needs can both inform instruction. [S4 source.obj0002-0003.s4.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Changing the ability language is necessary but incomplete: a possible Exhibit 2 characteristic still must not become a mandatory criterion. [S4 source.obj0002-0003.s4.2026-11-08]",
+          "b": "An asset perspective does not erase support needs. The guidance connects strengths and schooling information to support beyond existing ELE programs. [S4 source.obj0002-0003.s4.2026-11-08]",
+          "c": "The supplied packet identifies a compression conflict in the July 31, 2024 FAQ. Prefer the primary June 2024 Exhibit 1 and its full conditions, not the shorthand. [S4 source.obj0002-0003.s4.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.identification"
+      ],
+      "familyId": "family.obj0002.slife-criteria",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0002.diversity.v1"
+    },
+    {
+      "id": "task.obj0002.ltel-access",
+      "version": 1,
+      "kind": "mc",
+      "title": "Interpret LTEL usage without a statutory cutoff",
+      "prompt": "Original unaided check; synthetic illustrative practice. A team uses an LTEL label for a secondary student with continuing EL status and proposes permanently removing demanding history work because “the label proves low ability.” What is the best response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Examine the individual learning history and instructional access; NCELA describes common five-to-six-year usage, not an ESEA definition, and WIDA notes no standardized criteria."
+        },
+        {
+          "id": "b",
+          "text": "Apply a universal five-year ESEA cutoff and conclude the student cannot benefit from grade-level content."
+        },
+        {
+          "id": "c",
+          "text": "Ignore the student’s actual progress because no standardized label means no instructional question exists."
+        },
+        {
+          "id": "d",
+          "text": "Assume motivation is the cause whenever a student remains an EL beyond six years."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "a"
+        ],
+        "feedback": "The November 2024 fact sheet explicitly says LTEL is not defined in ESEA and asks about program fit and access. WIDA, February 2, 2026, notes no standardized criteria and emphasizes individual stories and authentic opportunities. [S10 source.obj0002-0003.s10.2026-11-08] [S9 source.obj0002-0003.s9.2026-11-08]",
+        "wrongFeedback": {
+          "b": "Common five-to-six-year usage is not a universal ESEA cutoff or an ability measure. The source warns of inequitable content access. [S9 source.obj0002-0003.s9.2026-11-08]",
+          "c": "No standardized duration criteria does not erase the need to understand the learner and ensure authentic learning opportunities. [S10 source.obj0002-0003.s10.2026-11-08]",
+          "d": "Continuing status alone does not establish motivation or cause. Program and instructional fit may need attention; investigate actual strengths and needs. [S9 source.obj0002-0003.s9.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s9.2026-11-08",
+        "source.obj0002-0003.s10.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.current-former"
+      ],
+      "familyId": "family.obj0002.ltel-access",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0002.diversity.v1"
+    },
+    {
+      "id": "task.obj0002.profile-planning",
+      "version": 1,
+      "kind": "mc",
+      "title": "Preserve a reasoning goal while responding to schooling assets",
+      "prompt": "Original unaided check; synthetic illustrative practice. Two newcomers are comparing evidence for competing habitat claims. One has extensive prior literacy and science schooling; the other explains local observations orally but is unfamiliar with written-source routines after schooling interruptions. Which plan best preserves the goal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Give both a copying task because a newcomer label determines the appropriate cognitive level."
+        },
+        {
+          "id": "b",
+          "text": "Remove the comparison goal until both can write fluent English paragraphs without help."
+        },
+        {
+          "id": "c",
+          "text": "Keep evidence comparison for both, connect the first learner’s literacy to English explanation, model written-source routines with oral rehearsal for the second, and observe each response."
+        },
+        {
+          "id": "d",
+          "text": "Value the second learner’s oral knowledge but assign only everyday conversation practice until formal literacy develops enough for evidence reasoning."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "c"
+        ],
+        "feedback": "Heterogeneity and assets justify observing individual access needs while preserving meaningful learning. These particular scaffolds are authored possibilities, not mandated methods. SLIFE assets and varying literacy do not imply low ability. [S4 source.obj0002-0003.s4.2026-11-08] [S8 source.obj0002-0003.s8.2026-11-08]",
+        "wrongFeedback": {
+          "a": "A group label does not establish one cognitive level or support plan; copying also removes the stated reasoning goal. [S8 source.obj0002-0003.s8.2026-11-08]",
+          "b": "Supporting cultural and linguistic assets can help access the meaningful task while English develops; fluent unsupported writing is not a prerequisite supplied by this source. [S8 source.obj0002-0003.s8.2026-11-08]",
+          "d": "Observed oral knowledge and lived expertise can support reasoning now. Interrupted schooling and emerging literacy do not establish an absence of capacity; provide access to the evidence task while developing literacy. [S4 source.obj0002-0003.s4.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.rigorous-scaffolds"
+      ],
+      "familyId": "family.scaffold-concept",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0002.diversity.v1"
+    },
+    {
+      "id": "task.obj0002.privacy-support",
+      "version": 1,
+      "kind": "mc",
+      "title": "Make support accessible without diagnosing trauma",
+      "prompt": "Original unaided check; synthetic illustrative practice. A newcomer is quiet during a class presentation. A colleague proposes repeated interviews about possible traumatic events before offering any classroom support. What should change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Diagnose trauma from silence and tell every teacher the family’s complete migration story."
+        },
+        {
+          "id": "b",
+          "text": "Offer predictable access supports, privately clarify present needs, share only essential support information through appropriate processes, and avoid requiring repeated sensitive retelling."
+        },
+        {
+          "id": "c",
+          "text": "Make a whole-class personal journey story a required first step to build empathy before offering classroom supports."
+        },
+        {
+          "id": "d",
+          "text": "Rule out all emotional needs because no trauma has been disclosed."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "b"
+        ],
+        "feedback": "The guidance supports privacy and avoiding repeated recounting of sensitive experiences. Emotional needs vary; a quiet observation neither diagnoses trauma nor rules needs out. [S8 source.obj0002-0003.s8.2026-11-08] [S4 source.obj0002-0003.s4.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Silence is not a diagnosis. Heterogeneous needs require individual attention; the label or one behavior does not establish trauma. [S8 source.obj0002-0003.s8.2026-11-08]",
+          "c": "An empathy-building intention does not justify required sensitive disclosure or making support depend on a personal story. Protect privacy and avoid requiring students to recount potentially sensitive experiences. [S4 source.obj0002-0003.s4.2026-11-08]",
+          "d": "Lack of disclosure does not establish lack of need. Make support accessible and respond to observations without a clinical inference. [S8 source.obj0002-0003.s8.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.shared-responsibility"
+      ],
+      "familyId": "family.obj0002.privacy-support",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0002.diversity.v1"
+    },
+    {
+      "id": "task.obj0002.learning-expectations",
+      "version": 1,
+      "kind": "mc",
+      "title": "Investigate educational expectations without national typing",
+      "prompt": "Original unaided check; synthetic illustrative practice. A student waits for a teacher demonstration before trying a new task. A staff member says the student’s nationality proves a fixed deductive learning style. Which response is strongest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep the national label and permanently restrict the student to teacher demonstrations."
+        },
+        {
+          "id": "b",
+          "text": "Treat the wait as proof that the student lacks the ability to discover patterns."
+        },
+        {
+          "id": "c",
+          "text": "Assume culture can never affect expectations, so avoid asking about prior classroom routines."
+        },
+        {
+          "id": "d",
+          "text": "Describe the observed wait, explain and model the new routine, ask about prior opportunities and observe responses across approaches without assigning a national learning type."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "d"
+        ],
+        "feedback": "Statement 0002.ds.04 supports awareness of culturally influenced educational practices. It does not justify assigning a fixed learning style from nationality; inquiry and response to observed opportunities are authored applications. [S1 source.obj0002-0003.s1.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Awareness of possible educational differences does not establish one permanent type for a nationality or justify restricting opportunity. [S1 source.obj0002-0003.s1.2026-11-08]",
+          "b": "Waiting in one task provides no ability conclusion. The framework asks about practices and effects on learning, not diagnosis from a single behavior. [S1 source.obj0002-0003.s1.2026-11-08]",
+          "c": "The statement explicitly includes culturally influenced educational practices. Consider possibilities respectfully without treating culture as either irrelevant or a deterministic explanation. [S1 source.obj0002-0003.s1.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s1.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.shared-responsibility"
+      ],
+      "familyId": "family.obj0002.learning-expectations",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0002.diversity.v1"
+    },
+    {
+      "id": "task.obj0003.culture-inquiry",
+      "version": 1,
+      "kind": "mc",
+      "title": "Use deep/surface culture as inquiry",
+      "prompt": "Original unaided check; synthetic illustrative practice. A school adds a food display but leaves an unexplained fast-paced discussion routine that excludes some learners. Which revision uses the framework’s culture concepts responsibly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep welcoming contributions and investigate participation expectations, explain routines and invite individual feedback without inferring a nationality’s cultural type."
+        },
+        {
+          "id": "b",
+          "text": "Declare the display sufficient because culture consists only of food and celebrations."
+        },
+        {
+          "id": "c",
+          "text": "Assign each national group a collectivist or individualist profile and set participation roles from that profile."
+        },
+        {
+          "id": "d",
+          "text": "Label every hesitant learner as experiencing culture shock and remove them from discussion."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "a"
+        ],
+        "feedback": "The framework includes deep/surface culture, communication patterns and cultural adaptation. The authored application is to investigate expectations as well as visible traditions without stereotyping or diagnosing adjustment. [S1 source.obj0002-0003.s1.2026-11-08]",
+        "wrongFeedback": {
+          "b": "The statement extends beyond surface examples to assumptions, beliefs, values and communication patterns; a display alone does not address the stated participation barrier. [S1 source.obj0002-0003.s1.2026-11-08]",
+          "c": "Collectivism/individualism are conceptual tools for awareness, not instructions to assign uniform national types or roles. [S1 source.obj0002-0003.s1.2026-11-08]",
+          "d": "Mentioning cultural adaptation does not make hesitation a diagnosis of culture shock. Investigate access and individual circumstances before drawing conclusions. [S1 source.obj0002-0003.s1.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s1.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.shared-responsibility"
+      ],
+      "familyId": "family.obj0003.culture-inquiry",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0003.culture-partnerships.v1"
+    },
+    {
+      "id": "task.obj0003.language-resources",
+      "version": 1,
+      "kind": "mc",
+      "title": "Use family languages as learning resources",
+      "prompt": "Original unaided check; synthetic illustrative practice. Students are comparing explanations of a community place. A caregiver offers an oral account in a familiar language and agrees to its use. Which response best uses the contribution for learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Require an English essay before the account can count as knowledge."
+        },
+        {
+          "id": "b",
+          "text": "Use an accessible, competently supported account as one source students compare with another, and invite the caregiver’s perspective without treating it as representative of every family."
+        },
+        {
+          "id": "c",
+          "text": "Display a greeting in that language but exclude the account from the reasoning task."
+        },
+        {
+          "id": "d",
+          "text": "Treat the account as the definitive view of everyone who shares the caregiver’s language."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "b"
+        ],
+        "feedback": "Family and community world experiences are resources; connecting the account to comparison serves the learning goal. The toolkit encourages cultural and linguistic assets, without making one account universal. [S8 source.obj0002-0003.s8.2026-11-08] [S7 source.obj0002-0003.s7.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Requiring an English essay dismisses personal, cultural and world experiences as resources. Access needs should be addressed instead of treating English form as the measure of knowledge. [S7 source.obj0002-0003.s7.2026-11-08]",
+          "c": "A greeting can be welcoming, but excluding the offered account from reasoning misses the opportunity to support the stated cultural and linguistic asset in learning. [S8 source.obj0002-0003.s8.2026-11-08]",
+          "d": "Diverse family experiences do not make one account representative of a whole language group. Treat it as a particular perspective that can be compared. [S7 source.obj0002-0003.s7.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s7.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.shared-responsibility"
+      ],
+      "familyId": "family.obj0003.language-resources",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0003.culture-partnerships.v1"
+    },
+    {
+      "id": "task.obj0003.family-participation",
+      "version": 1,
+      "kind": "mc",
+      "title": "Plan a two-way partnership beyond attendance",
+      "prompt": "Original unaided check; synthetic illustrative practice. Staff want to use PTA attendance to decide which families care about learning. They cite August 2018 ELPAC guidance as evidence that partnership means attending the school’s fixed meeting. Which revision is supported within this packet’s scope?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep attendance as the care measure, but offer an English-only recording after the meeting."
+        },
+        {
+          "id": "b",
+          "text": "Use the August 2018 numerical establishment threshold as a verified current rule and stop considering family ideas once that rule is met."
+        },
+        {
+          "id": "c",
+          "text": "Ask families only to approve a finished school plan; consultation would weaken the school’s responsibility."
+        },
+        {
+          "id": "d",
+          "text": "Invite accessible ways to share ideas and resources, let input shape a learning decision, and use the 2018 source for shared responsibility and trust without claiming a current numerical compliance rule."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "d"
+        ],
+        "feedback": "The supplied 2018 excerpts support strengths, shared responsibility and mutual trust, not attendance as a measure of care. Current ELPAC numerical compliance is outside this packet’s teaching scope. [S7 source.obj0002-0003.s7.2026-11-08]",
+        "wrongFeedback": {
+          "a": "Attendance does not capture the personal, community and world resources families can contribute. An English-only recording also does not address language access described by S5. [S7 source.obj0002-0003.s7.2026-11-08]",
+          "b": "This dated source is used for the partnership concept only. A current numerical requirement needs fresh verification; satisfying a threshold would not itself establish a trusting partnership. [S7 source.obj0002-0003.s7.2026-11-08]",
+          "c": "The source describes school improvement and student learning as shared responsibility; approving a fixed plan alone leaves family ideas no role in the decision. [S7 source.obj0002-0003.s7.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s7.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.shared-responsibility"
+      ],
+      "familyId": "family.obj0003.family-participation",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0003.culture-partnerships.v1"
+    },
+    {
+      "id": "task.obj0003.competent-interpretation",
+      "version": 1,
+      "kind": "mc",
+      "title": "Select competent family interpretation",
+      "prompt": "Original unaided check; synthetic illustrative practice. A school needs interpretation for a family meeting. A bilingual pupil, a sibling, a family friend and an untrained bilingual employee are readily available. Which plan matches the supplied DESE guidance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the school’s system to arrange an appropriate competent interpreter; neither student/family substitutes nor bilingual ability alone establishes qualification."
+        },
+        {
+          "id": "b",
+          "text": "Use the pupil because the pupil knows the classroom vocabulary best."
+        },
+        {
+          "id": "c",
+          "text": "Use the sibling or family friend because a trusted relationship replaces interpretation competence."
+        },
+        {
+          "id": "d",
+          "text": "Use the untrained employee automatically because speaking both languages proves high-quality interpretation skills."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "a"
+        ],
+        "feedback": "DESE’s quotation of joint guidance rejects reliance on students, siblings, friends or untrained staff and requires appropriate competent individuals. Bilingualism alone does not establish interpretation skill. [S6 source.obj0002-0003.s6.2026-11-08]",
+        "wrongFeedback": {
+          "b": "The guidance expressly says schools may not rely on or ask students to interpret for parents, even if the pupil knows classroom words. [S6 source.obj0002-0003.s6.2026-11-08]",
+          "c": "The quoted guidance also names siblings and friends; trust or availability does not substitute for appropriate competent interpretation. [S6 source.obj0002-0003.s6.2026-11-08]",
+          "d": "The source expressly distinguishes bilingual ability from the skills and knowledge needed for high-quality interpretation; untrained staff are not an automatic substitute. [S6 source.obj0002-0003.s6.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s6.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.shared-responsibility"
+      ],
+      "familyId": "family.obj0003.competent-interpretation",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0003.culture-partnerships.v1"
+    },
+    {
+      "id": "task.obj0003.preference-status",
+      "version": 1,
+      "kind": "mc",
+      "title": "Separate family access from student classification",
+      "prompt": "Original unaided check; synthetic illustrative practice. A caregiver requests interpreted meetings. A colleague treats the preference as proof of the child’s EL status and wants to postpone family access until classification is complete. Which response preserves the distinction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Record EL status now because a family’s communication language is a proxy for the child’s proficiency."
+        },
+        {
+          "id": "b",
+          "text": "Postpone access until the child’s classification is complete; the two decisions must use the same evidence."
+        },
+        {
+          "id": "c",
+          "text": "Arrange appropriate family access while the child’s identification follows its own information and process; family preference does not establish student EL status."
+        },
+        {
+          "id": "d",
+          "text": "Infer that the child cannot have a disability because the family’s language preference explains every classroom difficulty."
+        }
+      ],
+      "answerKey": {
+        "accepted": [
+          "c"
+        ],
+        "feedback": "Essential information should be understandable to families. [S5 source.obj0002-0003.s5.2026-11-08] Section 2 family preferences are informational, not child identification evidence. [Obj0001 S6 source.obj0001.s6.2026-11-08]",
+        "wrongFeedback": {
+          "a": "The existing form explicitly excludes family Section 2 preferences from identifying whether the child needs support learning English; a preference is not a proficiency result. [Obj0001 S6 source.obj0001.s6.2026-11-08]",
+          "b": "Family access needs attention on its own basis. The packet’s essential-information principle does not depend on proving the child’s classification. [S5 source.obj0002-0003.s5.2026-11-08]",
+          "d": "A communication preference supplies no evidence resolving disability or the cause of classroom difficulty. It is informational family-access data, not a child assessment. [Obj0001 S6 source.obj0001.s6.2026-11-08]"
+        }
+      },
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s6.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.identification"
+      ],
+      "familyId": "family.family-communication",
+      "noveltyKind": "familiar",
+      "lessonId": "lesson.obj0003.culture-partnerships.v1"
+    },
+    {
+      "id": "task.obj0002.contrasting-schooling-case",
+      "version": 1,
+      "kind": "case",
+      "title": "Plan access for a theater sound investigation",
+      "prompt": "Original unfamiliar nonmath application in a theater sound investigation. All people and observations are synthetic; this is not an official prompt. No deterministic answer key. The response remains provisional/manual pending judgment.\n\nA class must advise a school theater group about why dialogue is difficult to hear during rehearsals. Students have short audio samples, annotated stage sketches and competing written explanations. The samples were made on different days and may not represent the same conditions. The class must compare explanations, propose a fair follow-up observation and justify a reversible change while acknowledging uncertainty. No calculation is required.\n\nAmal recently arrived, has sustained prior schooling and reads technical explanations in a familiar language. Amal organizes the written explanations accurately but asks for help phrasing a comparison in English. Casey also recently arrived, describes practical sound-setup experience orally in a familiar language and notices differences in two samples. Casey has had significant schooling interruptions and is learning how written observation notes distinguish a claim, a condition and a source. The available record does not establish all Massachusetts SLIFE criteria. Neither learner has disclosed a trauma history. These observations do not establish nationality-based learning styles or immigration status.\n\nA team proposes the same copying sheet for both “because they are newcomers,” automatically codes Casey as SLIFE from the schooling interruption alone, and requests that both retell migration difficulties before receiving support. The team also wants to label a third learner, Drew, “unable to manage technical reasoning” because Drew has remained an EL for an extended period. Drew proposes changing microphone placement but has not yet explained how the unmatched recording conditions affect that claim. The team has not examined Drew's earlier access to similar investigations.\n\nPrepare a connected, reasoned plan:\n1. State one observed asset and one unresolved instructional question for each learner. Distinguish schooling, literacy, English use and the support used. Explain why newcomer, SLIFE and LTEL terms do not settle these questions or form mutually exclusive categories.\n2. Propose different initial supports for Amal and Casey while preserving the comparison, fair-observation and justification goals. State an observable content goal and language goal, explain why each support fits the actual observations, and describe a later opportunity to observe what each can do without that support. Include how their different expertise could inform, rather than predetermine, the follow-up investigation.\n3. Explain why Casey's available information is insufficient for a Massachusetts designation. Refer to all June 2024 Exhibit 1 criteria and holistic support, and distinguish a possible two-years-below characteristic from a required criterion. Do not make a real identification or invent a cutoff.\n4. Revise the team's support request to protect privacy without diagnosing trauma or denying possible needs. Name information essential to instruction, an optional support route and information that need not be demanded or repeatedly retold. Do not infer a diagnosis from either learner's label or participation.\n5. Reconsider Drew's access using the source-specific NCELA November 2024 and WIDA February 2, 2026 LTEL distinctions. Identify an observation that would help distinguish Drew's understanding of fair comparisons from English explanation needs. Explain why neither duration nor the label establishes ability or cause.\n6. Justify the plan with the supplied excerpts. Identify both an instructional uncertainty and an uncertainty in the investigation evidence that could change your plan. Qualify any newcomer three-year language by the June 2023 toolkit's own scope.\n\nReview focus: reasoning from observations to support, retained technical inquiry, assets without romanticizing or denying needs, qualified labels/criteria, privacy and explicit uncertainty. Multiple plans can be defensible. The review must examine the explanation and the fit between evidence and choices; keyword presence, completion, label use or familiarity tags cannot establish correctness, independent evidence, transfer or mastery. Reading the lesson or using its worked answer must be recorded as assistance. Source-checked means only model wording-to-source comparison, not human judgment of the learner response.",
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0002-0003.s9.2026-11-08",
+        "source.obj0002-0003.s10.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.shared-responsibility",
+        "sei.skill.domain-profiles",
+        "sei.skill.rigorous-scaffolds"
+      ],
+      "familyId": "family.obj0002.contrasting-schooling-case",
+      "noveltyKind": "unfamiliar",
+      "lessonId": "lesson.obj0002.diversity.v1"
+    },
+    {
+      "id": "task.obj0003.partnership-case",
+      "version": 1,
+      "kind": "case",
+      "title": "Co-design an inclusive school-library media partnership",
+      "prompt": "Original unfamiliar nonmath application in civics and school-community planning. All people, proposals and observations are synthetic; this is not an official writing prompt or one of the five-part mentor tasks. No deterministic answer key. The response remains provisional/manual pending judgment.\n\nA school and public library want to co-design a media club in which students compare two proposals for improving access to a community resource and justify a recommendation. The students must identify whose perspectives each proposal includes, whose views are missing and what further information could change their recommendation. The partnership has two draft launch plans: one fixed evening meeting at school with written English materials, or an afternoon library session inviting families to record personal journeys for a public audio collection. The team can revise either plan, but it does not yet know which times or formats families can access. A staff group proposes letting only attendees choose the final project and requiring the personal recording in the library option as a way to create belonging.\n\nA caregiver offers practical knowledge of local services and can discuss ideas by telephone in a familiar language. Another requests written information in a preferred language and cannot attend the evening meeting. A student mentions relatives living in more than one country but has not explained caregiving arrangements or private circumstances. An untrained bilingual employee and an older sibling are available; staff propose either as the interpreter. A colleague concludes that nonattendance means lack of care, that the preferred language proves the child's EL status, and that all families sharing a nationality will want a collectivist project format. No family has agreed to make a public personal recording.\n\nPrepare a reasoned planning memo:\n1. Identify the observed resources and access requests, separate them from staff assumptions, and state what remains unknown. Explain why attendance, language preferences or family constellation do not establish care, ability, EL status, disability, immigration status, trauma or a national learning style.\n2. Compare the two launch plans and propose a feasible revision with priorities and a sequence. Provide understandable essential information, competent interpretation and meaningful opportunities for family input to change a decision. Explain why the sibling or an untrained bilingual adult is not the required substitute. Do not invent interpreter credentials, legal deadlines or immigration procedures.\n3. Explain how one voluntarily shared family-language or community resource could contribute to the students' proposal-comparison and justification goal. Offer an alternative for families who decline; protect privacy and avoid forced migration or trauma disclosure. Specify an observable content goal and language goal, and explain how the plan preserves demanding reasoning.\n4. Use deep/surface culture or differing participation expectations as an inquiry tool: propose a respectful question and an adjustment to a school or library routine, while explaining why a whole nationality cannot supply the answer. Do not diagnose cultural shock from a behavior.\n5. Describe a two-way school-home-community relationship using the August 2018 ELPAC source's shared-responsibility principle only. Explain how input from someone who cannot attend could influence the decision, what later feedback would lead the team to revise the club and what remains a gap. Do not claim a current numerical ELPAC compliance threshold.\n6. Justify priorities with the supplied excerpts and identify one tradeoff that needs more information. Keep family access distinct from the child identification process described by the existing Objective 0001 source.\n\nReview focus: a feasible sequence connecting access, family agency, instructional reasoning, privacy and justified uncertainty. There is no single required launch plan or club format. Feedback must respond to the proposed choices and cited evidence; it must not infer national learning styles, ability, trauma, immigration status, disability or EL status from family preferences or participation. Keyword matches, completion, an unfamiliar tag or a model example do not establish an authoritative judgment, independence, transfer evidence or mastery. Source-checked denotes model wording comparison only; genuine human review requires a real human action.",
+      "reviewState": "source_checked",
+      "sourceRefs": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s6.2026-11-08",
+        "source.obj0002-0003.s7.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "skillIds": [
+        "sei.skill.shared-responsibility",
+        "sei.skill.identification",
+        "sei.skill.rigorous-scaffolds"
+      ],
+      "familyId": "family.obj0003.partnership-case",
+      "noveltyKind": "unfamiliar",
+      "lessonId": "lesson.obj0003.culture-partnerships.v1"
     }
   ],
   "cards": [
@@ -3965,6 +4919,518 @@
       ],
       "payloadSha256": "4bc49cd68555738714613db01a69163c6434de446a6c71d4ac7e5145191a0ea5",
       "createdAt": "2026-11-09T01:10:27.004Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s1.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s1.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: mtel56.obj.0002.ds.01, mtel56.obj.0002.ds.02, mtel56.obj.0002.ds.03, mtel56.obj.0002.ds.04, mtel56.obj.0003.ds.01, mtel56.obj.0003.ds.02, mtel56.obj.0003.ds.03, mtel56.obj.0003.ds.04.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "96000e3e019fe1387ea87ab9964b6d45eceb5d1ba5ddb875ac07e778bd16a1cb",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s4.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s4.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: exhibit-1-all, exhibit-1-el, exhibit-1-age, exhibit-1-enrollment, exhibit-1-schooling, holistic-support, not-ability, exhibit-2-may, assets, privacy, support-varies, authority-limit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "e57030b919e1769486b5a198cc128a9317cc8967bf5ebe2524138ad2dc0157df",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s5.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s5.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: newcomer-diversity, family-access.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "c9b90df7fad4d2eb2486ea341c9f30d3a2053aca17c2ad71a778d7e593b2bb4e",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s6.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s6.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s6.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: participation, joint-guidance-competence, bilingual-not-qualification.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "9226b6263fae9c487d23204598918b947cbc0d3716954b77d39208a28a598e79",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s7.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s7.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: partnership, family-assets, shared-responsibility.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "f326070ae587fdaaf6ea3511f51a7d2ee7cb4a7f2e34b25d2078abc7236e559f",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s8.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s8.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s8.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: publisher-definition, umbrella, temporary, heterogeneity, assets, needs-vary.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "bdd93c0fac2093dc05cc4e9041aca184125c14c026a53cc23801c90def43371f",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s9.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s9.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: not-esea-definition, program-access.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "232ffac371361306aefb1ec9f629681778e381225e64c2faf50614bb814a1b89",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s10.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s10.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s10.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: no-standardized-criteria, individual-access.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "86a1fe1b13c3ab068b2d7fd80e46b430c3d601f8dfba102ef3d4c03557925069",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.lesson.lesson.obj0002.diversity.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0002.diversity.v1",
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0002-0003.s9.2026-11-08",
+        "source.obj0002-0003.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Read the entire staged lesson, observable goals, both worked examples and counterexamples, all three assisted guided pauses, source-qualified explanations and remaining gaps against the supplied packet.",
+        "Verified all four June 2024 Exhibit 1 conditions including enrollment/absence alternatives, holistic support and Exhibit 2 MAY distinction; source-specific newcomer/LTEL terminology; individual assets without national learning-style or trauma diagnosis.",
+        "Guided instruction records no attempt, judgment, success or independent evidence. Authored strategies are visibly unofficial and bounded, not mandated source methods.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "da86b0d4fa27e3d740dc54847811a0a44149932ed72f908068e61f60e682f1c2",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.lesson.lesson.obj0003.culture-partnerships.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0003.culture-partnerships.v1",
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s6.2026-11-08",
+        "source.obj0002-0003.s7.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Read the entire staged lesson, observable goals, both worked examples and counterexamples, all three assisted guided pauses, source-qualified explanations and remaining gaps against the supplied packet.",
+        "Verified cultural inquiry and family-resource examples, competent interpretation, unchanged Objective 0001 Section 2 distinction, privacy and August 2018 partnership-only scope; no invented S11 terminology quote or current ELPAC numerical requirement.",
+        "Guided instruction records no attempt, judgment, success or independent evidence. Authored strategies are visibly unofficial and bounded, not mandated source methods.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "b1305d3db84748aae93bbfdca7feeb19acc12591697dde8b14cfb5a4b5facd7a",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.label-overlap.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.label-overlap",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0002-0003.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key c: June 2023 toolkit scope is publisher-specific; labels differ and can overlap across a history. Added the S9 reference and keyed-feedback clause for LTEL usage before review approval.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "c78df7bafad4ea3a3c097259470f8291a93f6ea6b885cb871587592ebb90aa43",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.slife-criteria.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.slife-criteria",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key b: known age, DOE025 EL and enrollment facts leave required prior schooling unknown; all Exhibit 1 conditions and holistic support apply. No inference from family preference or mandatory two-year cutoff.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "068625c67dbfc3d357a25e04bda5ee8f4e5667b242e94c82d170a70f64473a4d",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.slife-characteristics.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.slife-characteristics",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key d: Exhibit 2 MAY traits are not mandatory Exhibit 1 criteria; identification does not establish low ability. Primary June 2024 criteria resolve the compressed FAQ conflict. Shares the criteria exposure family conservatively.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "dde1afc04f38ac3b370b828331b84b92ff29ec8a6573bab5bf39ab6eb2a0902d",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.ltel-access.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.ltel-access",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s9.2026-11-08",
+        "source.obj0002-0003.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key a against November 2024 NCELA and February 2, 2026 WIDA: common usage is not an ESEA definition or standardized cutoff; investigate individual access without ability or motivation inference.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "321d5d1a125966898c81025c5bdc13ca07932021f023d977dcd2e403d828b415",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.profile-planning.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.profile-planning",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key c: authored scaffolds preserve evidence reasoning and respond to observed assets. Replaced the implausibly absolute deficit distractor with a plausible premature restriction to everyday oral practice; reviewed its revised rationale. Retains starter scaffold family.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "eb0e67da91abb14100977610bfdce09d379e6f53a1f6f06902cb00aec92e8dee",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.privacy-support.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.privacy-support",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key b against privacy and heterogeneous-needs excerpts. Revised distractor c to a well-intended but required personal-story prerequisite; its explanation rejects compelled disclosure without diagnosing or ruling out needs.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "71b7a0ca36a83b007c3b1101f98f14cee7ee4eb6020e80c867ec9a4163d225e0",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.learning-expectations.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.learning-expectations",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key d against original 0002.ds.04: inquiry about prior opportunities and current routines does not assign a fixed national deductive learning type. Awareness is an authored application, not a cultural taxonomy.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "7a9af3892e3e48d2cd1851bc7c91a991ff32f51ab6d81bdb88be80342c53c7aa",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.culture-inquiry.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.culture-inquiry",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key a against original 0003.ds.01: surface display alone leaves deeper communication expectations unaddressed. Distinct decision from fixed learning-style assignment; no national type or culture-shock diagnosis.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "fc3afea9584382b5f16723306f1d6ae0572ded752ff3372e18359b42122cf8e0",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.language-resources.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.language-resources",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s7.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key b against S7/S8: a voluntarily offered account can support actual comparison and reasoning; English essay form or a greeting alone does not exhaust its learning value; one account does not represent a language group.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "b4b5e26a689dc25c466d0c8e45493fb1b0ae22342c357f9821d58e82f0bc0c7f",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.family-participation.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.family-participation",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key d against S5/S7: accessible input can alter decisions; attendance does not establish care. August 2018 ELPAC source supports shared partnership only; no numerical current compliance threshold taught.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "4fa3da7b2c8b4740720f01a97c9cbf80fd35af5647514705abfb4d4a66ae3599",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.competent-interpretation.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.competent-interpretation",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s6.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key a to S6 quotation: no reliance on pupils, siblings, friends or untrained staff; bilingualism alone does not establish competence. No invented credential, procurement rule or deadline.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "b432f77c7110d9939799353e9d8d8e5a57f767caf4581827f50432efd2f2d33a",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.preference-status.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.preference-status",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s6.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key c to S5/S6 and unchanged Objective 0001 S6 Section 2 quote: family access is separate from child classification; no disability or causal inference from preference. Retains starter/0001 family-communication exposure family.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "d1e210436f6102802b5620f89b49b5e1090cdd925ed0011ec65eff7be65ebe34",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.contrasting-schooling-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.contrasting-schooling-case",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0002-0003.s9.2026-11-08",
+        "source.obj0002-0003.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Reviewed all six open-response demands: theater audio conditions create a new fair-comparison uncertainty alongside three observed learner profiles. Requires justified support, follow-up observation, source-qualified labels and privacy; no deterministic answer key, keyword grading or automatic transfer proof.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "d7a5c51b65759eeb22767de3390da7537d0f49f20060b565d183255069f68c86",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.partnership-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.partnership-case",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s6.2026-11-08",
+        "source.obj0002-0003.s7.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Reviewed all six open-response demands: compare and revise competing school-library launch plans under unknown access, consent and representation constraints. Requires priorities, tradeoffs and a feedback loop; no deterministic answer key or stereotype/trauma/status inference from family preferences.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "95e51ea4de8b4b8da7078fcb3831573f3e3b333f1ac85996bc6b5eed8970642a",
+      "createdAt": "2026-11-09T01:53:19.900Z"
     }
   ]
 }

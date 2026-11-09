@@ -3,9 +3,12 @@ import {describe, expect, it} from 'vitest';
 import type {Catalog} from '../packages/shared/src/index.js';
 import {deriveCoverage, type CoverageState} from '../packages/shared/src/coverage.js';
 import {INTEGRATION_REFERRAL_ID, SOURCE_COVERAGE_CONTRACT} from '../packages/shared/src/coverage-contract.js';
+import {readSliceBaseline} from './obj0002-0003-baseline';
+import {COVERAGE_CONTRACT_VERSION as BASE_CONTRACT_VERSION, SOURCE_COVERAGE_CONTRACT as BASE_CONTRACT} from './fixtures/coverage-contract-d8e0dd883457cc01fd6a394e3d5c4fc35993f506';
 
 const catalog = JSON.parse(readFileSync('content/catalog.json', 'utf8')) as Catalog;
 const inventory = JSON.parse(readFileSync('content/inventory.json', 'utf8')) as Catalog;
+const baseline = readSliceBaseline();
 const sharedStatement = 'mtel56.obj.0001.ds.01';
 const observation = (id: string, taskId: string, submittedAt: string, extra: Record<string, unknown> = {}) =>
   ({id, taskId, taskVersion: 1, startedAt: submittedAt, submittedAt, hintCount: 0, assistance: [], ...extra});
@@ -22,8 +25,10 @@ describe('source-backed statement coverage contract', () => {
   it('preserves the exact inventory and separate 59-bullet/one-referral denominators', () => {
     expect(catalog.objectives).toEqual(inventory.objectives);
     expect(catalog.statements).toEqual(inventory.statements);
-    const report = deriveCoverage(catalog);
-    expect(report.contractVersion).toBe(2);
+    // Preserve every v2 inventory/coverage count on its exact portable catalog.
+    const report = deriveCoverage(baseline);
+    expect(BASE_CONTRACT_VERSION).toBe(2);
+    expect(report.contractVersion).toBe(3);
     expect(report.totals).toMatchObject({objectiveCount: 13, statementCount: 60, bulletCount: 59, referralCount: 1, mappedStatementCount: 9, partialInstructionCount: 8, reviewedPracticeCount: 9, gapCount: 60, sourceCheckedTaskCount: 37, humanReviewedTaskCount: 0});
     expect(report.objectives.find(o => o.objectiveId === 'mtel56.obj.0013')).toMatchObject({statementCount: 1, bulletCount: 0, referralCount: 1, complete: false});
     expect(report.statements.find(s => s.statementId === INTEGRATION_REFERRAL_ID)?.kind).toBe('integration_referral');
@@ -41,7 +46,8 @@ describe('source-backed statement coverage contract', () => {
   });
 
   it('binds only inspected scopes and keeps unreviewed legal specifics as gaps', () => {
-    expect(SOURCE_COVERAGE_CONTRACT).toHaveLength(11);
+    expect(BASE_CONTRACT).toHaveLength(11);
+    expect(SOURCE_COVERAGE_CONTRACT.slice(0, BASE_CONTRACT.length)).toEqual(BASE_CONTRACT);
     const policy = row(empty, 'mtel56.obj.0001.ds.03');
     expect(policy.gaps.join(' ')).toContain('exit thresholds');
     expect(policy.gaps.join(' ')).not.toContain('monitoring durations');
@@ -72,7 +78,7 @@ describe('source-backed statement coverage contract', () => {
 
   it('never turns a broad skill alignment into statement instruction or evidence', () => {
     const target = 'mtel56.obj.0002.ds.01';
-    const c = structuredClone(catalog);
+    const c = structuredClone(baseline);
     c.alignments.push({id: 'synthetic-broad-alignment', skillId: 'sei.skill.shared-responsibility', statementId: target, frameworkKind: 'mtel56', rationale: 'Synthetic broad alignment', sourceVersionId: c.statements[0].sourceVersionId});
     const state = history([observation('one', 'task.shared-plan', '2026-11-01T12:00:00Z'), observation('two', 'task.team-evidence', '2026-11-03T12:00:00Z')]);
     const unrelated = row(state, target, c);

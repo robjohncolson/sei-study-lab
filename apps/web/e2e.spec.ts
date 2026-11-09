@@ -302,6 +302,40 @@ test('Objective 0001 lesson opens its own checks without treating guided practic
   expect(service.external).toEqual([]);
 });
 
+for (const lessonId of ['lesson.obj0002.diversity.v1', 'lesson.obj0003.culture-partnerships.v1']) {
+  test(`${lessonId} opens assisted instruction, a linked check and its manual case without evidence writes`, async ({page}) => {
+    const service = await mockDesk(page);
+    const lessonTasks = catalog.tasks.filter(t => t.lessonId === lessonId);
+    const check = lessonTasks.find(t => t.kind === 'mc')!;
+    const application = lessonTasks.find(t => t.kind === 'case')!;
+    expect(check).toBeDefined();
+    expect(application.answerKey).toBeUndefined();
+    await page.goto('/');
+    await page.getByRole('button', {name: 'Learn & practice', exact: false}).click();
+    await page.getByLabel('Short lesson', {exact: true}).selectOption(lessonId);
+    const lesson = page.locator('.lesson');
+    await expect(lesson).toContainText(/content goal/i);
+    await expect(lesson).toContainText(/language goal/i);
+    await expect(lesson).toContainText(/assisted/i);
+    await expect(lesson).toContainText('no attempts or independent evidence');
+    const links = page.getByRole('navigation', {name: 'Checks for this lesson', exact: true});
+    await expect(links.getByRole('button')).toHaveCount(lessonTasks.length);
+    await links.getByRole('button', {name: check.title, exact: true}).click();
+    await expect(page.locator('.practice-card h2')).toHaveText(check.title);
+    await expect(page.getByRole('radio')).toHaveCount(4);
+    await expect(page.getByRole('button', {name: 'Save draft now', exact: true})).toBeEnabled();
+    await links.getByRole('button', {name: application.title, exact: true}).click();
+    await expect(page.locator('.practice-card h2')).toHaveText(application.title);
+    await expect(page.locator('.practice-card')).toContainText(/pending|provisional/i);
+    await expect(page.getByLabel('Your response', {exact: true})).toHaveValue('');
+    await expect(page.getByLabel('Your response', {exact: true})).toBeEnabled();
+    expect(service.attempts).toEqual([]);
+    expect(service.drafts.size).toBe(0);
+    expect(service.writes).toEqual([]);
+    expect(service.external).toEqual([]);
+  });
+}
+
 for (const timezoneId of ['America/New_York', 'Asia/Tokyo']) {
   test.describe(`source retrieval calendar dates in ${timezoneId}`, () => {
     test.use({timezoneId, locale: 'en-US'});

@@ -5,6 +5,7 @@ import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {test} from 'node:test';
 import {COVERAGE_CONTRACT_VERSION, SOURCE_COVERAGE_CONTRACT} from '../packages/shared/src/coverage-contract.ts';
+import {COVERAGE_CONTRACT_VERSION as BASE_CONTRACT_VERSION, SOURCE_COVERAGE_CONTRACT as BASE_CONTRACT} from '../tests/fixtures/coverage-contract-d8e0dd883457cc01fd6a394e3d5c4fc35993f506.ts';
 import {readBaselineCatalog} from '../tests/catalog-baseline.ts';
 
 const read = path => JSON.parse(readFileSync(path, 'utf8'));
@@ -34,7 +35,7 @@ test('all installed records and exact official inventories survive unchanged', (
 
 test('the reviewed slice is exactly additive and contains seven checks plus one open case', () => {
   for (const [key, rows] of Object.entries({...module, sources: packet.sources, reviewEvents: reviews})) {
-    assert.deepEqual(catalog[key].slice(base[key].length), rows, key);
+    assert.deepEqual(catalog[key].slice(base[key].length, base[key].length + rows.length), rows, key);
   }
   assert.equal(module.lessons.length, 1);
   assert.equal(checks.length, 7);
@@ -106,9 +107,12 @@ test('equivalent older starter tasks retain their exact exposure families', () =
 });
 
 test('coverage v2 explicitly binds the new module with valid lesson fingerprints', () => {
-  assert.equal(COVERAGE_CONTRACT_VERSION, 2);
-  assert.equal(SOURCE_COVERAGE_CONTRACT.length, 11);
-  assert.equal(new Set(SOURCE_COVERAGE_CONTRACT.map(b => b.statementId)).size, 9);
+  assert.equal(BASE_CONTRACT_VERSION, 2);
+  assert.equal(COVERAGE_CONTRACT_VERSION, 3);
+  const legacy = SOURCE_COVERAGE_CONTRACT.slice(0, 11);
+  assert.deepEqual(legacy, BASE_CONTRACT);
+  assert.equal(legacy.length, 11);
+  assert.equal(new Set(legacy.map(b => b.statementId)).size, 9);
   assert.ok(SOURCE_COVERAGE_CONTRACT.every(b => b.remainingGap.length > 0));
   assert.equal(SOURCE_COVERAGE_CONTRACT.some(b => b.statementId === 'mtel56.obj.0001.ds.02'), false);
   for (const b of SOURCE_COVERAGE_CONTRACT) {

@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 1,
+  "packetId": "obj0002-0003.supplied.2026-11-08.v1",
+  "suppliedPacketProvenance": "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+  "reviewLimits": "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery.",
+  "reviewEvents": [
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s1.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s1.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: mtel56.obj.0002.ds.01, mtel56.obj.0002.ds.02, mtel56.obj.0002.ds.03, mtel56.obj.0002.ds.04, mtel56.obj.0003.ds.01, mtel56.obj.0003.ds.02, mtel56.obj.0003.ds.03, mtel56.obj.0003.ds.04.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "96000e3e019fe1387ea87ab9964b6d45eceb5d1ba5ddb875ac07e778bd16a1cb",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s4.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s4.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: exhibit-1-all, exhibit-1-el, exhibit-1-age, exhibit-1-enrollment, exhibit-1-schooling, holistic-support, not-ability, exhibit-2-may, assets, privacy, support-varies, authority-limit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "e57030b919e1769486b5a198cc128a9317cc8967bf5ebe2524138ad2dc0157df",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s5.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s5.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: newcomer-diversity, family-access.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "c9b90df7fad4d2eb2486ea341c9f30d3a2053aca17c2ad71a778d7e593b2bb4e",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s6.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s6.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s6.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: participation, joint-guidance-competence, bilingual-not-qualification.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "9226b6263fae9c487d23204598918b947cbc0d3716954b77d39208a28a598e79",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s7.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s7.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: partnership, family-assets, shared-responsibility.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "f326070ae587fdaaf6ea3511f51a7d2ee7cb4a7f2e34b25d2078abc7236e559f",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s8.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s8.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s8.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: publisher-definition, umbrella, temporary, heterogeneity, assets, needs-vary.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "bdd93c0fac2093dc05cc4e9041aca184125c14c026a53cc23801c90def43371f",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s9.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s9.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: not-esea-definition, program-access.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "232ffac371361306aefb1ec9f629681778e381225e64c2faf50614bb814a1b89",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.source.source.obj0002-0003.s10.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0002-0003.s10.2026-11-08",
+      "sourceVersionId": "source.obj0002-0003.s10.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, version cue, date-only supplied retrieval metadata, binary SHA provenance and every supporting excerpt against the supplied packet; S1 eight statement strings also match the immutable installed inventory exactly.",
+        "Repaired literal question-mark encoding damage to supplied curly quotes, apostrophes and ellipses, then reread all source excerpts before approval.",
+        "Reviewed excerpt locators: no-standardized-criteria, individual-access.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "86a1fe1b13c3ab068b2d7fd80e46b430c3d601f8dfba102ef3d4c03557925069",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.lesson.lesson.obj0002.diversity.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0002.diversity.v1",
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0002-0003.s9.2026-11-08",
+        "source.obj0002-0003.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Read the entire staged lesson, observable goals, both worked examples and counterexamples, all three assisted guided pauses, source-qualified explanations and remaining gaps against the supplied packet.",
+        "Verified all four June 2024 Exhibit 1 conditions including enrollment/absence alternatives, holistic support and Exhibit 2 MAY distinction; source-specific newcomer/LTEL terminology; individual assets without national learning-style or trauma diagnosis.",
+        "Guided instruction records no attempt, judgment, success or independent evidence. Authored strategies are visibly unofficial and bounded, not mandated source methods.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "da86b0d4fa27e3d740dc54847811a0a44149932ed72f908068e61f60e682f1c2",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.lesson.lesson.obj0003.culture-partnerships.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0003.culture-partnerships.v1",
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s6.2026-11-08",
+        "source.obj0002-0003.s7.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Read the entire staged lesson, observable goals, both worked examples and counterexamples, all three assisted guided pauses, source-qualified explanations and remaining gaps against the supplied packet.",
+        "Verified cultural inquiry and family-resource examples, competent interpretation, unchanged Objective 0001 Section 2 distinction, privacy and August 2018 partnership-only scope; no invented S11 terminology quote or current ELPAC numerical requirement.",
+        "Guided instruction records no attempt, judgment, success or independent evidence. Authored strategies are visibly unofficial and bounded, not mandated source methods.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "b1305d3db84748aae93bbfdca7feeb19acc12591697dde8b14cfb5a4b5facd7a",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.label-overlap.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.label-overlap",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0002-0003.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key c: June 2023 toolkit scope is publisher-specific; labels differ and can overlap across a history. Added the S9 reference and keyed-feedback clause for LTEL usage before review approval.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "c78df7bafad4ea3a3c097259470f8291a93f6ea6b885cb871587592ebb90aa43",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.slife-criteria.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.slife-criteria",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key b: known age, DOE025 EL and enrollment facts leave required prior schooling unknown; all Exhibit 1 conditions and holistic support apply. No inference from family preference or mandatory two-year cutoff.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "068625c67dbfc3d357a25e04bda5ee8f4e5667b242e94c82d170a70f64473a4d",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.slife-characteristics.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.slife-characteristics",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key d: Exhibit 2 MAY traits are not mandatory Exhibit 1 criteria; identification does not establish low ability. Primary June 2024 criteria resolve the compressed FAQ conflict. Shares the criteria exposure family conservatively.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "dde1afc04f38ac3b370b828331b84b92ff29ec8a6573bab5bf39ab6eb2a0902d",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.ltel-access.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.ltel-access",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s9.2026-11-08",
+        "source.obj0002-0003.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key a against November 2024 NCELA and February 2, 2026 WIDA: common usage is not an ESEA definition or standardized cutoff; investigate individual access without ability or motivation inference.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "321d5d1a125966898c81025c5bdc13ca07932021f023d977dcd2e403d828b415",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.profile-planning.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.profile-planning",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key c: authored scaffolds preserve evidence reasoning and respond to observed assets. Replaced the implausibly absolute deficit distractor with a plausible premature restriction to everyday oral practice; reviewed its revised rationale. Retains starter scaffold family.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "eb0e67da91abb14100977610bfdce09d379e6f53a1f6f06902cb00aec92e8dee",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.privacy-support.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.privacy-support",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key b against privacy and heterogeneous-needs excerpts. Revised distractor c to a well-intended but required personal-story prerequisite; its explanation rejects compelled disclosure without diagnosing or ruling out needs.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "71b7a0ca36a83b007c3b1101f98f14cee7ee4eb6020e80c867ec9a4163d225e0",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.learning-expectations.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.learning-expectations",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key d against original 0002.ds.04: inquiry about prior opportunities and current routines does not assign a fixed national deductive learning type. Awareness is an authored application, not a cultural taxonomy.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "7a9af3892e3e48d2cd1851bc7c91a991ff32f51ab6d81bdb88be80342c53c7aa",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.culture-inquiry.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.culture-inquiry",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key a against original 0003.ds.01: surface display alone leaves deeper communication expectations unaddressed. Distinct decision from fixed learning-style assignment; no national type or culture-shock diagnosis.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "fc3afea9584382b5f16723306f1d6ae0572ded752ff3372e18359b42122cf8e0",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.language-resources.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.language-resources",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s7.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key b against S7/S8: a voluntarily offered account can support actual comparison and reasoning; English essay form or a greeting alone does not exhaust its learning value; one account does not represent a language group.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "b4b5e26a689dc25c466d0c8e45493fb1b0ae22342c357f9821d58e82f0bc0c7f",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.family-participation.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.family-participation",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key d against S5/S7: accessible input can alter decisions; attendance does not establish care. August 2018 ELPAC source supports shared partnership only; no numerical current compliance threshold taught.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "4fa3da7b2c8b4740720f01a97c9cbf80fd35af5647514705abfb4d4a66ae3599",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.competent-interpretation.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.competent-interpretation",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s6.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key a to S6 quotation: no reliance on pupils, siblings, friends or untrained staff; bilingualism alone does not establish competence. No invented credential, procurement rule or deadline.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "b432f77c7110d9939799353e9d8d8e5a57f767caf4581827f50432efd2f2d33a",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.preference-status.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.preference-status",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s6.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared all four choices and key c to S5/S6 and unchanged Objective 0001 S6 Section 2 quote: family access is separate from child classification; no disability or causal inference from preference. Retains starter/0001 family-communication exposure family.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "d1e210436f6102802b5620f89b49b5e1090cdd925ed0011ec65eff7be65ebe34",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0002.contrasting-schooling-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0002.contrasting-schooling-case",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0002-0003.s9.2026-11-08",
+        "source.obj0002-0003.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Reviewed all six open-response demands: theater audio conditions create a new fair-comparison uncertainty alongside three observed learner profiles. Requires justified support, follow-up observation, source-qualified labels and privacy; no deterministic answer key, keyword grading or automatic transfer proof.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "d7a5c51b65759eeb22767de3390da7537d0f49f20060b565d183255069f68c86",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    },
+    {
+      "id": "review.obj0002-0003.task.task.obj0003.partnership-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0003.partnership-case",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0002-0003.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0002-0003.s1.2026-11-08",
+        "source.obj0002-0003.s4.2026-11-08",
+        "source.obj0002-0003.s5.2026-11-08",
+        "source.obj0002-0003.s6.2026-11-08",
+        "source.obj0002-0003.s7.2026-11-08",
+        "source.obj0002-0003.s8.2026-11-08",
+        "source.obj0001.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex source_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Reviewed all six open-response demands: compare and revise competing school-library launch plans under unknown access, consent and representation constraints. Requires priorities, tradeoffs and a feedback loop; no deterministic answer key or stereotype/trauma/status inference from family preferences.",
+        "Reviewed every source reference, keyed and wrong-option rationale or open-response demand. Twelve finite checks retain eleven exposure families; existing starter/0001 correlations and manual case uncertainty remain explicit.",
+        "User-supplied curated first-party packet obj0002-0003.supplied.2026-11-08.v1; researcher retrieval 2026-11-08 America/New_York. Codex did not fetch URLs, inspect BOX/raw files or original binaries, or independently verify the supplied binary SHA values.",
+        "Separate model wording-to-supplied-packet comparison only; not human review, full-document inspection, independent source validation, clinical assessment, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "95e51ea4de8b4b8da7078fcb3831573f3e3b333f1ac85996bc6b5eed8970642a",
+      "createdAt": "2026-11-09T01:53:19.900Z"
+    }
+  ]
+}
