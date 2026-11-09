@@ -148,6 +148,11 @@ describe('knowledge estimates extend readiness and statement coverage', () => {
     expect(first.lessonId).toBeDefined();
     expect(first.label).toMatch(/Objective 000\d/);
   });
+
+  it('prefers checked retrieval items over open cases for the knowledge slice', () => {
+    const first = estimate().slices.find(s => s.track === 'knowledge')!;
+    expect(['mc', 'short']).toContain(catalog.tasks.find(t => t.id === first.taskId)!.kind);
+  });
 });
 
 describe('five-part essay milestones', () => {

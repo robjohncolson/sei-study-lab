@@ -239,7 +239,10 @@ export function estimateStudyPlan({catalog, state, flashcards, now}: {catalog: C
       statementEvidence: statements.some(statement => statement.independentEvidence.length > 0), statementNeedsRecheck: statements.some(statement => statement.needsRecheck),
       hasAttempts: ownAttempts.length > 0, incorrectTasks, statementCount: statements.filter(statement => statement.kind === 'descriptive_bullet').length});
     const eligibleTasks = ownTasks.filter(available);
-    const next = eligibleTasks.find(task => recommendations.some(recommendation => recommendation.kind === 'task' && recommendation.taskId === task.id)) ?? eligibleTasks[0];
+    // Checked retrieval items (mc/short) can produce independent evidence; open cases stay pending judgment, so they come after.
+    const recommended = (task: Catalog['tasks'][number]) => recommendations.some(recommendation => recommendation.kind === 'task' && recommendation.taskId === task.id);
+    const retrieval = eligibleTasks.filter(task => task.kind === 'mc' || task.kind === 'short');
+    const next = retrieval.find(recommended) ?? retrieval[0] ?? eligibleTasks.find(recommended) ?? eligibleTasks[0];
     return {id: objective.id, ...classification, statementCount: statements.filter(statement => statement.kind === 'descriptive_bullet').length,
       skillIds, taskIds: ownTasks.map(task => task.id), taskId: next?.id, lessonId: lesson?.id, lessonTitle: lesson?.title};
   });

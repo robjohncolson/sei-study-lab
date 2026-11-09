@@ -35,7 +35,7 @@ An objective is **missed** if it is not stable and a mapped skill or statement n
 
 A recheck anywhere among mapped skills or statements contributes one combined miss signal. Each own task with a latest authoritative incorrect result contributes one more. Each signal adds 10 minutes, capped at 20 extra minutes. The baseline for each objective is its unseen time.
 
-Today's objective is chosen from missed (more signals first), then started, then unseen, with objective IDs breaking ties. The estimator prefers an own task recommended by `planSession`, otherwise a reviewed `mc`, `short` or `case` task with current source support outside its same-task/family 24-hour cooldown. If no such check is available, the slice opens the objective lesson and says checks are unavailable or cooling down. Opening a suggested check preserves any existing draft and its recorded assistance.
+Today's objective is chosen from missed (more signals first), then started, then unseen, with objective IDs breaking ties. The estimator prefers checked retrieval items (`mc` or `short`), which can produce independent evidence: first one recommended by `planSession`, then any eligible one. Open `case` tasks stay pending judgment, so they are offered only when no retrieval check is eligible. Every candidate is a reviewed own task with current source support, outside its same-task/family 24-hour cooldown. If no such check is available, the slice opens the objective lesson and says checks are unavailable or cooling down. Opening a suggested check preserves any existing draft and its recorded assistance.
 
 Knowledge progress is `round(100 × (1 − objective remaining minutes / objective baseline minutes))`, clamped to 0–100. Flashcard catch-up is excluded from that bar. The stable-objective count and FSRS Review-card count remain separate visible summaries.
 
@@ -78,57 +78,8 @@ Completed study days are distinct Eastern calendar dates before today with at le
 
 `tests/study-estimate.test.ts` uses the real catalog with synthetic history. The stable-objective unit fixture injects readiness statuses and coverage facts into `classifyObjective`; a second fixture projects stable Objective 0001 through the real readiness and coverage functions using synthetic observations on reviewed catalog families. The existing readiness and coverage suites retain their evidence-promotion checks. The suite also checks ET boundaries, focused/broad time, capped misses and authoritative supersession, essay milestones and quote identity, cooldowns, slice reallocation, flashcard catch-up, session-day counting, and deterministic read-only output. SQLite and Postgres queue tests verify summary counts and unchanged row counts; browser checks cover accessible bars, a 40-minute list, writing navigation and no desk-load POSTs.
 
-## Change and verification report
+## Tests
 
-| Area | Files changed |
-| --- | --- |
-| Shared estimator and queue contract | `packages/shared/src/study-estimate.ts`, `packages/shared/src/native-fsrs.ts` |
-| Read-only queue summaries | `apps/server/src/native-store.ts`, `apps/server/src/postgres/native-store.ts` |
-| Desk and guarded navigation | `apps/web/src/StudyProgress.tsx`, `apps/web/src/App.tsx`, `apps/web/src/Practice.tsx`, `apps/web/src/Writing.tsx`, `apps/web/src/styles.css` |
-| Tests | `tests/study-estimate.test.ts`, `tests/native-store.test.ts`, `apps/server/postgres/hosted.pg.test.ts`, `apps/web/study-plan/e2e.spec.ts` |
-| Documentation | `docs/study-plan.md` |
-
-The worktree has Node 22.17.1 and no node_modules. No dependencies were installed. Typecheck, lint, Vitest, integration, Postgres and Playwright suites were not run. Node TypeScript syntax checks passed for changed `.ts` sources (not TSX); `git diff --check` passed. A dependency-free smoke run stripped the original pure readiness, coverage, planner and estimator bodies with Node, omitting the unavailable Zod schema declarations. It verified ET tilt, the real-catalog baseline (260 knowledge and 150 essay minutes), the six-session example, quoted mentor-text revisions and synthetic independent evidence making Objective 0001 stable. This smoke run does not replace the unrun application suites.
-
-GitNexus upstream impact returned target-not-found / UNKNOWN risk for the affected application symbols in the parent Projects index. Local direct callers were inspected: the browser entry mounts App; App mounts Practice and Writing; Writing mounts WritingSession; the native queue methods serve the SQLite and hosted GET routes through the storage interfaces and feed Flashcards. The new projection adds no evidence-writing process. The pre-commit `detect_changes --scope all --repo Projects` attempt returned a not-a-git-repository diagnostic and no valid change-impact result.
-
-### Test names added
-
-Estimator cases in `tests/study-estimate.test.ts` (27 cases including six parameterized dates):
-
-- uses the date tilt at %s (six ET boundary dates)
-- uses ET even when the UTC date is different and clamps the exam countdown
-- requires a valid injected clock
-- gives a stable objective zero remaining minutes only with both readiness and coverage
-- projects stable Objective 0001 from real catalog families and synthetic independent evidence
-- gives an unseen focused objective one 15-minute slice and a broad objective 25 minutes
-- adds ten minutes per recent miss signal capped at twenty extra minutes
-- uses the latest authoritative own-task judgment and ignores provisional supersession
-- uses effective judgment chronology when an older attempt receives a late correction
-- only offers reviewed knowledge tasks outside the family cooldown
-- budgets 150 minutes for five undrafted parts and selects the public-shape practice task
-- gives drafted-only parts fifteen remaining minutes and one-third progress
-- counts a changed submission after provisional feedback as revised but still needs text evidence
-- finishes revised parts only when the latest part text quotes at least three bound mentor words
-- requires feedback before a different preserved response and ignores whitespace-only revisions
-- uses the newest current-version draft for evidence and leaves archived drafts separate
-- selects the writing task with the most recent current activity and targets parts in order
-- uses the documented parallel-session formula with completed-track reallocation
-- reallocates empty tracks and zero-due flashcards while unknown flashcards keep maintenance
-- adds only flashcard backlog beyond the daily slice to knowledge minutes
-- counts session N and about-total by distinct ET dates before today
-- is deterministic, read-only, totals forty minutes and uses bounded planning language
-
-Browser cases in `apps/web/study-plan/e2e.spec.ts`:
-
-- desk exposes two accessible progress bars and a 40-minute plan without POSTs, then opens its essay task
-- knowledge slice opens its named check with the objective lesson preselected
-- saved feedback prioritizes Part 2 and opens that writing part without preserving a new response
-- unavailable flashcard summary keeps maintenance time and the mobile plan usable
-- Refresh rereads both summaries using GET and reallocates a zero-due flashcard slice
-
-Native queue cases:
-
-- summarizes all available FSRS states and held cards before limiting the read-only queue (SQLite)
-- returns an uninitialized or complete native summary with SELECT-only queue reads (Postgres)
-- Extended: keeps empty and enrolled queue reads free of database writes (SQLite)
+- `tests/study-estimate.test.ts`: ET tilt boundaries, objective classification and minutes, miss caps, essay milestones and quote matching, knowledge-task choice, slice reallocation, flashcard catch-up, the parallel-session formula, and session-day counting.
+- `tests/native-store.test.ts` and `apps/server/postgres/hosted.pg.test.ts`: read-only queue `summary` counts in SQLite and Postgres, with unchanged row counts.
+- `apps/web/study-plan/e2e.spec.ts`: accessible progress bars, a 40-minute plan, navigation to the targeted writing part and lesson, no POST requests on desk load, and mobile layout.
