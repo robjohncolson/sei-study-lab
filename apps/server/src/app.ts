@@ -8,6 +8,7 @@ import { CatalogSchema, validateCatalog, type Catalog } from '../../../packages/
 import { SeiStore, ROOT } from './store.js';
 import { JsonSchema } from './types.js';
 import { approveProposal, createHandoff, inspectProposal } from './handoff.js';
+import { NativeStoreError } from './native-store.js';
 
 const ImportBody=z.object({payload:z.unknown(),confirm:z.literal(true).optional()}).strict();
 const ProposalBody=z.object({proposal:z.unknown(),confirm:z.literal(true).optional()}).strict();
@@ -15,14 +16,14 @@ export function exportAnkiTsv(catalog:Catalog):string {
   const escape=(s:string)=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/\t/g,' ').replace(/\r?\n/g,'<br>');
   return '#separator:Tab\n#html:true\n#columns:StableID\tFront\tBack\tSource\tTags\n'+catalog.cards.map(c=>[c.id,c.front,c.back,c.source,c.tags.join(' ')].map(escape).join('\t')).join('\n')+'\n';
 }
-export async function createSeiServer(options:{dbPath?:string;catalog?:Catalog;serveWeb?:boolean;testPorts?:{api:number;web:number}}={}){
+export async function createSeiServer(options:{dbPath?:string;catalog?:Catalog;serveWeb?:boolean;testPorts?:{api:number;web:number};clock?:()=>Date}={}){
   const ports=z.object({api:z.number().int().min(1024).max(65535),web:z.number().int().min(1024).max(65535)}).strict().refine(p=>p.api!==p.web,'Test API and web ports must differ').parse(options.testPorts??{api:4317,web:5173});
   if(options.testPorts&&!options.dbPath)throw new Error('Alternate test ports require an explicit isolated test database');
   const hosts=new Set([`127.0.0.1:${ports.api}`,`127.0.0.1:${ports.web}`,`localhost:${ports.api}`,`localhost:${ports.web}`]);
   const origins=new Set([...hosts].map(h=>`http://${h}`));
   const catalog=CatalogSchema.parse(options.catalog??JSON.parse(readFileSync(resolve(ROOT,'content/catalog.json'),'utf8')));
   const errors=validateCatalog(catalog);if(errors.length)throw new Error(`Invalid content catalog: ${errors.join('; ')}`);
-  const store=await SeiStore.open(catalog,options.dbPath);
+  const store=await SeiStore.open(catalog,options.dbPath,options.clock);
   const app=Fastify({logger:false,bodyLimit:2_000_000,requestTimeout:15000,connectionTimeout:10000,trustProxy:false});
   const sessions=new Map<string,{token:string;expires:number;studySessionId:string}>();
   app.addHook('onClose',async()=>{store.close();});
@@ -38,6 +39,7 @@ export async function createSeiServer(options:{dbPath?:string;catalog?:Catalog;s
     }
   });
   app.setErrorHandler((error,_req,reply)=>{
+    if(error instanceof NativeStoreError)return reply.code(error.statusCode).send({error:error.message});
     if(error instanceof z.ZodError)return reply.code(400).send({error:'Invalid data schema',issues:error.issues.map(i=>({path:i.path,message:i.message}))});
     const failure=error as Error&{code?:string};
     if(failure.code==='FST_ERR_CTP_BODY_TOO_LARGE')return reply.code(413).send({error:'Request exceeds the 2 MB limit'});
@@ -60,6 +62,10 @@ export async function createSeiServer(options:{dbPath?:string;catalog?:Catalog;s
   });
   app.get('/api/catalog',async()=>catalog);
   app.get('/api/state',async()=>store.state());
+  app.get('/api/native-flashcards',async()=>store.native.queue());
+  app.post('/api/native-flashcards/initialize',async()=>store.native.initialize());
+  app.post('/api/native-flashcards/reviews',async(req)=>store.native.review(req.body));
+  app.post('/api/native-flashcards/controls',async(req)=>store.native.control(req.body));
   app.post('/api/attempts',async(req)=>store.submit(req.body,sessions.get(req.headers.cookie!.match(/sei_session=([a-f0-9]{64})/)![1])!.studySessionId));
   app.get<{Params:{taskId:string}}>('/api/drafts/:taskId',async(req)=>store.draft(req.params.taskId));
   app.put<{Params:{taskId:string}}>('/api/drafts/:taskId',async(req)=>{const body=z.object({taskVersion:z.union([z.string().min(1),z.number().int().positive()]),answer:JsonSchema}).strict().parse(req.body);return store.saveDraft(req.params.taskId,body.taskVersion,body.answer);});

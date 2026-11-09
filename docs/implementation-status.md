@@ -1,5 +1,7 @@
 ﻿# Implementation status and actual verification
 
+The native flashcard slice is implemented on top of clean base `9d977577844f65eb9d4895d3d01666774eec3beb`, with the supplied exact ts-fsrs 5.4.2 manifest patch. **Its library-dependent checks are unrun in Athena:** dependencies are absent, and typecheck/lint/test cannot start. No install was attempted. The successful counts below are historical, not validation of the native slice. See [native changes, available smoke checks, and preservation blockers](native-flashcards.md). Native JSON interchange is deferred and legacy export is blocked after deck initialization; consistent SQLite backup preserves accepted native history.
+
 | Slice | Working result | Remaining limits |
 |---|---|---|
 | 1 — local shell and inventory | React/Vite + Fastify; SQLite migration; loopback Host/Origin/CSRF; complete 13-objective inventory; separate competencies/indicators; DAG validation | Node 22 SQLite is experimental; Node 24 not tested |

@@ -1,4 +1,7 @@
 let csrfToken = '';
+export class ApiError extends Error {
+  constructor(message:string,readonly status:number){super(message);this.name='ApiError';}
+}
 export async function initializeSession() {
   const session = await api<{csrfToken:string}>('/session');
   csrfToken = session.csrfToken;
@@ -6,7 +9,7 @@ export async function initializeSession() {
 export async function api<T>(path: string, method = 'GET', data?: unknown): Promise<T> {
   const response = await fetch(`/api${path}`, { method, credentials: 'same-origin', headers: { ...(data === undefined ? {} : {'Content-Type':'application/json'}), ...(method === 'GET' ? {} : {'x-csrf-token':csrfToken}) }, ...(data === undefined ? {} : {body:JSON.stringify(data)}) });
   const result = await response.json() as T & { error?: string; message?: string };
-  if (!response.ok) throw new Error(typeof result.message === 'string' ? result.message : typeof result.error === 'string' ? result.error : `Request failed (${response.status}).`);
+  if (!response.ok) throw new ApiError(typeof result.message === 'string' ? result.message : typeof result.error === 'string' ? result.error : `Request failed (${response.status}).`,response.status);
   return result;
 }
 export function download(name: string, body: string, type='application/json') {

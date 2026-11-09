@@ -6,4 +6,4 @@ In Anki's text import dialog, explicitly select the intended note type and deck,
 
 The current Anki manual was retrieved in the source inventory. No installed Anki version was inspected or tested. Import UI labels/settings vary by version; verify those settings in your installed version. No APKG generation or AnkiConnect calls are implemented.
 
-FSRS scheduling happens within Anki when configured there. This app neither implements FSRS nor assigns intervals. Exporting cards does not return review history. The app truthfully displays “reviews not synchronized”; self-ratings do not establish transfer mastery.
+The native Flashcards workspace uses pinned ts-fsrs 5.4.2 (FSRS-6) as this app's sole scheduling owner. Optional TSV export copies card content only. Anki review history and schedules never feed back into this app; `reviewsSynchronized` remains false. Self-ratings do not establish transfer mastery. See [native flashcards and preservation limits](native-flashcards.md).

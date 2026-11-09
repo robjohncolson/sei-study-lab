@@ -46,6 +46,10 @@ Extended-response judgments remain provisional, including locally approved exter
 
 ## Data and privacy
 
+Native Flashcards reviews the twelve existing starter cards using pinned `ts-fsrs` 5.4.2 (FSRS-6) on Node 22.17.1. Reveal before rating; typed recall and assistance are preserved, and ratings never promote learning evidence. See [native scheduling, recovery, backup limits, and actual verification](docs/native-flashcards.md).
+
+After opening the native deck, legacy JSON export is blocked because its format cannot preserve native history. Use the consistent SQLite backup below for all accepted reviews. Native JSON import/export is deferred; older evidence-only imports remain supported. Browser drafts and pending review receipts are separate local working data and are not included in a SQLite backup.
+
 SQLite stores data in ignored runtime/study.sqlite (including WAL/SHM). Back up with:
 
 ```powershell

@@ -6,6 +6,7 @@ import { z } from 'zod';
 import type { Catalog } from '../../../packages/shared/src/index.js';
 import { getAttemptEligibility } from '../../../packages/shared/src/index.js';
 import { InterchangeSchema, SubmitSchema, type Attempt, type Evidence, type Interchange, type Judgment, type Json } from './types.js';
+import { NativeStore, NativeStoreError } from './native-store.js';
 
 export const ROOT = resolve(process.cwd());
 export const DEFAULT_DB = resolve(ROOT,'runtime/study.sqlite');
@@ -19,27 +20,28 @@ const entityTables=new Set(['source_versions','review_events','objectives','stat
 
 export class SeiStore {
   readonly db: DatabaseSync;
-  static async open(catalog:Catalog,dbPath=DEFAULT_DB){
+  readonly native: NativeStore;
+  static async open(catalog:Catalog,dbPath=DEFAULT_DB,clock:()=>Date=()=>new Date()){
     let migrationPrepared=false;
     if(dbPath!==':memory:'&&existsSync(dbPath)){
       const existing=new DatabaseSync(dbPath,{readOnly:true});
       try{
         const known=existing.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name='schema_migrations'").get();
-        if(known&&!existing.prepare('SELECT version FROM schema_migrations WHERE version=2').get()){
+        if(known&&(!existing.prepare('SELECT version FROM schema_migrations WHERE version=2').get()||!existing.prepare('SELECT version FROM schema_migrations WHERE version=3').get())){
           const backupDir=resolve(dirname(dbPath),'backups');mkdirSync(backupDir,{recursive:true});
-          await backup(existing,resolve(backupDir,`before-migration-002-${Date.now()}-${randomUUID()}.sqlite`));
+          await backup(existing,resolve(backupDir,`before-migration-003-${Date.now()}-${randomUUID()}.sqlite`));
           migrationPrepared=true;
         }
       }finally{existing.close();}
     }
-    return new SeiStore(catalog,dbPath,migrationPrepared);
+    return new SeiStore(catalog,dbPath,migrationPrepared,clock);
   }
-  constructor(readonly catalog:Catalog,dbPath=DEFAULT_DB,migrationPrepared=false) {
+  constructor(readonly catalog:Catalog,dbPath=DEFAULT_DB,migrationPrepared=false,clock:()=>Date=()=>new Date()) {
     if(dbPath!==':memory:') mkdirSync(dirname(dbPath),{recursive:true});
     this.db=new DatabaseSync(dbPath);
     try{
     const known=this.db.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name='schema_migrations'").get();
-    if(dbPath!==':memory:'&&known&&!this.db.prepare('SELECT version FROM schema_migrations WHERE version=2').get()&&!migrationPrepared)throw new Error('Existing database requires a consistent pre-migration backup. Open it with await SeiStore.open().');
+    if(dbPath!==':memory:'&&known&&(!this.db.prepare('SELECT version FROM schema_migrations WHERE version=2').get()||!this.db.prepare('SELECT version FROM schema_migrations WHERE version=3').get())&&!migrationPrepared)throw new Error('Existing database requires a consistent pre-migration backup. Open it with await SeiStore.open().');
     this.db.exec('PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;');
     this.db.exec(readFileSync(resolve(ROOT,'apps/server/src/migrations/001-initial.sql'),'utf8'));
     this.db.prepare('INSERT OR IGNORE INTO schema_migrations(version,applied_at) VALUES(1,?)').run(utcNow());
@@ -52,6 +54,7 @@ export class SeiStore {
       this.db.exec(`CREATE TRIGGER IF NOT EXISTS ${table}_no_update BEFORE UPDATE ON ${table} BEGIN SELECT RAISE(ABORT,'Append-only record'); END; CREATE TRIGGER IF NOT EXISTS ${table}_no_delete BEFORE DELETE ON ${table} BEGIN SELECT RAISE(ABORT,'Append-only record'); END;`);
     }
     this.transaction(()=>this.seedCatalog());
+    this.native=new NativeStore(this.db,catalog,clock);
     }catch(error){this.db.close();throw error;}
   }
   close(){this.db.close();}
@@ -153,7 +156,10 @@ export class SeiStore {
     }
     const updatedAt=utcNow();this.db.prepare('INSERT INTO drafts(task_id,task_version,answer_json,updated_at) VALUES(?,?,?,?) ON CONFLICT(task_id,task_version) DO UPDATE SET answer_json=excluded.answer_json,updated_at=excluded.updated_at').run(taskId,String(task.version),canonical(answer),updatedAt);return {saved:true,taskVersion:String(task.version),updatedAt};
   }
-  exportData():Interchange {return {schemaVersion:1,appVersion:'0.1.0',exportedAt:utcNow(),origin:'sei-study-lab',catalog:{tasks:this.entities<Json>('tasks'),sources:this.entities<Json>('source_versions'),mentorTexts:this.entities<Json>('mentor_texts'),rubrics:this.entities<Json>('rubrics')},attempts:this.entities<Attempt>('attempts'),judgments:this.entities<Judgment>('judgments'),evidenceEvents:this.entities<Evidence>('evidence_events')};}
+  exportData():Interchange {
+    if(this.native.hasHistory())throw new NativeStoreError('JSON export is unavailable because it cannot preserve native flashcard history. Use npm run db:backup for a consistent SQLite backup. Native flashcard JSON interchange is not supported in this version.',400);
+    return {schemaVersion:1,appVersion:'0.1.0',exportedAt:utcNow(),origin:'sei-study-lab',catalog:{tasks:this.entities<Json>('tasks'),sources:this.entities<Json>('source_versions'),mentorTexts:this.entities<Json>('mentor_texts'),rubrics:this.entities<Json>('rubrics')},attempts:this.entities<Attempt>('attempts'),judgments:this.entities<Judgment>('judgments'),evidenceEvents:this.entities<Evidence>('evidence_events')};
+  }
   inspectImport(raw:unknown){
     if(Buffer.byteLength(JSON.stringify(raw),'utf8')>2_000_000)throw new Error('Import exceeds the 2 MB limit');
     const payload=InterchangeSchema.parse(raw);
