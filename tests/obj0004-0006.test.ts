@@ -30,8 +30,9 @@ afterEach(() => stores.splice(0).forEach(s => s.close()));
 describe('Objectives 0004–0006 append-only curriculum and evidence boundaries', () => {
   it('passes portable exact-history, scopes, keys, source, review-hash, card and author-recipe checks without Git', () => {
     expect(validateCatalog(catalog)).toEqual([]);
-    const output = execFileSync(process.execPath, ['--experimental-strip-types', 'scripts/verify-obj0004-0006.mjs'], {encoding: 'utf8'});
+    const output = execFileSync(process.execPath, ['--experimental-strip-types', '--test-reporter=tap', 'scripts/verify-obj0004-0006.mjs'], {encoding: 'utf8'});
     expect(output).toMatch(/# fail 0/);
+    expect(output).toMatch(/# pass 11/);
   }, 20000);
 
   it('retains sixteen exact official statement texts, explicit gaps and zero seeded evidence', () => {
