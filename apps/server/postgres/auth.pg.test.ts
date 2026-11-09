@@ -246,7 +246,7 @@ describe('password authentication on disposable real Postgres', () => {
         FROM pg_catalog.pg_class c CROSS JOIN LATERAL pg_catalog.aclexplode(c.relacl) acl
         LEFT JOIN pg_catalog.pg_roles r ON r.oid=acl.grantee WHERE c.oid=$1::regclass`, [`sei.${table}`]);
       expect(grants.rows.some(row => ['PUBLIC', 'sei_app', 'anon', 'authenticated'].includes(row.role))).toBe(false);
-      const policy = await harness.database.query(`SELECT policyname, roles, cmd, qual, with_check FROM pg_catalog.pg_policies
+      const policy = await harness.database.query(`SELECT policyname, roles::text[] AS roles, cmd, qual, with_check FROM pg_catalog.pg_policies
         WHERE schemaname='sei' AND tablename=$1`, [table]);
       expect(policy.rows).toHaveLength(1);
       expect(policy.rows[0]).toMatchObject({ policyname: 'sei_auth_definer', cmd: 'ALL', qual: 'true', with_check: 'true' });

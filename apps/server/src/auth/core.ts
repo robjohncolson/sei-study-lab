@@ -1,7 +1,8 @@
 import { createHmac, randomBytes, scrypt, timingSafeEqual } from 'node:crypto';
 
 export class AuthError extends Error {
-  constructor(readonly statusCode: number, message: string) { super(message); }
+  readonly statusCode: number;
+  constructor(statusCode: number, message: string) { super(message); this.statusCode = statusCode; }
 }
 
 export function normalizeUsername(value: unknown): string {
@@ -100,7 +101,12 @@ export function readSessionCookie(origins: ReadonlySet<string>, header?: string)
 /** Per-process IP and username buckets; bounded memory without evicting live limits. */
 export class AuthRateLimiter {
   private readonly buckets = new Map<string, { tokens: number; at: number }>();
-  constructor(private readonly capacity = 10, private readonly intervalMs = 60_000, private readonly maxBuckets = 10_000) {}
+  private readonly capacity: number;
+  private readonly intervalMs: number;
+  private readonly maxBuckets: number;
+  constructor(capacity = 10, intervalMs = 60_000, maxBuckets = 10_000) {
+    this.capacity = capacity; this.intervalMs = intervalMs; this.maxBuckets = maxBuckets;
+  }
   take(ip: string, username: string, now = Date.now()): boolean {
     for (const [key, bucket] of this.buckets) if (now - bucket.at >= this.intervalMs) this.buckets.delete(key);
     const keys = [`ip:${ip}`, `user:${username}`];

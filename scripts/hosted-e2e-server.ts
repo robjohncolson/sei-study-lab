@@ -34,5 +34,8 @@ try {
   await shutdown();
   throw new Error('Could not start the hosted browser test server');
 }
+// Vite installs its own exiting signal handlers; this script must drop the disposable database first.
+process.removeAllListeners('SIGINT');
+process.removeAllListeners('SIGTERM');
 process.on('SIGINT', () => { void shutdown().then(() => process.exit(0)); });
 process.on('SIGTERM', () => { void shutdown().then(() => process.exit(0)); });

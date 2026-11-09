@@ -6,7 +6,7 @@ export default defineConfig({
   testMatch: '**/hosted.spec.ts',
   use: {baseURL: 'http://127.0.0.1:5176', browserName: 'chromium', channel: 'msedge', trace: 'off', screenshot: 'off', video: 'off'},
   // No server or database is opened when this optional suite is not configured.
-  webServer: enabled ? {command: 'node --import tsx scripts/hosted-e2e-server.ts', url: 'http://127.0.0.1:5176', reuseExistingServer: false, timeout: 60000} : undefined,
+  webServer: enabled ? {command: 'node --import tsx scripts/hosted-e2e-server.ts', url: 'http://127.0.0.1:5176', reuseExistingServer: false, timeout: 60000, gracefulShutdown: {signal: 'SIGTERM', timeout: 10000}} : undefined,
   workers: 1,
   retries: 0,
 });

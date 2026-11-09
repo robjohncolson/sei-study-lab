@@ -57,8 +57,11 @@ test('password account opens the saved desk, signs out, signs in and closes regi
   await page.getByRole('button', {name: 'Sign in', exact: true}).click();
   await expect(page.getByRole('button', {name: 'Sign out', exact: true})).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  const refresh = plan.getByRole('button', {name: 'Refresh', exact: true});
+  // Let the post-sign-in plan load settle so the expired-session request is the click below.
+  await expect(refresh).toBeEnabled();
   await context.clearCookies();
-  await plan.getByRole('button', {name: 'Refresh', exact: true}).click();
+  await refresh.click();
   await expect(page.getByRole('heading', {name: 'Sign in', exact: true})).toBeVisible();
   await expect(page.getByRole('navigation', {name: 'Workspace'})).toHaveCount(0);
 });
