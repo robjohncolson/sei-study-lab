@@ -73,6 +73,7 @@ export async function createPostgresHarness() {
       await database.query(migration('001-sei-hosted.sql'));
       await database.query(migration('002-sei-study.sql'));
       await database.query(migration('003-sei-ai-feedback.sql'));
+      await database.query(migration('004-sei-auth.sql'));
     }
     databaseUrl.username = 'sei_app';
     databaseUrl.password = password;

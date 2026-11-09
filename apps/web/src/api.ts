@@ -1,17 +1,37 @@
 let csrfToken = '';
-export type SessionInfo = { csrfToken: string; storageMode?: 'sqlite' | 'postgres'; authMode?: 'public' | 'supabase-jwt' };
+let sessionRequest = 0;
+export type SessionInfo = {
+  csrfToken: string;
+  storageMode?: 'sqlite' | 'postgres';
+  authMode?: 'none' | 'public' | 'supabase-jwt' | 'password';
+  signedIn?: boolean;
+  username?: string | null;
+  signupOpen?: boolean;
+  setupCodeRequired?: boolean;
+};
+const signInRequiredListeners = new Set<() => void>();
+export function onSignInRequired(listener: () => void) {
+  signInRequiredListeners.add(listener);
+  return () => { signInRequiredListeners.delete(listener); };
+}
 export class ApiError extends Error {
   constructor(message:string,readonly status:number){super(message);this.name='ApiError';}
 }
 export async function initializeSession() {
+  const request = ++sessionRequest;
   const session = await api<SessionInfo>('/session');
-  csrfToken = session.csrfToken;
+  if (request === sessionRequest) csrfToken = session.csrfToken;
   return session;
 }
 export async function api<T>(path: string, method = 'GET', data?: unknown): Promise<T> {
   const response = await fetch(`/api${path}`, { method, credentials: 'same-origin', headers: { ...(data === undefined ? {} : {'Content-Type':'application/json'}), ...(method === 'GET' ? {} : {'x-csrf-token':csrfToken}) }, ...(data === undefined ? {} : {body:JSON.stringify(data)}) });
   const result = await response.json() as T & { error?: string; message?: string };
-  if (!response.ok) throw new ApiError(typeof result.message === 'string' ? result.message : typeof result.error === 'string' ? result.error : `Request failed (${response.status}).`,response.status);
+  if (!response.ok) {
+    if (response.status === 401 && path !== '/session' && !path.startsWith('/auth/')) {
+      for (const listener of signInRequiredListeners) listener();
+    }
+    throw new ApiError(typeof result.message === 'string' ? result.message : typeof result.error === 'string' ? result.error : `Request failed (${response.status}).`,response.status);
+  }
   return result;
 }
 export function download(name: string, body: string, type='application/json') {

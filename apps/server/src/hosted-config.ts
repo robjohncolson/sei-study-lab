@@ -1,8 +1,11 @@
+import { parseSignupSetting, validateSessionSecret } from './auth/core.js';
+
 /** Environment parsing is separate from clients: invalid config never opens a connection. */
 export class HostedConfigError extends Error {}
 
 type HostedAuthentication =
   | { authMode: 'public'; supabaseUrl?: never; issuer?: never }
+  | { authMode: 'password'; sessionSecret: string; allowSignup: boolean; setupCode?: string; supabaseUrl?: never; issuer?: never }
   | { authMode: 'supabase-jwt'; supabaseUrl: string; issuer: string };
 
 export type HostedConfig = {
@@ -37,8 +40,8 @@ function parseUrl(value: string, name: string): URL {
 /** All errors identify the setting, never its value (URLs can carry credentials). */
 export function readHostedConfig(env: NodeJS.ProcessEnv = process.env): HostedConfig {
   const authMode = required(env, 'HOSTED_AUTH_MODE');
-  if (authMode !== 'public' && authMode !== 'supabase-jwt') {
-    throw new HostedConfigError('HOSTED_AUTH_MODE must be public or supabase-jwt');
+  if (authMode !== 'public' && authMode !== 'supabase-jwt' && authMode !== 'password') {
+    throw new HostedConfigError('HOSTED_AUTH_MODE must be public, supabase-jwt or password');
   }
   const databaseUrl = required(env, 'SEI_DATABASE_URL');
   const database = parseUrl(databaseUrl, 'SEI_DATABASE_URL');
@@ -47,7 +50,7 @@ export function readHostedConfig(env: NodeJS.ProcessEnv = process.env): HostedCo
       !/^sei_app(?:\.[a-z0-9]+)?$/.test(database.username)) {
     throw new HostedConfigError('SEI_DATABASE_URL must name sei_app (or its pooler user) and a database, without query options');
   }
-  const ownerSetting = authMode === 'public' ? 'PUBLIC_OWNER_ID' : 'OWNER_USER_ID';
+  const ownerSetting = authMode === 'supabase-jwt' ? 'OWNER_USER_ID' : 'PUBLIC_OWNER_ID';
   const ownerUserId = required(env, ownerSetting);
   if (!isUuid(ownerUserId)) throw new HostedConfigError(`${ownerSetting} must be a UUID`);
   let authentication: HostedAuthentication;
@@ -58,6 +61,15 @@ export function readHostedConfig(env: NodeJS.ProcessEnv = process.env): HostedCo
       throw new HostedConfigError('SUPABASE_URL must be an HTTPS origin (HTTP is allowed only for localhost tests)');
     }
     authentication = { authMode, supabaseUrl: supabase.origin, issuer: `${supabase.origin}/auth/v1` };
+  } else if (authMode === 'password') {
+    let sessionSecret: string, allowSignup: boolean;
+    try { sessionSecret = validateSessionSecret(env.SEI_SESSION_SECRET); }
+    catch { throw new HostedConfigError('SEI_SESSION_SECRET'); }
+    try { allowSignup = parseSignupSetting(env.AUTH_ALLOW_SIGNUP, 'AUTH_ALLOW_SIGNUP'); }
+    catch { throw new HostedConfigError('AUTH_ALLOW_SIGNUP'); }
+    const setupCode = env.AUTH_SETUP_CODE;
+    if (setupCode !== undefined && (!setupCode.trim() || Buffer.byteLength(setupCode) > 4096)) throw new HostedConfigError('AUTH_SETUP_CODE');
+    authentication = { authMode, sessionSecret, allowSignup, ...(setupCode === undefined ? {} : { setupCode }) };
   } else {
     authentication = { authMode };
   }

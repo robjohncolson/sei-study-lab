@@ -8,8 +8,9 @@ export class HostedAuthError extends Error {
   }
 }
 
-/** No cookies, user_metadata, database calls, or token logging participate in authorization. */
+/** Public/JWT authorization. Password sessions use the separate AuthService verifier. */
 export function createOwnerVerifier(config: HostedConfig, key?: JWTVerifyGetKey) {
+  if (config.authMode === 'password') throw new Error('Password mode requires the session owner verifier');
   if (config.authMode === 'public') {
     // The only owner source is validated server configuration. No request value,
     // even a signed bearer token, can select a different public study history.

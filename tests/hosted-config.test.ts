@@ -58,14 +58,14 @@ describe('hosted configuration, without network or database connections', () => 
     catch (error) { message = (error as Error).message; }
     expect(message).toContain(name);
     expect(message).not.toContain(value);
-    if (name === 'HOSTED_AUTH_MODE') expect(message).toBe('HOSTED_AUTH_MODE must be public or supabase-jwt');
+    if (name === 'HOSTED_AUTH_MODE') expect(message).toBe('HOSTED_AUTH_MODE must be public, supabase-jwt or password');
   });
   it.each(['public ', ' public', 'PUBLIC', 'supabase-jwt ', ' supabase-jwt', 'SUPABASE-JWT'])(
     'rejects the whitespace/case variant %j with the fixed auth-mode error', value => {
       let message = '';
       try { readHostedConfig({ ...environment(), HOSTED_AUTH_MODE: value }); }
       catch (error) { message = (error as Error).message; }
-      expect(message).toBe('HOSTED_AUTH_MODE must be public or supabase-jwt');
+      expect(message).toBe('HOSTED_AUTH_MODE must be public, supabase-jwt or password');
     },
   );
   it('defaults to one pooled connection and requires verified TLS for remote hosts', () => {

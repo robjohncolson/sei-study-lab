@@ -18,8 +18,12 @@ import { JsonSchema } from './types.js';
 import { readAiConfig } from './ai/ai-config.js';
 import { registerAiRoutes, type AiServerOptions } from './ai/ai-routes.js';
 import { PostgresAiStorage } from './ai/postgres-ai-storage.js';
+import { AuthError } from './auth/core.js';
+import { AuthService, isPublicAuthRoute } from './auth/service.js';
+import { PostgresAuthStore } from './auth/postgres-auth-store.js';
+import { registerPasswordRoutes } from './auth/routes.js';
 
-// No secret or server session: the custom header plus exact Origin guard prevents
+// The custom header plus exact Origin guard prevents
 // browser cross-origin writes. The server never approves CORS preflights.
 export const HOSTED_CSRF_TOKEN = 'hosted-origin-checked';
 
@@ -33,14 +37,17 @@ export type HostedServerOptions = {
   ai?: AiServerOptions;
 };
 
-/** Hosted routes are isolated from the local store, cookies, CSRF sessions, and runtime files. */
+/** Hosted routes are isolated from local SQLite, CSRF sessions, and runtime files. */
 export async function createHostedSeiServer(options: HostedServerOptions = {}) {
   const config = options.config ?? readHostedConfig(options.env);
   const aiConfig = readAiConfig(options.ai?.env ?? options.env);
   const catalog = CatalogSchema.parse(options.catalog ?? bundledCatalog);
   if (validateCatalog(catalog).length) throw new Error('Invalid content catalog');
-  const verifyOwner = createOwnerVerifier(config, options.key);
+  const verifyOwner = config.authMode === 'password' ? null : createOwnerVerifier(config, options.key);
   const pool = options.pool ?? createHostedPool(config);
+  const passwordAuth = config.authMode === 'password' ? new AuthService(new PostgresAuthStore(pool), {
+    ...config, firstOwner: config.ownerUserId,
+  }, options.clock) : null;
   const app = Fastify({ logger: false, bodyLimit: 2_000_000, requestTimeout: 15_000, connectionTimeout: 10_000, trustProxy: false });
   const identities = new WeakMap<FastifyRequest, VerifiedOwnerClaims>();
   if (!options.pool) app.addHook('onClose', async () => { await pool.end(); });
@@ -68,10 +75,17 @@ export async function createHostedSeiServer(options: HostedServerOptions = {}) {
     }
   });
   app.addHook('preHandler', async request => {
-    identities.set(request, await verifyOwner(request.headers.authorization));
+    if (passwordAuth) {
+      if (isPublicAuthRoute(request.url)) return;
+      const identity = await passwordAuth.identity(request.headers.cookie);
+      if (!identity) throw new AuthError(401, 'Sign in required');
+      identities.set(request, { sub: identity.ownerId, role: 'authenticated' });
+    } else {
+      identities.set(request, await verifyOwner!(request.headers.authorization));
+    }
   });
   app.setErrorHandler((error, _request, reply) => {
-    if (error instanceof HostedAuthError || error instanceof NativeStoreError || error instanceof PostgresStudyError) {
+    if (error instanceof AuthError || error instanceof HostedAuthError || error instanceof NativeStoreError || error instanceof PostgresStudyError) {
       return reply.code(error.statusCode).send({ error: error.message });
     }
     if (error instanceof StudyValidationError) return reply.code(400).send({ error: error.message });
@@ -105,9 +119,11 @@ export async function createHostedSeiServer(options: HostedServerOptions = {}) {
       return { status: 'ok', storageMode: 'postgres', ownerId: claims.sub, databaseRole: result.rows[0].role };
     });
   };
-  app.get('/api/health', identity);
+  app.get('/api/health', passwordAuth ? async () => ({ status: 'ok', storageMode: 'postgres' }) : identity);
   app.get('/api/identity', identity);
-  app.get('/api/session', async () => ({ csrfToken: HOSTED_CSRF_TOKEN, storageMode: 'postgres', authMode: config.authMode }));
+  app.get('/api/session', async request => ({ csrfToken: HOSTED_CSRF_TOKEN, storageMode: 'postgres', authMode: config.authMode,
+    ...(passwordAuth ? await passwordAuth.status(request.headers.cookie) : {}) }));
+  if (passwordAuth) registerPasswordRoutes(app, passwordAuth);
   app.get('/api/catalog', async () => catalog);
   app.get('/api/state', request => study(request, store => store.state()));
   app.post('/api/attempts', request => {
