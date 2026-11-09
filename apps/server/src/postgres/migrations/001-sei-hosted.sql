@@ -1,4 +1,4 @@
--- OPERATOR ONLY. Run as postgres after 000. Supabase supplies auth.uid().
+-- OPERATOR ONLY. Run as postgres after 000.
 -- This migration owns only sei objects and never exposes sei to the Data API.
 BEGIN;
 CREATE SCHEMA IF NOT EXISTS sei;
@@ -24,6 +24,15 @@ BEGIN
   END IF;
 END
 $ownership$;
+
+-- Operator-owned; the guard above also covers this function on reruns.
+-- Only the server sets this transaction-local claim in withOwnerTransaction.
+CREATE OR REPLACE FUNCTION sei.request_owner_id() RETURNS uuid
+LANGUAGE sql STABLE SECURITY INVOKER SET search_path = pg_catalog AS $$
+  SELECT nullif(current_setting('request.jwt.claim.sub', true), '')::uuid
+$$;
+REVOKE ALL ON FUNCTION sei.request_owner_id() FROM PUBLIC;
+GRANT EXECUTE ON FUNCTION sei.request_owner_id() TO sei_app;
 
 CREATE TABLE IF NOT EXISTS sei.native_scheduler_configs (
   owner_id uuid NOT NULL,
@@ -93,7 +102,7 @@ BEGIN
     EXECUTE format('ALTER TABLE sei.%I ENABLE ROW LEVEL SECURITY', table_name);
     EXECUTE format('ALTER TABLE sei.%I FORCE ROW LEVEL SECURITY', table_name);
     EXECUTE format('DROP POLICY IF EXISTS sei_owner ON sei.%I', table_name);
-    EXECUTE format('CREATE POLICY sei_owner ON sei.%I TO sei_app USING (owner_id = auth.uid()) WITH CHECK (owner_id = auth.uid())', table_name);
+    EXECUTE format('CREATE POLICY sei_owner ON sei.%I TO sei_app USING (owner_id = sei.request_owner_id()) WITH CHECK (owner_id = sei.request_owner_id())', table_name);
     EXECUTE format('REVOKE ALL ON TABLE sei.%I FROM PUBLIC, sei_app', table_name);
     IF table_name <> 'native_flashcard_projections' THEN
       EXECUTE format('DROP TRIGGER IF EXISTS sei_append_only ON sei.%I', table_name);

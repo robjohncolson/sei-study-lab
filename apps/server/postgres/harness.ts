@@ -54,9 +54,9 @@ export async function createPostgresHarness() {
     database = new Client(connectionOptions(databaseUrl.toString()));
     await database.connect();
     await database.query(`
+      -- Admin-owned decoy: policies must work without access to this schema.
       CREATE SCHEMA auth;
-      CREATE FUNCTION auth.uid() RETURNS uuid LANGUAGE sql STABLE AS
-        $$ SELECT nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
+      REVOKE ALL ON SCHEMA auth FROM PUBLIC;
       CREATE TABLE public.answers(id integer PRIMARY KEY, payload text NOT NULL);
       INSERT INTO public.answers VALUES (1, 'synthetic neighbor answer');
       CREATE SCHEMA lesson_planning;
@@ -69,7 +69,6 @@ export async function createPostgresHarness() {
     // Password is random, test-only, memory-only, and never printed or written.
     const password = randomBytes(32).toString('hex');
     await database.query(`ALTER ROLE sei_app LOGIN PASSWORD '${password}'`);
-    await database.query('REVOKE ALL ON SCHEMA auth FROM PUBLIC; REVOKE ALL ON FUNCTION auth.uid() FROM PUBLIC; GRANT USAGE ON SCHEMA auth TO sei_app; GRANT EXECUTE ON FUNCTION auth.uid() TO sei_app;');
     for (let pass = 0; pass < 2; pass++) {
       await database.query(migration('001-sei-hosted.sql'));
       await database.query(migration('002-sei-study.sql'));
@@ -81,6 +80,12 @@ export async function createPostgresHarness() {
     pool = new Pool(appConfig);
     const result = await pool.query<{ current_user: string }>('SELECT current_user');
     if (result.rows[0].current_user !== 'sei_app') throw new Error('Harness must connect as sei_app itself');
+    const authUsage = await pool.query<{ allowed: boolean }>(
+      "SELECT has_schema_privilege(current_user, oid, 'USAGE') AS allowed FROM pg_catalog.pg_namespace WHERE nspname = 'auth'",
+    );
+    if (authUsage.rows.length !== 1 || authUsage.rows[0].allowed !== false) {
+      throw new Error('Harness requires a decoy auth schema with no USAGE for sei_app');
+    }
     return { pool, database, admin, name, appUrl, appConfig, dispose };
   } catch (error) {
     await dispose();

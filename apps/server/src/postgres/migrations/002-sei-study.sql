@@ -1,4 +1,4 @@
--- OPERATOR ONLY. Run as postgres after 000 and 001. Supabase supplies auth.uid().
+-- OPERATOR ONLY. Run as postgres after 000 and 001.
 -- Only private sei objects are touched; no Data API or global/Auth changes.
 BEGIN;
 
@@ -91,7 +91,7 @@ BEGIN
     EXECUTE format('ALTER TABLE sei.%I ENABLE ROW LEVEL SECURITY', table_name);
     EXECUTE format('ALTER TABLE sei.%I FORCE ROW LEVEL SECURITY', table_name);
     EXECUTE format('DROP POLICY IF EXISTS sei_owner ON sei.%I', table_name);
-    EXECUTE format('CREATE POLICY sei_owner ON sei.%I TO sei_app USING (owner_id = auth.uid()) WITH CHECK (owner_id = auth.uid())', table_name);
+    EXECUTE format('CREATE POLICY sei_owner ON sei.%I TO sei_app USING (owner_id = sei.request_owner_id()) WITH CHECK (owner_id = sei.request_owner_id())', table_name);
     EXECUTE format('REVOKE ALL ON TABLE sei.%I FROM PUBLIC, sei_app', table_name);
     EXECUTE format('REVOKE ALL ON SEQUENCE sei.%I FROM PUBLIC, sei_app', table_name || '_sequence_seq');
     IF table_name = 'drafts' THEN

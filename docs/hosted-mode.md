@@ -65,16 +65,27 @@ All DB work runs in `withOwnerTransaction`: BEGIN, set `request.jwt.claims` and
 `request.jwt.claim.sub` transaction-locally, parameterized unnamed queries, then
 COMMIT or ROLLBACK before releasing the client. Remote TLS verifies certificates;
 optional CA text supplies trust. Only explicit localhost tests allow plain TCP.
-Pools default to one connection and are capped at five.
+Pools default to one connection and are capped at five. Only the server connects
+as `sei_app` and sets these claims; clients cannot connect directly as that role
+or obtain its credentials. The claims come from the configured public owner or
+verified JWT identity, never client-supplied owner fields.
 
 `sei_app` cannot bypass RLS or create roles/databases and has no superuser,
 inheritance, or replication capability. All tables enable and force RLS with
-owner policies using `auth.uid()`. Migration 002 adds full entity JSON and
+owner policies using `sei.request_owner_id()`. Migration 001 defines this
+operator-owned, stable SQL SECURITY INVOKER helper with `search_path = pg_catalog`.
+It reads `nullif(current_setting('request.jwt.claim.sub', true), '')::uuid`;
+missing or empty claims produce NULL, so policies return no rows and reject
+inserts. The helper reads the server-set claim without verifying identity itself.
+PUBLIC execution is revoked, and only `sei_app` is granted EXECUTE. Neither
+migration needs access to the `auth` schema or changes to Supabase-managed
+privileges. Migration 002 adds full entity JSON and
 owner-scoped foreign keys in `task_versions`, `attempts`, `judgments`, and
 `evidence_events`. These are append-only with SELECT/INSERT only. Drafts also
 permit UPDATE, as native projections do in 001. No DELETE/TRUNCATE or
 PUBLIC/anon/authenticated grants are added. Ownership guards refuse app/API-owned
-objects. The private `sei` schema is never exposed in the Data API.
+objects, including the owner helper on reruns. The private `sei` schema is never
+exposed in the Data API.
 
 User answer-bearing columns use PostgreSQL `json` so escaped U+0000 and lone
 surrogates accepted by SQLite remain intact; bundled tasks and evidence use
@@ -177,6 +188,10 @@ side-effect-free entry import. The separate Postgres suite extends the original
 eleven tests with public HTTP study workflows, SQLite state/eligibility parity,
 writing, versioned drafts, rollback/concurrency, isolation, immutable mutation
 rejection, and neighbor denial. The harness applies 000, 001, and 002 twice.
+It creates an admin-owned decoy `auth` schema with no functions or PUBLIC/
+`sei_app` grants and asserts that `sei_app` has no USAGE there. Existing owner
+operations, other-owner isolation, absent-claim read/insert denial, and
+transaction-local claim assertions must pass without access to that schema.
 Run `npm run test:postgres` only against an explicitly provisioned disposable
 Postgres 17+ cluster: it creates/drops a synthetic database and role and refuses
 an existing `sei_app`. Never point it at Supabase or a shared/live DB. The supplied
