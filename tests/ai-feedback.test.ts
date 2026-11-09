@@ -7,7 +7,7 @@ import { CatalogSchema } from '../packages/shared/src/index.js';
 import { readAiConfig } from '../apps/server/src/ai/ai-config.js';
 import { dayEt, estimateCostMicroUsd, parseAiUsage, usageCostMicroUsd } from '../apps/server/src/ai/budget.js';
 import { AiAdapterError, createAiAdapter, NullAdapter } from '../apps/server/src/ai/deepseek-adapter.js';
-import { AI_INVALID_RESPONSE, AI_PRIVACY_NOTICE, buildFeedbackRequest, validateFeedbackOutput } from '../apps/server/src/ai/feedback-request.js';
+import { AI_INVALID_RESPONSE, AI_PRIVACY_NOTICE, buildFeedbackRequest, feedbackSystemPrompt, validateFeedbackOutput } from '../apps/server/src/ai/feedback-request.js';
 import type { Attempt } from '../apps/server/src/types.js';
 
 const catalog = CatalogSchema.parse(bundledCatalog);
@@ -206,5 +206,70 @@ describe('mock-only DeepSeek HTTP boundary and secret containment', () => {
     const walk = (directory: string): string[] => readdirSync(directory, { withFileTypes: true }).flatMap(entry =>
       entry.isDirectory() ? walk(resolve(directory, entry.name)) : [resolve(directory, entry.name)]);
     for (const file of walk(resolve('apps/web/src'))) expect(readFileSync(file, 'utf8')).not.toMatch(/DEEPSEEK|\bsk-/);
+  });
+});
+
+describe('exam-aligned prompt contract (official Field 56 holistic rubric)', () => {
+  const prompt = () => requestFor().messages[0].content;
+  it('binds the four official performance characteristics verbatim from the versioned rubric', () => {
+    const rubric = requestFor().rubric;
+    expect(prompt()).toBe(feedbackSystemPrompt(rubric));
+    const official: Record<string, [string, string]> = {
+      purpose: ['Purpose', 'The extent to which the response achieves the purpose of the assignment.'],
+      'subject-matter-knowledge': ['Subject Matter Knowledge', 'Accuracy and appropriateness in the application of subject matter knowledge.'],
+      support: ['Support', 'Quality and relevance of supporting details.'],
+      rationale: ['Rationale', 'Soundness of argument and degree of understanding of the subject matter.'],
+    };
+    expect(rubric.criteria.map(criterion => criterion.id).sort()).toEqual(Object.keys(official).sort());
+    for (const [id, [title, text]] of Object.entries(official)) expect(prompt()).toContain(`- ${title} (criterionId "${id}"): ${text}`);
+    expect(prompt()).toContain('4 thorough, 3 adequate, 2 limited, 1 weak');
+    expect(prompt()).toContain('A 3 largely achieves the purpose');
+    expect(prompt()).toContain('A 2 only partially achieves the purpose');
+  });
+  it('applies U/B gates before choosing one holistic 1-4 score', () => {
+    const text = prompt();
+    expect(text).toContain('U/B gates first');
+    expect(text.indexOf('STEP 1: U/B gates first')).toBeLessThan(text.indexOf('STEP 2'));
+    for (const gate of ['no response', 'unrelated to the assigned topic', 'illegible', 'primarily in a language other than English',
+      'not of sufficient length to score', 'merely a repetition of the assignment']) expect(text).toContain(gate);
+    expect(text).toContain('Do not invent word-count minimums');
+  });
+  it('forbids analytic numeric scores, pass predictions and official-authority claims', () => {
+    const text = prompt();
+    expect(text).toContain('Never give numeric per-criterion scores');
+    expect(text).toContain('pass/fail predictions');
+    expect(text).toContain('Never state or imply that any holistic point is the passing cut');
+    expect(text).toContain('qualifying score of 240 applies to the whole test');
+    expect(text).toContain('You are not the official MTEL scorer');
+    expect(text).toContain('not an official MTEL score');
+    expect(text).toContain('Begin reason with "Unofficial practice feedback, not an official MTEL score."');
+  });
+  it('requires Part I(a), the same mentor text throughout, literal answer quotes and mentor anchors', () => {
+    const text = prompt();
+    expect(text).toContain('Part I(a)');
+    expect(text).toContain('same mentor text for all five parts');
+    expect(text).toContain('switches to another text or topic');
+    expect(text).toContain('literal, nonempty substring of one original answer part');
+    expect(text).toMatch(/mentor-text sentence or phrase the candidate should have used as an anchor/);
+    for (const trigger of ['borderline between adjacent score points', 'a required part is missing', 'mentor-text evidence is ambiguous'])
+      expect(text).toContain(trigger);
+  });
+  it('coaches exam-relevant SEI knowledge and flags common misconceptions', () => {
+    const text = prompt();
+    for (const point of ['concurrent content and language objectives', 'word/phrase, sentence and discourse levels',
+      'only for students literate in their first language', 'distinct from comprehension',
+      'without permanently lowering the content target', 'process, shared or collaborative writing',
+      'checks content understanding separately from English form', 'treating every English learner reading difficulty as a phonics problem',
+      'invented cut scores, reclassification thresholds', 'not applied to this text and objective']) expect(text).toContain(point);
+  });
+  it('describes only the public Part I shape and never copies the official sample response or invents Parts II-V', () => {
+    const text = prompt();
+    expect(text).toContain('Only Part I is public');
+    expect(text).toContain('never invent or claim official wording for Parts II-V');
+    for (const copied of [/anemometer/i, /wind vane/i, /meteorolog/i, /kite/i]) expect(text).not.toMatch(copied);
+  });
+  it('stays small enough that a worst-case reservation remains about a cent', () => {
+    expect(prompt().length).toBeLessThan(12_000);
+    expect(estimateCostMicroUsd(requestFor().messages, configured())).toBeLessThan(10_000);
   });
 });

@@ -64,6 +64,31 @@ request ledger, and raw model output is never stored. Only a validated proposal,
 including its literal answer quotes, can occupy `proposal_json`. Request/response
 bodies, authentication headers, and keys are never logged.
 
+### Scorer-aligned prompt
+
+`feedbackSystemPrompt()` in `apps/server/src/ai/feedback-request.ts` builds the
+system instructions. The official characteristic wording (Purpose, Subject
+Matter Knowledge, Support, Rationale) and the 1-4/U/B descriptors come from the
+versioned rubric `rubric.mtel56.public@1`, not from the prompt file. The prompt:
+
+- applies the official U/B gates first, without word-count minimums;
+- requires Part I(a) mentor identification and the same mentor text in every
+  part, and flags review when either fails;
+- matches the whole response to one holistic descriptor (4 thorough,
+  3 adequate, 2 limited, 1 weak), never per-characteristic numbers, and never
+  presents a holistic point as a passing cut (the published qualifying score,
+  240, is for the whole test);
+- coaches exam-relevant Field 56 knowledge and flags common errors, such as
+  strategy-name lists, invented thresholds, phonics-only diagnoses, lowered
+  content targets, and assessment of English form only;
+- asks for short, exam-facing comments: what the response shows, then the
+  single most important concrete fix, anchored to literal answer quotes and
+  to mentor-text wording.
+
+It describes only the public Part I shape. It does not copy the official sample
+response or claim any official Parts II-V wording. Tests in
+`tests/ai-feedback.test.ts` pin these rules.
+
 The model name and price defaults come from the task's verified DeepSeek
 documentation snapshot dated **2026-11-09 ET**: `deepseek-flash` is
 DeepSeek-V4.1-Flash. See the provider's [models and pricing documentation](https://api-docs.deepseek.com/quick_start/pricing)
