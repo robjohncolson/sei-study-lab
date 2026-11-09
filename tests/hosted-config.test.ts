@@ -28,8 +28,8 @@ describe('hosted configuration, without network or database connections', () => 
   });
   it.each([
     ['HOSTED_AUTH_MODE', 'PUBLIC'],
-    ['HOSTED_AUTH_MODE', 'public '],
-    ['HOSTED_AUTH_MODE', 'none'],
+    ['HOSTED_AUTH_MODE', 'public-x9 '],
+    ['HOSTED_AUTH_MODE', 'none-zz'],
     ['SEI_DATABASE_URL', 'not-a-url-containing-secret'],
     ['SEI_DATABASE_URL', 'postgresql://postgres:secret@db.example.test/db'],
     ['SEI_DATABASE_URL', 'postgresql://service_role:secret@db.example.test/db'],
@@ -58,7 +58,16 @@ describe('hosted configuration, without network or database connections', () => 
     catch (error) { message = (error as Error).message; }
     expect(message).toContain(name);
     expect(message).not.toContain(value);
+    if (name === 'HOSTED_AUTH_MODE') expect(message).toBe('HOSTED_AUTH_MODE must be public or supabase-jwt');
   });
+  it.each(['public ', ' public', 'PUBLIC', 'supabase-jwt ', ' supabase-jwt', 'SUPABASE-JWT'])(
+    'rejects the whitespace/case variant %j with the fixed auth-mode error', value => {
+      let message = '';
+      try { readHostedConfig({ ...environment(), HOSTED_AUTH_MODE: value }); }
+      catch (error) { message = (error as Error).message; }
+      expect(message).toBe('HOSTED_AUTH_MODE must be public or supabase-jwt');
+    },
+  );
   it('defaults to one pooled connection and requires verified TLS for remote hosts', () => {
     const config = readHostedConfig(environment());
     expect(config.poolMax).toBe(1);

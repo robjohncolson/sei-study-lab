@@ -142,29 +142,18 @@ The coordinator must create this exact **vercel.json** (protected in this slice)
 ```json
 {
   "framework": null,
-  "buildCommand": "npm run build:web",
+  "buildCommand": "vite build --config apps/web/vite.config.ts",
   "outputDirectory": "dist/web",
   "installCommand": "npm ci --ignore-scripts",
-  "functions": {
-    "api/[...path].ts": {
-      "maxDuration": 15
-    }
-  }
+  "rewrites": [{ "source": "/api/:path*", "destination": "/api/[...path]" }],
+  "functions": { "api/[...path].ts": { "maxDuration": 15 } }
 }
 ```
 
-**Manifest prerequisite:** the supplied base lacks `build:web`. This slice also
-explicitly requires `package.json` and `package-lock.json` to stay byte-identical,
-so it cannot add the script. Before deploying, the coordinator must separately
-authorize/add this entry to `package.json`'s `scripts`:
-
-```json
-"build:web": "vite build --config apps/web/vite.config.ts"
-```
-
-Keep existing `build` semantics unchanged. Until that manifest edit and protected
-Vercel config are supplied, the build command above cannot run. Dependencies stay
-exactly as supplied, including pg 8.23.1 and jose 6.2.16.
+Set the Vercel project Node.js version to **22.x**; the package's
+`engines: ">=22.17.0"` otherwise selects the newest runtime. No `build:web` script
+or package manifest change is needed. Dependencies stay exactly as supplied,
+including pg 8.23.1 and jose 6.2.16.
 
 `api/[...path].ts` is an ESM Node function that lazily caches one
 `createHostedHandler` promise per warm instance, forwards requests, and never
