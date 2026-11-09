@@ -302,7 +302,13 @@ test('Objective 0001 lesson opens its own checks without treating guided practic
   expect(service.external).toEqual([]);
 });
 
-for (const lessonId of ['lesson.obj0002.diversity.v1', 'lesson.obj0003.culture-partnerships.v1']) {
+for (const lessonId of [
+  'lesson.obj0002.diversity.v1',
+  'lesson.obj0003.culture-partnerships.v1',
+  'lesson.obj0004.forms-transfer.v1',
+  'lesson.obj0005.profiles-environments.v1',
+  'lesson.obj0006.vocabulary-talk.v1',
+]) {
   test(`${lessonId} opens assisted instruction, a linked check and its manual case without evidence writes`, async ({page}) => {
     const service = await mockDesk(page);
     const lessonTasks = catalog.tasks.filter(t => t.lessonId === lessonId);

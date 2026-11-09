@@ -1,0 +1,440 @@
+{
+  "packetId": "obj0004-0006.supplied.2026-11-08.v1",
+  "sources": [
+    {
+      "id": "source.obj0004-0006.s1.2026-11-08",
+      "title": "MTEL Field 56 objectives: original Objective 0004–0006 statements",
+      "url": "https://www.mtel.nesinc.com/Content/StudyGuide/MA_SG_OBJ_56.htm",
+      "documentVersion": "Live page 2026-11-08",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0004-0006-s1-v1",
+      "excerpt": "Apply knowledge of important linguistic terminology and concepts in the areas of phonology, morphology, semantics, syntax, discourse, and pragmatics, including knowledge of the units of language (e.g., phonemes, morphemes, words, phrases, sentences, extended text), rhetorical registers, and writing conventions, including those represented in the Massachusetts Curriculum Framework for English Language Arts and Literacy and the World-Class Instructional Design and Assessment English Language Development Standards (WIDA ELD Standards).\n\nApply understanding of the nature of language transfer and the influence of transfer from the first language on English language learners' second-language acquisition, including how linguistic features of English compare and contrast with linguistic features of other languages.\n\nApply understanding of the relationships between language forms (units of language) and language functions (the purpose for which units of language are used) and of contextual factors (e.g., cultural and social norms, physical setting, relationships among participants, audience) that affect a speaker's or writer's use of language forms and functions as represented in the Massachusetts Curriculum Framework for English Language Arts and Literacy and the WIDA ELD Standards.\n\nAnalyze language structures of academic oral and written language functions (e.g., to inform, to persuade, to support an argument).\n\nApply understanding of key theories of second-language acquisition (e.g., social vs. academic language, interdependence/\"dual iceberg\" hypothesis) in order to plan and deliver effective SEI instruction.\n\nApply understanding of characteristics of various stages and processes of second-language development (e.g., receptive vs. productive skills), including the various English language proficiency levels (i.e., entering, emerging, developing, expanding, bridging, and reaching) as described in the WIDA ELD Standards in order to plan and deliver effective SEI instruction.\n\nApply understanding of physical, cognitive, and educational factors (e.g., age, prior schooling in the first language, first-language literacy level, metalinguistic/metacognitive awareness, continuity of schooling) that can influence English language learners' acquisition of English, including factors that affect the rate at which English language learners acquire fluent English proficiency.\n\nApply understanding of affective factors (e.g., motivation, inhibition, personality, social distance, affective filter) that can influence English language learners' acquisition of English, including factors that affect the rate at which English language learners acquire fluent English proficiency.\n\nApply understanding of sociocultural, political, and ideological factors (e.g., social distance, psychological distance, social and cultural capital, cultural identity) that can influence English language learners' acquisition of English, including factors that affect the rate at which English language learners acquire fluent English proficiency.\n\nApply knowledge of how to create school and classroom environments that support English language learners' acquisition of English (e.g., creating a visually supportive and text-rich environment, promoting meaningful communication, reducing the environmental affective filter, discerning when to emphasize fluency and communication and when to emphasize explicit error correction).\n\nRecognize the role of aural (listening) and oral (speaking) language development across the curriculum, including the significance of listening comprehension (e.g., listening for main ideas and details, responding to verbal questions) and links between oral language and literacy development.\n\nRecognize the role of vocabulary development in context across the curriculum, including the importance of vocabulary development as a key for unlocking meaning in content lessons, the link between vocabulary development and academic achievement, and the influence of vocabulary on English language learners' academic language development.\n\nApply knowledge of a range of oral communication and interpersonal skills, as well as vocabulary skills, as described in the WIDA ELD Standards (e.g., Speaking Rubric of the WIDA Consortium) and in the Massachusetts Curriculum Framework for English Language Arts and Literacy to provide English language learners with explicit instruction in how to communicate effectively for social and instructional purposes within the school setting.\n\nAnalyze methods and practices that provide opportunities for students to engage in listening comprehension activities and encourage students' oral language use and development (e.g., cooperative learning, think-pair-share), including providing appropriate feedback and designing a learning environment that promotes meaningful and purposeful oral interactions.\n\nApply knowledge of evidence-based principles of effective vocabulary instruction (e.g., recognizing the three tiers of vocabulary, selecting words for vocabulary instruction that may pose special challenges for English language learners [e.g., idiomatic expressions, cognates and false cognates], teaching word parts/analysis, preteaching content vocabulary, teaching concepts versus labels, reinforcing vocabulary through meaningful exposure to and opportunities to use new vocabulary in context).\n\nAnalyze methods and practices for promoting English language learners' vocabulary development (e.g., word guesses, semantic maps, interactive word walls, drama and chants), including using technology to build vocabulary.",
+      "supportingExcerpts": [
+        {
+          "id": "mtel56.obj.0004.ds.01",
+          "text": "Apply knowledge of important linguistic terminology and concepts in the areas of phonology, morphology, semantics, syntax, discourse, and pragmatics, including knowledge of the units of language (e.g., phonemes, morphemes, words, phrases, sentences, extended text), rhetorical registers, and writing conventions, including those represented in the Massachusetts Curriculum Framework for English Language Arts and Literacy and the World-Class Instructional Design and Assessment English Language Development Standards (WIDA ELD Standards)."
+        },
+        {
+          "id": "mtel56.obj.0004.ds.02",
+          "text": "Apply understanding of the nature of language transfer and the influence of transfer from the first language on English language learners' second-language acquisition, including how linguistic features of English compare and contrast with linguistic features of other languages."
+        },
+        {
+          "id": "mtel56.obj.0004.ds.03",
+          "text": "Apply understanding of the relationships between language forms (units of language) and language functions (the purpose for which units of language are used) and of contextual factors (e.g., cultural and social norms, physical setting, relationships among participants, audience) that affect a speaker's or writer's use of language forms and functions as represented in the Massachusetts Curriculum Framework for English Language Arts and Literacy and the WIDA ELD Standards."
+        },
+        {
+          "id": "mtel56.obj.0004.ds.04",
+          "text": "Analyze language structures of academic oral and written language functions (e.g., to inform, to persuade, to support an argument)."
+        },
+        {
+          "id": "mtel56.obj.0005.ds.01",
+          "text": "Apply understanding of key theories of second-language acquisition (e.g., social vs. academic language, interdependence/\"dual iceberg\" hypothesis) in order to plan and deliver effective SEI instruction."
+        },
+        {
+          "id": "mtel56.obj.0005.ds.02",
+          "text": "Apply understanding of characteristics of various stages and processes of second-language development (e.g., receptive vs. productive skills), including the various English language proficiency levels (i.e., entering, emerging, developing, expanding, bridging, and reaching) as described in the WIDA ELD Standards in order to plan and deliver effective SEI instruction."
+        },
+        {
+          "id": "mtel56.obj.0005.ds.03",
+          "text": "Apply understanding of physical, cognitive, and educational factors (e.g., age, prior schooling in the first language, first-language literacy level, metalinguistic/metacognitive awareness, continuity of schooling) that can influence English language learners' acquisition of English, including factors that affect the rate at which English language learners acquire fluent English proficiency."
+        },
+        {
+          "id": "mtel56.obj.0005.ds.04",
+          "text": "Apply understanding of affective factors (e.g., motivation, inhibition, personality, social distance, affective filter) that can influence English language learners' acquisition of English, including factors that affect the rate at which English language learners acquire fluent English proficiency."
+        },
+        {
+          "id": "mtel56.obj.0005.ds.05",
+          "text": "Apply understanding of sociocultural, political, and ideological factors (e.g., social distance, psychological distance, social and cultural capital, cultural identity) that can influence English language learners' acquisition of English, including factors that affect the rate at which English language learners acquire fluent English proficiency."
+        },
+        {
+          "id": "mtel56.obj.0005.ds.06",
+          "text": "Apply knowledge of how to create school and classroom environments that support English language learners' acquisition of English (e.g., creating a visually supportive and text-rich environment, promoting meaningful communication, reducing the environmental affective filter, discerning when to emphasize fluency and communication and when to emphasize explicit error correction)."
+        },
+        {
+          "id": "mtel56.obj.0006.ds.01",
+          "text": "Recognize the role of aural (listening) and oral (speaking) language development across the curriculum, including the significance of listening comprehension (e.g., listening for main ideas and details, responding to verbal questions) and links between oral language and literacy development."
+        },
+        {
+          "id": "mtel56.obj.0006.ds.02",
+          "text": "Recognize the role of vocabulary development in context across the curriculum, including the importance of vocabulary development as a key for unlocking meaning in content lessons, the link between vocabulary development and academic achievement, and the influence of vocabulary on English language learners' academic language development."
+        },
+        {
+          "id": "mtel56.obj.0006.ds.03",
+          "text": "Apply knowledge of a range of oral communication and interpersonal skills, as well as vocabulary skills, as described in the WIDA ELD Standards (e.g., Speaking Rubric of the WIDA Consortium) and in the Massachusetts Curriculum Framework for English Language Arts and Literacy to provide English language learners with explicit instruction in how to communicate effectively for social and instructional purposes within the school setting."
+        },
+        {
+          "id": "mtel56.obj.0006.ds.04",
+          "text": "Analyze methods and practices that provide opportunities for students to engage in listening comprehension activities and encourage students' oral language use and development (e.g., cooperative learning, think-pair-share), including providing appropriate feedback and designing a learning environment that promotes meaningful and purposeful oral interactions."
+        },
+        {
+          "id": "mtel56.obj.0006.ds.05",
+          "text": "Apply knowledge of evidence-based principles of effective vocabulary instruction (e.g., recognizing the three tiers of vocabulary, selecting words for vocabulary instruction that may pose special challenges for English language learners [e.g., idiomatic expressions, cognates and false cognates], teaching word parts/analysis, preteaching content vocabulary, teaching concepts versus labels, reinforcing vocabulary through meaningful exposure to and opportunities to use new vocabulary in context)."
+        },
+        {
+          "id": "mtel56.obj.0006.ds.06",
+          "text": "Analyze methods and practices for promoting English language learners' vocabulary development (e.g., word guesses, semantic maps, interactive word walls, drama and chants), including using technology to build vocabulary."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independent researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs or inspect original binaries. Supplied packet data, not independent retrieval.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Exam scope inventory only. The original statements support naming concepts; authored examples are unofficial, not official exam items. All 4/6/6 statements remain unchanged.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent source verification or evidence of learner mastery.",
+      "suppliedPacketNotes": [
+        {
+          "id": "forms-functions-cue",
+          "text": "The supplied packet describes a published sample-family cue connecting a research presentation with sequencing forms. This is a shape-of-reasoning note, not an item reproduction or a universal function for research projects."
+        },
+        {
+          "id": "polysemy-cue",
+          "text": "The supplied packet describes the Objective 0006 polysemy cue: multiple-meaning words used differently across content areas. This is supplied-packet commentary, not a quoted official item."
+        }
+      ]
+    },
+    {
+      "id": "source.obj0004-0006.s2.2026-11-08",
+      "title": "WIDA ELD Standards Framework, 2020 Edition",
+      "url": "https://wida.wisc.edu/sites/default/files/resource/WIDA-ELD-Standards-Framework-2020.pdf",
+      "documentVersion": "2020 Edition",
+      "sha256": "0d92701e7cc5015fb1b98619561f2b22e5b813ddc476c0b799bfc94534b9fba7",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0004-0006-s2-v1",
+      "excerpt": "language development is not a straightforward linear process across proficiency levels; it is contingent on a variety of factors, including multilingual learners’ familiarity with the topic, audience, and situation.\n\nthey may speak at a higher proficiency level while write at an earlier proficiency level. A proficiency level does not categorize a multilingual learner\n\nAt any given point … multilingual learners may demonstrate a range of abilities within and across each proficiency level.\n\nidentifies snapshots of what a multilingual learner knows and can do\n\nNor should they be used to limit access to complex texts and grade-level materials, participation in rigorous learning, or engagement in meaningful classroom discussions.\n\nPLDs should not be used as the single document or as the only evidence in high-stakes situations\n\nDescription of cognitive ability; Identification of student readiness abilities; Tracking for remediation or enrichment; Grading in report cards; Consideration for grade placement or retention; Evaluation of teachers.\n\nIdentification for special education services; for example in trying to obtain cognitive support services solely based on a student’s English language proficiency level\n\nThe discourse dimension imparts overall meaning across an entire text … The sentence dimension contributes to the grammatical complexity of a text … The word/phrase dimension adds precision\n\ninterpretive … listening, reading, and viewing … expressive … speaking, writing, and representing.\n\nEveryday language … Cross-disciplinary language … Technical language …",
+      "supportingExcerpts": [
+        {
+          "id": "nonlinear",
+          "text": "language development is not a straightforward linear process across proficiency levels; it is contingent on a variety of factors, including multilingual learners’ familiarity with the topic, audience, and situation."
+        },
+        {
+          "id": "domain-snapshot",
+          "text": "they may speak at a higher proficiency level while write at an earlier proficiency level. A proficiency level does not categorize a multilingual learner"
+        },
+        {
+          "id": "snapshot-time",
+          "text": "At any given point … multilingual learners may demonstrate a range of abilities within and across each proficiency level."
+        },
+        {
+          "id": "snapshot-description",
+          "text": "identifies snapshots of what a multilingual learner knows and can do"
+        },
+        {
+          "id": "access",
+          "text": "Nor should they be used to limit access to complex texts and grade-level materials, participation in rigorous learning, or engagement in meaningful classroom discussions."
+        },
+        {
+          "id": "inapplicable",
+          "text": "PLDs should not be used as the single document or as the only evidence in high-stakes situations"
+        },
+        {
+          "id": "inapplicable-examples",
+          "text": "Description of cognitive ability; Identification of student readiness abilities; Tracking for remediation or enrichment; Grading in report cards; Consideration for grade placement or retention; Evaluation of teachers."
+        },
+        {
+          "id": "special-education",
+          "text": "Identification for special education services; for example in trying to obtain cognitive support services solely based on a student’s English language proficiency level"
+        },
+        {
+          "id": "dimensions",
+          "text": "The discourse dimension imparts overall meaning across an entire text … The sentence dimension contributes to the grammatical complexity of a text … The word/phrase dimension adds precision"
+        },
+        {
+          "id": "modes",
+          "text": "interpretive … listening, reading, and viewing … expressive … speaking, writing, and representing."
+        },
+        {
+          "id": "language-varieties",
+          "text": "Everyday language … Cross-disciplinary language … Technical language …"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independent researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs or inspect original binaries. Supplied packet data, not independent retrieval.",
+      "hashProvenance": "Binary SHA-256 supplied by the researcher; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Domain-at-a-time language performance is not a learner label, cognitive ability, readiness or disability determination. Development varies by topic, audience and situation. PLDs cannot restrict rigorous access or be the sole basis for high-stakes decisions. Dimensions help analyze language demands; no invented level-by-level PLD table.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent source verification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0004-0006.s3.2026-11-08",
+      "title": "WIDA Guiding Principles of Language Development",
+      "url": "https://wida.wisc.edu/sites/default/files/resource/Guiding-Principles-of-Language-Development.pdf",
+      "documentVersion": "© 2019 Board of Regents UW / WIDA",
+      "sha256": "c53f8e011cfe2928dd9f34fba598f167ae9878947027d199bf25c6d49761b11e",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0004-0006-s3-v1",
+      "excerpt": "Multilingual learners’ languages and cultures are valuable resources to be leveraged for schooling and classroom life\n\nMultilingual learners’ language development and learning occur over time through meaningful engagement\n\nMultilingual learners use and develop language when opportunities for learning take into account their individual experiences, characteristics, abilities, and levels of language proficiency\n\nintentionally integrate multiple modalities, including oral, written, visual, and kinesthetic modes\n\nMultilingual learners draw on their metacognitive, metalinguistic, and metacultural awareness\n\nMultilingual learners use their full linguistic repertoire, including translanguaging practices",
+      "supportingExcerpts": [
+        {
+          "id": "assets",
+          "text": "Multilingual learners’ languages and cultures are valuable resources to be leveraged for schooling and classroom life"
+        },
+        {
+          "id": "engagement",
+          "text": "Multilingual learners’ language development and learning occur over time through meaningful engagement"
+        },
+        {
+          "id": "individual-experiences",
+          "text": "Multilingual learners use and develop language when opportunities for learning take into account their individual experiences, characteristics, abilities, and levels of language proficiency"
+        },
+        {
+          "id": "modalities",
+          "text": "intentionally integrate multiple modalities, including oral, written, visual, and kinesthetic modes"
+        },
+        {
+          "id": "awareness",
+          "text": "Multilingual learners draw on their metacognitive, metalinguistic, and metacultural awareness"
+        },
+        {
+          "id": "repertoire",
+          "text": "Multilingual learners use their full linguistic repertoire, including translanguaging practices"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independent researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs or inspect original binaries. Supplied packet data, not independent retrieval.",
+      "hashProvenance": "Binary SHA-256 supplied by the researcher; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Use actual language resources and individual experiences; multimodality is an instructional resource, not a fixed learning-style classification or a causal ranking of acquisition factors.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent source verification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0004-0006.s4.2026-11-08",
+      "title": "Can Do Descriptors, Key Uses Edition K–12 FAQ",
+      "url": "https://wida.wisc.edu/sites/default/files/resource/Can-Do-Descriptors-Key-Uses-K-12-FAQs.pdf",
+      "documentVersion": "Key Uses Edition K–12 FAQ; companion https://wida.wisc.edu/teach/can-do/descriptors",
+      "sha256": "a67a28b34fea3bf6586945e8a7c914f2f2ff710fd494d01de32c904e1c95a4eb",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0004-0006-s4-v1",
+      "excerpt": "The Can Do Descriptors, Key Uses Edition can help educators see what English language learners (ELLs) can do with language in different situations, and in different content areas, throughout their journey toward English language proficiency.",
+      "supportingExcerpts": [
+        {
+          "id": "possibilities",
+          "text": "The Can Do Descriptors, Key Uses Edition can help educators see what English language learners (ELLs) can do with language in different situations, and in different content areas, throughout their journey toward English language proficiency."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independent researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs or inspect original binaries. Supplied packet data, not independent retrieval.",
+      "hashProvenance": "Binary SHA-256 supplied by the researcher; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Examples of what learners can do with language supplement planning. S10 supplies the explicit standards/version caution; this FAQ is not the 2020 Language Expectations.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent source verification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0004-0006.s5.2026-11-08",
+      "title": "WWC Educator’s Practice Guide: Teaching Academic Content and Literacy to English Learners in Elementary and Middle School",
+      "url": "https://ies.ed.gov/ncee/wwc/Docs/PracticeGuide/english_learners_pg_040114.pdf",
+      "documentVersion": "April 2014; NCEE 2014-4012; K–8 English-medium instruction",
+      "sha256": "6f39b0f96514344b3773b21ff6f53b7cc2503407ce0e325d7525463115893596",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0004-0006-s5-v1",
+      "excerpt": "Recommendation 1: Teach a set of academic vocabulary words intensively across several days using a variety of instructional activities.\n\nRecommendation 2: Integrate oral and written English language instruction into content-area teaching.\n\nSummary of evidence: Strong (Rec 1) … Level of Evidence: Strong (Rec 2, content-acquisition measures).\n\nTypically, academic vocabulary is broken into two categories: general academic vocabulary and domain-specific vocabulary.\n\nWords that have cognate relationships across languages (e.g., investigación and investigation) are often a good way for students to learn new words… Not all languages lend themselves to cross-language connections…\n\nThere are also false cognates… be sure to … [check] whether or not those cognates are false cognates.\n\nteach … word parts (morphology), and cognates.\n\nidiomatic expressions (e.g., in hot pursuit) extend the word’s usage…",
+      "supportingExcerpts": [
+        {
+          "id": "rec1",
+          "text": "Recommendation 1: Teach a set of academic vocabulary words intensively across several days using a variety of instructional activities."
+        },
+        {
+          "id": "rec2",
+          "text": "Recommendation 2: Integrate oral and written English language instruction into content-area teaching."
+        },
+        {
+          "id": "evidence",
+          "text": "Summary of evidence: Strong (Rec 1) … Level of Evidence: Strong (Rec 2, content-acquisition measures)."
+        },
+        {
+          "id": "academic-vocabulary",
+          "text": "Typically, academic vocabulary is broken into two categories: general academic vocabulary and domain-specific vocabulary."
+        },
+        {
+          "id": "cognates",
+          "text": "Words that have cognate relationships across languages (e.g., investigación and investigation) are often a good way for students to learn new words… Not all languages lend themselves to cross-language connections…"
+        },
+        {
+          "id": "false-cognates",
+          "text": "There are also false cognates… be sure to … [check] whether or not those cognates are false cognates."
+        },
+        {
+          "id": "word-parts",
+          "text": "teach … word parts (morphology), and cognates."
+        },
+        {
+          "id": "idioms",
+          "text": "idiomatic expressions (e.g., in hot pursuit) extend the word’s usage…"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independent researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs or inspect original binaries. Supplied packet data, not independent retrieval.",
+      "hashProvenance": "Binary SHA-256 supplied by the researcher; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "K–8 scope only. Rec 1 and Rec 2 have Strong ratings, with Rec 2 content-acquisition qualification. Supports a small multi-day word set, varied practice and oral/written content integration; no effect sizes, tier membership rules, fixed word lists or unrestricted grade-band extrapolation. Cognate availability must be checked, not assumed across languages.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent source verification or evidence of learner mastery.",
+      "suppliedPacketNotes": [
+        {
+          "id": "multiple-meanings",
+          "text": "The supplied packet connects its Objective 0006 polysemy cue to S5 multiple-meaning and academic-vocabulary activities. This records the supplied comparison note; no missing passage or source quotation is invented."
+        }
+      ]
+    },
+    {
+      "id": "source.obj0004-0006.s6.2026-11-08",
+      "title": "WWC Instructional Tips based on the 2014 practice guide",
+      "url": "https://ies.ed.gov/ncee/wwc/Docs/ReferenceResources/WWC_ELs_tips_2022.pdf",
+      "documentVersion": "2022 tips sheet; classroom-facing restatement of S5 Recommendations 1–2",
+      "sha256": "7019d7bbeeef366d6e2ca0c9ce0320da7ff8a5e3acb3926de44117534224e8dc",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0004-0006-s6-v1",
+      "excerpt": "Provide daily opportunities for students to talk about content in pairs or small groups.\n\nStrategically use instructional tools—such as short videos, visuals, and graphic organizers—to anchor instruction and help students make sense of content.\n\nExplicitly teach the content-specific academic vocabulary, as well as the general academic vocabulary that supports it, during content-area instruction.\n\nWhen students are taught a small number of words at a time, they can retain new vocabulary better.",
+      "supportingExcerpts": [
+        {
+          "id": "daily-talk",
+          "text": "Provide daily opportunities for students to talk about content in pairs or small groups."
+        },
+        {
+          "id": "anchors",
+          "text": "Strategically use instructional tools—such as short videos, visuals, and graphic organizers—to anchor instruction and help students make sense of content."
+        },
+        {
+          "id": "vocabulary",
+          "text": "Explicitly teach the content-specific academic vocabulary, as well as the general academic vocabulary that supports it, during content-area instruction."
+        },
+        {
+          "id": "small-set",
+          "text": "When students are taught a small number of words at a time, they can retain new vocabulary better."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independent researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs or inspect original binaries. Supplied packet data, not independent retrieval.",
+      "hashProvenance": "Binary SHA-256 supplied by the researcher; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Classroom-facing application of the excerpts supplied jointly under S5 / S6 in the packet; this inventory does not independently resolve which binary contains each sentence. Pair talk, visual anchors and a small set of words are planning supports; no external media is fetched and no effect size or acquisition timetable is inferred.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent source verification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0004-0006.s7.2026-11-08",
+      "title": "DESE Guidance for Sheltered English Immersion (SEI) Programs",
+      "url": "https://www.doe.mass.edu/ele/guidance/sei/sei.docx",
+      "documentVersion": "Linked from DESE ELE Guidance (SEI section) as of 2026-11-08",
+      "sha256": "99df99b285a23eafc727bb3eed13839f4489e6525216eb7a74eb568f756e584a",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0004-0006-s7-v1",
+      "excerpt": "ELs can meaningfully engage with grade-level content, and develop discipline-specific academic language.\n\nsheltered content lessons deliver high-quality ELD instruction throughout the day and across disciplines.\n\nTeachers derive instructional focus from two sets of standards taught in tandem: the Frameworks for the subject area and the WIDA Standards\n\nESL instruction develops students’ academic language practices such as arguing with evidence, justifying conclusions, expressing cause-and-effect relationships\n\nESL time is the opportunity for teachers to hone in more closely on the needs of each student at a particular English proficiency level in each skill area (listening, speaking, reading, and writing).\n\nschools should not remove EL students from core SEI content instruction to participate in ESL instruction.\n\nrigorous, purposefully scaffolded learning opportunities to accelerate their academic discourse and literacy; safe and risk-encouraging classroom environments",
+      "supportingExcerpts": [
+        {
+          "id": "rigorous-content",
+          "text": "ELs can meaningfully engage with grade-level content, and develop discipline-specific academic language."
+        },
+        {
+          "id": "across-day",
+          "text": "sheltered content lessons deliver high-quality ELD instruction throughout the day and across disciplines."
+        },
+        {
+          "id": "standards",
+          "text": "Teachers derive instructional focus from two sets of standards taught in tandem: the Frameworks for the subject area and the WIDA Standards"
+        },
+        {
+          "id": "functions",
+          "text": "ESL instruction develops students’ academic language practices such as arguing with evidence, justifying conclusions, expressing cause-and-effect relationships"
+        },
+        {
+          "id": "domains",
+          "text": "ESL time is the opportunity for teachers to hone in more closely on the needs of each student at a particular English proficiency level in each skill area (listening, speaking, reading, and writing)."
+        },
+        {
+          "id": "core-access",
+          "text": "schools should not remove EL students from core SEI content instruction to participate in ESL instruction."
+        },
+        {
+          "id": "risk-rigor",
+          "text": "rigorous, purposefully scaffolded learning opportunities to accelerate their academic discourse and literacy; safe and risk-encouraging classroom environments"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independent researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs or inspect original binaries. Supplied packet data, not independent retrieval.",
+      "hashProvenance": "Binary SHA-256 supplied by the researcher; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Content and language standards taught together, dedicated ESL and language development across the day. Preserve core access and rigor; a risk-encouraging climate is not evidence for a deterministic affective-filter score or a universal LTEL acquisition clock.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent source verification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0004-0006.s8.2026-11-08",
+      "title": "DESE SEI Guidance Appendices",
+      "url": "https://www.doe.mass.edu/ele/guidance/sei/appendices.docx",
+      "documentVersion": "Companion to S7; supplied inventory role: collaboration/co-teaching spotlights",
+      "sha256": "27b1a325797238d0728d17652a74f21ea013d6f38ad72e1dd4f5349837b8f19f",
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0004-0006-s8-v1",
+      "excerpt": "No substantive excerpt supplied; inventory metadata only.",
+      "supportingExcerpts": [],
+      "reviewState": "source_compared",
+      "provenance": "Independent researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs or inspect original binaries. Supplied packet data, not independent retrieval.",
+      "hashProvenance": "Binary SHA-256 supplied by the researcher; not independently recomputed from downloaded bytes.",
+      "derivedClaimRationale": "Inventory-only pointer: the packet supplies metadata and a role, but no substantive excerpt from S8. No lesson, key, rationale, card or coverage claim relies on unseen appendix wording.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent source verification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0004-0006.s9.2026-11-08",
+      "title": "DESE SEI Programs landing: statutory definition and WIDA Guiding Principles quotation",
+      "url": "https://www.doe.mass.edu/ele/programs/sei.html",
+      "documentVersion": "Live 2026-11-08; footnote quoting WIDA Guiding Principles",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0004-0006-s9-v1",
+      "excerpt": "Students’ academic language development in their native language facilitates their academic language development in English. Conversely, students’ academic language development in English informs their academic language development in their native language.",
+      "supportingExcerpts": [
+        {
+          "id": "l1-l2",
+          "text": "Students’ academic language development in their native language facilitates their academic language development in English. Conversely, students’ academic language development in English informs their academic language development in their native language."
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independent researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs or inspect original binaries. Supplied packet data, not independent retrieval.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "The supplied DESE footnote supports reciprocal academic-language resources as a planning stance. It does not establish universal BICS/CALP years, validate an iceberg diagram or show that every transfer is positive. No additional statutory interpretation is derived from the inventory title.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent source verification or evidence of learner mastery."
+    },
+    {
+      "id": "source.obj0004-0006.s10.2026-11-08",
+      "title": "Can Do Descriptors overview",
+      "url": "https://wida.wisc.edu/teach/can-do/descriptors",
+      "documentVersion": "Live 2026-11-08; not yet updated to the 2020 Edition",
+      "sha256": null,
+      "retrievedAt": "2026-11-08",
+      "retrievalTimezone": "America/New_York",
+      "effectiveDate": null,
+      "version": "supplied-2026-11-08-obj0004-0006-s10-v1",
+      "excerpt": "Although the Can Do Descriptors relate to the ELD Standards Statements, they don’t replace them but are used to supplement the standards statements during instruction.\n\nThe Can Do Descriptors have not yet been updated to reflect the 2020 Edition",
+      "supportingExcerpts": [
+        {
+          "id": "supplement",
+          "text": "Although the Can Do Descriptors relate to the ELD Standards Statements, they don’t replace them but are used to supplement the standards statements during instruction."
+        },
+        {
+          "id": "version",
+          "text": "The Can Do Descriptors have not yet been updated to reflect the 2020 Edition"
+        }
+      ],
+      "reviewState": "source_compared",
+      "provenance": "Independent researcher evidence packet supplied by the user; researcher retrieval 2026-11-08, America/New_York. Codex did not retrieve these URLs or inspect original binaries. Supplied packet data, not independent retrieval.",
+      "hashProvenance": "No binary SHA supplied for HTML; no hash invented.",
+      "derivedClaimRationale": "Can Dos supplement standards and remain usable examples; the supplied overview explicitly says they are not yet updated to 2020. Do not equate them with the 2020 Language Expectations.",
+      "reviewLimits": "Separate model comparison to supplied packet only; not human review, full-document review, independent source verification or evidence of learner mastery."
+    }
+  ],
+  "gaps": [
+    "Beck tiers monograph and Cummins primary text were not fetched: no tier rules/word lists, iceberg diagrams or acquisition year clocks.",
+    "S8 metadata only; collaboration/co-teaching appendix details remain unsupported.",
+    "T14 learning-styles matching is a pedagogy caution, not a separately taught or assessed Field 56 requirement; no external research was fetched.",
+    "No cognate-utility percentages, district cut scores or Can Do-to-2020 equivalence."
+  ]
+}

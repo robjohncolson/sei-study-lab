@@ -39,14 +39,14 @@ test('portable base and legacy contract are digest-pinned; all prior entities re
     assert.deepEqual(Array.isArray(rows) ? catalog[key].slice(0, rows.length) : catalog[key], rows, key);
   }
   for (const key of ['objectives', 'statements', 'competencies', 'indicators', 'skills', 'alignments', 'prerequisites', 'mentorTexts', 'rubrics', 'cards']) {
-    assert.deepEqual(catalog[key], baseline[key], key);
+    assert.deepEqual(key === 'cards' ? catalog.cards.slice(0, baseline.cards.length) : catalog[key], baseline[key], key);
   }
   assert.deepEqual(SOURCE_COVERAGE_CONTRACT.slice(0, baselineContract.length), baselineContract);
 });
 
 test('exactly two lessons, twelve conceptual checks and two distinct manual cases are appended', () => {
   for (const [key, rows] of Object.entries({...module, sources: packet.sources, reviewEvents: reviews})) {
-    assert.deepEqual(catalog[key].slice(baseline[key].length), rows, key);
+    assert.deepEqual(catalog[key].slice(baseline[key].length, baseline[key].length + rows.length), rows, key);
   }
   assert.equal(module.lessons.length, 2);
   assert.equal(checks.length, 12);
@@ -165,7 +165,7 @@ test('assisted staged instruction is substantial and creates no seeded learning 
 
 test('the original eight statements have narrow explicit v3 scopes and remaining gaps', () => {
   assert.equal(COVERAGE_CONTRACT_VERSION, 3);
-  const bindings = SOURCE_COVERAGE_CONTRACT.slice(baselineContract.length);
+  const bindings = SOURCE_COVERAGE_CONTRACT.slice(baselineContract.length, baselineContract.length + 14);
   const originalStatements = baseline.statements.filter(s => /^mtel56\.obj\.000[23]\./.test(s.id));
   assert.equal(originalStatements.length, 8);
   assert.deepEqual([...new Set(bindings.map(b => b.statementId))].sort(), originalStatements.map(s => s.id).sort());
@@ -214,7 +214,7 @@ test('portable recipe appends idempotently and rejects same-version conflicts or
   assert.ok(testRoot.startsWith(workspace + sep), 'Temporary fixture root must remain inside this repository');
   const dir = mkdtempSync(resolve(testRoot, '.authoring-check-'));
   try {
-    const names = ['author-seed.ts', ...['obj0001', 'obj0002-0003'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])];
+    const names = ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])];
     for (const name of names) copyFileSync(resolve('content', name), resolve(dir, name));
     const path = resolve(dir, 'catalog.json');
     writeFileSync(path, JSON.stringify(baseline, null, 2) + '\n');

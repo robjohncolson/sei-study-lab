@@ -1,0 +1,148 @@
+/** Derived audit of the installed starter content, not official wording or human review.
+ * Every binding samples only the named scope. No binding asserts complete instruction.
+ * Lessons have no version field, so their payload fingerprint also invalidates stale links.
+ */
+export type CoverageBinding = {
+  statementId: string;
+  statementVersion: string | number;
+  sourceVersionId: string;
+  sourceVersion: string | number;
+  scope: string;
+  remainingGap: string;
+  lessons: {lessonId: string; fingerprint: string}[];
+  tasks: {taskId: string; taskVersion: string | number; skillId: string}[];
+};
+
+export const INTEGRATION_REFERRAL_ID = 'mtel56.obj.0013.reference.0001-0012';
+export const COVERAGE_CONTRACT_VERSION = 3;
+const sourceVersionId = 'source.framework.2026-11-08';
+const lesson = (lessonId: string, fingerprint: string) => ({lessonId, fingerprint});
+const tasks = (skillId: string, ids: string[]): CoverageBinding['tasks'] =>
+  ids.map(taskId => ({taskId: `task.${taskId}`, taskVersion: 1, skillId: `sei.skill.${skillId}`}));
+const binding = (statementId: string, scope: string, remainingGap: string, lessons: CoverageBinding['lessons'], taskRefs: CoverageBinding['tasks']): CoverageBinding =>
+  ({statementId, statementVersion: 1, sourceVersionId, sourceVersion: '2026-11-08', scope, remainingGap, lessons, tasks: taskRefs});
+
+export const SOURCE_COVERAGE_CONTRACT: readonly CoverageBinding[] = [
+  binding('mtel56.obj.0001.ds.01',
+    'Shared classroom responsibility and communicating content/language observations to colleagues.',
+    'These short examples do not establish comprehensive implementation across educator roles and settings.',
+    [lesson('lesson.shared', '10ec0e2e')],
+    tasks('shared-responsibility', ['shared-plan', 'team-evidence', 'shared-recall', 'case-new-student'])),
+  binding('mtel56.obj.0001.ds.01',
+    'Shared content/ESL responsibility, evidence-sharing, and preserving ESL instruction alongside sheltered content; voluntary informed parent opt-out is distinct.',
+    'These bounded classroom and team decisions do not establish comprehensive implementation across educator roles and settings.',
+    [lesson('lesson.obj0001.identification-shared.v1', '94eb964a')],
+    tasks('shared-responsibility', ['obj0001.shared-services', 'obj0001.community-archive-case'])),
+  binding('mtel56.obj.0001.ds.03',
+    'Survey versus proficiency, family communication preferences, and evidence-responsive support for current/former ELs; recognizing the need to verify policy.',
+    'Full statutes/IDEA, current exit thresholds and detailed reclassification criteria, accommodation rules, and broader operational guidance remain gaps. This slice establishes neither a complete identification procedure nor all legal coverage.',
+    [lesson('lesson.identification', '8c09a860')],
+    [...tasks('identification', ['survey-purpose', 'translation-preference', 'survey-recall', 'case-new-student']),
+      ...tasks('current-former', ['former-support', 'policy-date', 'policy-recall', 'case-former-el'])]),
+  binding('mtel56.obj.0001.ds.03',
+    'Protocol-qualified survey/screening/determination/placement; separate family communication access; determination/placement notice and records; opt-out versus status; January 2026 guidance four-year FEL monitoring (supplied retrieval 2026-11-08); language acquisition versus disability principles from February 2019 guidance.',
+    'Full statutes/IDEA, current exit thresholds and detailed reclassification criteria, accommodation rules, and broader operational guidance remain gaps. This slice establishes neither a complete identification procedure nor all legal coverage.',
+    [lesson('lesson.obj0001.identification-shared.v1', '94eb964a')],
+    [...tasks('identification', ['obj0001.evidence-chain', 'obj0001.family-access', 'obj0001.notice-record', 'obj0001.language-disability', 'obj0001.community-archive-case']),
+      ...tasks('current-former', ['obj0001.opt-out', 'obj0001.fel-support'])]),
+  binding('mtel56.obj.0006.ds.01',
+    'Oral rehearsal as one bridge into written explanations.',
+    'The wider role of listening comprehension and oral language across the curriculum is not fully instructed or assessed.',
+    [lesson('lesson.academic', '84927e7a')],
+    tasks('oral-to-writing', ['rehearsal-bridge', 'rehearsal-evidence', 'rehearsal-recall', 'case-water'])),
+  binding('mtel56.obj.0008.ds.01',
+    'Distinguishing conversational fluency from the academic language needed for mathematical explanation.',
+    'Differentiation across grade, proficiency, and literacy levels remains broader than these examples.',
+    [lesson('lesson.academic', '84927e7a')],
+    tasks('academic-language', ['social-academic', 'academic-recall'])),
+  binding('mtel56.obj.0008.ds.05',
+    'Connected explanations, modeled language, and oral rehearsal into writing in mathematics/science examples.',
+    'The range of academic-language methods, vocabulary instruction, and participation in classroom discourse remains incomplete.',
+    [lesson('lesson.academic', '84927e7a')],
+    [...tasks('academic-language', ['language-levels']), ...tasks('oral-to-writing', ['rehearsal-bridge', 'rehearsal-evidence', 'rehearsal-recall', 'case-water'])]),
+  binding('mtel56.obj.0009.ds.03',
+    'Formative use of classroom evidence and separating content reasoning from English control.',
+    'Assessment types, portfolios, grading practices, performance assessment, and proficiency-specific interpretation are only partially represented.',
+    [lesson('lesson.assessment', 'a764cb9e')],
+    tasks('assessment-purpose', ['grammar-content', 'formative-use', 'formative-recall', 'case-former-el'])),
+  binding('mtel56.obj.0009.ds.04',
+    'Interpreting uneven language-domain profiles instead of assuming equal strengths from one overall result.',
+    'ACCESS/MCAS purposes, reporting, administration, and interpretation require dedicated source-backed instruction; domain recall alone does not test these.',
+    [lesson('lesson.assessment', 'a764cb9e')],
+    tasks('domain-profiles', ['uneven-profile', 'domain-demand', 'domains-recall', 'case-water'])),
+  binding('mtel56.obj.0009.ds.05',
+    'Reducing classroom language barriers while preserving the content reasoning demanded by a task.',
+    'Proficiency-specific assessment differentiation and current permitted standardized-test accommodations remain unsupported.',
+    [lesson('lesson.scaffolding', 'b43d34f3')],
+    tasks('rigorous-scaffolds', ['preserve-demand', 'fade-support', 'scaffold-recall', 'case-former-el'])),
+  binding(INTEGRATION_REFERRAL_ID,
+    'Two authored mentor-text tasks sample integrated lesson planning in five custom parts.',
+    'This referral points to objectives 0001–0012. Two derived writing tasks neither cover all those statements nor supply official Parts II–V; authoritative writing adjudication remains unavailable.',
+    [], tasks('integrated-writing', ['writing.mentor.math-plans', 'writing.mentor.science-streams'])),
+  // Additive scopes: a task observation supports only its own named distinction.
+  // The eleven legacy bindings above retain their exact scope/fingerprint payloads.
+  binding('mtel56.obj.0002.ds.01',
+    'Distinguishing overlapping newcomer/refugee/SLIFE/LTEL labels without inferring an individual profile; the June 2023 toolkit newcomer window is publisher-specific.',
+    'Disabilities, migrants, undocumented status, socioeconomic circumstances and the full range of special-population services remain outside this sampled label distinction.',
+    [lesson('lesson.obj0002.diversity.v1', 'e29e5ac7')],
+    tasks('identification', ['obj0002.label-overlap'])),
+  binding('mtel56.obj.0002.ds.01',
+    'Recognizing incomplete June 2024 Massachusetts SLIFE Exhibit 1 conditions when prior formal schooling is unknown, and seeking that information for holistic support planning.',
+    'This finite distinction is not a completed individual identification procedure, eligibility determination, or instruction in every special population.',
+    [], tasks('identification', ['obj0002.slife-criteria'])),
+  binding('mtel56.obj.0002.ds.01',
+    'Distinguishing possible SLIFE characteristics, including approximately two years below grade level, from mandatory Exhibit 1 identification criteria.',
+    'Actual student strengths and needs require individual observations; this check does not establish diagnostic or support-planning competence for every SLIFE student.',
+    [], tasks('identification', ['obj0002.slife-characteristics'])),
+  binding('mtel56.obj.0002.ds.01',
+    'Interpreting source-specific LTEL usage without an ESEA statutory definition and considering instructional access instead of presumed inability.',
+    'Local identification rules, program evaluation, longitudinal student evidence and every special population remain beyond this bounded source comparison.',
+    [], tasks('current-former', ['obj0002.ltel-access'])),
+  binding('mtel56.obj.0002.ds.02',
+    'Selecting instruction from observed individual assets and schooling/language profiles while preserving a common content reasoning goal.',
+    'This classroom choice does not survey all social/cultural/educational experiences or establish an individual learner profile without observation.',
+    [lesson('lesson.obj0002.diversity.v1', 'e29e5ac7')],
+    tasks('rigorous-scaffolds', ['obj0002.profile-planning'])),
+  binding('mtel56.obj.0002.ds.03',
+    'Choosing privacy-preserving trauma-informed access and optional support without forced disclosure or clinical diagnosis.',
+    'Full service systems, clinical care, disability procedures and external referral arrangements require additional sources and professional judgment.',
+    [lesson('lesson.obj0002.diversity.v1', 'e29e5ac7')],
+    tasks('shared-responsibility', ['obj0002.privacy-support'])),
+  binding('mtel56.obj.0002.ds.04',
+    'Asking about individual learning experiences and making classroom participation expectations explicit without assigning national learning styles.',
+    'This awareness example does not comprehensively teach inductive/deductive approaches, cultural frameworks, or their effects across settings.',
+    [lesson('lesson.obj0002.diversity.v1', 'e29e5ac7')],
+    tasks('shared-responsibility', ['obj0002.learning-expectations'])),
+  binding('mtel56.obj.0003.ds.01',
+    'Using surface/deep culture and differing participation expectations as inquiry tools without treating a nationality as a cultural type.',
+    'Broader cultural adaptation, socioeconomic differences, literacy views and individual experiences require further instruction and observation.',
+    [lesson('lesson.obj0003.culture-partnerships.v1', 'dd4e2250')],
+    tasks('shared-responsibility', ['obj0003.culture-inquiry'])),
+  binding('mtel56.obj.0003.ds.02',
+    'Using voluntarily shared home-language and community resources in an inclusive classroom learning task.',
+    'A single resource-use decision does not establish inclusive practice across curriculum, classrooms, language profiles or home-school transitions.',
+    [lesson('lesson.obj0003.culture-partnerships.v1', 'dd4e2250')],
+    tasks('shared-responsibility', ['obj0003.language-resources'])),
+  binding('mtel56.obj.0003.ds.03',
+    'Recognizing family strengths and varied contributions to learning without equating PTA attendance with care.',
+    'Transnational/separated family constellations and their individual experiences are not comprehensively taught or assessed by this participation example.',
+    [lesson('lesson.obj0003.culture-partnerships.v1', 'dd4e2250')],
+    tasks('shared-responsibility', ['obj0003.family-participation'])),
+  binding('mtel56.obj.0003.ds.04',
+    'Selecting appropriate competent interpretation for family communication; bilingual ability alone does not establish interpreter competence.',
+    'This source-backed distinction does not teach complete legal compliance, interpreter training, or current ELPAC numerical requirements.',
+    [lesson('lesson.obj0003.culture-partnerships.v1', 'dd4e2250')],
+    tasks('shared-responsibility', ['obj0003.competent-interpretation'])),
+  binding('mtel56.obj.0003.ds.04',
+    'Separating family language-access preferences from the student EL-status determination while communicating essential information accessibly.',
+    'Family preference alone establishes neither student status nor a full profile; complete language-access procedures and partnership practice remain broader.',
+    [], tasks('identification', ['obj0003.preference-status'])),
+  binding('mtel56.obj.0002.ds.02',
+    'Planning and justifying differentiated access for two synthetic newcomer schooling/asset profiles, with uncertainty and an observation plan; open response remains pending judgment.',
+    'An unfamiliar case label supplies no independent or transfer proof; real individual assessment, service decisions and wider population knowledge remain gaps.',
+    [], tasks('rigorous-scaffolds', ['obj0002.contrasting-schooling-case'])),
+  binding('mtel56.obj.0003.ds.04',
+    'Planning an inclusive synthetic school-community partnership with family choice, competent language access, shared decisions, uncertainty and justification; open response remains pending judgment.',
+    'The plan is provisional/manual practice, not evidence of enacted partnership quality, complete statutory coverage or current ELPAC numerical compliance.',
+    [], tasks('shared-responsibility', ['obj0003.partnership-case'])),
+];

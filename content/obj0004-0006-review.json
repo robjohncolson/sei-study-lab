@@ -1,0 +1,739 @@
+{
+  "schemaVersion": 1,
+  "packetId": "obj0004-0006.supplied.2026-11-08.v1",
+  "suppliedPacketProvenance": "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+  "reviewLimits": "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery.",
+  "reviewFindings": [
+    "Repaired literal question-mark encoding damage to supplied punctuation, copyright cue, accent in investigacion, and grade-band dashes; reread every supporting excerpt against the packet.",
+    "Added omitted supplied S2 point-in-time snapshot wording and everyday/cross-disciplinary/technical language cue so the source inventory directly supports the lesson and snapshot card.",
+    "Recorded S1 forms/functions and polysemy cues as supplied-packet notes rather than invented official item quotations; S5 multiple-meaning comparison is likewise labeled as a packet note.",
+    "Clarified that the oral-practice excerpt block is jointly supplied under S5/S6; S8 retains only inventory metadata and supplies no instructional or card authority.",
+    "Bound the sound-versus-word-part item capacity/rigor rejection to S2 as well as S1 terminology; added the S1 environment citation to Objective 0006 feedback timing.",
+    "Strengthened the museum-profile case with two observation opportunities and a comparison that changes topic familiarity and visual support, requiring priorities and justified uncertainty rather than repetition of the worked profile.",
+    "Reviewed all 13 keys, all 39 wrong-option rationales, three staged lessons, three distinct manual cases, six card backs, and the narrow lesson-only coverage claims. No automatic grading, learner evidence, unsupported tier rules, fixed acquisition clocks or human-review promotion was introduced."
+  ],
+  "reviewEvents": [
+    {
+      "id": "review.obj0004-0006.source.source.obj0004-0006.s1.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0004-0006.s1.2026-11-08",
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Verified all sixteen 0004/0005/0006 statement strings against the unchanged inventory (4/6/6); forms/functions and polysemy notes preserve only the supplied reasoning cue, not published exam items.",
+        "Compared exact supplied URL, edition/date cue, retrievedAt 2026-11-08 date-only, America/New_York, supplied binary hash or explicit null, excerpt wording and provenance limits.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "3512642cee21a0a841c98fce85afe52654039f2bea3d24c3f26b426de334e6ef",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.source.source.obj0004-0006.s2.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0004-0006.s2.2026-11-08",
+      "sourceVersionId": "source.obj0004-0006.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared 2020 dimensions, non-linear topic/audience/situation contingencies, point-in-time domain snapshots and inapplicable PLD uses. Added the missing supplied snapshot and language-variety excerpts; no cognitive classification or restriction of rigorous access is authorized.",
+        "Compared exact supplied URL, edition/date cue, retrievedAt 2026-11-08 date-only, America/New_York, supplied binary hash or explicit null, excerpt wording and provenance limits.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "75080ddea9a23ffbd2161b8d54d0f155431a21aa759dbb882fe4dffd0d466b5a",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.source.source.obj0004-0006.s3.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0004-0006.s3.2026-11-08",
+      "sourceVersionId": "source.obj0004-0006.s3.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s3.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared the supplied 2019 assets, engagement, individual-experience, multimodality, awareness and repertoire excerpts. No learning-style matching or causal ranking is derived.",
+        "Compared exact supplied URL, edition/date cue, retrievedAt 2026-11-08 date-only, America/New_York, supplied binary hash or explicit null, excerpt wording and provenance limits.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "649f20171ffbeadfbaded61b54798e42e4fd9b45c28a99750fed3c8fed3c435f",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.source.source.obj0004-0006.s4.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0004-0006.s4.2026-11-08",
+      "sourceVersionId": "source.obj0004-0006.s4.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s4.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared Key Uses K-12 examples of what learners can do with language; the separate S10 snapshot supplies the standards-supplement and not-yet-2020 caution.",
+        "Compared exact supplied URL, edition/date cue, retrievedAt 2026-11-08 date-only, America/New_York, supplied binary hash or explicit null, excerpt wording and provenance limits.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "8663198591551fa8d1ffcc3028a8e3e4997079cec5668b135ea46acef72cd45e",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.source.source.obj0004-0006.s5.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0004-0006.s5.2026-11-08",
+      "sourceVersionId": "source.obj0004-0006.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared April 2014 NCEE 2014-4012 K-8 Recommendations 1/2 and Strong ratings, including Rec 2 content-acquisition qualification, vocabulary categories, cognates, false-cognate checking, morphology and idioms. No effect sizes or Beck tier rules are invented.",
+        "Compared exact supplied URL, edition/date cue, retrievedAt 2026-11-08 date-only, America/New_York, supplied binary hash or explicit null, excerpt wording and provenance limits.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "5fd9d9db6b33d693398ae827940a3708c244eeaa36dafe27a06db3b155ec1fee",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.source.source.obj0004-0006.s6.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0004-0006.s6.2026-11-08",
+      "sourceVersionId": "source.obj0004-0006.s6.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared 2022 tips metadata and the jointly supplied S5/S6 daily talk, visual-anchor, explicit vocabulary and small-set excerpts; attribution limits remain explicit.",
+        "Compared exact supplied URL, edition/date cue, retrievedAt 2026-11-08 date-only, America/New_York, supplied binary hash or explicit null, excerpt wording and provenance limits.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "03027aac09994134fd58afdb2cad5d7f2f620f3f7381a7f010f582be8dcc46ce",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.source.source.obj0004-0006.s7.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0004-0006.s7.2026-11-08",
+      "sourceVersionId": "source.obj0004-0006.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared rigorous grade-level sheltered content, standards in tandem, language across disciplines, dedicated ESL skill areas and no removal from core SEI for ESL. No service minutes or acquisition deadline is derived.",
+        "Compared exact supplied URL, edition/date cue, retrievedAt 2026-11-08 date-only, America/New_York, supplied binary hash or explicit null, excerpt wording and provenance limits.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "caeb142a97c5a49aedd793864b95a9e64a9c46c697ae88e97927f2874b0535d1",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.source.source.obj0004-0006.s8.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0004-0006.s8.2026-11-08",
+      "sourceVersionId": "source.obj0004-0006.s8.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s8.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared URL, companion role and supplied binary hash only. No substantive excerpt was supplied, and no lesson, task or card cites this source as instructional support.",
+        "Compared exact supplied URL, edition/date cue, retrievedAt 2026-11-08 date-only, America/New_York, supplied binary hash or explicit null, excerpt wording and provenance limits.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "9a6ca34d740299ea3fab8f6914cf7b823270414dbd3e92074bc2ef0463009be8",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.source.source.obj0004-0006.s9.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0004-0006.s9.2026-11-08",
+      "sourceVersionId": "source.obj0004-0006.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared the supplied DESE footnote quoting reciprocal native-language/English academic development. No new statutory interpretation, universal timeline or all-positive transfer claim is derived.",
+        "Compared exact supplied URL, edition/date cue, retrievedAt 2026-11-08 date-only, America/New_York, supplied binary hash or explicit null, excerpt wording and provenance limits.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "b2592d5f37c88774636d2a1440f02903c8aa5cb726df43586f94a7d6cbb5c468",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.source.source.obj0004-0006.s10.2026-11-08.v1",
+      "entityType": "source",
+      "entityId": "source.obj0004-0006.s10.2026-11-08",
+      "sourceVersionId": "source.obj0004-0006.s10.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Compared the supplied live overview caution: Can Dos supplement standards and have not yet been updated to the 2020 Edition. They are not equated with 2020 Language Expectations.",
+        "Compared exact supplied URL, edition/date cue, retrievedAt 2026-11-08 date-only, America/New_York, supplied binary hash or explicit null, excerpt wording and provenance limits.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "c0c3466f888bb1fb875b6131a599cbd2a70aa646f3d1c8f07f3a046f54215b44",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.lesson.lesson.obj0004.forms-transfer.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0004.forms-transfer.v1",
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Reviewed content/language goals, authored linguistic explanations, three reasoned examples and assisted pauses. S1 terminology is explicitly unpacked in original examples; S2 dimensions and S3/S5/S9 resources support bounded form/function/register and transfer decisions. No unsupported named language-pair rules. Remaining full-linguistics and writing-convention gaps are explicit.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "d89d96738f3cc38d4bed0006140620b6105628dcf66b9ccc7cf1abddce647788",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.lesson.lesson.obj0005.profiles-environments.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0005.profiles-environments.v1",
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s4.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s9.2026-11-08",
+        "source.obj0004-0006.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Reviewed domain-at-a-time language descriptions, six inventory level names, social/academic and interdependence planning constructs, non-linear development, influences without deterministic ranking, risk-friendly rigor, calibrated feedback and SCI/ESL coordination. All three worked comparisons and guided checks remain static; 5ds03/05 scopes teach individual resources/opportunity questions while causal and sociopolitical mechanisms remain gaps.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "883ff126c7aa437c3e803e44ba785c879d86378dfe0a4473514572f7336eac00",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.lesson.lesson.obj0006.vocabulary-talk.v1.v1",
+      "entityType": "lesson",
+      "entityId": "lesson.obj0006.vocabulary-talk.v1",
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Reviewed K-8 scope and both Strong recommendation ratings, small multi-day vocabulary set, meaningful listening and oral/written integration, verified cognate/false-cognate decisions, morphology and contextual polysemy. Word choices and duration are authored illustrations. The semantic-map example is an authored option only; technology and activity-effectiveness claims remain gaps.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "582c843e692d99f33c089c4fdcf4ea8502c2a11158005e7bf1ba8194b4154ff2",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0004.sound-or-part.v1",
+      "entityType": "task",
+      "entityId": "task.obj0004.sound-or-part",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T1 key b: sound contrast versus meaningful prefix. Distractors swap units, substitute syntax, or infer fixed capacity; rationales now bind the last rejection to S2 rigorous-access and cognitive-description boundaries.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "479794d522c4718525722c17a704aebeba29af5990e33ac2630e09f04d896327",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0004.argument-forms.v1",
+      "entityType": "task",
+      "entityId": "task.obj0004.argument-forms",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T2 key d: claim/evidence and qualification fit an argument with conflicting observations. Distractors use universal sequencing, noun-only study or unjustified certainty; each rationale follows purpose or S2 dimensions.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "e05eae8a336d21a865cfe021b5a2f4bc9a9f323c37712ce1f7ae01562fcf5d86",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0004.audience-register.v1",
+      "entityType": "task",
+      "entityId": "task.obj0004.audience-register",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T3 key a: clarify context and formality for new readers while retaining evidence. Distractors infer personality, alter evidence or deny audience effects. No nationality/cultural-type inference.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "cb669d2e58bf3e64ecd62899021bd857cac5a4e1d00e2c97b6b5370c886f837c",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0004.cognate-resource.v1",
+      "entityType": "task",
+      "entityId": "task.obj0004.cognate-resource",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s9.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T4 key c: verify the supplied investigacion/investigation connection in context and retain alternatives. Distractors assume all languages share cognates, prohibit L1 resources or equate recognition with full comprehension.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "963827c4aa07c2529311e2882d0225a8cfb29d55e9563dce96571e924648cea2",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0004.false-friend.v1",
+      "entityType": "task",
+      "entityId": "task.obj0004.false-friend",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T5 key b: contrast the checked meanings in context without discarding L1 resources. Different meanings are synthetic given facts, not invented facts about a named language pair.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "a98b3ffbb405aff0ae4d785c065bbddaffebd1cffed850b1264b505697905947",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0005.domain-profile.v1",
+      "entityType": "task",
+      "entityId": "task.obj0005.domain-profile",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T6 key d: preserve complex source access, support observed writing demands, and gather other domain evidence. All distractors violate domain or access boundaries; family.domain-concept retains starter correlation.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "93bfcfe56c85a90781efe90f5769ca6037b69b5e92ae6f0c125e35a67a2a5b29",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0005.pld-boundary.v1",
+      "entityType": "task",
+      "entityId": "task.obj0005.pld-boundary",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T7 key a: reject PLD-only cognitive/placement inference while retaining rigorous access and wider evidence. Distractors infer inability, rule out disability or substitute tracking. family.obj0001.language-disability preserves related prior exposure.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "45c37345c263e5804fdfcac1eae906261d371831507ba52363c3dc96363079ce",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0005.non-linear.v1",
+      "entityType": "task",
+      "entityId": "task.obj0005.non-linear",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T8 key c: compare topic/audience/situation/supports across samples. No permanent regression, sole motivation cause, causal ranking or social-to-academic shortcut follows.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "3a966149ca057fdd14f74a767abae46d4f60a49d558f0db94324f5aa2398e4ac",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0005.risk-and-rigor.v1",
+      "entityType": "task",
+      "entityId": "task.obj0005.risk-and-rigor",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T9 key b: retain comparison reasoning, reduce participation risk and calibrate feedback by phase. Distractors remove challenge, interrupt every form or permanently prohibit correction; starter scaffold family retained.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "d37d920f4fff72e0eacd6292a99318a8420e7b6144832fedffcd2b7318065b22",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0006.word-sequence.v1",
+      "entityType": "task",
+      "entityId": "task.obj0006.word-sequence",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T10 key d: intensive small set with varied activities over days in grade 6. Distractors use one-off lists, invented tier rules or no revisiting. Strong rating and K-8 scope remain qualified.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "1ab51db4d7504179487623b6101b58aff63f15e23092cd4dfb6136a694c4ab67",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0006.content-talk.v1",
+      "entityType": "task",
+      "entityId": "task.obj0006.content-talk",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T11 key a: content-source partner explanation/paraphrase and written comparison. Distractors use silence, unrelated talk or exact imitation as independent reasoning. Starter oral-writing family retained.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "702675d1bb726340505d850f9086727cd2cc04965e86bdb0374b5b0092c23a28",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0006.polysemy.v1",
+      "entityType": "task",
+      "entityId": "task.obj0006.polysemy",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T12 key c: compare the two supplied contextual meanings of measure. Distractors assert one meaning, invented rare-word tier or pronunciation-only remediation. Source packet notes distinguish the supplied cue from an official item quotation.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "8ee26d6e8369a3b7fc4a16ba1796b7e83a1b443258a1f2f5ed7d00c836e5aae6",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0005.sci-esl.v1",
+      "entityType": "task",
+      "entityId": "task.obj0005.sci-esl",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s7.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "T13 key b: preserve core SEI inquiry, teach content language and coordinate dedicated ESL. Distractors postpone content, cancel ESL or separate language from content absolutely. Starter shared-responsibility family retained.",
+        "Independently compared the key and each of the three wrong-option explanations with the supplied source-specific support; finite discrimination only, with no deficit auto-inference.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "bc05af263b4ec57266918e85ac4647e4ff073c77a55ed7c66195de16185e7390",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0004.audience-argument-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0004.audience-argument-case",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Reviewed unfamiliar source-uncertainty analysis, unsupported chronology, and two justified audience passages. Combining audience/register with evidence qualification is required; listing terms or sequencing words cannot determine judgment.",
+        "No answerKey or options; response remains needs_review/provisional/manual. Unfamiliarity, keywords and model comparison do not establish independent or transfer evidence.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "99ebcddf5835b02c8327fc432eca0f0b6893585a93ed571a399c6960a1fefcbd",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0005.museum-profile-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0005.museum-profile-case",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s2.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s4.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08",
+        "source.obj0004-0006.s9.2026-11-08",
+        "source.obj0004-0006.s10.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Reviewed uneven domain evidence, changed context, competing invalid plans and service coordination. Added two-observation prioritization and a confounded recording comparison so the response must justify information gathering and uncertainty, not copy the worked profile.",
+        "No answerKey or options; response remains needs_review/provisional/manual. Unfamiliarity, keywords and model comparison do not establish independent or transfer evidence.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "a68c6effbeb10a71e5677ffcaf61f626bdd8e2eaaafe0761ed01340220e75d43",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.task.task.obj0006.civic-vocabulary-case.v1",
+      "entityType": "task",
+      "entityId": "task.obj0006.civic-vocabulary-case",
+      "taskVersion": 1,
+      "sourceVersionId": "source.obj0004-0006.s1.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s1.2026-11-08",
+        "source.obj0004-0006.s3.2026-11-08",
+        "source.obj0004-0006.s5.2026-11-08",
+        "source.obj0004-0006.s6.2026-11-08",
+        "source.obj0004-0006.s7.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Reviewed connected multi-day planning, cognate/false-cognate/polysemy/morphology decisions, listening and written transfer, uncertain word familiarity and a later change to opening-hours information. Neither a fixed word list nor activity count is a grading key.",
+        "No answerKey or options; response remains needs_review/provisional/manual. Unfamiliarity, keywords and model comparison do not establish independent or transfer evidence.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "4222579732831225d23266e80cd4f9f6854aedbd3c42d56a19b8edcf8fef355c",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.card.card.obj0004.language-dimensions.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0004.language-dimensions.v1",
+      "sourceVersionId": "source.obj0004-0006.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Back precisely paraphrases the supplied S2 discourse, sentence and word/phrase contributions; recall support only.",
+        "Compared source excerpt locators: dimensions. Exact native card shape and objective/skill/version tags retained; cards do not create learner evidence.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "493ef33d41bc2aac5986f853a67a0b15c4fdb23a73573af8a4532a669c890731",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.card.card.obj0004.cognate-check.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0004.cognate-check.v1",
+      "sourceVersionId": "source.obj0004-0006.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Back retains cognate potential, unequal cross-language availability and checking false cognates from S5; no universal language-pair guarantee.",
+        "Compared source excerpt locators: cognates, false-cognates. Exact native card shape and objective/skill/version tags retained; cards do not create learner evidence.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "d81a4d38917c6dfe0f14a6962696d214f1ad5ca84404525a31f8e409e470ec82",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.card.card.obj0005.domain-snapshot.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0005.domain-snapshot.v1",
+      "sourceVersionId": "source.obj0004-0006.s2.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s2.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Back combines S2 point-in-time snapshots, cross-domain variation, no learner categorization and the cognitive-description prohibition.",
+        "Compared source excerpt locators: snapshot-time, snapshot-description, domain-snapshot, inapplicable-examples. Exact native card shape and objective/skill/version tags retained; cards do not create learner evidence.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "f6d5a99da838fc6e12183666dd5d21e2ece73130338b630c51bc15abd23646ec",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.card.card.obj0005.academic-interdependence.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0005.academic-interdependence.v1",
+      "sourceVersionId": "source.obj0004-0006.s9.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s9.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Back accurately paraphrases the reciprocal academic-language relationship in the supplied S9 WIDA quotation; no years-to-fluency claim.",
+        "Compared source excerpt locators: l1-l2. Exact native card shape and objective/skill/version tags retained; cards do not create learner evidence.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "808c510df7c65c5242c38757a7899b33df1e949580898d61415c2bf73d32050d",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.card.card.obj0006.intensive-vocabulary.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0006.intensive-vocabulary.v1",
+      "sourceVersionId": "source.obj0004-0006.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Front retains April 2014 K-8 scope; back preserves Recommendation 1 intensive multi-day varied activities and Strong rating.",
+        "Compared source excerpt locators: rec1, evidence. Exact native card shape and objective/skill/version tags retained; cards do not create learner evidence.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "3118d1d75bcdca60e45f797efc15445dd13850bad2a91831598a2ec48852bcdf",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    },
+    {
+      "id": "review.obj0004-0006.card.card.obj0006.content-language.v1.v1",
+      "entityType": "card",
+      "entityId": "card.obj0006.content-language.v1",
+      "sourceVersionId": "source.obj0004-0006.s5.2026-11-08",
+      "comparedSourceIds": [
+        "source.obj0004-0006.s5.2026-11-08"
+      ],
+      "reviewerKind": "model",
+      "reviewerLabel": "Codex compat_review agent: separate wording-to-supplied-packet comparison",
+      "checks": [
+        "Front retains April 2014 K-8 scope; back preserves Recommendation 2 oral/written integration and Strong rating with content-acquisition qualification.",
+        "Compared source excerpt locators: rec2, evidence. Exact native card shape and objective/skill/version tags retained; cards do not create learner evidence.",
+        "User supplied packet obj0004-0006.supplied.2026-11-08.v1, independently researched with retrieval date 2026-11-08 America/New_York. Codex did not retrieve URLs, inspect original binaries or independently verify the supplied binary SHA-256 values.",
+        "Separate model wording/key/distractor/source comparison against the supplied packet only; not human review, independent source verification, full-document inspection, current-law certification or evidence of learner mastery."
+      ],
+      "payloadSha256": "6f7f01d30b1f906e4f8be050bd61bc46c775a29f246c9d016b25b4c654b45757",
+      "createdAt": "2026-11-09T14:00:25.076Z"
+    }
+  ]
+}

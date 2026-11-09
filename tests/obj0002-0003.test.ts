@@ -19,7 +19,7 @@ const sources = (read('content/obj0002-0003-sources.json') as Pick<Catalog, 'sou
 const reviews = (read('content/obj0002-0003-review.json') as Pick<Catalog, 'reviewEvents'>).reviewEvents;
 const checks = module.tasks.filter(t => t.kind === 'mc');
 const cases = module.tasks.filter(t => t.kind === 'case');
-const scopeBindings = SOURCE_COVERAGE_CONTRACT.slice(baseContract.length);
+const scopeBindings = SOURCE_COVERAGE_CONTRACT.slice(baseContract.length, baseContract.length + 14);
 const task = (id: string) => module.tasks.find(t => t.id === id)!;
 const empty = (): PlannerState => ({attempts: [], judgments: [], evidenceEvents: [], drafts: []});
 const canonical = (value: unknown) => JSON.stringify(value, (_key, v: unknown) => v && typeof v === 'object' && !Array.isArray(v)
@@ -40,13 +40,15 @@ describe('Objective 0002/0003 exact additive content and bounded review', () => 
       const current = catalog[key as keyof Catalog];
       expect(Array.isArray(rows) ? (current as unknown[]).slice(0, rows.length) : current, key).toEqual(rows);
     }
-    for (const key of ['objectives', 'statements', 'competencies', 'indicators', 'alignments', 'skills', 'prerequisites', 'mentorTexts', 'rubrics', 'cards'] as const) expect(catalog[key], key).toEqual(baseline[key]);
+    for (const key of ['objectives', 'statements', 'competencies', 'indicators', 'alignments', 'skills', 'prerequisites', 'mentorTexts', 'rubrics', 'cards'] as const) {
+      expect(key === 'cards' ? catalog.cards.slice(0, baseline.cards.length) : catalog[key], key).toEqual(baseline[key]);
+    }
     expect(catalog.tasks.filter(t => t.kind === 'writing')).toEqual(baseline.tasks.filter(t => t.kind === 'writing'));
     expect(SOURCE_COVERAGE_CONTRACT.slice(0, baseContract.length)).toEqual(baseContract);
-    expect(catalog.lessons.slice(baseline.lessons.length)).toEqual(module.lessons);
-    expect(catalog.tasks.slice(baseline.tasks.length)).toEqual(module.tasks);
-    expect(catalog.sources.slice(baseline.sources.length)).toEqual(sources);
-    expect(catalog.reviewEvents.slice(baseline.reviewEvents.length)).toEqual(reviews);
+    expect(catalog.lessons.slice(baseline.lessons.length, baseline.lessons.length + module.lessons.length)).toEqual(module.lessons);
+    expect(catalog.tasks.slice(baseline.tasks.length, baseline.tasks.length + module.tasks.length)).toEqual(module.tasks);
+    expect(catalog.sources.slice(baseline.sources.length, baseline.sources.length + sources.length)).toEqual(sources);
+    expect(catalog.reviewEvents.slice(baseline.reviewEvents.length, baseline.reviewEvents.length + reviews.length)).toEqual(reviews);
   });
 
   it('has exactly twelve concept checks and two nuanced cases across two scaffolded lessons', () => {
@@ -180,7 +182,14 @@ describe('Objective 0002/0003 exact additive content and bounded review', () => 
       for (const ref of binding.lessons) expect(ref.fingerprint).toBe(lessonFingerprint(module.lessons.find(l => l.id === ref.lessonId)!));
     }
     const report = deriveCoverage(catalog);
-    expect(report.totals).toMatchObject({objectiveCount: 13, statementCount: 60, bulletCount: 59, referralCount: 1, mappedStatementCount: 9,
+    // Retain this module's exact aggregate assertions at its installed prefix.
+    const sliceReport = deriveCoverage({...catalog,
+      lessons: catalog.lessons.slice(0, baseline.lessons.length + module.lessons.length),
+      tasks: catalog.tasks.slice(0, baseline.tasks.length + module.tasks.length),
+      sources: catalog.sources.slice(0, baseline.sources.length + sources.length),
+      reviewEvents: catalog.reviewEvents.slice(0, baseline.reviewEvents.length + reviews.length),
+    }, undefined, SOURCE_COVERAGE_CONTRACT.slice(0, baseContract.length + 14));
+    expect(sliceReport.totals).toMatchObject({objectiveCount: 13, statementCount: 60, bulletCount: 59, referralCount: 1, mappedStatementCount: 9,
       partialInstructionCount: 16, reviewedPracticeCount: 17, sourceCheckedTaskCount: 51, humanReviewedTaskCount: 0, independentEvidenceCount: 0, gapCount: 60});
     for (const statement of official) {
       const row = report.statements.find(s => s.statementId === statement.id)!;
@@ -200,7 +209,7 @@ describe('Objective 0002/0003 evidence boundaries and authoring safety', () => {
     // Validate before try so the cleanup guard cannot replace a test failure.
     if (!resolve(dir).startsWith(testRoot + sep)) throw new Error('Unsafe authoring test cleanup target');
     try {
-      for (const name of ['author-seed.ts', ...['obj0001', 'obj0002-0003'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])]) {
+      for (const name of ['author-seed.ts', ...['obj0001', 'obj0002-0003', 'obj0004-0006'].flatMap(prefix => [`${prefix}-sources.json`, `${prefix}-module.json`, `${prefix}-review.json`])]) {
         copyFileSync(resolve('content', name), resolve(dir, name));
       }
       const path = resolve(dir, 'catalog.json');

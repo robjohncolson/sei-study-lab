@@ -24,7 +24,7 @@ test('all installed records and exact official inventories survive unchanged', (
     assert.deepEqual(catalog[key].slice(0, value.length), value, key);
   }
   for (const key of ['objectives', 'statements', 'competencies', 'indicators', 'skills', 'alignments', 'prerequisites', 'cards', 'mentorTexts', 'rubrics']) {
-    assert.deepEqual(catalog[key], base[key], key);
+    assert.deepEqual(key === 'cards' ? catalog.cards.slice(0, base.cards.length) : catalog[key], base[key], key);
   }
   assert.equal(catalog.objectives.length, 13);
   assert.equal(catalog.statements.length, 60);

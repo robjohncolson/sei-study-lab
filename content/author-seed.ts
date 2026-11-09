@@ -12,17 +12,18 @@ const canonical = (value: unknown): string => JSON.stringify(value, (_key, v: un
     ? Object.fromEntries(Object.entries(v).sort(([a], [b]) => a.localeCompare(b))) : v);
 const payloadHash = (row: RecordRow) => createHash('sha256').update(canonical(row)).digest('hex');
 const catalog = read('./catalog.json');
-const modules = ['obj0001', 'obj0002-0003'].map(name => ({
+const modules = ['obj0001', 'obj0002-0003', 'obj0004-0006'].map(name => ({
   ...read(`./${name}-sources.json`),
   ...read(`./${name}-module.json`),
   reviewEvents: read(`./${name}-review.json`).reviewEvents,
-})) as {sources: RecordRow[]; lessons: RecordRow[]; tasks: RecordRow[]; reviewEvents: RecordRow[]}[];
+})) as {sources: RecordRow[]; lessons: RecordRow[]; tasks: RecordRow[]; cards?: RecordRow[]; reviewEvents: RecordRow[]}[];
 const sources = modules.flatMap(m => m.sources);
 const lessons = modules.flatMap(m => m.lessons);
 const tasks = modules.flatMap(m => m.tasks);
+const cards = modules.flatMap(m => m.cards ?? []);
 const reviewEvents = modules.flatMap(m => m.reviewEvents);
 
-for (const [kind, rows] of [['source', sources], ['lesson', lessons], ['task', tasks]] as const) {
+for (const [kind, rows] of [['source', sources], ['lesson', lessons], ['task', tasks], ['card', cards]] as const) {
   for (const row of rows) {
     const review = reviewEvents.find(e => e.entityType === kind && e.entityId === row.id);
     if (!review || review.reviewerKind !== 'model' || review.payloadSha256 !== payloadHash(row)) {
@@ -35,7 +36,7 @@ for (const [kind, rows] of [['source', sources], ['lesson', lessons], ['task', t
 
 // A source ID is itself a snapshot key; tasks also have an explicit version.
 // Refuse every same-key conflict rather than rewriting evidence used by history.
-const additions = {sources, lessons, tasks, reviewEvents};
+const additions = {sources, lessons, tasks, cards, reviewEvents};
 for (const [table, rows] of Object.entries(additions)) {
   const installed = catalog[table] as RecordRow[];
   for (const row of rows) {
@@ -46,4 +47,4 @@ for (const [table, rows] of Object.entries(additions)) {
   }
 }
 writeFileSync(new URL('./catalog.json', import.meta.url), JSON.stringify(catalog, null, 2) + '\n');
-console.log('Appended reviewed Objective 0001 and 0002/0003 slices; all installed records preserved.');
+console.log('Appended reviewed Objective 0001, 0002/0003 and 0004/0005/0006 slices; all installed records preserved.');

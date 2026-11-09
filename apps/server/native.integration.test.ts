@@ -58,10 +58,10 @@ describe('native review API, isolated in-memory databases', () => {
     const initialize = () => app.inject({ method: 'POST', url: '/api/native-flashcards/initialize', headers: protectedHeaders });
     const enrolled = await initialize();
     expect(enrolled.statusCode).toBe(200);
-    expect(enrolled.json()).toEqual({ initialized: 12 });
+    expect(enrolled.json()).toEqual({ initialized: catalog.cards.length });
     const queue = (await app.inject({ url: '/api/native-flashcards', headers })).json<NativeQueueResponse>();
-    expect(queue.queue).toHaveLength(12);
-    expect(new Set(queue.queue.map(item => item.card.id)).size).toBe(12);
+    expect(queue.queue).toHaveLength(catalog.cards.length);
+    expect(new Set(queue.queue.map(item => item.card.id)).size).toBe(catalog.cards.length);
     expect(queue.queue.every(item => item.version === 1 && item.schedule.due === now.toISOString())).toBe(true);
     now = new Date('2026-11-10T00:00:00.000Z');
     // Repeating the command also covers retry after its response was lost.
