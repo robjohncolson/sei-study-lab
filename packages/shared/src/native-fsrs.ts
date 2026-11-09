@@ -110,6 +110,16 @@ export type NativeQueueItem = {
   missing: boolean;
   schedule: NativeLibraryCard;
 };
+/** Read-only counts from enrolled projections, before applying the queue limit. */
+export type FlashcardSummary = {
+  initialized: boolean;
+  total: number;
+  due: number;
+  new: number;
+  learning: number;
+  review: number;
+  held: number;
+};
 export type NativeQueueResponse = {
   serverNow: string;
   reviewsSynchronized: false;
@@ -117,6 +127,7 @@ export type NativeQueueResponse = {
   queue: NativeQueueItem[];
   held: NativeQueueItem[];
   nextDue: string | null;
+  summary: FlashcardSummary;
 };
 export type NativeQueue = NativeQueueResponse;
 export type NativeReceipt = {

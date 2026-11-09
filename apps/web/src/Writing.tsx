@@ -6,12 +6,12 @@ import {useDraftNavigation,useVersionedDraft} from './DraftNavigation';
 import type {Catalog,EventRow,StudyState,Task} from './types';
 
 type WritingDraft={mentorTextId:string;mentorTextVersion:string|number;mentorTextHash:string;rubricVersionId:string|null;parts:Record<string,string>;plannedMinutes:number;parentAttemptId?:string;startedAt:string;assistance:string[]};
-export function Writing({catalog,state,refresh,initialTaskId='',hosted=false}:{catalog:Catalog;state:StudyState;refresh:()=>Promise<void>;initialTaskId?:string;hosted?:boolean}) {
+export function Writing({catalog,state,refresh,initialTaskId='',initialPartId,hosted=false}:{catalog:Catalog;state:StudyState;refresh:()=>Promise<void>;initialTaskId?:string;initialPartId?:string;hosted?:boolean}) {
   const navigation=useDraftNavigation(),tasks=catalog.tasks.filter(t=>t.kind==='writing');
   const [selected,setSelected]=useState(initialTaskId||tasks[0]?.id||''),task=tasks.find(t=>t.id===selected);
-  return <><PageHeading eyebrow="ONE TEXT · FIVE CONNECTED PARTS" title="Think like a teacher. Write the reasoning." text="This is derived practice using authored mentor texts. The official public sample supplies Part I only; these five prompts are not official exam prompts."/><label htmlFor="writing-task">Practice text and task</label><select className="writing-picker" id="writing-task" value={selected} onChange={e=>{const id=e.target.value;void navigation.leave(()=>setSelected(id));}}>{tasks.map(t=><option key={t.id} value={t.id}>{catalog.mentorTexts.find(m=>m.id===t.mentorTextId)?.title??t.title}</option>)}</select>{task?<WritingSession key={`${task.id}@${task.version}`} task={task} catalog={catalog} state={state} refresh={refresh} hosted={hosted}/>:<section className="panel"><h2>Writing scaffold pending</h2><p>No reviewed writing task is available in this catalog.</p></section>}</>;
+  return <><PageHeading eyebrow="ONE TEXT · FIVE CONNECTED PARTS" title="Think like a teacher. Write the reasoning." text="This is derived practice using authored mentor texts. The official public sample supplies Part I only; these five prompts are not official exam prompts."/><label htmlFor="writing-task">Practice text and task</label><select className="writing-picker" id="writing-task" value={selected} onChange={e=>{const id=e.target.value;void navigation.leave(()=>setSelected(id));}}>{tasks.map(t=><option key={t.id} value={t.id}>{catalog.mentorTexts.find(m=>m.id===t.mentorTextId)?.title??t.title}</option>)}</select>{task?<WritingSession key={`${task.id}@${task.version}`} task={task} catalog={catalog} state={state} refresh={refresh} initialPartId={selected===initialTaskId?initialPartId:undefined} hosted={hosted}/>:<section className="panel"><h2>Writing scaffold pending</h2><p>No reviewed writing task is available in this catalog.</p></section>}</>;
 }
-function WritingSession({task,catalog,state,refresh,hosted}:{task:Task;catalog:Catalog;state:StudyState;refresh:()=>Promise<void>;hosted:boolean}) {
+function WritingSession({task,catalog,state,refresh,initialPartId,hosted}:{task:Task;catalog:Catalog;state:StudyState;refresh:()=>Promise<void>;initialPartId?:string;hosted:boolean}) {
   const navigation=useDraftNavigation(),mentor=catalog.mentorTexts.find(m=>m.id===task.mentorTextId),rubric=catalog.rubrics.find(r=>r.id===task.rubricVersionId||`${r.id}@${r.version}`===task.rubricVersionId),parts=task.parts??[];
   const initial:WritingDraft={mentorTextId:mentor?.id??'',mentorTextVersion:mentor?.version??'',mentorTextHash:mentor?.sha256??'',rubricVersionId:task.rubricVersionId??null,parts:Object.fromEntries(parts.map(p=>[p.id,''])),plannedMinutes:60,startedAt:new Date().toISOString(),assistance:[]};
   const decode=(value:unknown):WritingDraft|null=>{
@@ -21,7 +21,7 @@ function WritingSession({task,catalog,state,refresh,hosted}:{task:Task;catalog:C
   };
   const draft=useVersionedDraft<WritingDraft>({taskId:task.id,taskVersion:task.version,initial,decode,recoveredText:'Draft recovered with the same mentor text and task version.',emptyText:'Ready to begin.',savedText:'All five parts saved on this device.'});
   const {parts:answers,plannedMinutes:minutes,parentAttemptId}=draft.data;
-  const [partId,setPartId]=useState(parts[0]?.id??''),[error,setError]=useState(''),[busy,setBusy]=useState(false),[submitted,setSubmitted]=useState(false);
+  const [partId,setPartId]=useState(parts.find(p=>p.id===initialPartId)?.id??parts[0]?.id??''),[error,setError]=useState(''),[busy,setBusy]=useState(false),[submitted,setSubmitted]=useState(false);
   const submission=useRef<Promise<void>|null>(null);
   useEffect(()=>navigation.register({flush:async()=>{if(submission.current)await submission.current;},dirty:()=>submission.current!==null}),[navigation.register]);
   const save=()=>{void draft.flush().catch(()=>{});};

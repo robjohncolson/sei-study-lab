@@ -45,6 +45,7 @@ describe('native immutable flashcard storage', () => {
     db.exec('PRAGMA query_only=ON');
     expect(store.queue().queue).toEqual([]);
     expect(store.queue().held).toEqual([]);
+    expect(store.queue().summary).toEqual({ initialized: false, total: 0, due: 0, new: 0, learning: 0, review: 0, held: 0 });
     expect(store.history()).toEqual([]);
     expect(store.hasHistory()).toBe(false);
     expect(snapshot()).toEqual(empty);
@@ -54,7 +55,34 @@ describe('native immutable flashcard storage', () => {
     db.exec('PRAGMA query_only=ON');
     expect(store.queue().queue).toHaveLength(1);
     expect(store.queue().queue[0].version).toBe(1);
+    expect(store.queue().summary).toEqual({ initialized: true, total: 1, due: 1, new: 1, learning: 0, review: 0, held: 0 });
     expect(snapshot()).toEqual(enrolled);
+  });
+
+  it('summarizes all available FSRS states and held cards before limiting the read-only queue', () => {
+    const { db, store, catalog, advance } = setup(['new', 'learning', 'review', 'relearning', 'stale', 'suspended', 'missing']);
+    const initial = store.queue().queue;
+    const item = (id: string) => initial.find(entry => entry.card.id === id)!;
+    store.review(review(item('learning'), { rating: 1 }));
+    store.review(review(item('review'), { rating: 4 }));
+    store.review(review(item('relearning'), { rating: 4 }));
+    store.control(control(item('suspended'), 'suspend'));
+    catalog.cards.find(card => card.id === 'stale')!.front = 'Changed synthetic front';
+    catalog.cards.splice(catalog.cards.findIndex(card => card.id === 'missing'), 1);
+    const later = '2026-11-25T00:00:00.000Z';
+    advance(later);
+    const relearning = store.queue().queue.find(entry => entry.card.id === 'relearning')!;
+    const receipt = store.review(review(relearning, { rating: 1, startedAt: later, revealedAt: later, clientNow: later }));
+    expect(receipt.schedule.state).toBe(3);
+    advance('2026-11-26T00:00:00.000Z');
+    const snapshot = () => ['native_flashcard_events', 'native_flashcard_projections', 'native_card_versions', 'native_scheduler_configs']
+      .map(table => db.prepare(`SELECT * FROM ${table}`).all());
+    const before = snapshot();
+    db.exec('PRAGMA query_only=ON');
+    const result = store.queue(1);
+    expect(result.queue).toHaveLength(1);
+    expect(result.summary).toEqual({ initialized: true, total: 7, due: 4, new: 1, learning: 2, review: 1, held: 3 });
+    expect(snapshot()).toEqual(before);
   });
 
   it('enrolls each new catalog card only on an explicit idempotent initialization', () => {

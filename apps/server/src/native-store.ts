@@ -258,8 +258,13 @@ export class NativeStore {
     const learningFirst = (item: NativeQueueItem) => item.schedule.state === 1 || item.schedule.state === 3 ? 0 : 1;
     due.sort((a, b) => learningFirst(a) - learningFirst(b) || ordinal(a.schedule.due, b.schedule.due) || ordinal(a.card.id, b.card.id));
     const future = available.filter(item => Date.parse(item.schedule.due) > Date.parse(now)).map(item => item.schedule.due).sort();
+    const held = items.filter(item => item.stale || item.suspended || item.missing);
+    const summary = { initialized: items.length > 0, total: items.length, due: due.length,
+      new: available.filter(item => item.schedule.state === 0).length,
+      learning: available.filter(item => item.schedule.state === 1 || item.schedule.state === 3).length,
+      review: available.filter(item => item.schedule.state === 2).length, held: held.length };
     return { serverNow: now, config, reviewsSynchronized: false, queue: due.slice(0, limit),
-      held: items.filter(item => item.stale || item.suspended || item.missing), nextDue: future[0] ?? null };
+      held, nextDue: future[0] ?? null, summary };
   }
 
   /** No catalog or current clock participates: init and control anchors are events. */

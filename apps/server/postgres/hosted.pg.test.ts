@@ -105,6 +105,43 @@ describe('hosted foundation on a disposable real Postgres database', () => {
     expect((await run(owner, catalog, store => store.queue())).reviewsSynchronized).toBe(false);
   });
 
+  it('returns an uninitialized or complete native summary with SELECT-only queue reads', async () => {
+    const owner = randomUUID(), catalog = syntheticCatalog(7);
+    const queue = (now = t0) => withOwnerTransaction(harness.pool, claims(owner), async client => {
+      const queries = vi.spyOn(client, 'query');
+      try {
+        const result = await new PostgresNativeStore(client, owner, catalog, () => new Date(now)).queue(1);
+        for (const [sql] of queries.mock.calls) expect(sql).toMatch(/^\s*SELECT\b/i);
+        return result;
+      } finally { queries.mockRestore(); }
+    });
+    const empty = await snapshot(owner);
+    expect((await queue()).summary).toEqual({ initialized: false, total: 0, due: 0, new: 0, learning: 0, review: 0, held: 0 });
+    expect(await snapshot(owner)).toEqual(empty);
+    await run(owner, catalog, store => store.initialize());
+    const enrolled = await snapshot(owner);
+    const first = await queue();
+    expect(first.queue).toHaveLength(1);
+    expect(first.summary).toEqual({ initialized: true, total: catalog.cards.length, due: 7, new: 7, learning: 0, review: 0, held: 0 });
+    expect(await snapshot(owner)).toEqual(enrolled);
+
+    const items = (await run(owner, catalog, store => store.queue())).queue;
+    await run(owner, catalog, store => store.review(review(items[1], t0, { rating: 1 })));
+    await run(owner, catalog, store => store.review(review(items[2], t0, { rating: 4 })));
+    await run(owner, catalog, store => store.review(review(items[3], t0, { rating: 4 })));
+    await run(owner, catalog, store => store.control(control(items[5], 'suspend')));
+    catalog.cards[4].front = 'Changed synthetic front';
+    catalog.cards.splice(6, 1);
+    const later = '2026-11-25T00:00:00.000Z';
+    const relearning = (await run(owner, catalog, store => store.queue(), later)).queue.find(item => item.card.id === items[3].card.id)!;
+    const receipt = await run(owner, catalog, store => store.review(review(relearning, later, { rating: 1 })), later);
+    expect(receipt.schedule.state).toBe(3);
+    const before = await snapshot(owner);
+    expect((await queue('2026-11-26T00:00:00.000Z')).summary)
+      .toEqual({ initialized: true, total: 7, due: 4, new: 1, learning: 2, review: 1, held: 3 });
+    expect(await snapshot(owner)).toEqual(before);
+  });
+
   it.each(['store', 'public HTTP'] as const)('enrolls only appended catalog cards through %s without rewriting earlier reviews or projections', async mode => {
     const owner = randomUUID(), catalog = syntheticCatalog(3);
     const originalIds = catalog.cards.map(card => card.id);
