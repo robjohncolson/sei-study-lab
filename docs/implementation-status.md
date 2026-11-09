@@ -1,5 +1,12 @@
 ﻿# Implementation status and actual verification
 
+The hosted storage/auth foundation is additive behind `STORAGE_MODE=postgres`;
+SQLite remains the default. It supports native flashcards and owner identity only,
+with private-schema Postgres migrations and an isolated real-Postgres test suite.
+No history upload, hosted browser login, or deployment is included. Dependencies
+are absent in this sandbox, so runtime verification remains with the coordinator.
+See [hosted architecture, provisioning, hash checks, and limits](hosted-mode.md).
+
 The native flashcard slice is implemented on top of clean base `9d977577844f65eb9d4895d3d01666774eec3beb`, with the supplied exact ts-fsrs 5.4.2 manifest patch. **Its library-dependent checks are unrun in Athena:** dependencies are absent, and typecheck/lint/test cannot start. No install was attempted. The successful counts below are historical, not validation of the native slice. See [native changes, available smoke checks, and preservation blockers](native-flashcards.md). Native JSON interchange is deferred and legacy export is blocked after deck initialization; consistent SQLite backup preserves accepted native history.
 
 | Slice | Working result | Remaining limits |
