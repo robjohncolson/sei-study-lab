@@ -9,17 +9,18 @@ async function mockDesk(page:Page,options:{catalog?:Catalog;initialDrafts?:{task
   const testCatalog=options.catalog??catalog;
   const drafts=new Map<string,{taskId:string;taskVersion:string|number;answer:unknown}>();
   for(const d of options.initialDrafts??[])drafts.set(`${d.taskId}@${d.taskVersion}`,d);
-  const attempts:Record<string,unknown>[]=[],judgments:Record<string,unknown>[]=[],external:string[]=[],imports:unknown[]=[];
+  const attempts:Record<string,unknown>[]=[],judgments:Record<string,unknown>[]=[],external:string[]=[],imports:unknown[]=[],writes:string[]=[];
   const controls={failSaves:false,delaySaveMs:0,delayLoadMs:0,failAfterSubmit:false,delaySubmitMs:0};
   await page.route('**/*',async route=>{
     const url=new URL(route.request().url());
     if(url.hostname!=='127.0.0.1'&&url.hostname!=='localhost'){external.push(url.href);await route.abort();return;}
     if(!url.pathname.startsWith('/api/')){await route.continue();return;}
+    if(route.request().method()!=='GET')writes.push(`${route.request().method()} ${url.pathname}`);
     const body=route.request().method()==='GET'?undefined:route.request().postDataJSON() as Record<string,unknown>;
     let result:unknown={};
     if(url.pathname==='/api/session')result={csrfToken:'test-only-session-token'};
     else if(url.pathname==='/api/catalog')result=testCatalog;
-    else if(url.pathname==='/api/state')result={attempts,judgments,evidenceEvents:[],taskVersions:testCatalog.tasks};
+    else if(url.pathname==='/api/state')result={attempts,judgments,evidenceEvents:[],taskVersions:testCatalog.tasks,drafts:[...drafts.values()]};
     else if(url.pathname.startsWith('/api/drafts/')){
       const taskId=decodeURIComponent(url.pathname.split('/').at(-1)!),task=testCatalog.tasks.find(t=>t.id===taskId)!;
       if(body){
@@ -38,7 +39,7 @@ async function mockDesk(page:Page,options:{catalog?:Catalog;initialDrafts?:{task
     else if(url.pathname==='/api/export')result={schemaVersion:1,attempts,judgments,evidenceEvents:[]};
     await route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(result)});
   });
-  return {drafts,attempts,external,imports,controls};
+  return {drafts,attempts,external,imports,controls,writes};
 }
 test('practice supports keyboard selection, hints, and recovered answers without external requests',async({page})=>{
   const service=await mockDesk(page);
@@ -221,4 +222,55 @@ test('navigation waits for submission metadata and blocks when its draft save fa
   expect(service.attempts).toHaveLength(1);service.controls.failSaves=false;
   await page.getByRole('button',{name:'Standards map',exact:false}).click();await expect(page.locator('.coverage-list>details')).toHaveCount(13);
   const task=catalog.tasks.find(t=>t.kind==='mc')!;expect(service.drafts.get(`${task.id}@${task.version}`)?.answer).toMatchObject({parentAttemptId:'attempt-0'});
+});
+
+test('session recommendations have separate tracks and support keyboard launch without evidence writes',async({page})=>{
+  const service=await mockDesk(page);await page.goto('/');
+  const plan=page.getByRole('region',{name:'A short next session'});
+  await expect(plan).toBeVisible();
+  for(const track of ['RETRIEVAL','APPLICATION_TRANSFER','WRITING'])await expect(plan.locator(`[data-track="${track}"]`)).toHaveCount(1);
+  await expect(plan.getByText('Retrieval',{exact:true})).toBeVisible();
+  await expect(plan.getByText('Application / transfer',{exact:true})).toBeVisible();
+  await expect(plan.getByText('Writing',{exact:true})).toBeVisible();
+  const launch=plan.getByRole('button',{name:'Open recommended retrieval task',exact:true});
+  await launch.focus();await page.keyboard.press('Enter');
+  await expect(page.locator('.practice-card')).toBeVisible();
+  expect(service.attempts).toEqual([]);expect(service.writes).toEqual([]);expect(service.external).toEqual([]);
+});
+
+test('session override opens the chosen existing writing task without fabricated attempts',async({page})=>{
+  const service=await mockDesk(page),task=catalog.tasks.filter(t=>t.kind==='writing')[1]!;
+  await page.goto('/');
+  await page.getByLabel('Choose any existing task',{exact:true}).selectOption(task.id);
+  const open=page.getByRole('button',{name:'Open chosen task',exact:true});await open.focus();await page.keyboard.press('Enter');
+  await expect(page.getByLabel('Practice text and task',{exact:true})).toHaveValue(task.id);
+  await expect(page.locator('#writing-answer')).toBeEnabled();
+  expect(service.attempts).toEqual([]);expect(service.drafts.size).toBe(0);expect(service.writes).toEqual([]);expect(service.external).toEqual([]);
+});
+
+test('returning to the desk refreshes held assisted drafts before recommending independent work',async({page})=>{
+  const changed=structuredClone(catalog),task=changed.tasks.find(t=>t.kind==='mc')!;
+  changed.tasks=[task];
+  const service=await mockDesk(page,{catalog:changed});await page.goto('/');
+  await page.getByRole('button',{name:'Begin a practice check'}).click();
+  await page.getByRole('radio').first().check();
+  await page.getByRole('button',{name:'Use a hint',exact:true}).click();
+  await expect(page.getByRole('status')).toContainText('Draft saved');
+  await page.getByRole('button',{name:'Study desk',exact:false}).click();
+  const retrieval=page.getByRole('region',{name:'A short next session'}).locator('[data-track="RETRIEVAL"]');
+  await expect(retrieval).toContainText(/draft|assisted/i);
+  expect(service.attempts).toEqual([]);
+  expect(service.drafts.get(`${task.id}@${task.version}`)?.answer).toMatchObject({hintCount:1});
+});
+
+test('standards show every objective gap and distinguish the integration referral denominator',async({page})=>{
+  const service=await mockDesk(page);await page.goto('/');
+  const gaps=page.getByRole('button',{name:'See statement gaps',exact:true});await gaps.focus();await page.keyboard.press('Enter');
+  const objectives=page.locator('.coverage-list>details');await expect(objectives).toHaveCount(13);
+  for(const objective of await objectives.all())await expect(objective.locator('summary').first()).toContainText(/gap/i);
+  await expect(page.getByRole('main')).toContainText('59 official descriptive bullets');
+  await expect(page.getByRole('main')).toContainText('1 integration referral');
+  const integration=objectives.filter({hasText:'0013'});await integration.locator('summary').first().click();
+  await expect(integration).toContainText('mtel56.obj.0013.reference.0001-0012');
+  expect(service.attempts).toEqual([]);expect(service.external).toEqual([]);
 });
