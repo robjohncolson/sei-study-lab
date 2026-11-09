@@ -1,0 +1,8 @@
+{
+  "framework": null,
+  "buildCommand": "vite build --config apps/web/vite.config.ts",
+  "outputDirectory": "dist/web",
+  "installCommand": "npm ci --ignore-scripts",
+  "rewrites": [{ "source": "/api/:path*", "destination": "/api/[...path]" }],
+  "functions": { "api/[...path].ts": { "maxDuration": 15 } }
+}

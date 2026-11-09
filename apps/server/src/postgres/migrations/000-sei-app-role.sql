@@ -16,10 +16,20 @@ BEGIN
   END IF;
   IF EXISTS (
     SELECT FROM pg_catalog.pg_auth_members AS m
-    JOIN pg_catalog.pg_roles AS r ON r.oid = m.member OR r.oid = m.roleid
+    JOIN pg_catalog.pg_roles AS r ON r.oid = m.member
     WHERE r.rolname = 'sei_app'
   ) THEN
-    RAISE EXCEPTION 'sei_app must not have role memberships or member roles';
+    RAISE EXCEPTION 'sei_app must not have role memberships';
+  END IF;
+  -- PostgreSQL 16+ automatically grants a new role to a non-superuser creator
+  -- (for example Supabase's postgres operator). Allow only that operator.
+  IF EXISTS (
+    SELECT FROM pg_catalog.pg_auth_members AS m
+    JOIN pg_catalog.pg_roles AS r ON r.oid = m.roleid
+    WHERE r.rolname = 'sei_app' AND m.member <> (
+      SELECT oid FROM pg_catalog.pg_roles WHERE rolname = current_user)
+  ) THEN
+    RAISE EXCEPTION 'sei_app must not have member roles other than the provisioning operator';
   END IF;
 END
 $role$;
