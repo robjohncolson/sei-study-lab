@@ -65,7 +65,7 @@ export function registerAiRoutes(app: FastifyInstance, options: {
   app.post('/api/ai-feedback', {
     // Node's requestTimeout covers receiving the request. Extend the socket's idle
     // timeout for this route's bounded 50-second provider operation when listening.
-    onRequest: async (request, reply) => { request.raw.setTimeout?.(60_000); reply.raw.setTimeout?.(60_000); },
+    onRequest: async (request, reply) => { try { if (typeof request.raw.socket?.setTimeout === 'function') { request.raw.setTimeout?.(60_000); reply.raw.setTimeout?.(60_000); } } catch { /* Best-effort when listening; serverless platforms enforce their own duration. */ } },
   }, safe(async (request, reply) => {
     if (!request.body || typeof request.body !== 'object' || !('consent' in request.body) || request.body.consent !== true) {
       return reply.code(400).send({ error: 'Explicit consent is required for each request' });
