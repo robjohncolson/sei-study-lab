@@ -10,11 +10,15 @@ import { JsonSchema } from './types.js';
 import { approveProposal, createHandoff, inspectProposal } from './handoff.js';
 import { NativeStoreError } from './native-store.js';
 import { exportAnkiTsv } from './anki.js';
+import { readAiConfig } from './ai/ai-config.js';
+import { registerAiRoutes, type AiServerOptions } from './ai/ai-routes.js';
+import { SqliteAiStorage } from './ai/sqlite-ai-storage.js';
 export { exportAnkiTsv } from './anki.js';
 
 const ImportBody=z.object({payload:z.unknown(),confirm:z.literal(true).optional()}).strict();
 const ProposalBody=z.object({proposal:z.unknown(),confirm:z.literal(true).optional()}).strict();
-export async function createSeiServer(options:{dbPath?:string;catalog?:Catalog;serveWeb?:boolean;testPorts?:{api:number;web:number};clock?:()=>Date}={}){
+export async function createSeiServer(options:{dbPath?:string;catalog?:Catalog;serveWeb?:boolean;testPorts?:{api:number;web:number};clock?:()=>Date;ai?:AiServerOptions}={}){
+  const aiConfig=readAiConfig(options.ai?.env);
   const ports=z.object({api:z.number().int().min(1024).max(65535),web:z.number().int().min(1024).max(65535)}).strict().refine(p=>p.api!==p.web,'Test API and web ports must differ').parse(options.testPorts??{api:4317,web:5173});
   if(options.testPorts&&!options.dbPath)throw new Error('Alternate test ports require an explicit isolated test database');
   const hosts=new Set([`127.0.0.1:${ports.api}`,`127.0.0.1:${ports.web}`,`localhost:${ports.api}`,`localhost:${ports.web}`]);
@@ -74,6 +78,7 @@ export async function createSeiServer(options:{dbPath?:string;catalog?:Catalog;s
   app.post('/api/handoff',async(req)=>createHandoff(store,req.body));
   app.post('/api/proposals/preview',async(req)=>{const body=ProposalBody.parse(req.body);const p=inspectProposal(store,body.proposal);return {valid:true,proposal:p.proposal,warning:p.warning};});
   app.post('/api/proposals/approve',async(req)=>{const body=ProposalBody.parse(req.body);if(body.confirm!==true)throw new Error('Explicit local approval is required');return approveProposal(store,body.proposal);});
+  registerAiRoutes(app,{config:aiConfig,storage:()=>new SqliteAiStorage(store,options.clock),local:true,fetch:options.ai?.fetch,clock:options.clock});
   if(options.serveWeb){await app.register(fastifyStatic,{root:resolve(ROOT,'dist/web'),index:'index.html'});app.setNotFoundHandler((req,reply)=>req.url.startsWith('/api/')?reply.code(404).send({error:'Unknown API route'}):reply.sendFile('index.html'));}
   await app.ready();return app;
 }

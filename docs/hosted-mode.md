@@ -37,10 +37,21 @@ back. Bundled tasks are inserted if absent per owner; conflicting entities with
 the same ID/version fail. State includes older `sei.task_versions`. Reading study
 state/drafts can seed new bundled versions; native queue GET/HEAD stays read-only.
 
+Optional [DeepSeek essay feedback](ai-feedback.md) is available in both hosted
+auth modes when configured on the server. Writing requires an exact-data preview
+and fresh consent for each request; saving its unofficial proposal is a separate
+action. Public visitors share the owner's daily AI budget. The local Grok handoff
+is unchanged, and hosted Exchange keeps handoff/proposal sections hidden. Apply
+operator migration `003-sei-ai-feedback.sql` after 000–002 before enabling this
+feature. Its configuration, privacy notice, reservation accounting and verification
+limits are documented in the linked guide. The coordinator must separately raise
+the hosting function duration to accommodate the 50-second provider timeout;
+deployment configuration is unchanged here.
+
 Native flashcards still use the shared scheduler and ts-fsrs 5.4.2, immutable
 reviews, per-owner client-event idempotency, and replayable projections. Reviews
-do not establish readiness or transfer evidence. No models, AnkiConnect,
-telemetry, external assets, or automatic history transfers are introduced.
+do not establish readiness or transfer evidence. There are no automatic model
+calls, AnkiConnect, telemetry, external assets, or automatic history transfers.
 
 ## Request and database boundaries
 
@@ -137,7 +148,8 @@ No provisioning or deployment was performed here. For the existing Supabase
 
 1. Review and run `apps/server/src/postgres/migrations/000-sei-app-role.sql` as
    `postgres` through the Supabase SQL editor.
-2. Run `001-sei-hosted.sql`, then `002-sei-study.sql`, from that directory as
+2. Run `001-sei-hosted.sql`, then `002-sei-study.sql`, then
+   `003-sei-ai-feedback.sql`, from that directory as
    `postgres`. Reruns preserve data and restore named policies/triggers/grants.
    These are operator scripts, never startup migrations.
 3. Set `sei_app LOGIN` and a generated password out-of-band. Use transaction
@@ -187,7 +199,7 @@ Default tests add config/public owner-spoof guards, shared-logic parity, and
 side-effect-free entry import. The separate Postgres suite extends the original
 eleven tests with public HTTP study workflows, SQLite state/eligibility parity,
 writing, versioned drafts, rollback/concurrency, isolation, immutable mutation
-rejection, and neighbor denial. The harness applies 000, 001, and 002 twice.
+rejection, and neighbor denial. The harness applies 000, 001, 002, and 003 twice.
 It creates an admin-owned decoy `auth` schema with no functions or PUBLIC/
 `sei_app` grants and asserts that `sei_app` has no USAGE there. Existing owner
 operations, other-owner isolation, absent-claim read/insert denial, and

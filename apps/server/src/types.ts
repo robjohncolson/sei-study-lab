@@ -13,10 +13,12 @@ export const AttemptSchema = z.object({
 }).strict();
 export type Attempt = z.infer<typeof AttemptSchema>;
 export const JudgmentSchema = z.object({
-  id:z.string().uuid(),attemptId:z.string().uuid(),judgeKind:z.enum(['authored_key','local_approved_proposal']),judgeVersion:id,
+  id:z.string().uuid(),attemptId:z.string().uuid(),judgeKind:z.enum(['authored_key','local_approved_proposal','ai_approved_proposal']),judgeVersion:id,
   rubricVersionId:z.string().nullable(),result:z.object({status:z.enum(['correct','incorrect','needs_review']),feedback:z.string(),provisional:z.boolean(),sourceChecked:z.boolean(),proposal:JsonSchema.optional()}).strict(),
   quotedEvidence:z.array(z.string()),uncertaintyReason:z.string().nullable(),supersedesId:z.string().uuid().nullable(),createdAt:utc,
-}).strict();
+}).strict().superRefine((judgment,ctx)=>{
+  if(judgment.judgeKind==='ai_approved_proposal'&&(judgment.result.status!=='needs_review'||judgment.result.provisional!==true||judgment.result.sourceChecked!==false))ctx.addIssue({code:'custom',path:['result'],message:'AI feedback must remain provisional, unchecked and awaiting review'});
+});
 export type Judgment=z.infer<typeof JudgmentSchema>;
 export const EvidenceSchema=z.object({id:z.string().uuid(),attemptId:z.string().uuid(),judgmentId:z.string().uuid(),skillId:id,
   evidenceKind:z.enum(['success','failure','pending']),independence:z.enum(['unaided','assisted']),eligible:z.boolean(),exclusionReason:z.string().nullable(),createdAt:utc,

@@ -15,6 +15,9 @@ import { PostgresStudyError, PostgresStudyStore } from './postgres/study-store.j
 import { createHostedPool, withOwnerTransaction } from './postgres/transaction.js';
 import { StudyValidationError } from './study-logic.js';
 import { JsonSchema } from './types.js';
+import { readAiConfig } from './ai/ai-config.js';
+import { registerAiRoutes, type AiServerOptions } from './ai/ai-routes.js';
+import { PostgresAiStorage } from './ai/postgres-ai-storage.js';
 
 // No secret or server session: the custom header plus exact Origin guard prevents
 // browser cross-origin writes. The server never approves CORS preflights.
@@ -27,11 +30,13 @@ export type HostedServerOptions = {
   key?: JWTVerifyGetKey;
   catalog?: Catalog;
   clock?: () => Date;
+  ai?: AiServerOptions;
 };
 
 /** Hosted routes are isolated from the local store, cookies, CSRF sessions, and runtime files. */
 export async function createHostedSeiServer(options: HostedServerOptions = {}) {
   const config = options.config ?? readHostedConfig(options.env);
+  const aiConfig = readAiConfig(options.ai?.env ?? options.env);
   const catalog = CatalogSchema.parse(options.catalog ?? bundledCatalog);
   if (validateCatalog(catalog).length) throw new Error('Invalid content catalog');
   const verifyOwner = createOwnerVerifier(config, options.key);
@@ -125,6 +130,9 @@ export async function createHostedSeiServer(options: HostedServerOptions = {}) {
     const query = z.object({ cardId: z.string().min(1).max(200).optional() }).strict().parse(request.query);
     return native(request, store => store.history(query.cardId));
   });
+  registerAiRoutes(app, { config: aiConfig,
+    storage: request => new PostgresAiStorage(pool, claimsFor(request), catalog, options.clock),
+    local: false, fetch: options.ai?.fetch, clock: options.clock });
   app.all('/*', async (_request, reply) => reply.code(501).send({ error: 'Not yet available in hosted mode' }));
   await app.ready();
   return app;

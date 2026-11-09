@@ -26,9 +26,9 @@ export class SeiStore {
       const existing=new DatabaseSync(dbPath,{readOnly:true});
       try{
         const known=existing.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name='schema_migrations'").get();
-        if(known&&(!existing.prepare('SELECT version FROM schema_migrations WHERE version=2').get()||!existing.prepare('SELECT version FROM schema_migrations WHERE version=3').get())){
+        if(known&&(!existing.prepare('SELECT version FROM schema_migrations WHERE version=2').get()||!existing.prepare('SELECT version FROM schema_migrations WHERE version=3').get()||!existing.prepare('SELECT version FROM schema_migrations WHERE version=4').get())){
           const backupDir=resolve(dirname(dbPath),'backups');mkdirSync(backupDir,{recursive:true});
-          await backup(existing,resolve(backupDir,`before-migration-003-${Date.now()}-${randomUUID()}.sqlite`));
+          await backup(existing,resolve(backupDir,`before-migration-004-${Date.now()}-${randomUUID()}.sqlite`));
           migrationPrepared=true;
         }
       }finally{existing.close();}
@@ -40,7 +40,7 @@ export class SeiStore {
     this.db=new DatabaseSync(dbPath);
     try{
     const known=this.db.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name='schema_migrations'").get();
-    if(dbPath!==':memory:'&&known&&(!this.db.prepare('SELECT version FROM schema_migrations WHERE version=2').get()||!this.db.prepare('SELECT version FROM schema_migrations WHERE version=3').get())&&!migrationPrepared)throw new Error('Existing database requires a consistent pre-migration backup. Open it with await SeiStore.open().');
+    if(dbPath!==':memory:'&&known&&(!this.db.prepare('SELECT version FROM schema_migrations WHERE version=2').get()||!this.db.prepare('SELECT version FROM schema_migrations WHERE version=3').get()||!this.db.prepare('SELECT version FROM schema_migrations WHERE version=4').get())&&!migrationPrepared)throw new Error('Existing database requires a consistent pre-migration backup. Open it with await SeiStore.open().');
     this.db.exec('PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;');
     this.db.exec(readFileSync(resolve(ROOT,'apps/server/src/migrations/001-initial.sql'),'utf8'));
     this.db.prepare('INSERT OR IGNORE INTO schema_migrations(version,applied_at) VALUES(1,?)').run(utcNow());
@@ -54,6 +54,10 @@ export class SeiStore {
     }
     this.transaction(()=>this.seedCatalog());
     this.native=new NativeStore(this.db,catalog,clock);
+    if(!this.db.prepare('SELECT version FROM schema_migrations WHERE version=4').get())this.transaction(()=>{
+      this.db.exec(readFileSync(resolve(ROOT,'apps/server/src/migrations/004-ai-feedback.sql'),'utf8'));
+      this.db.prepare('INSERT INTO schema_migrations(version,applied_at) VALUES(4,?)').run(utcNow());
+    });
     }catch(error){this.db.close();throw error;}
   }
   close(){this.db.close();}
