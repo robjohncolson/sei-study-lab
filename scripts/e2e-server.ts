@@ -3,8 +3,9 @@ import {createSeiServer} from '../apps/server/src/app.js';
 import {resolve} from 'node:path';
 
 // Test-only ports and database: never attach browser tests to the user's app.
+// Browser tests never inherit a provider key; AI routes are mocked per test.
 const apiPort=4318,webPort=5174;
-const backend=await createSeiServer({dbPath:resolve(`runtime/test-databases/e2e-${Date.now()}.sqlite`),testPorts:{api:apiPort,web:webPort}});
+const backend=await createSeiServer({dbPath:resolve(`runtime/test-databases/e2e-${Date.now()}.sqlite`),testPorts:{api:apiPort,web:webPort},ai:{env:{}}});
 let web:Awaited<ReturnType<typeof createServer>>|undefined;
 try {
   await backend.listen({host:'127.0.0.1',port:apiPort});

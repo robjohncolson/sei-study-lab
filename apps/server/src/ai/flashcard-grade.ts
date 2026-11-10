@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import { z } from 'zod';
 import type { AiMessage } from './feedback-request.js';
-import { canonicalAiJson } from './ai-json.ts';
+import { canonicalAiJson } from './ai-json.js';
 
 export const FLASHCARD_MAX_OUTPUT_TOKENS = 200;
 export const FLASHCARD_ESSAY_REQUEST_RESERVE = 10;
