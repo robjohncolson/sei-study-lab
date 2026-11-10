@@ -146,6 +146,24 @@ describe('AI accounting and approval on disposable real Postgres', () => {
     expect(await storage.usage(day)).toMatchObject({ requests: 3, reservedMicroUsd: 1000, spentMicroUsd: 100 });
   });
 
+  it('settles flashcard usage only in the owning ledger without request history', async () => {
+    const { owner, claims, storage } = await setup();
+    const foreign = new PostgresAiStorage(harness.pool, { sub: randomUUID(), role: 'authenticated' }, catalog, now);
+    expect(await storage.reserve(day, 1000, 1_500_000, 50)).toBe(true);
+    await expect(foreign.settleUsage({ day, reservedMicroUsd: 1000, costMicroUsd: 42, inputTokens: 100, outputTokens: 10 }))
+      .rejects.toMatchObject({ statusCode: 500, message: 'AI feedback accounting could not be completed.' });
+    expect(await storage.usage(day)).toMatchObject({ requests: 1, reservedMicroUsd: 1000, spentMicroUsd: 0 });
+    await storage.settleUsage({ day, reservedMicroUsd: 1000, costMicroUsd: 42, inputTokens: 100, outputTokens: 10 });
+    expect(await storage.usage(day)).toEqual({ requests: 1, reservedMicroUsd: 0, spentMicroUsd: 42, inputTokens: 100, outputTokens: 10 });
+    expect(await foreign.usage(day)).toEqual({ requests: 0, reservedMicroUsd: 0, spentMicroUsd: 0, inputTokens: 0, outputTokens: 0 });
+    await withOwnerTransaction(harness.pool, claims, async client => {
+      expect((await client.query('SELECT * FROM sei.ai_feedback_requests WHERE owner_id=$1', [owner])).rows).toEqual([]);
+    });
+    expect(await storage.reserve(day, 1000, 1_500_000, 50)).toBe(true);
+    await storage.settleUsage({ day, reservedMicroUsd: 1000, costMicroUsd: 1000, inputTokens: 0, outputTokens: 0, retainReservation: true });
+    expect(await storage.usage(day)).toMatchObject({ requests: 2, reservedMicroUsd: 1000, spentMicroUsd: 42 });
+  });
+
   it('appends one provisional judgment on concurrent approval, no evidence, with owner isolation', async () => {
     const { owner, claims, storage, record, submitted } = await setup();
     const request = record();

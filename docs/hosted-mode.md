@@ -51,6 +51,10 @@ native flashcard reads and AI status/preview/request/approval, require a valid
 session. The existing per-owner daily AI budget therefore applies **per account**.
 Signing in on another computer opens that account's hosted study history.
 
+Flashcard closeness status, preview and grading routes at `/api/flashcard-grade`
+also require sign-in in password mode. They use the signed-in owner's existing
+AI usage ledger, shared with essay feedback; this feature needs no migration.
+
 To roll back the login gate, switch `HOSTED_AUTH_MODE` back to `public` while
 retaining `PUBLIC_OWNER_ID`. The original owner's history becomes public again;
 other accounts' histories remain under their separate owner IDs. Migration 004

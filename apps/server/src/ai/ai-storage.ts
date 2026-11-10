@@ -12,12 +12,14 @@ export type AiRequestRecord = {
   costMicroUsd: number; createdAt: string;
 };
 export type AiFinish = { day: string; reservedMicroUsd: number; costMicroUsd: number; inputTokens: number; outputTokens: number; request: AiRequestRecord; retainReservation?: boolean };
+export type AiUsageSettlement = Omit<AiFinish, 'request'>;
 export type AiApproval = { judgment: Judgment; evidenceEvents: Evidence[]; duplicate: boolean };
 export interface AiStorage {
   loadAttempt(attemptId: string): Promise<AiStoredAttempt | null>;
   usage(day: string): Promise<AiDailyUsage>;
   reserve(day: string, estimateMicroUsd: number, budgetMicroUsd: number, requestCap: number): Promise<boolean>;
   finish(value: AiFinish): Promise<void>;
+  settleUsage(value: AiUsageSettlement): Promise<void>;
   approve(requestId: string): Promise<AiApproval>;
 }
 export class AiStorageError extends Error {

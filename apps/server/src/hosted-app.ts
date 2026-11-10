@@ -17,6 +17,7 @@ import { StudyValidationError } from './study-logic.js';
 import { JsonSchema } from './types.js';
 import { readAiConfig } from './ai/ai-config.js';
 import { registerAiRoutes, type AiServerOptions } from './ai/ai-routes.js';
+import { registerFlashcardGradeRoutes } from './ai/flashcard-grade-routes.js';
 import { PostgresAiStorage } from './ai/postgres-ai-storage.js';
 import { AuthError } from './auth/core.js';
 import { AuthService, isPublicAuthRoute } from './auth/service.js';
@@ -149,6 +150,9 @@ export async function createHostedSeiServer(options: HostedServerOptions = {}) {
   registerAiRoutes(app, { config: aiConfig,
     storage: request => new PostgresAiStorage(pool, claimsFor(request), catalog, options.clock),
     local: false, fetch: options.ai?.fetch, clock: options.clock });
+  registerFlashcardGradeRoutes(app, { config: aiConfig, catalog,
+    storage: request => new PostgresAiStorage(pool, claimsFor(request), catalog, options.clock),
+    fetch: options.ai?.fetch, clock: options.clock });
   app.all('/*', async (_request, reply) => reply.code(501).send({ error: 'Not yet available in hosted mode' }));
   await app.ready();
   return app;

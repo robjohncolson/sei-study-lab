@@ -1,13 +1,18 @@
 import type {NativeCardContent,NativeControlInput,NativeQueueItem,NativeReviewInput} from '../../../packages/shared/src/native-fsrs';
+import type {Closeness,RatingSource} from '../../../packages/shared/src/flashcard-grade';
 
 export const FLASHCARD_DRAFT_KEY='sei.native-flashcards.draft.v1';
 export type PendingFlashcardWrite=
   |{kind:'review';request:NativeReviewInput}
   |{kind:'control';request:NativeControlInput};
+export type FlashcardCheck=
+  |{closeness:Closeness|'empty';source:RatingSource;explanation:string|null;suggestedRating:1|2|3|4}
+  |{fallback:true;reason:string};
 export type FlashcardDraft={
   id:string;card:NativeCardContent;cardFingerprint:string;expectedVersion:number;
   response:string;hintCount:number;assistance:string[];startedAt:string;
   revealedAt:string|null;pending:PendingFlashcardWrite|null;heldReason:string|null;
+  check?:FlashcardCheck;
 };
 export type FlashcardRecovery={draft:FlashcardDraft;archivedAt:string;reason:string};
 export type FlashcardDraftFile={schemaVersion:1;active:FlashcardDraft|null;recovery:FlashcardRecovery[]};
@@ -16,9 +21,15 @@ type StoragePort=Pick<Storage,'getItem'|'setItem'>;
 function record(value:unknown):value is Record<string,unknown>{return typeof value==='object'&&value!==null&&!Array.isArray(value);}
 function strings(value:unknown):value is string[]{return Array.isArray(value)&&value.every(item=>typeof item==='string');}
 function instant(value:unknown):value is string{return typeof value==='string'&&Number.isFinite(new Date(value).getTime());}
+function validCheck(value:unknown):value is FlashcardCheck {
+  if(!record(value))return false;
+  if('fallback' in value)return Object.keys(value).length===2&&value.fallback===true&&typeof value.reason==='string'&&value.reason.trim().length>0;
+  return Object.keys(value).length===4&&typeof value.closeness==='string'&&['correct','close','incorrect','empty'].includes(value.closeness)&&typeof value.source==='string'&&['exact','ai','empty','dont_know','manual'].includes(value.source)&&(value.explanation===null||(typeof value.explanation==='string'&&value.explanation.trim().length>0&&value.explanation.length<=300&&!/\p{Cc}/u.test(value.explanation)))&&typeof value.suggestedRating==='number'&&[1,2,3,4].includes(value.suggestedRating);
+}
 function validDraft(value:unknown):value is FlashcardDraft {
   if(!record(value)||typeof value.id!=='string'||!record(value.card)||typeof value.card.id!=='string'||typeof value.card.front!=='string'||typeof value.card.back!=='string'||typeof value.card.source!=='string'||!strings(value.card.tags))return false;
   if(typeof value.cardFingerprint!=='string'||!/^[a-f0-9]{64}$/.test(value.cardFingerprint)||!Number.isInteger(value.expectedVersion)||Number(value.expectedVersion)<1||typeof value.response!=='string'||!Number.isInteger(value.hintCount)||Number(value.hintCount)<0||!strings(value.assistance)||!instant(value.startedAt)||(value.revealedAt!==null&&!instant(value.revealedAt))||(value.heldReason!==null&&typeof value.heldReason!=='string'))return false;
+  if('check' in value&&(!validCheck(value.check)||value.revealedAt===null))return false;
   if(value.pending!==null){
     if(!record(value.pending)||!['review','control'].includes(String(value.pending.kind))||!record(value.pending.request))return false;
     const pending=value.pending.request;

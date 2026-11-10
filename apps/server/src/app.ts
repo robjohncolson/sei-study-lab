@@ -12,6 +12,7 @@ import { NativeStoreError } from './native-store.js';
 import { exportAnkiTsv } from './anki.js';
 import { readAiConfig } from './ai/ai-config.js';
 import { registerAiRoutes, type AiServerOptions } from './ai/ai-routes.js';
+import { registerFlashcardGradeRoutes } from './ai/flashcard-grade-routes.js';
 import { SqliteAiStorage } from './ai/sqlite-ai-storage.js';
 import { AuthError, parseSignupSetting, validateSessionSecret } from './auth/core.js';
 import { AuthService, isPublicAuthRoute } from './auth/service.js';
@@ -109,6 +110,7 @@ export async function createSeiServer(options:{dbPath?:string;catalog?:Catalog;s
   app.post('/api/proposals/preview',async(req)=>{const body=ProposalBody.parse(req.body);const p=inspectProposal(store,body.proposal);return {valid:true,proposal:p.proposal,warning:p.warning};});
   app.post('/api/proposals/approve',async(req)=>{const body=ProposalBody.parse(req.body);if(body.confirm!==true)throw new Error('Explicit local approval is required');return approveProposal(store,body.proposal);});
   registerAiRoutes(app,{config:aiConfig,storage:()=>new SqliteAiStorage(store,options.clock),local:true,fetch:options.ai?.fetch,clock:options.clock});
+  registerFlashcardGradeRoutes(app,{config:aiConfig,catalog,storage:()=>new SqliteAiStorage(store,options.clock),fetch:options.ai?.fetch,clock:options.clock});
   if(options.serveWeb){await app.register(fastifyStatic,{root:resolve(ROOT,'dist/web'),index:'index.html'});app.setNotFoundHandler((req,reply)=>req.url.startsWith('/api/')?reply.code(404).send({error:'Unknown API route'}):reply.sendFile('index.html'));}
   await app.ready();return app;
 }

@@ -2,6 +2,8 @@ import { createHash } from 'node:crypto';
 import { z } from 'zod';
 import { ProposalSchema, validateProposal, type Catalog } from '../../../../packages/shared/src/index.js';
 import type { Attempt } from '../types.js';
+import { canonicalAiJson } from './ai-json.js';
+export { canonicalAiJson } from './ai-json.js';
 
 export const AI_PRIVACY_NOTICE = "Sends this essay, the task, the mentor text and the rubric to DeepSeek. DeepSeek (Hangzhou DeepSeek AI Co.) states that it processes and stores data in the People's Republic of China. Do not include names or student information.";
 export const AI_INVALID_RESPONSE = 'The AI response could not be validated; no feedback was saved. Use manual review.';
@@ -15,13 +17,6 @@ export class AiRequestError extends Error {
 }
 export class AiOutputError extends Error {
   constructor() { super(AI_INVALID_RESPONSE); }
-}
-
-export function canonicalAiJson(value: unknown): string {
-  if (value === null || typeof value !== 'object') return JSON.stringify(value);
-  if (Array.isArray(value)) return `[${value.map(canonicalAiJson).join(',')}]`;
-  const object = value as Record<string, unknown>;
-  return `{${Object.keys(object).sort().map(key => `${JSON.stringify(key)}:${canonicalAiJson(object[key])}`).join(',')}}`;
 }
 
 const CHARACTERISTIC_GUIDANCE: Record<string, string> = {

@@ -1,4 +1,4 @@
-# Optional essay feedback
+# Optional AI feedback
 
 DeepSeek feedback is an optional, provisional, unofficial reading of a preserved
 writing attempt. It does not predict passing, act as an official MTEL scorer, or
@@ -153,6 +153,79 @@ feedback. The hosted AI route permits the provider timeout; the coordinator must
 raise the hosting function duration separately before enabling it. This change
 does not edit deployment configuration, provision credentials, publish, or deploy.
 
+## Flashcard closeness checks
+
+Native Flashcards uses **Check answer** to freeze typed recall and a count-up
+timer, then suggest a scheduling rating. **Continue** saves that rating;
+**Change rating** exposes Again, Hard, Good and Easy as a manual override.
+Reviews remain scheduling records only: AI closeness is unofficial, is not an
+MTEL score, does not establish mastery or independent evidence, and does not
+predict passing. It creates no attempt, judgment, or evidence event.
+
+**Use AI checking for this session** starts unchecked. Enabling it records consent
+in this tab's `sessionStorage` under `sei.flashcard-ai-consent.v1`, retained across
+cards and reloads for that tab session. The notice beside it states:
+
+> Sends this card's prompt, its target answer and your typed recall to DeepSeek. DeepSeek (Hangzhou DeepSeek AI Co.) states that it processes and stores data in the People's Republic of China. Do not include names or student information.
+
+Only the card front, target answer and typed recall reach the provider. Card IDs,
+fingerprints, account/session data, timestamps, assistance and hint metadata stay
+on the application side. **Show exactly what will be sent** previews those three
+fields without calling the provider or spending budget. The server rebuilds the
+payload from the current catalog and verifies both the card fingerprint and a
+model-bound preview hash immediately before a request. An exact normalized match,
+blank recall or **I don't know** needs no provider request. Normalization uses NFC,
+case folding, collapsed whitespace and removed trailing sentence punctuation;
+the original recall is preserved unchanged.
+
+The routes are `GET /api/flashcard-grade/status`,
+`POST /api/flashcard-grade/preview` and `POST /api/flashcard-grade`.
+The last requires explicit consent and a fresh preview hash. With no backend key,
+the local app continues to work and non-exact responses use manual ratings. AI
+failure, invalid output, exhausted limits or a stale preview also leave the
+frozen time, response and target visible with manual rating buttons. The provider
+timeout remains 50 seconds; the browser bounds the check at 55 seconds. Reloading
+a revealed draft never automatically repeats an AI request.
+
+Flashcards share the existing per-owner, per-America/New_York-day
+`ai_feedback_usage` ledger with essays. The default limits remain **$2 and 60
+requests**. A flashcard reservation uses a request ceiling of
+`max(1, dailyRequestCap - 10)` and a budget ceiling of
+`floor(0.75 * dailyBudgetMicroUsd)`. At defaults, the 51st shared request cannot be
+reserved for a flashcard, and flashcards cannot reserve above **$1.50** of shared
+spent plus reserved budget. Essays retain their full 60-request/$2 ceilings;
+these are shared totals, not separate quotas. The atomic storage reservation
+enforces the ceilings under concurrency. Flashcard output and its reservation
+estimate both use **200 output tokens**, without changing essay settings.
+
+Only ledger usage is settled: no raw model output is stored, and no row is added
+to `ai_feedback_requests` because flashcard checks have no attempt reference.
+Reported token usage settles to actual cost; a response without usable usage
+keeps the reservation charged, and a failure before a response costs zero. Failed
+validation still settles provider usage. No database migration is needed.
+
+Elapsed time is derived from the existing `revealedAt - startedAt`. Expected time
+in milliseconds is `clamp(6000, 4000 + words(back) * 800, 40000)`, where words are
+nonempty whitespace-separated tokens. Fast means elapsed time at or below 0.75
+times expected; slow means at or above twice expected; other valid times are
+typical. Invalid or negative elapsed values are treated as typical.
+
+| Recall result | Pace | Suggested rating |
+| --- | --- | --- |
+| Empty, I don't know, or incorrect | Any | Again (1) |
+| Close | Any | Hard (2) |
+| Correct | Slow | Hard (2) |
+| Correct | Typical | Good (3) |
+| Correct | Fast | Easy (4) |
+
+Pasted text, consulted materials, a study hint, or any positive hint count caps
+the suggestion at Hard; Again is never raised. These timing and assistance rules
+only choose a review schedule. The strict persisted review payload is unchanged:
+it still contains rating 1–4 and the existing recall/context fields. The browser's
+version-1 draft envelope retains an optional validated check result (closeness,
+source, explanation and suggested rating) or a fallback reason. Old revealed
+drafts without a result show manual rating buttons.
+
 ## Verification boundaries
 
 Unit and integration tests inject mock HTTP; no test is permitted to call the
@@ -177,3 +250,13 @@ models was not authorized. Dependency-backed checks, browser runs, and database
 execution therefore require later authorized verification. Do not treat authored
 tests as a passing test run. Real Postgres tests require a dedicated disposable
 Postgres 17+ cluster, never a shared or live database.
+
+For the flashcard check feature,
+`node --experimental-strip-types --test tests/flashcard-grade-pure.test.mjs`
+passed all six dependency-free tests. These cover normalization, timing and rating
+mapping, elapsed formatting, version-1 draft recovery and strict check rejection,
+and the browser-source credential boundary. The required `npm run typecheck`,
+`npm run lint`, `npm test` and `npm run content:validate` commands could not start:
+`tsc`, `eslint`, `vitest` and `tsx` are absent. Flashcard integration, browser and
+Postgres tests were authored but not run. No packages or browsers were installed,
+and no real provider API was called.

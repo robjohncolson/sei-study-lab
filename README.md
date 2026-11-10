@@ -25,7 +25,7 @@ npm run build
 npm start
 ```
 
-Open http://127.0.0.1:4317. Run commands from the repository root so content and migration paths resolve. Internet is needed for initial npm installation; after installation/build the study workflow requires no network connection. Source fetching is a separate deliberate development action, never part of startup. No model calls, CDN assets, telemetry or accounts.
+Open http://127.0.0.1:4317. Run commands from the repository root so content and migration paths resolve. Internet is needed for initial npm installation; after installation/build the study workflow requires no network connection. Source fetching is a separate deliberate development action, never part of startup. No automatic model calls, CDN assets or telemetry. Optional DeepSeek feedback requires backend configuration and explicit consent; the default local workflow needs no account.
 
 ## Study workflow
 
@@ -46,7 +46,7 @@ Extended-response judgments remain provisional, including locally approved exter
 
 ## Data and privacy
 
-Native Flashcards reviews the twelve preserved starter cards and six appended Objective 0004–0006 recall cards using pinned `ts-fsrs` 5.4.2 (FSRS-6) on Node 22.17.1. Reveal before rating; typed recall and assistance are preserved, and ratings never promote learning evidence. See [native scheduling, recovery, backup limits, and actual verification](docs/native-flashcards.md).
+Native Flashcards reviews the twelve preserved starter cards and six appended Objective 0004–0006 recall cards using pinned `ts-fsrs` 5.4.2 (FSRS-6) on Node 22.17.1. Type your recall and choose **Check answer** to freeze the count-up timer. Exact and blank recalls receive a suggested rating locally; optional session-consented DeepSeek closeness checks can suggest a rating for other wording. **Continue** saves the suggestion, **Change rating** overrides it, and manual ratings remain the fallback. Typed recall and assistance are preserved; ratings schedule reviews only and never promote learning evidence. See [AI privacy, timing and budget rules](docs/ai-feedback.md#flashcard-closeness-checks). See [native scheduling, recovery, backup limits, and actual verification](docs/native-flashcards.md).
 
 After opening the native deck, legacy JSON export is blocked because its format cannot preserve native history. Use the consistent SQLite backup below for all accepted reviews. Native JSON import/export is deferred; older evidence-only imports remain supported. Browser drafts and pending review receipts are separate local working data and are not included in a SQLite backup.
 
@@ -79,7 +79,7 @@ See [implementation status](docs/implementation-status.md) for commands actually
 
 ## Further development
 
-[Architecture](docs/architecture.md), [data schema](docs/data-schema.md), [content-review checklist](docs/content-review-checklist.md), [Anki workflow](docs/anki-workflow.md), and [decisions/TODO](docs/decisions-and-todo.md) explain the boundaries. Anki TSV does not synchronize reviews. AnkiConnect, model adapters and BKT are deferred.
+[Architecture](docs/architecture.md), [data schema](docs/data-schema.md), [content-review checklist](docs/content-review-checklist.md), [Anki workflow](docs/anki-workflow.md), and [decisions/TODO](docs/decisions-and-todo.md) explain the boundaries. Anki TSV does not synchronize reviews. AnkiConnect and BKT are deferred; the optional DeepSeek adapter is described in [AI feedback](docs/ai-feedback.md).
 
 The user has authorized public source-code review on GitHub. Local runtime databases and private answers remain excluded. Publishing the source does not deploy the application; it remains single-user localhost software. Future hosting, model connections, or private-data sharing require separate authorization.
 

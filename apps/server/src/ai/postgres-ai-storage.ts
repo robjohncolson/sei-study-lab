@@ -5,7 +5,7 @@ import type { VerifiedOwnerClaims } from '../hosted-auth.js';
 import { withOwnerTransaction } from '../postgres/transaction.js';
 import { deriveStudyEvidence } from '../study-logic.js';
 import type { Attempt, Judgment } from '../types.js';
-import { aiJudgment, assertAiApprovalIdentity, AiStorageError, emptyAiUsage, type AiStorage, type AiFinish } from './ai-storage.js';
+import { aiJudgment, assertAiApprovalIdentity, AiStorageError, emptyAiUsage, type AiStorage, type AiFinish, type AiUsageSettlement } from './ai-storage.js';
 
 export class PostgresAiStorage implements AiStorage {
   constructor(readonly pool: Pool, readonly claims: VerifiedOwnerClaims, readonly catalog: Catalog,
@@ -64,6 +64,20 @@ export class PostgresAiStorage implements AiStorage {
         VALUES($1,$2,$3,$4,$5,$6,$7::jsonb,$8,$9)`, [this.claims.sub, row.id, row.attemptId, row.previewSha256, row.model, row.status,
         row.proposal ? JSON.stringify(ProposalSchema.parse(row.proposal)) : null, value.costMicroUsd, row.createdAt]);
     });
+  }
+
+  /** Only the authenticated owner's ledger changes; no request history is inserted. */
+  async settleUsage(value: AiUsageSettlement) {
+    try {
+      await withOwnerTransaction(this.pool, this.claims, async client => {
+        const changed = await client.query(`UPDATE sei.ai_feedback_usage SET reserved_micro_usd=reserved_micro_usd-$3,
+          spent_micro_usd=spent_micro_usd+$4,input_tokens=input_tokens+$5,output_tokens=output_tokens+$6,updated_at=$7
+          WHERE owner_id=$1 AND day_et=$2 AND reserved_micro_usd>=$8 RETURNING requests`,
+        [this.claims.sub, value.day, value.retainReservation ? 0 : value.reservedMicroUsd, value.retainReservation ? 0 : value.costMicroUsd,
+          value.inputTokens, value.outputTokens, this.clock().toISOString(), value.reservedMicroUsd]);
+        if (changed.rowCount !== 1) throw new AiStorageError(500, 'AI feedback accounting could not be completed.');
+      });
+    } catch { throw new AiStorageError(500, 'AI feedback accounting could not be completed.'); }
   }
 
   async approve(requestId: string) {

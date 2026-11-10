@@ -53,6 +53,51 @@ describe('native flashcard unfinished work',()=>{
     const storage={getItem:()=>null,setItem:()=>{throw new Error('Synthetic quota error');}};
     expect(()=>new FlashcardDraftStorage(storage).write(pendingFile())).toThrow('Synthetic quota error');
   });
+  it('keeps schema version 1 and accepts old revealed drafts without a check',()=>{
+    const file=pendingFile();file.active!.pending=null;
+    const recovered=decodeFlashcardDraftFile(JSON.stringify(file));
+    expect(recovered).toEqual(file);
+    expect(recovered.active?.check).toBeUndefined();
+    expect(FLASHCARD_DRAFT_KEY).toBe('sei.native-flashcards.draft.v1');
+  });
+  it('round-trips completed checks and fallbacks without altering frozen review bytes',()=>{
+    const checks=[
+      {closeness:'correct',source:'exact',explanation:'Matches the target answer.',suggestedRating:4},
+      {closeness:'close',source:'ai',explanation:'Name the missing concept.',suggestedRating:2},
+      {closeness:'incorrect',source:'ai',explanation:'Revisit the target.',suggestedRating:1},
+      {closeness:'empty',source:'empty',explanation:null,suggestedRating:1},
+      {closeness:'empty',source:'dont_know',explanation:null,suggestedRating:1},
+      {closeness:'correct',source:'manual',explanation:null,suggestedRating:3},
+      {fallback:true,reason:'AI checking is off; choose a rating.'},
+    ];
+    for(const check of checks){
+      const file=pendingFile(),rawPending=JSON.stringify(file.active!.pending);
+      const raw=JSON.stringify({...file,active:{...file.active,check}});
+      const recovered=decodeFlashcardDraftFile(raw);
+      expect(recovered.active?.check).toEqual(check);
+      expect(JSON.stringify(recovered.active?.pending)).toBe(rawPending);
+    }
+  });
+  it('rejects malformed check results instead of silently accepting or replacing saved work',()=>{
+    const correct={closeness:'correct',source:'ai',explanation:'The concept matches.',suggestedRating:3};
+    const invalid=[null,{},[],{...correct,closeness:'mastered'},{...correct,source:'provider'},
+      {...correct,closeness:['correct']},{...correct,source:['ai']},
+      {...correct,suggestedRating:0},{...correct,suggestedRating:2.5},{...correct,suggestedRating:5},
+      {...correct,explanation:''},{...correct,explanation:' '},{...correct,explanation:'a'.repeat(301)},
+      {...correct,explanation:'Line\nbreak'},{...correct,explanation:'Null\u0000character'},
+      {...correct,score:100},{...correct,fallback:true},{fallback:false,reason:'Unavailable'},
+      {fallback:true,reason:''},{fallback:true,reason:' '},{fallback:true,reason:'Unavailable',rating:1},
+    ];
+    for(const check of invalid){
+      const file=pendingFile(),storage=memoryStorage();
+      const raw=JSON.stringify({...file,active:{...file.active,check}});
+      storage.setItem(FLASHCARD_DRAFT_KEY,raw);
+      expect(()=>new FlashcardDraftStorage(storage).read()).toThrow('not been overwritten');
+      expect(storage.getItem(FLASHCARD_DRAFT_KEY)).toBe(raw);
+    }
+    const file=pendingFile();
+    expect(()=>decodeFlashcardDraftFile(JSON.stringify({...file,active:{...file.active,pending:null,revealedAt:null,check:correct}}))).toThrow('not been overwritten');
+  });
 });
 
 describe('native flashcard schedule labels',()=>{

@@ -2,7 +2,7 @@ import type { Catalog } from '../../../../packages/shared/src/index.js';
 import { ProposalSchema } from '../../../../packages/shared/src/index.js';
 import { canonical, type SeiStore } from '../store.js';
 import type { Attempt, Judgment } from '../types.js';
-import { aiJudgment, assertAiApprovalIdentity, AiStorageError, emptyAiUsage, type AiStorage, type AiFinish } from './ai-storage.js';
+import { aiJudgment, assertAiApprovalIdentity, AiStorageError, emptyAiUsage, type AiStorage, type AiFinish, type AiUsageSettlement } from './ai-storage.js';
 
 // A local SQLite installation is one owner; sessions do not create budget identities.
 const LOCAL_OWNER = '00000000-0000-4000-8000-000000000001';
@@ -49,6 +49,19 @@ export class SqliteAiStorage implements AiStorage {
         VALUES(?,?,?,?,?,?,?,?,?)`).run(LOCAL_OWNER, row.id, row.attemptId, row.previewSha256, row.model,
         row.status, row.proposal ? canonical(ProposalSchema.parse(row.proposal)) : null, value.costMicroUsd, row.createdAt);
     });
+  }
+
+  /** Complete a reserved flashcard call without an attempt-bound history row. */
+  async settleUsage(value: AiUsageSettlement) {
+    try {
+      this.store.transaction(() => {
+        const changed = this.store.db.prepare(`UPDATE ai_feedback_usage SET reserved_micro_usd=reserved_micro_usd-?,
+          spent_micro_usd=spent_micro_usd+?,input_tokens=input_tokens+?,output_tokens=output_tokens+?,updated_at=?
+          WHERE owner_id=? AND day_et=? AND reserved_micro_usd>=? RETURNING requests`).get(value.retainReservation ? 0 : value.reservedMicroUsd,
+          value.retainReservation ? 0 : value.costMicroUsd, value.inputTokens, value.outputTokens, this.clock().toISOString(), LOCAL_OWNER, value.day, value.reservedMicroUsd);
+        if (!changed) throw new AiStorageError(500, 'AI feedback accounting could not be completed.');
+      });
+    } catch { throw new AiStorageError(500, 'AI feedback accounting could not be completed.'); }
   }
 
   async approve(requestId: string) {
